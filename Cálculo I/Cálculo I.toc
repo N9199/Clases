@@ -1,0 +1,4 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}ASDF}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Series}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Something}{5}{chapter.3}

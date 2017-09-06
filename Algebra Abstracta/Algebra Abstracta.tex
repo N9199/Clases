@@ -1,0 +1,577 @@
+\documentclass[11pt]{book}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}          
+\usepackage{graphicx}
+\usepackage{amsthm, amsmath, amssymb}
+\usepackage{mathtools}
+\usepackage{setspace}\onehalfspacing
+\usepackage[loose,nice]{units} 
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\title{Algebra Abstracta I}
+\author{Nicholas Mc-Donnell}
+\date{2do semestre 2017}
+
+\renewcommand{\d}[1]{\ensuremath{\operatorname{d}\!{#1}}}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+
+\newtheorem{thm}{Teorema}[section]
+\newtheorem{lem}[thm]{Lema}
+\newtheorem{prop}[thm]{Proposición}
+\newtheorem*{cor}{Corolario}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definición}[section]
+\newtheorem{obs}{Observación}[section]
+
+\pagenumbering{gobble}
+
+\begin{document}
+\maketitle
+
+\newpage
+\tableofcontents
+
+\newpage
+\pagenumbering{arabic}
+\chapter{Grupos}
+\section{Grupos}
+Una operación en un conjunto $S$ es una función.\\
+\[
+S\times S\rightarrow S
+\]
+\[
+(a,b)\mapsto ab
+\]
+Ejemplo: $S= \textrm{Matrices de } n\times n$\\
+La multiplicación y la suma son operaciones en este conjunto.\\
+La operación puede ser asociativa: $(ab)c=a(bc)$\\
+Esto implica que se le puede dar un y solo un sentido a $a_1\cdot a_2\cdot...\cdot a_n$\\
+La operación es conmutativa: $ab=ba$\\
+Ejemplo: Dado un conjunto $T$
+\[S=\{ \textrm{funciones de } T\textrm{ en } T\}\]
+En este conjunto la operación de composición es asociativa.\\
+La operación tiene identidad (o neutro) para la operación en $S$ es el clásico neutro y es único:
+\[
+\exists e: \forall a, ae=ea=a
+\]
+Lo operación tiene inverso, con identidad $e$: $\forall a \exists a^{-1}: aa^{-1}=a^{-1}a=e$\\
+\begin{lem}
+Si la operación es asociativa, esto implica que los inversos son únicos.\\
+\end{lem}
+\begin{proof}
+
+\[
+b\cdot a =a\cdot b=e=a\cdot b'\quad / b\cdot
+\]
+\[
+(b\cdot a)\cdot b=(b\cdot a)\cdot b' \quad /\textrm{Propiedad asociativa}
+\]
+\[
+e\cdot b= e\cdot b'
+\]
+\[
+b=b'
+\]
+Además, si $a$ y $b$ tienen inverso y la operación es asociativa, esto implica que $ab$ tiene inverso:
+\[
+(ab)^{-1}=b^{-1}a^{-1} \qedhere
+\]
+\end{proof}
+\subsection{Grupos}
+\begin{defn}
+Un grupo es un conjunto $G$ con operación asociativa e identidad, tal que todo elemento tiene inverso.
+\end{defn}
+Ejemplo:  $GL_n\begin{pmatrix}\mathbb{Q} \\ \mathbb{R} \\ \mathbb{C} \end{pmatrix}=\{M\in\textrm{Matrices}\begin{pmatrix}\mathbb{Q} \\ \mathbb{R} \\ \mathbb{C} \end{pmatrix}:det(M)\neq 0\}$ (Grupo general lineal)\\
+Este es un grupo no abeliano con el producto.\\
+
+\begin{defn}[Orden]
+El orden de un grupo $G$ es su cardinalidad $|G|$
+\end{defn}
+Sea $T$ un conjunto (no vací­o).\\
+\[
+S_{|T|}=\{\textrm{Las biyecciones de } T \textrm{ en si mismo}\}
+\]
+Entonces, $(S_{|T|},\circ)$ es un grupo.\\
+Explicación:\\
+\begin{itemize}
+	\item Asociatividad, esta aparece como propiedad de la composición de las funciones
+	
+	\item Identidad, $e=1|_T$, la función identidad (biyectiva)
+	
+	\item Dada $f:T\rightarrow T$ biyección $\implies \exists f^{-1}:T\rightarrow T$ tal que $f\circ f^{-1}=f^{-1}\circ f=1|_T$
+\end{itemize}
+
+Si $|T|=n$ finito, $S_{|T|}=$ grupo de simetrí­a de $n$ elementos. Y $|S_n|=n!$.\\
+
+\subsection{Motivación para estudiar esto:}
+
+Resolver: $p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0=0$ por radicales, donde $a_i\in\mathbb{Q}$\\
+Existe cierta manera de asociar un grupo a $p(x)$.\\
+$Gal(p)=Gal(K|\mathbb{Q}$ donde $K=\mathbb{Q}(\alpha_1,\alpha_2,...,\alpha_n)$ (cuerpo).\\
+\begin{thm}
+Sea $f(x)\in \mathbb{Q}[x]$ irreducible:\\
+\[
+f(x)\textrm{ se resuelve por radicales}\iff Gal(f)\textrm{ es soluble}
+\]
+Ser soluble es la siguiente propiedad:
+\[
+\exists 1\triangleleft G_1\triangleleft G_2\triangleleft ...\triangleleft Gal(f):G_{i+1}/G_i\textrm{ es grupo abeliano y } G_i\textrm{ subgrupo de } G_i+1
+\]
+\end{thm}
+Ejemplo: $f(x)=2x^5-10x+5$\\
+$Gal(f)$ es isomorfo a $S_5$, pero $S_5$ no es soluble, lo que implica que $f(x)=0$ no se resuelve por radicales (fórmula).\\
+
+\section{Subgrupos}
+Def: Sea $G$ un grupo, $H\subset G$ es subgrupo $\iff$ $H$ es grupo (con la misma operación).\\
+\subsection{Subgrupos triviales}
+Sea $(G,\cdot)$ grupo y $e$ su neutro. $(G,\cdot)<(G,\cdot)$ y $(\{e\},\cdot)<(G,\cdot)$ (Notación de subgrupo).
+\subsubsection{Subgrupos de $(\mathbb{Z},+)$}
+Los pares son subgrupo de $(\mathbb{Z},+)$, además los múltiplos de $n$ son subgrupo de $(\mathbb{Z},+)$\\
+$b\mathbb{Z}:=\{bk,k\in\mathbb{Z}\}$\\
+Proposición: Todo subgrupo de $\mathbb{Z}$ es de la forma $b\mathbb{Z}$ ($H<\mathbb{Z}\iff H=b\mathbb{Z}$)\\
+Dem:\\
+\begin{enumerate}
+	\item Caso: $H$ sin números positivos $\iff H=\{0\}=0\mathbb{Z}$, esto es por los inversos (sin positivos no hay negativos)
+	
+	\item Caso: $H$ tiene números positivos $\implies\exists m\in\mathbb{Z}^+:\forall a>0\in H\implies m\leq a$
+\end{enumerate}
+Demostrar que $H=m\mathbb{Z}$.\\
+$\supseteq$\\
+Clausura e inducción $(\forall x\in H\implies x\in m\mathbb{Z})$ y también tirar inversos.\\
+$\subseteq$\\
+Todo elemento de $H$ es divisible por $m$.\\
+Sea $a\in H$ no divisible por $m\implies a=mc+r$ con $0<r<m$\\
+Como $a\in H,m\in H\implies mc\in H\implies -mc\in H$\\
+Por clausura $a-mc=r\in H$. Pero por buen orden es el más pequeño.\\
+\[
+\rightarrow\leftarrow
+\]
+\subsubsection{Subgrupos Generados}
+
+Sea $(G,\cdot)$ grupo y $S\subseteq G$, con $S\neq\emptyset$.\\
+$<S>=\bigcap _{S\subseteq H<G}=$ es el subgrupo más pequeño que contiene a $S$.\\
+
+\subsubsection{Subgrupos generados por un elemento}
+Subgrupo de $G$ generado por $x$
+\[
+<x>:=\{e,x^1,x^{-1},x^2,x^{-2},...\}
+\]
+
+\begin{lem}
+	\[x\in G, (G,\cdot)\]
+	$\{\textrm{Los $K$ tal que $x^k=e$}\}$ es subgrupo de $\mathbb{Z}$
+	
+\end{lem}
+
+\begin{defn}[Centro]
+	Si $G$ es grupo, el centro de $G$ es:
+\end{defn}
+\[
+Z(G)=\{z\in G: zg=gz\,\forall g\in G\}\trianglelefteq G
+\]
+Si $g\in G,z\in Z\implies gzg^{-1}=z$
+\section{Relación de equivalencia y particiones}
+\begin{defn}[Partición]
+	Sea $S\neq\emptyset$ conjunto. Una partición $P$ de $S$ es una subdivisión $S$ en un subconjuntos disjuntos.\\
+\end{defn}
+Ejemplos:\\
+$\{1,3\},\{2,5\},\{4\}$ es partición de $\{1,2,3,4,5\}$\\
+Pares e impares en $\mathbb{Z}$\\
+\subsection{Relación de equivalencia}
+\begin{defn}[Relaciones de equivalencia]
+	Una \underline{relación de equivalencia} en $S$ es una forma de relacionar elementos de $S$, $a\sim b$, tal que:
+	\begin{enumerate}[label=(\arabic*)]
+		\item Si $a\sim b,b\sim c\implies a\sim c$ (transitivo)
+		
+		\item Si $a\sim b\implies b\sim a$ (simétrico)
+		
+		\item $a\sim a$ (reflexivo)
+	\end{enumerate}
+\end{defn}
+
+Ejemplo:\\
+Los isomorfismos particionan el conjunto de objetos. Luego tenemos un conjunto que clasifica los objetos.\\
+En Matemáticas \underline{clasificamos}. Cómo?\\
+Buscamos \underline{isomorfismos} entre objetos que se presentan en formas distintas, pero estructuralmente son lo mismo.\\
+Dado $S\neq\emptyset$\\
+Partición de $S\equiv$ una relación de equivalencia\\
+Despues de particionar se crea un nuevo conjunto, $\overline{S}=S/\sim=$ Conjunto de las particiones.\\
+Ejemplo:\\
+$\mathbb{Z}\rightarrow\overline{\mathbb{Z}}=\{\textrm{pares, impares}\},\textrm{impares}=\overline{1},\overline{-1},\overline{3},\textrm{pares}=\overline{0},\overline{-2},\overline{2}$\\
+Queremos: $\overline{a}+\overline{b}=\overline{a+b}$\\
+$\therefore$ Siempre hay un función sobreyectiva:
+\[
+S\rightarrow \overline{S}
+\]
+\[
+a\mapsto \overline{a}
+\]
+Cualquier función entre conjuntos $S\xrightarrow{\varphi}T$ define una partición en $S:a\sim b$ si $\varphi(a)=\varphi(b)$
+\[
+\therefore \overline{S}=\{\varphi^{-1}(t):t\in T\}
+\]
+Asá­ tenemos morfismo biyectivo (isomorfismo)
+\[
+\overline{S}\xrightarrow{\overline{\varphi}}\Im(\varphi)
+\]
+Volviendo a grupos: Sea $\varphi:G\rightarrow G'$ morfismo entre grupos.\\
+Ejemplo:
+\[
+\mathbb{C}^\times\xrightarrow{\varphi}\mathbb{R}_{>0}^\times \quad \varphi(a)=|a|
+\]
+\[
+\varphi(a\cdot b)=|a\cdot b|=|a|\cdot |b|=\varphi(a)\cdot\varphi(b)
+\]
+Esta partición es $\{z\in\mathbb{C}^\times:|z|=r,r\in\mathbb{R}_{>0}\}$\\
+Notar que: $\ker(\varphi)=\{z\in\mathbb{C}^\times:|z|=1\}$\\
+\\
+Proposición: $G\xrightarrow{\varphi}G'$ morfismo de grupo con kernel $N$. Sean $a,b\in G\implies$
+\[
+\varphi(a)=\varphi(b)\iff a=b\cdot n\quad\textrm{para algún }n\in N
+\]
+\[
+\iff a\cdot b^{-1}\in N
+\]
+Notación: $aN=\{an: n\in N\}$
+$|aN|=|N|$\\
+Dem:\\
+\[
+N\rightarrow aN
+\]
+\[n\mapsto an
+\]
+\[
+\textrm{(Inyectiva)}\quad an=an'\implies n=n'
+\]
+\[
+\textrm{(Sobreyectiva)}\quad an'\in aN \implies \varphi{n'}=an'
+\]
+Dem:
+\[
+\varphi(a)=\varphi(b)\iff \varphi(a)\varphi(b)^{-1}=e
+\]
+\[
+\iff \varphi(ab^{-1})=e
+\]
+\[
+\iff ab^{-1}\in \ker(\varphi)=N
+\]
+Def: Dado $H\leq G,a \in G$.
+\[
+aH=\{a\cdot h:h\in H\}
+\]
+se llama clase lateral izquierda. (clases laterales derechas $Ha$)\\
+Proposición: Dado $H\leq G$, las clases laterales izquierdas particionan $G$.\\
+Ejemplos:
+\begin{itemize}
+	\item Si $G$ es abeliano $\implies aH=Ha\quad \forall a\in G\implies$ la misma partición.
+	
+	\item $S_3=$ permutaciones de $3$ elementos $\iff$ simetrá­as del triángulo equilátero\\
+	Si $H=\{1|,\sigma_1\}=<\sigma_1>$
+\end{itemize}
+Tarea: verificar que clases laterales coinciden o no coinciden.\\
+Notación: la cardinalidad de las clases laterales se denota por $\left[G:H\right]$ (indice de $H$ en $G$)\\
+\subsubsection{Corolario: Teorema de Lagrange}
+Si $G$ es finito y $H\leq G\implies |H|\cdot [G:H]=|G|$\\
+En particular: $|H|\, |\,|G|$\\
+Más particular, $|a| \, |\,|G|\quad \forall a \in G$\\
+Corolario: Si $G$ tiene orden $p$ primo y $a\in G\setminus\{e\}\implies G=<a>$\\
+En efecto, $G$ es isomorfo a $\mathbb{Z}/p\mathbb{Z}$.\\
+Dem:\\
+Si $a\neq e\implies |a|\neq 1$\\
+Pero $|a|\, |\, |G|=p\textrm{ primo}\implies G=<a>\implies |a|=p$
+\[
+\therefore \{a,a^2,a^3,...,a^{p-1},e\}=G=<a>
+\]
+Isomorfismo:
+\[
+\mathbb{Z}/p\mathbb{Z}\rightarrow G
+\]
+\[
+\overline{i}\mapsto a^i
+\]
+
+\subsubsection{$\mathbb{Z}/p\mathbb{Z}$}
+Sea $n\in\mathbb{Z}_{>0}$.\\
+En $\mathbb{Z}$ definir la relacion de equivalencia:
+\[
+a\sim b\iff a-b\textrm{ es divisible por } n
+\]
+\[
+\therefore \mathbb{Z}/n\mathbb{Z}=\{i\mathbb{Z}:i\in\mathbb{Z}\}=\{\overline{0},\overline{1},\overline{2},...,\overline{n-1}\}
+\]
+Tarea: la suma designada por $\overline{a}+\overline{b}=\overline{a+b}$ no depende de $a,b$ sino de su clase.
+\[
+\therefore (\mathbb{Z}/n\mathbb{Z},+)\textrm{ es un grupo de $n$ elementos, y $\mathbb{Z}/n\mathbb{Z}=<\overline{1}>$}
+\]
+Tarea: $G=\bigcup_{g\in G}gH=\bigcup_{g\in G}Hg$ y para $g,g'\in G$ $gH\cap f'H=\emptyset$ o $gH=g'H$, por relación de equivalencia ($a\sim b\iff a=bh$ para algún $h\in H$)\\
+Notación: $[G:H]=$ \# de clases lat. izq.$=$\# de clases lat. der.
+\[
+\therefore |G|=[G:H]\cdot |H|
+\]
+\subsection{Meta}
+Dado $n>0$ entero. Cuántos grupos $G$ existen $|G|=n$?\\
+Si $n$ es primo $\implies$ hay sólo 1\\
+Si $n=4\implies$ hay sólo 2
+\[
+\mathbb{Z}/4\mathbb{Z},\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/2\mathbb{Z}
+\]
+Si $n=6\implies$ hay sólo 2
+\[
+\mathbb{Z}/6\mathbb{Z}, S_3
+\]
+Si $n=8\implies$ hay 5.
+
+\subsubsection{Corolario}
+Sea $\varphi:G\rightarrow G'$ morfismo entre grupos finitos
+\[
+\implies \ker(\varphi) \unlhd G,\varphi (G) \unlhd G'
+\]
+\[
+|G|=|\ker\varphi|\cdot[G:\ker\varphi]=|\ker\varphi|\cdot |\varphi(G)|
+\]
+Prop: $H\unlhd G\iff$Toda clase lateral izquierda es derecha $\iff gH=Hg\forall g\in G$\\
+Dem: Tenemos siempre
+\[
+gh=(ghg^{-1})g\forall g\in G
+\]
+Suponer $H\lhd G\implies ghg^{-1}\in H\implies gH\subseteq Hg$. También
+\[
+hg=g(g^{-1}hg)\forall g\in G
+\]
+\[
+\implies Hg\subseteq gH\implies gH=Hg
+\]
+Si $H\ntriangleleft G\implies \exists ghg^{-1}\notin H$
+\[
+\implies gh\in Hg
+\]
+\[
+\therefore Hg\neq gH
+\]
+$Hg=g'H$?
+No, ya que las clases laterales izquierda y derecha particionan. Luego, si $Hg=g'H$
+\[
+\implies g\in g'H\textrm{ y }g\in gH
+\]
+\[
+\implies g'H\cap gH\neq\emptyset\implies g'H=gH
+\]
+\[
+\rightarrow\leftarrow
+\]
+\section{Restricción de morfismos a subgrupos}
+Obs: $K,H\leq G\implies K\cap H\leq H$
+\[
+K\lhd G\implies K\cap H\lhd H
+\]
+Obs: $\varphi:G\rightarrow G'$ morfismo
+\[
+\implies \varphi|_H:H\rightarrow G'\quad\textrm{es morfismo}
+\]
+Prop: $\varphi:G\rightarrow G'$ morfismo, $h'\leq G$. Sea $\varphi^{-1}(H')=\tilde{H}$
+\begin{enumerate}[label=(\alph*)]
+	\item $\tilde{H}\leq G$
+	
+	\item $H'\lhd G'\implies \tilde{H}\lhd G$
+	
+	\item $\tilde{H}$ contiene a $\ker\varphi$
+	
+	\item $\varphi|_H:\tilde{H}\rightarrow H'$ tiene kernel $\ker\varphi$
+\end{enumerate}
+Dem: p.d. $\tilde{H}\leq G$
+\begin{enumerate}
+	\item $e\in\tilde{H}$ ya que $\varphi(e)=e'\in H'$
+	
+	\item $x,y\in\tilde{H}\implies\varphi(xy)=\varphi(x)\varphi(y)\in H'$
+	
+	\item $x\in\tilde{H}\implies x^{-1}\in\tilde{H}$
+\end{enumerate}
+\section{Producto de grupos}
+Def: Dados $g,G'$ grupos, podemos formar un \underline{nuevo grupo}:
+\[
+G\times G'=\{(g,g'):g\in G,g'\in G'\}
+\]
+Con la operación:
+\[
+(a,b)\cdot_{G\times G'}(c,d)=(a\cdot_G b,c\cdot_{G'} d)
+\]
+\subsection{Porqué es grupo?}
+\begin{enumerate}[label=(\alph*)]
+	\item Identidad: $(e,e')$
+	
+	\item Invertibilidad: Para $(a,b),(a,b)^{-1}=(a^{-1},b^{-1})$
+\end{enumerate}
+Ejemplos:
+\begin{itemize}
+	\item $S_3\times\mathbb{Z}/2\mathbb{Z}$ es un grupo de orden 12 y no es abeliano
+	
+	\item $\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/2\mathbb{Z}$ es grupo de orden 4 y \underline{no} es $\mathbb{Z}/4\mathbb{Z}$
+	
+	\item $\mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/3\mathbb{Z}$ es grupo abeliano de orden 6.\\
+	Notar que es generado por el $(1,1)$, por lo que es isomorfo a $\mathbb{Z}/6\mathbb{Z}$
+\end{itemize}
+Sean $n,m$ coprimos enteros
+\[
+\implies \mathbb{Z}/n\mathbb{Z}\times\mathbb{Z}/m\mathbb{Z}\simeq\mathbb{Z}/m,\mathbb{Z}
+\]
+
+\chapter{Simetrías}
+\section{Simetrías en figuras planas}
+\begin{defn}[Isometría]
+Una función $m:\mathbb{R}^2\rightarrow\mathbb{R}^2$ es una \underline{isometría} si preserva distancia, es decir $\forall p,q\in\mathbb{R}^2$
+\[ dist(P,Q)=dist(m(P),m(Q))\]
+\end{defn}
+\begin{prop}
+$m:\mathbb{R}^2\rightarrow\mathbb{R}^2$ isometría
+\[\implies m\left(\begin{bmatrix} x\\ y\end{bmatrix}\right)=\begin{bmatrix} x_0\\y_0\end{bmatrix}+M \begin{bmatrix} x\\ y\end{bmatrix}\]
+\[\textrm{Con }M^tM=\begin{bmatrix} 1 && 0\\ 0 && 1\end{bmatrix}\]
+Notar que $\begin{bmatrix} x_0 \\ y_0\end{bmatrix}=m\left(\begin{bmatrix} 0 \\ 0\end{bmatrix}\right)$
+\end{prop}
+\begin{proof}
+\[\mathbb{R}^2\xrightarrow{m}\mathbb{R}^2\xrightarrow{-m\begin{bmatrix} 0\\ 0\end{bmatrix}}\mathbb{R}^2\]
+\[T=\textrm{ isometría con }T\begin{bmatrix} 0 \\ 0\end{bmatrix}\]
+\[\therefore \textrm{ Sea }v\in \mathbb{R}^2\setminus\vec{0}, T(v)\]
+\[T(\lambda v)=\lambda T(v)\quad\textrm(ejercicio)\]
+\[T(u+v)=T(u)+T(v)\]
+Luego $T$ es transformación lineal: $\exists M\in M_{2\times 2}$
+\[ T\begin{bmatrix} x\\ y\end{bmatrix}=M\begin{bmatrix} x\\ y\end{bmatrix}, M=\begin{bmatrix} A && C\\ B && D\end{bmatrix}\]
+\[ M\begin{bmatrix} 1\\ 0\end{bmatrix}=\begin{bmatrix} A\\ B\end{bmatrix}\implies A^2+B^2=1\]
+\[ M\begin{bmatrix} 0\\ 1\end{bmatrix}=\begin{bmatrix} C\\ D\end{bmatrix}\implies C^2+D^2=1\]
+\[\begin{bmatrix} A\\ B\end{bmatrix}\cdot\begin{bmatrix} C\\ D\end{bmatrix}=0\implies AC+BD=0\]
+\[\therefore \begin{bmatrix} A && B\\ C && D\end{bmatrix}\begin{bmatrix} A && C\\ B && D\end{bmatrix}=\begin{bmatrix} 1 && 0\\ 0 && 1\end{bmatrix}\qedhere\]
+\end{proof}
+\begin{cor}
+Isometrías son biyecciones
+\end{cor}
+\begin{cor}
+Isometrías forman un grupo con la composición.
+\end{cor}
+\begin{defn}[Simetría]
+Sea $F\subseteq\mathbb{R}^2$ una figura. Una \underline{simetría} es una isometría tal que
+\[m(F)=F\]
+\[Sim(F)\leq Sim(\mathbb{R}^2\]
+\end{defn}
+\section{Acciones de grupo}
+\begin{defn}
+	$G=$ Grupo, $S\neq\emptyset$ conjunto. Sea $G\times S\rightarrow S,(g,s)\mapsto g\cdot s$ tal que:
+	\begin{enumerate}[label=(\alph*)]
+		\item $e\cdot s= s,\forall s\in S$
+
+		\item $(gg')\cdot s=g\cdot(g'\cdot s)\forall g,g'\in G,\forall s\in S$
+	\end{enumerate}
+	Si tenemos esto decimos que $G$ actua en $S$
+	\[(G S)\]
+\end{defn}
+Ejemplos:
+\begin{itemize}
+	\item $F\subseteq\mathbb{R}^2$ figura.\\
+	\[Sim(F)=G, S=F\]
+	\[\therefore G S\]
+	\[G\times S\rightarrow S\]
+	\[(g,p)\mapsto g\cdot p=g(p)\]
+
+	\item $G=\mathbb{Z}/2\mathbb{Z}, S=\mathbb{C}$
+	$G S$ por conjugación
+	\[\{0,1\}\times\mathbb{C}\rightarrow\mathbb{C}\]
+	\[0\cdot z= z\]
+	\[1\cdot z=\bar{z}\]
+	
+\end{itemize}
+\begin{obs}
+	Si $G S$ y $g\in G$
+	\[\implies m_g:S\rightarrow S, m_g(s)=g\cdot s\quad\textrm{ y es biyección:}\]
+	\begin{itemize}
+		\item Inyectiva: 
+		\[g\cdot s=g\cdot s'\quad /g^{-1}\cdot\]
+		\[g^{-1}\cdot (g\cdot s)=g^{-1}\cdot (g\cdot s')\implies e\cdot s=e\cdot s'\]
+		\[\implies s=s'\]
+
+		\item Sobreyectiva: Dado $s\in S$, $g\cdot ?=s\therefore ?=g^{-1}\cdot s$
+	\end{itemize}
+	
+	Lo principal de $G S$ es que particiona a $S$ en órbitas.
+	\[O_s=\{s'\in S:g\cdot s=s'\textrm{ para algún }g\in G\}\]
+\end{obs}
+Ejemplo: $G=D_4, S=\square$, $D_4$ verlo como $Sim(\square)$\\
+Las órbitas de $G\circlearrowleft S$ definen una relación de equivalencia:
+\[s\sim s'\iff s'=g\cdot s\exists g\in G\]
+\[\therefore S\textrm{ es unión de órbitas disjuntas}\]
+\begin{defn}
+	Si $S$ es una órbita $\implies$ decimos que $G$ actua \underline{transitivamente}. $\iff$ Dados $s,s'\in S\exists g\in G$ tal que $s=g\cdot s'$
+\end{defn}
+Ejemplo: $Sim(\mathbb{R}^2$ actua en $\mathbb{R}^2$ transitivamente.
+\begin{defn}
+	El \underline{estabilizador de $s\in S$} es $G_s=\{g\in G: g\cdot s=s\}$
+\end{defn}
+Ejemplo: $G_{(0,0)}$ para $G=Sim(\mathbb{R}^2)\circlearrowleft\mathbb{R}^2$
+\[\therefore G_{(0,0)}=\{M\in Mat_{2\times 2}(\mathbb{R}):M^tM=Id\}=\textrm{ grupo ortogonal }= O(2,\mathbb{R})\]
+\begin{obs}
+	$G_s\leq G$
+\end{obs}
+Ejemplo: $G=Sim(\mathbb{R}^2), S=\{\triangle\in\mathbb{R}^2\}$
+$\implies$ las órbitas son los $\triangle_s$ congruentes.
+\[G_\triangle=\{e\}\quad G_{\triangle\textrm{ (equilátero)}}\simeq S_3\]
+\[G_{\triangle\textrm{ (isosceles)}}\simeq \mathbb{Z}/2\mathbb{Z}\]
+\subsection{Acción en clases laterales}
+\begin{defn}
+	$H\leq G\implies$ clases laterales izquierdas particionan $G$\\
+	\underline{Notación:} part.$=G/H$\\
+	$G$ actua en $G/H$!
+	\[G\times G/H\rightarrow G/H\]
+	\[(g, aH)\mapsto gaH=g\cdot aH\]
+	es acción y transitiva.
+\end{defn}
+\begin{prop}
+	$G\circlearrowleft S, s\in S, H=G_s, O_s$ la órbita de $s$. Luego $G/H\xrightarrow{\varphi}O_s,\varphi(aH)=a\cdot s$ es biyección.
+	\begin{proof}
+		\begin{itemize}
+			\item Bien definido: Sean $aH=bH\iff \exists h\in H: b=ah$
+			\[\implies b\cdot s= ah\cdot s= a\cdot(h\cdot s)= a\cdot s\]
+			
+			\item Inyectiva:
+			\[a\cdot s=b\cdot s\implies s=a^{-1}b\cdot s\implies a^{-1}b\in G_s=H\]
+			\[\iff aH=bH\]
+
+			\item  Sobreyectiva: Si $g\cdot s\in O_s\implies\varphi(gH)=gs$
+		\end{itemize}
+	\end{proof}
+\end{prop}
+\begin{prop}
+	\[G\circlearrowleft S, s\in S,\exists a\in G: s'=a\cdot s\]
+	\begin{enumerate}[label=(\alph*)]
+		\item $aG_s=\{g\in G:g\cdot s=s'\}$
+
+		\item $G_{s'}=aG_sa^{-1}$
+	\end{enumerate}
+	\begin{proof}
+		\begin{enumerate}[label=(\alph*)]
+			\item Si $b\in aG_s\implies b=ah$ para algún $h\in G_s$
+			\[\implies b\cdot s=ah\cdot s= a\cdot(h\cdot s)=a\cdot s= s'\implies b\in\textrm{Derecha}\]
+			\[ b\in\textrm{Derecha}, b\cdot s=s'=a\cdot s\implies a^{-1}bs=s\]
+			\[a^{-1}b\in G_s\implies b\in aG_s\]
+
+			\item Si $h\in G_s$
+			\[\implies h\cdot s'=s'\implies h\cdot(a\cdot s)=a\cdot s\]
+			\[\implies a^{-1}ha\cdot s=s\implies a^{-1}ha\in G_s\]
+			\[\implies h\in aG_sa^{-1}\]
+			\[h\in aG_sa^{-1}\]
+			\[\implies h=ah'a^{-1}\implies h\cdot s'=ah'a^{-1}\cdot s'=ah'a^{-1}\cdot as=s'\]
+		\end{enumerate}
+	\end{proof}
+\end{prop}
+Ejemplo: Sea $(a,b)\in\mathbb{R}^2$
+\[\therefore G_{(a,b)}=t_{(a,b)}G_{(0,0)}t^{-1}_{(a,b)}\]
+\[G_{(a,b)}=\{f\in Sim(\mathbb{R}^2):f(x,y)=t^{-1}(M(t_{(a,b)}(x,y)))\}\]
+Hola
+\end{document}
