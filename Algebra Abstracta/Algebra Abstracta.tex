@@ -23,6 +23,9 @@
 
 \renewcommand{\d}[1]{\ensuremath{\operatorname{d}\!{#1}}}
 \renewcommand{\vec}[1]{\mathbf{#1}}
+\newcommand{\set}[1]{\mathbb{#1}}
+\newcommand{\func}[5]{#1:#2\xrightarrow[#5]{#4}#3}
+\newcommand{\contr}{\rightarrow\leftarrow}
 
 \newtheorem{thm}{Teorema}[section]
 \newtheorem{lem}[thm]{Lema}
@@ -45,7 +48,7 @@
 \pagenumbering{arabic}
 \chapter{Grupos}
 \section{Grupos}
-Una operación en un conjunto $S$ es una función.\\
+Una operación en un conjunto $S$ es una función.
 \[
 S\times S\rightarrow S
 \]
@@ -64,9 +67,9 @@ La operación tiene identidad (o neutro) para la operación en $S$ es el clásic
 \[
 \exists e: \forall a, ae=ea=a
 \]
-Lo operación tiene inverso, con identidad $e$: $\forall a \exists a^{-1}: aa^{-1}=a^{-1}a=e$\\
+Lo operación tiene inverso, con identidad $e$: $\forall a \exists a^{-1}: aa^{-1}=a^{-1}a=e$
 \begin{lem}
-Si la operación es asociativa, esto implica que los inversos son únicos.\\
+Si la operación es asociativa, esto implica que los inversos son únicos.
 \end{lem}
 \begin{proof}
 
@@ -92,17 +95,17 @@ Además, si $a$ y $b$ tienen inverso y la operación es asociativa, esto implica
 Un grupo es un conjunto $G$ con operación asociativa e identidad, tal que todo elemento tiene inverso.
 \end{defn}
 Ejemplo:  $GL_n\begin{pmatrix}\mathbb{Q} \\ \mathbb{R} \\ \mathbb{C} \end{pmatrix}=\{M\in\textrm{Matrices}\begin{pmatrix}\mathbb{Q} \\ \mathbb{R} \\ \mathbb{C} \end{pmatrix}:det(M)\neq 0\}$ (Grupo general lineal)\\
-Este es un grupo no abeliano con el producto.\\
+Este es un grupo no abeliano con el producto.
 
 \begin{defn}[Orden]
 El orden de un grupo $G$ es su cardinalidad $|G|$
 \end{defn}
-Sea $T$ un conjunto (no vací­o).\\
+Sea $T$ un conjunto (no vací­o).
 \[
 S_{|T|}=\{\textrm{Las biyecciones de } T \textrm{ en si mismo}\}
 \]
 Entonces, $(S_{|T|},\circ)$ es un grupo.\\
-Explicación:\\
+Explicación:
 \begin{itemize}
 	\item Asociatividad, esta aparece como propiedad de la composición de las funciones
 	
@@ -111,15 +114,15 @@ Explicación:\\
 	\item Dada $f:T\rightarrow T$ biyección $\implies \exists f^{-1}:T\rightarrow T$ tal que $f\circ f^{-1}=f^{-1}\circ f=1|_T$
 \end{itemize}
 
-Si $|T|=n$ finito, $S_{|T|}=$ grupo de simetrí­a de $n$ elementos. Y $|S_n|=n!$.\\
+Si $|T|=n$ finito, $S_{|T|}=$ grupo de simetrí­a de $n$ elementos. Y $|S_n|=n!$.
 
 \subsection{Motivación para estudiar esto:}
 
 Resolver: $p(x)=a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0=0$ por radicales, donde $a_i\in\mathbb{Q}$\\
 Existe cierta manera de asociar un grupo a $p(x)$.\\
-$Gal(p)=Gal(K|\mathbb{Q}$ donde $K=\mathbb{Q}(\alpha_1,\alpha_2,...,\alpha_n)$ (cuerpo).\\
+$Gal(p)=Gal(K|\mathbb{Q}$ donde $K=\mathbb{Q}(\alpha_1,\alpha_2,...,\alpha_n)$ (cuerpo).
 \begin{thm}
-Sea $f(x)\in \mathbb{Q}[x]$ irreducible:\\
+Sea $f(x)\in \mathbb{Q}[x]$ irreducible:
 \[
 f(x)\textrm{ se resuelve por radicales}\iff Gal(f)\textrm{ es soluble}
 \]
@@ -129,37 +132,40 @@ Ser soluble es la siguiente propiedad:
 \]
 \end{thm}
 Ejemplo: $f(x)=2x^5-10x+5$\\
-$Gal(f)$ es isomorfo a $S_5$, pero $S_5$ no es soluble, lo que implica que $f(x)=0$ no se resuelve por radicales (fórmula).\\
+$Gal(f)$ es isomorfo a $S_5$, pero $S_5$ no es soluble, lo que implica que $f(x)=0$ no se resuelve por radicales (fórmula).
 
 \section{Subgrupos}
-Def: Sea $G$ un grupo, $H\subset G$ es subgrupo $\iff$ $H$ es grupo (con la misma operación).\\
+Def: Sea $G$ un grupo, $H\subset G$ es subgrupo $\iff$ $H$ es grupo (con la misma operación).
 \subsection{Subgrupos triviales}
 Sea $(G,\cdot)$ grupo y $e$ su neutro. $(G,\cdot)<(G,\cdot)$ y $(\{e\},\cdot)<(G,\cdot)$ (Notación de subgrupo).
 \subsubsection{Subgrupos de $(\mathbb{Z},+)$}
 Los pares son subgrupo de $(\mathbb{Z},+)$, además los múltiplos de $n$ son subgrupo de $(\mathbb{Z},+)$\\
-$b\mathbb{Z}:=\{bk,k\in\mathbb{Z}\}$\\
-Proposición: Todo subgrupo de $\mathbb{Z}$ es de la forma $b\mathbb{Z}$ ($H<\mathbb{Z}\iff H=b\mathbb{Z}$)\\
-Dem:\\
-\begin{enumerate}
-	\item Caso: $H$ sin números positivos $\iff H=\{0\}=0\mathbb{Z}$, esto es por los inversos (sin positivos no hay negativos)
-	
-	\item Caso: $H$ tiene números positivos $\implies\exists m\in\mathbb{Z}^+:\forall a>0\in H\implies m\leq a$
-\end{enumerate}
-Demostrar que $H=m\mathbb{Z}$.\\
-$\supseteq$\\
-Clausura e inducción $(\forall x\in H\implies x\in m\mathbb{Z})$ y también tirar inversos.\\
-$\subseteq$\\
-Todo elemento de $H$ es divisible por $m$.\\
-Sea $a\in H$ no divisible por $m\implies a=mc+r$ con $0<r<m$\\
-Como $a\in H,m\in H\implies mc\in H\implies -mc\in H$\\
-Por clausura $a-mc=r\in H$. Pero por buen orden es el más pequeño.\\
-\[
-\rightarrow\leftarrow
-\]
+$b\mathbb{Z}:=\{bk,k\in\mathbb{Z}\}$
+\begin{prop}
+	Todo subgrupo de $\mathbb{Z}$ es de la forma $b\mathbb{Z}$ ($H<\mathbb{Z}\iff H=b\mathbb{Z}$)
+	\begin{proof}
+		\begin{enumerate}
+			\item Caso: $H$ sin números positivos $\iff H=\{0\}=0\mathbb{Z}$, esto es por los inversos (sin positivos no hay negativos)
+			
+			\item Caso: $H$ tiene números positivos $\implies\exists m\in\mathbb{Z}^+:\forall a>0\in H\implies m\leq a$
+		\end{enumerate}
+		Demostrar que $H=m\mathbb{Z}$.\\
+		$\supseteq$\\
+		Clausura e inducción $(\forall x\in H\implies x\in m\mathbb{Z})$ y también tirar inversos.\\
+		$\subseteq$\\
+		Todo elemento de $H$ es divisible por $m$.\\
+		Sea $a\in H$ no divisible por $m\implies a=mc+r$ con $0<r<m$\\
+		Como $a\in H,m\in H\implies mc\in H\implies -mc\in H$\\
+		Por clausura $a-mc=r\in H$. Pero por buen orden es el más pequeño.
+		\[
+		\rightarrow\leftarrow
+		\]
+	\end{proof}
+\end{prop} 
 \subsubsection{Subgrupos Generados}
 
 Sea $(G,\cdot)$ grupo y $S\subseteq G$, con $S\neq\emptyset$.\\
-$<S>=\bigcap _{S\subseteq H<G}=$ es el subgrupo más pequeño que contiene a $S$.\\
+$<S>=\bigcap _{S\subseteq H<G}=$ es el subgrupo más pequeño que contiene a $S$.
 
 \subsubsection{Subgrupos generados por un elemento}
 Subgrupo de $G$ generado por $x$
@@ -170,7 +176,6 @@ Subgrupo de $G$ generado por $x$
 \begin{lem}
 	\[x\in G, (G,\cdot)\]
 	$\{\textrm{Los $K$ tal que $x^k=e$}\}$ es subgrupo de $\mathbb{Z}$
-	
 \end{lem}
 
 \begin{defn}[Centro]
@@ -182,11 +187,11 @@ Z(G)=\{z\in G: zg=gz\,\forall g\in G\}\trianglelefteq G
 Si $g\in G,z\in Z\implies gzg^{-1}=z$
 \section{Relación de equivalencia y particiones}
 \begin{defn}[Partición]
-	Sea $S\neq\emptyset$ conjunto. Una partición $P$ de $S$ es una subdivisión $S$ en un subconjuntos disjuntos.\\
+	Sea $S\neq\emptyset$ conjunto. Una partición $P$ de $S$ es una subdivisión $S$ en un subconjuntos disjuntos.
 \end{defn}
 Ejemplos:\\
 $\{1,3\},\{2,5\},\{4\}$ es partición de $\{1,2,3,4,5\}$\\
-Pares e impares en $\mathbb{Z}$\\
+Pares e impares en $\mathbb{Z}$
 \subsection{Relación de equivalencia}
 \begin{defn}[Relaciones de equivalencia]
 	Una \underline{relación de equivalencia} en $S$ es una forma de relacionar elementos de $S$, $a\sim b$, tal que:
@@ -234,7 +239,6 @@ Ejemplo:
 \]
 Esta partición es $\{z\in\mathbb{C}^\times:|z|=r,r\in\mathbb{R}_{>0}\}$\\
 Notar que: $\ker(\varphi)=\{z\in\mathbb{C}^\times:|z|=1\}$\\
-\\
 Proposición: $G\xrightarrow{\varphi}G'$ morfismo de grupo con kernel $N$. Sean $a,b\in G\implies$
 \[
 \varphi(a)=\varphi(b)\iff a=b\cdot n\quad\textrm{para algún }n\in N
@@ -242,9 +246,9 @@ Proposición: $G\xrightarrow{\varphi}G'$ morfismo de grupo con kernel $N$. Sean 
 \[
 \iff a\cdot b^{-1}\in N
 \]
-Notación: $aN=\{an: n\in N\}$
+Notación: $aN=\{an: n\in N\}$\\
 $|aN|=|N|$\\
-Dem:\\
+Dem:
 \[
 N\rightarrow aN
 \]
@@ -280,7 +284,7 @@ Ejemplos:
 	Si $H=\{1|,\sigma_1\}=<\sigma_1>$
 \end{itemize}
 Tarea: verificar que clases laterales coinciden o no coinciden.\\
-Notación: la cardinalidad de las clases laterales se denota por $\left[G:H\right]$ (indice de $H$ en $G$)\\
+Notación: la cardinalidad de las clases laterales se denota por $\left[G:H\right]$ (indice de $H$ en $G$)
 \subsubsection{Corolario: Teorema de Lagrange}
 Si $G$ es finito y $H\leq G\implies |H|\cdot [G:H]=|G|$\\
 En particular: $|H|\, |\,|G|$\\
@@ -475,7 +479,7 @@ Sea $F\subseteq\mathbb{R}^2$ una figura. Una \underline{simetría} es una isomet
 \end{defn}
 Ejemplos:
 \begin{itemize}
-	\item $F\subseteq\mathbb{R}^2$ figura.\\
+	\item $F\subseteq\mathbb{R}^2$ figura.
 	\[Sim(F)=G, S=F\]
 	\[\therefore G S\]
 	\[G\times S\rightarrow S\]
@@ -566,12 +570,86 @@ $\implies$ las órbitas son los $\triangle_s$ congruentes.
 			\[\implies a^{-1}ha\cdot s=s\implies a^{-1}ha\in G_s\]
 			\[\implies h\in aG_sa^{-1}\]
 			\[h\in aG_sa^{-1}\]
-			\[\implies h=ah'a^{-1}\implies h\cdot s'=ah'a^{-1}\cdot s'=ah'a^{-1}\cdot as=s'\]
+			\[\implies h=ah'a^{-1}\implies h\cdot s'=ah'a^{-1}\cdot s'=ah'a^{-1}\cdot as=s'\qedhere\]
 		\end{enumerate}
 	\end{proof}
 \end{prop}
 Ejemplo: Sea $(a,b)\in\mathbb{R}^2$
 \[\therefore G_{(a,b)}=t_{(a,b)}G_{(0,0)}t^{-1}_{(a,b)}\]
 \[G_{(a,b)}=\{f\in Sim(\mathbb{R}^2):f(x,y)=t^{-1}(M(t_{(a,b)}(x,y)))\}\]
-Hola
+\section{}
+\begin{thm}
+	Todo grupo finito $G$ de $SO_3$ es uno de los siguientes:
+	\begin{itemize}
+		\item $C_k:$ grupo ciclico de orden $k$
+
+		\item $D_k:$ Diedral de orden $2k$ (isometrías de un poligono regular de $k$ lados)
+
+		\item $T:$ Tetraedral; 12 rotaciones de llevar un tetraedro en si mismo.
+
+		\item $O:$ Octaedral; 24 rotaciones que llevan un cubo o un octaedro en si mismo.
+
+		\item $I:$ Icosaedral; 60 rotaciones que llevan dodecaedros o icoseaedros en si mismo.
+	\end{itemize}
+	\begin{proof}
+		Sea $G\leq SO_3$ finito: $|G|=N$\\
+		Si $g\in G$ y $g\neq Id\implies g$ fija 2 puntos en la esfera.
+		\[P=\{Pg,P'gLg\in G\}=\textrm{Polos de $G$}\]
+		$G\circlearrowright P:G$ envia polos en polos.
+		\begin{proof}
+			$p\in P, g\in G$. Necesitamos $gp\in P$ fijo por algún $g'\in G$. Asumir $x\neq Id, x\in G$ tal que $xp=p\implies gxg^{-1}(gp)=gp$
+		\end{proof}
+		\underline{La Idea} es contar polos. 
+		Creemos que hay $2n-2$ polos, pero no ya que el estabilizador de $p\in P$ es ciclico de orden $r_p$.
+		\[G_p\textrm{ es cíclico}\]
+		\[\therefore |O_p|=\frac{|G|}{|G_p|}\]
+		Digamos que $|O_p| = n_p$
+		\[r_p\cdot n_p=N\]
+		\# elementos en $G$ con $p$ polo $=r_p-1$
+		\[\implies\sum_{p\in P}(r_p-1)=2(N-1)\]
+		Dividir $P$ en órbitas:
+		\[O_1,...,O_s\]
+		disjuntas: $|O_i|=n_i$
+		\[\therefore\sum^s_{i=1}n_i(r_i-1)=2N-2\]
+		Como $r_in_i=N$, entonces
+		\[\sum^s_{i=1}\frac{N}{r_i}(r_i-1)=2N-2\]
+		\[\therefore 2-\frac{2}{N}=\sum^s_{i=1}\left(1-\frac{1}{r_i}\right)\]
+		Notar que:
+		\[2-\frac{2}{N}<2\textrm{ y }1-\frac{1}{r_i}\geq \frac{1}{2}\]
+		\[\therefore 2>\frac{1}{2}s\implies 4>s\implies s\leq 3\]
+		\begin{enumerate}[label=(\arabic* órbitas):]
+			\item $2-2/N=1-1/r_1$, $2-2/N\geq 1$ y $1-1/r_1<1$
+			\[\contr\]
+			Por lo que no existe este caso.
+			
+			\item $s=2$
+			\[2-\frac{2}{N}=1-\frac{1}{r_1}+1-\frac{1}{r_2}\]
+			\[\implies\frac{2}{N}=\frac{1}{r_1}+\frac{1}{r_2}\]
+			Pero $r_i\leq N$
+			\[\therefore r_1=r_2=N\]
+			\[\therefore n_1=n_2=1\]
+			\[\therefore G_p=G=G_{p'}\]
+			Rotaciones $2\pi/N$
+
+			\item $s=3$
+			\[\frac{2}{N}=\frac{1}{r_1}+\frac{1}{r_2}+\frac{1}{r_3}-1\]
+			Asumir que $r_1\leq r_2\leq r_3$
+			\[\therefore r_1=2\]
+			\begin{enumerate}[label=(\roman*)]
+				\item Asumimos $r_1=r_2=2,r_3=r$
+				\[\therefore N=2r\implies n_3=2.\]
+				\[O_3=\{p,p'\}\]
+				\[\therefore G\simeq D_r\]
+
+				\item Asumimos $r_1=2,r_i\geq 3$, pero $r_2\geq 4, r_3\geq 4\implies \contr$ y $r_2=3, r_3\geq 6\implies \contr$
+				\[\therefore r_2=3\]
+				\begin{center}
+					\begin{tabular}{ c | c | c | c | c | c }
+						
+					\end{tabular}
+				\end{center}
+			\end{enumerate}
+		\end{enumerate}
+	\end{proof}
+\end{thm}
 \end{document}
