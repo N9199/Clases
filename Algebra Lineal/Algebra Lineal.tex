@@ -27,6 +27,8 @@
 \newcommand{\func}[5]{#1:#2\xrightarrow[#5]{#4}#3}
 \newcommand{\contr}{\rightarrow\leftarrow}
 
+\DeclareMathOperator{\Ima}{Im}
+
 \newtheorem{thm}{Terorema}[section]
 \newtheorem{lem}[thm]{Lema}
 \newtheorem{prop}[thm]{Proposición}
@@ -96,7 +98,7 @@ Una base B de un espacio vectorial es un conjunto $B\subseteq V$ tal que:
 Un espacio vectorial $V$ se dice finito-dimensional si existe un conjunto $S\subseteq V,\|S\|<\infty$ tal que $<S>=V$.
 \end{defn}
 \begin{cor}
-Si $V$ es finito-dimensional, todas las bases de $V$ son finitas y tienen la misma cardinalidad.\\
+Si $V$ es finito-dimensional, todas las bases de $V$ son finitas y tienen la misma cardinalidad.
 \begin{proof}
 Sean $B_1$ y $B_2$ bases de V.\\
 Por Teo (*), $\|B_1\|,\|B_2\|\leq m$, donde $m$ es el tamaño de $S$ tal que $<S>=V$ y $\|S\|<\infty$.\\
@@ -129,7 +131,8 @@ Ejemplos:
 		$p\in P_n(\mathbb{C})$\\
 		$\implies p(x)=a_0\cdot 1+a_1\cdot x+,,,+a_nx^n\in<\{1,x,x^2,...,x^n\}>$
 		
-		\item $\{1,x,...,x^n\}$ es linealmente independiente. Por contradicción supongamos $(a_0,a_1,...,a_n)\neq (0,0,...,0)$\\
+		\item $\{1,x,...,x^n\}$ es linealmente independiente.\\
+		Por contradicción supongamos $(a_0,a_1,...,a_n)\neq (0,0,...,0)$\\
 		$0=a_0\cdot 1+a_1\cdot x+...+a_n\cdot x^n$ Con igualdad de funciones.\\
 		$\iff (\forall x\in \mathbb{C}) 0=a_0\cdot 1+a_1\cdot x+...+a_n\cdot x^n$\\
 		Recuerdo (TFA): Todo polinomio complejo de grado $\geq 1$ posee una raÃ­z compleja.\\
@@ -148,7 +151,7 @@ $\{0\}, \dim\{0\}=0$, notando que base es $\emptyset$, tenemos que $<\emptyset>=
 \end{obs}
 \begin{lem}
 Sea $S\subseteq , S=\{v_1,...,v_n\}$ conjunto linealmente independiente.\\
-$v\notin<v_1,...,v_n>\implies\{v,v_1,...,v_n\}$ es linealmente independiente.\\
+$v\notin<v_1,...,v_n>\implies\{v,v_1,...,v_n\}$ es linealmente independiente.
 \begin{proof}
 Ejercicio
 \end{proof}
@@ -163,7 +166,7 @@ Sea $V$ espacio vectorial finito dimensional, entonces:
 \end{enumerate}
 
 \end{thm}
-Todo espacio vectorial $V\neq\{0\}$ finito dimensional posee una base.\\
+Todo espacio vectorial $V\neq\{0\}$ finito dimensional posee una base.
 \begin{proof}
 \begin{enumerate}[label=\alph*)]
 	\item Sea $v\in V\setminus\{0\}$. Entonces $\{V\}$ es linealmente independiente.\\
@@ -332,7 +335,7 @@ Si $T:V\rightarrow W$ transformaciones lineales, entonces:
 
 \end{proof}
 
-La importancia de este teorema se relaciona con el hecho de poder definir transformaciones lineales sólo a través de como actuan sobre una base. Esto se relaciona con la nocion de \underline{matriz representante}.\\
+La importancia de este teorema se relaciona con el hecho de poder definir transformaciones lineales sólo a través de como actuan sobre una base. Esto se relaciona con la nocion de \underline{matriz representante}.
 \begin{defn}
 Si $T:V\rightarrow W$ transformación lineal, definimos:
 \begin{itemize}
@@ -537,7 +540,7 @@ S\circ T)(\lambda u+v)=\lambda S(T(u))+S(T(v))=lambda(S\circ T)(u)+(S\circ T)(v)
 \]
 \begin{defn}{Endomorfismo}
 
-Una transformación lineal $T\in\mathcal{L}(V,V)$ de dice endomorfismo u operador lineal. Denotamos $End (V)=\mathcal{L}(V,V)$. La composición funciona como producto sobre $End(V)$\\\\
+Una transformación lineal $T\in\mathcal{L}(V,V)$ de dice endomorfismo u operador lineal. Denotamos $End (V)=\mathcal{L}(V,V)$. La composición funciona como producto sobre $End(V)$\\
 Propiedades:
 \begin{enumerate}[label=\alph*)]
 	\item $I\circ S=S\circ I=S$ ($I$ es neutro para $\circ$)
@@ -558,7 +561,7 @@ También es importante observar que \underline{NO} todo operador posee elemento 
 S\circ T=T\circ S=I
 \]
 \subsubsection{Corolario}
-Sea $V$ espacio vectorial finito-dimensional y $\mathbb{B}_V=\{v_1,...,v_n\}$ base de $V$. Entonces $\{E^{p,1}:p,q=1,...,n\}$ es base de $End(v)$.\\
+Sea $V$ espacio vectorial finito-dimensional y $\mathbb{B}_V=\{v_1,...,v_n\}$ base de $V$. Entonces $\{E^{p,1}:p,q=1,...,n\}$ es base de $End(v)$.
 \begin{proof}
 Directo por Teo (+).
 \end{proof}
@@ -633,9 +636,7 @@ Tv_1=Tv_2\iff T(v_1-v_2)=0
 \end{defn}
 \begin{thm}
 Sea $T\in\mathcal{L}(V,W)$. Entonces:\\
-
 $T$ no-singular $\iff T$ transforma conjuntos linealmente independientes en conjuntos linealmente independientes, es decir, $\{v_1,...,v_k\}\subseteq V\textrm{ l.i.}\implies\{Tv_1,...,Tv_k\}\subseteq W\textrm{ l.i.}$
-
 \end{thm}
 \begin{thm}{$\square$ }
 Sean $V,W$ finito-dimensionales tal que $\dim V=\dim W$. Si $T\in\mathcal{L}(V,W)$ entonces las siguientes son equivalentes:
@@ -681,11 +682,11 @@ Sean $V,W$ espacio vectorial sobre $\mathbb{F}$. Decimos que $T\in\mathcal{L}(V,
 \end{defn}
 Ejemplos:
 \begin{enumerate}
-	\item $\mathbb{F}^{n+1}$ y $\mathcal{P}_n(\mathbb{F})$ son isomorfos\\
+	\item $\mathbb{F}^{n+1}$ y $\mathcal{P}_n(\mathbb{F})$ son isomorfos
 	\[T:\mathbb{F}^{n+1}\rightarrow \mathcal{P}_n(\mathbb{F})\]
 	\[(a_0,a_1,....,a_n)\mapsto p(x)=\sum^n_{I=1}a_ix^i+a_o\]
 	
-	\item (Coordenadas baricéntricas): Si $B=\{v_1,...,v_n\}$ es base de $V$\\
+	\item (Coordenadas baricéntricas): Si $B=\{v_1,...,v_n\}$ es base de $V$
 	\[(\forall v\in V)v=\sum^n_{I=1}\lambda_i v_i\]
 	\[ [\cdot ]_B:V\rightarrow \mathbb{F}^n\]
 	\[ v\mapsto(\lambda_1,...,\lambda_n)=[v]_B\]
@@ -950,8 +951,8 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	Una matriz $A\in\set{F}^{n\times m}$ se dice triangular superior si
 	\[a_{i,j}=0\forall i>j\]
 	\[\begin{bmatrix}
-		\lambda_1 && 0 && \cdots && 0\\
-		0 && \lambda_2 && \cdots && 0\\
+		\lambda_1 && * && \cdots && *\\
+		0 && \lambda_2 && \cdots && *\\
 		\vdots && \vdots && \ddots && \vdots\\
 		0 && 0 && \cdots && \lambda_n
 	\end{bmatrix}\]
@@ -968,5 +969,74 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\begin{proof}
 		
 	\end{proof}
+\end{prop}
+\begin{prop}[Invertibilidad a través de representaciones matriciales]
+	Sea $T\in\mathcal{L}(V)$ tal que posee una representación $\triangle$ superior con respecto a cierta base. Entonces $T$ invertible $\iff$ las entradas diagonales de la matriz son no nulas.
+	\begin{proof}
+		Sea $B$ base tal que
+		\[\mathcal{M}_B(T)=\begin{bmatrix}
+			\lambda_1 && \cdots && *\\
+			\vdots && \ddots && \vdots\\
+			0 && \cdots && \lambda_n
+		\end{bmatrix}(*)\]
+		$\impliedby$ Por $(*)$
+		\[Tv_1=\lambda_1v_1\]
+		\[\therefore v_1=T\left(\frac{v_1}{\lambda_1}\right)\in \Ima(T)\]
+		Nuevamente, por $(*)$
+		\[Tv_2=av_1+\lambda_2v_2\]
+		\[\lambda\neq 0\implies v_2=T\left(\frac{v_2}{\lambda_2}\right)+\frac{a}{\lambda_2}v_1\in\Ima(T)\]
+		Por inducción:
+		\[Tv_j=a_1v_1+a_2v_2+...+a_{j-1}v_{j-1}+\lambda_jv_j\]
+		\[v_j=T\left(\frac{v_j}{\lambda_j}\right)+\frac{a_1}{\lambda_j}v_1+...+\frac{a_{j-1}}{\lambda_j}v_{j-1}\in\Ima(T)\]
+		$\implies$ Sabemos que $\forall j=1,...,n$
+		\[Tv_j=a_1v_1+...+a_{j-1}v_{j-1+\lambda_jv_j}\]
+		\[\implies Tv_j\in<v-1,...,v_j>\]
+		Si algún $\lambda_j=0$:
+		\[Tv_j\in<v_1,...,v_{j-1}>\]
+		\[T(<v_1,...,v_j>)\subseteq <v_1,...,v_{j-1}>\]
+		En efecto
+	\end{proof}
+	\begin{cor}[Valores propios de operador a través de representación $\triangle$ superior]
+		Sea $T\in\mathcal{L}(V)$ con representación $\triangle$ superior
+		\[\mathcal{M}_B(T)=\begin{bmatrix}
+			\lambda_1 && \cdots && *\\
+			\vdots && \ddots && \vdots\\
+			0 && \cdots && \lambda_n
+		\end{bmatrix}(*)\]
+		con $B$ base de $V$. Entonces los valores propios de $T$ son $\lambda_1,...,\lambda_n$
+		\begin{proof}
+			\[T_\lambda I\quad\textrm{ no es biyectiva}\]
+			\[\mathcal{M}_B(T-\lambda I)=\begin{bmatrix}
+				\lambda_1-\lambda && \cdots && *\\
+				\vdots && \ddots && \vdots\\
+				0 && \cdots && \lambda_n-\lambda
+			\end{bmatrix}(*)\]
+			\[\mathcal{M}_B(T-\lambda I)=\mathcal{M}_B(T)-\lambda\mathcal{M}_B(I)\]
+			Por el Teo ($\therefore$)\\
+			$T-\lambda I$ invertible si solo si $\lambda_1-\lambda,...,\lambda_n-\lambda\neq 0$\\
+			$\lambda$ es valor propio si solo si $\lambda_1=\lambda$ o $\lambda_2=\lambda$ ... $\lambda_n=\lambda$
+		\end{proof}
+	\end{cor}
+\end{prop}
+\section{Subespacios propios y Matrices Diagonales}
+\begin{defn}[Diagonal de una matriz diagonal]
+	Sea $A\in\set{F}^{n\times m}$. Definimos $Diag(A)\in\set{F}^{N\times m}$
+	\[(Diag(A))_{i,j}=\]
+	Y decimos que $A$ es diagonal si
+	\[A=Diag(A)\]
+	Equivalentemente, $A$ es diagonal si 
+	\[a_{i,j}=0\forall i\neq j\]
+	Claramente, toda matriz diagonal es $\triangle$ supeior, entonces los valores propios de $A$ son los valores en la diagonal.	
+\end{defn}
+\begin{defn}[Subespacio Propio]
+	Sea $T\in\mathcal{L}(V)$ y $\lambda\in\set{F}$. El subespacio propio de $T$ correspondiente a $\lambda, E(\lambda,T)$, se define como
+	\[E(\lambda,T)=\ker (T-\lambda I)\]
+	es decir, el conjunto de vectores propios asociados a $\lambda$, más el cero.
+	\begin{obs}
+		$\lambda$ es valor propio de $T\iff E(\lambda, T)\neq \{0\}$
+	\end{obs}
+\end{defn}
+\begin{prop}[Suma de subespacios propios es directa]
+	
 \end{prop}
 \end{document}
