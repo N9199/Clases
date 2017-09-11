@@ -898,6 +898,15 @@ $m-1\implies m$: Sea $p(z)=a_0+a_1z+...+a_mz^m$ con $a_m\neq 0$
 \end{cor}
 \end{thm}
 \section{Subespacios invariantes, y valores y vectores propios}
+Queremos entender la estructura de $T\in End(V)=\mathcal{L}(V)$ supongamos que
+\[V=U_1\oplus...\oplus U_m\]
+y
+\[T|_{u_1},T|_{u_2},...,T|_{u_m}\]
+
+\begin{defn}[Subespacio invariante]
+	Sea $T\in\mathcal{L}(V)$ un subespacio $U$ de $V$ se dice invariante para $T$ si $TU\subseteq U$
+	\[\implies TU=\{w\in V:w=Tv\}\]
+\end{defn}
 Propiedad: Sea $p,q\in\set{F}[z]$ y $T\in\mathcal{L}(V)$. Entonces:
 \begin{enumerate}
 	\item $(p\cdot q)(T)=p(T)\cdot q(T)$
@@ -1039,4 +1048,39 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 \begin{prop}[Suma de subespacios propios es directa]
 	
 \end{prop}
+\chapter{Espacios de Producto Interno}
+\begin{defn}[Producto Interno]
+	Un producto interno sobre un espacio vectorial $V$ es una función
+	\[\func{<\cdot,\cdot>}{V\times V}{\set{F}}{}{}\]
+	\[(u,v)\mapsto <u,v>\]
+	\begin{enumerate}[label=\roman*)]
+		\item Positividad: $<v,v>\geq 0\quad\forall v\in V$
+
+		\item Definitividad: $<v,v>=0\iff v=0$
+
+		\item Aditividad por la izquierda: $\forall u,v,w\in V$
+		\[<u+v,w>=<u,w>+<v,w>\]
+
+		\item Homogeneidad: $<\lambda u,v>=\lambda<u,v>\quad\forall\lambda\in\set{F}\forall u,v\in V$
+
+		\item Simetría conjugada: $<u,v>=\overline{<v,u>}$
+	\end{enumerate}
+\end{defn}
+\begin{obs}
+	En el caso $\set{F}=\set{R}, (V)\iff <u,v>=<v,u>$
+\end{obs}
+\underline{Ejemplos:}
+\begin{enumerate}[label=\alph*)]
+	\item El producto interno Euclideano sobre $\set{F}^n$
+	\[<(z_1,...,z_n),(w_1,...,w_n)>=z_1\cdot \overline{w_1}+...+z_n\cdot \overline{w_n}\]
+
+	\item Si $c_1,...,c_n>0$, entonces
+	\[(z_1,...,z_n),(w_1,...,w_n)>=\sum^n_{i=1}c_i\cdot z_i\cdot \overline{w_i}\]
+	
+	\item Si $V=\mathcal{C}[-1,1]$
+	\[<f,g>=\int^1_{-1}f(x)g(x)\d x\]
+
+	\item Si $V=\set{R}[x]$ entonces
+	\[<p,q>=\int_0^\infty e^{-x} p(x)q(x)\d{x}\]
+\end{enumerate}
 \end{document}
