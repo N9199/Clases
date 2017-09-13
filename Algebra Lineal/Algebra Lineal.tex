@@ -45,6 +45,7 @@
 \tableofcontents
 \pagenumbering{arabic}
 \chapter{Espacios Vectoriales}
+\section{Espacios Vectoriales}
 \section{Subespacios generados}
 \subsection{Combinaciones lineales}
 \begin{thm}[*]
@@ -1056,7 +1057,7 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\begin{enumerate}[label=\roman*)]
 		\item Positividad: $<v,v>\geq 0\quad\forall v\in V$
 
-		\item Definitividad: $<v,v>=0\iff v=0$
+		\item Definitividad: $<v,v>=0\iff v=\vec{0}$
 
 		\item Aditividad por la izquierda: $\forall u,v,w\in V$
 		\[<u+v,w>=<u,w>+<v,w>\]
@@ -1075,7 +1076,7 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\[<(z_1,...,z_n),(w_1,...,w_n)>=z_1\cdot \overline{w_1}+...+z_n\cdot \overline{w_n}\]
 
 	\item Si $c_1,...,c_n>0$, entonces
-	\[(z_1,...,z_n),(w_1,...,w_n)>=\sum^n_{i=1}c_i\cdot z_i\cdot \overline{w_i}\]
+	\[<(z_1,...,z_n),(w_1,...,w_n)>=\sum^n_{i=1}c_i\cdot z_i\cdot \overline{w_i}\]
 	
 	\item Si $V=\mathcal{C}[-1,1]$
 	\[<f,g>=\int^1_{-1}f(x)g(x)\d x\]
@@ -1083,4 +1084,86 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\item Si $V=\set{R}[x]$ entonces
 	\[<p,q>=\int_0^\infty e^{-x} p(x)q(x)\d{x}\]
 \end{enumerate}
+\subsubsection{Integrales}
+Si $f\in\mathcal{C}[a,b]$ y $f\geq 0$ definimos la integral de $f$ como el "área bajo la curva".
+\[\int^b_a f(x)\d{x}=\lim_{N\rightarrow\infty}\frac{1}{N}\sum^{N-1}_{n=0}f(x_n)\]
+\[x_i=a+\frac{(b-a)}{N}\cdot i\]
+\[i=0,...,N\]
+\begin{enumerate}
+	\item \begin{thm}[Teorema Fundamental del Cálculo]
+		Sea $\func{f}{[a,b]}{\set{R}}{}{}$ continua tal que para $\func{F}{[a,b]}{\set{R}}{}{}$ se cumple $F'(x)=f(x)$ (primitiva).\\
+		Entonces:
+		\[\int^b_a f(x)\d{x}=\sum^J_{j=1}\int_{A_j=[a_j,b_j]}f(x)\d{x}\]
+	\end{thm}
+
+	\item Linealidad:
+	\[\func{\mathcal{I}}{\mathcal{C}[a,b]}{\mathcal{C}[a,b]}{}{}\]
+	\[f(x)\mapsto\int^x_af(t)\d{t}\]
+	es una tra lineal.
+\end{enumerate}
+Ejemplos:
+\begin{enumerate}
+	\item Monomio:
+	\[p(t)=t^k\quad P(t)=\frac{t^{k+1}}{k+1}\]
+	$P$ es primitiva de $p$:
+	\[P'(t)=t^k=p(t)\]
+	\[\therefore TFC\]
+	\[\int^t_0p(s)\d{s}=P(t)-P(0)\]
+
+	\item Polinomios:
+	\[p(t)=a_0+a_1t+...+a_nt\]
+	\[\int^t_0p(s)\d{t}=\sum^n_{k=0}a_k\int^t_0s^k\d{s}\]
+
+	\item Exponenciales:
+	\[f(x)=e^{\lambda x}\quad(\lambda\neq 0)\]
+	\[F(x)=\frac{e^{\lambda x}}{\lambda}\]
+	\[\therefore \int^x_0e^{\lambda t}\d{t}=F(x)-F(0)=\frac{e^{\lambda x}-1}{\lambda}\]
+	
+	\item Seno-Coseno:
+	\[\func{f}{\set{R}}{\set{C}}{}{}\]
+	\[f(x)=e^{i\lambda x}=\cos\lambda x+i\sin\lambda x\]
+	\[F(x)=\frac{e^{\lambda x}}{\lambda}\]
+	\[\therefore\int^x_0f(t)\d{t}=\frac{e^{i\lambda x}-1}{i\lambda}\]
+	\[\int^x_0f(t)=\frac{\sin \lambda x}{\lambda}+i\frac{1-\cos \lambda x}{\lambda}\]
+	\[\implies \int^x_0\sin\lambda t\d{t}=\frac{1-\cos \lambda x}{\lambda}\]
+	\[\int^x_0\cos\lambda t\d{t}=\frac{\sin \lambda x}{\lambda}\]
+\end{enumerate}
+\subsection{Espacio de producto interno}
+\begin{defn}[Espacio de producto interno]
+	$(V,<\cdot,\cdot>)$ es un espacio de producto interno (e.p.i.) si $V$ es una espacio vectorial y $<\cdot,\cdot>$ es producto interno sobre $V$.
+\end{defn}
+\begin{prop}[Propiedades básicas]
+	\
+	\begin{enumerate}[label=(\alph*)]
+		\item \[\forall u\in V\quad v\mapsto <v,u> \]
+		Es una transformación lineal de $V$ hacia $\set{F}$
+
+		\item \[<0,u>=0\forall u\in V\]
+
+		\item \[<u,0>=0\forall u\in V\]
+
+		\item \[<u,v+w>=<u,v>+<u,w>\forall u,v,w\in V\]
+
+		\item \[<u,\lambda v>=bar{\lambda}<u,v>\forall u,v\in V \forall \lambda\in\set{F}\]
+	\end{enumerate}
+\end{prop}
+\section{Norma}
+\begin{defn}[Norma]
+	Sea $(V,<\cdot,\cdot>)$ un espacio de producto interno, definimos la norma asociada como:
+	\[\|x\|=\sqrt{<x,>}\]
+\end{defn}
+\underline{Propiedades:} Sea $v\in V$
+\begin{enumerate}[label=(\alph*)]
+	\item \[\|v\|=0\iff v=0\]
+
+	\item \[\|\lambda v\|=|\lambda|\|v\|\forall \lambda\in \set{F}\]
+\end{enumerate}
+\subsubsection{Intuición geométrica:}
+Sean $u,v\in\set{R}^2$\\
+Por teo del coseno
+\[\|v-u\|^2=\|u\|^2+\|v\|^2-2\|u\|\|v\|\cos\theta\]
+\[\|v-u\|^2=<v-u,v-u>=\|v\|^2-<v,u>-<u,v>+\|u\|^2\]
+\[\|v-u\|^2=\|v\|^2+\|u\|^2-2<u,v>\]
+Reemplazando:
+\[<u,v>=\|u\|\|v\|\cos\theta\]
 \end{document}
