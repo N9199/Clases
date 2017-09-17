@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 SEP 2017 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 SEP 2017 14:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1941,10 +1941,6 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1118.
  [30]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 1131.
-
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1131.
 Package babel Info: Redefining spanish shorthand >>
@@ -1957,6 +1953,8 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1131.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1131.
+LaTeX Info: Redefining \. on input line 1147.
+LaTeX Info: Redefining \% on input line 1147.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1147.
 Package babel Info: Redefining spanish shorthand >>
@@ -1981,7 +1979,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1147.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1147.
-[31]
+ [31]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1150.
 Package babel Info: Redefining spanish shorthand >>
@@ -2031,12 +2029,12 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1169.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1169.
 
 Package rerunfilecheck Info: File `"Algebra Lineal".out' has not changed.
-(rerunfilecheck)             Checksum: 2FAD14A297EA5C4724D0B93A6C1FCE81;1729.
+(rerunfilecheck)             Checksum: A22D54BF45ED4C16EB094D058CD7CA56;1724.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1169.
  ) 
 Here is how much of TeX's memory you used:
  8861 strings out of 492995
- 126174 string characters out of 6132704
+ 126164 string characters out of 6132704
  234991 words of memory out of 5000000
  12087 multiletter control sequences out of 15000+600000
  15840 words of font info for 58 fonts, out of 8000000 for 9000
@@ -2061,7 +2059,7 @@ e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Algebra Lineal.pdf" (33 pages, 296612 bytes).
+Output written on "Algebra Lineal.pdf" (33 pages, 296519 bytes).
 PDF statistics:
  518 PDF objects out of 1000 (max. 8388607)
  459 compressed objects within 5 object streams

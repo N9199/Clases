@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1504796101 "/Users/nicholas/Documents/Clases/Algebra Abstracta/Algebra Abstracta.tex" "Algebra Abstracta.pdf" "Algebra Abstracta" 1504796101
-  "/Users/nicholas/Documents/Clases/Algebra Abstracta/Algebra Abstracta.tex" 1504796100 22504 f1c0ed00a25e94f118053803754367f3 ""
+["pdflatex"] 1505507082 "/Users/nicholas/Documents/Clases/Algebra Abstracta/Algebra Abstracta.tex" "Algebra Abstracta.pdf" "Algebra Abstracta" 1505507083
+  "/Users/nicholas/Documents/Clases/Algebra Abstracta/Algebra Abstracta.tex" 1505507082 22495 3fbd52cff4d59b579b9f5c3a320d63f1 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -113,13 +113,13 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "Algebra Abstracta.aux" 1504796101 3339 89788ea9fb889da716b4d53d482d9c4d ""
-  "Algebra Abstracta.out" 1504796101 1132 11be5c224c4b16252b5f992663cc22a0 ""
-  "Algebra Abstracta.tex" 1504796100 22504 f1c0ed00a25e94f118053803754367f3 ""
-  "Algebra Abstracta.toc" 1504796101 1895 b595fca8e964902a69e20dd390a8e39d ""
+  "Algebra Abstracta.aux" 1505507083 3342 d670d8c68550acd1c563b1719c20cd28 ""
+  "Algebra Abstracta.out" 1505507083 1132 11be5c224c4b16252b5f992663cc22a0 ""
+  "Algebra Abstracta.tex" 1505507082 22495 3fbd52cff4d59b579b9f5c3a320d63f1 ""
+  "Algebra Abstracta.toc" 1505507083 1898 fe03fc119054d7ad2d00d1906a050469 ""
   (generated)
   "Algebra Abstracta.aux"
-  "Algebra Abstracta.toc"
-  "Algebra Abstracta.log"
   "Algebra Abstracta.out"
+  "Algebra Abstracta.toc"
   "Algebra Abstracta.pdf"
+  "Algebra Abstracta.log"
