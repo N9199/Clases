@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  13 SEP 2017 14:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  20 SEP 2017 11:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -920,1000 +920,962 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 48.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 49.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 50.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 78.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 73.
 [3]
-LaTeX Info: Redefining \. on input line 131.
-LaTeX Info: Redefining \% on input line 131.
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+LaTeX Info: Redefining \. on input line 133.
+LaTeX Info: Redefining \% on input line 133.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 131.
- [4]
-LaTeX Info: Redefining \. on input line 187.
-LaTeX Info: Redefining \% on input line 187.
+(babel)             in language  on input line 133.
+[4]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 177.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 180.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 180.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 180.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 180.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 180.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 180.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 180.
  [5]
-LaTeX Info: Redefining \. on input line 239.
-LaTeX Info: Redefining \% on input line 239.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 181.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 181.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 181.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 181.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 181.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 181.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 182.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 239.
+(babel)             in language  on input line 182.
+
+Underfull \vbox (badness 2035) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 221.
+LaTeX Info: Redefining \% on input line 221.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 221.
  [6]
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 275.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 275.
 
-Package amsthm Warning: The \qedhere command may not work correctly here on inp
-ut line 266.
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 269.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 269.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 269.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 269.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 269.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 269.
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 278.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 278.
 [7]
-LaTeX Info: Redefining \. on input line 316.
-LaTeX Info: Redefining \% on input line 316.
+LaTeX Info: Redefining \. on input line 327.
+LaTeX Info: Redefining \% on input line 327.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 316.
+(babel)             in language  on input line 327.
  [8]
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
+LaTeX Info: Redefining \. on input line 377.
+LaTeX Info: Redefining \% on input line 377.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 362.
+(babel)             in language  on input line 377.
  [9]
 
 Package amsthm Warning: The \qedhere command may not work correctly here on inp
-ut line 394.
+ut line 398.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 401.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 401.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 401.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 401.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 398.
+(babel)             in language  on input line 401.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 398.
-
-Underfull \vbox (badness 3417) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 407.
-LaTeX Info: Redefining \% on input line 407.
+(babel)             in language  on input line 401.
+LaTeX Info: Redefining \. on input line 418.
+LaTeX Info: Redefining \% on input line 418.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 407.
+(babel)             in language  on input line 418.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 407.
- [10]
-Underfull \vbox (badness 6173) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 454.
-LaTeX Info: Redefining \% on input line 454.
+(babel)             in language  on input line 418.
+[10]
+LaTeX Info: Redefining \. on input line 452.
+LaTeX Info: Redefining \% on input line 452.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 454.
+(babel)             in language  on input line 452.
  [11]
+LaTeX Info: Redefining \. on input line 496.
+LaTeX Info: Redefining \% on input line 496.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 491.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 491.
-
-Underfull \vbox (badness 2376) has occurred while \output is active []
-
-LaTeX Info: Redefining \. on input line 500.
-LaTeX Info: Redefining \% on input line 500.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 496.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 500.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 500.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 500.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 500.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 500.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 500.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 496.
  [12]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 528.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 528.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 528.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 528.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 528.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 528.
-LaTeX Info: Redefining \. on input line 550.
-LaTeX Info: Redefining \% on input line 550.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 550.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 550.
 
+Package amsthm Warning: The \qedhere command may not work correctly here on inp
+ut line 526.
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 530.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 530.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 530.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 530.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 530.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 530.
+LaTeX Info: Redefining \. on input line 548.
+LaTeX Info: Redefining \% on input line 548.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 548.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 548.
 [13]
+Underfull \vbox (badness 1365) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 593.
+LaTeX Info: Redefining \% on input line 593.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 580.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 580.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 580.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 580.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 580.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 580.
-LaTeX Info: Redefining \. on input line 597.
-LaTeX Info: Redefining \% on input line 597.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 597.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 597.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 597.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 597.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 597.
+(babel)             in language  on input line 593.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 597.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 597.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 597.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 597.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 597.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 597.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 597.
+(babel)             in language  on input line 593.
  [14]
-LaTeX Info: Redefining \. on input line 659.
-LaTeX Info: Redefining \% on input line 659.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 623.
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 659.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 659.
- [15]
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 680.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 680.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 680.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 680.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 680.
+(babel)             in language  on input line 643.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 680.
-LaTeX Info: Redefining \. on input line 696.
-LaTeX Info: Redefining \% on input line 696.
+(babel)             in language  on input line 643.
+
+[15]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 660.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 660.
+LaTeX Info: Redefining \. on input line 695.
+LaTeX Info: Redefining \% on input line 695.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 695.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 695.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 695.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 695.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 695.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 696.
+(babel)             in language  on input line 695.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 695.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 695.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 695.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 695.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 695.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 695.
  [16]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 720.
+(babel)             in language  on input line 712.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 720.
+(babel)             in language  on input line 712.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 720.
+(babel)             in language  on input line 712.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 720.
+(babel)             in language  on input line 712.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 720.
+(babel)             in language  on input line 712.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 720.
-LaTeX Info: Redefining \. on input line 724.
-LaTeX Info: Redefining \% on input line 724.
+(babel)             in language  on input line 712.
+LaTeX Info: Redefining \. on input line 743.
+LaTeX Info: Redefining \% on input line 743.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 724.
+(babel)             in language  on input line 743.
  [17]
+LaTeX Info: Redefining \. on input line 800.
+LaTeX Info: Redefining \% on input line 800.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 736.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 736.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 736.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 736.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 736.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 736.
-LaTeX Info: Redefining \. on input line 747.
-LaTeX Info: Redefining \% on input line 747.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 747.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 747.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 747.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 747.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 747.
+(babel)             in language  on input line 800.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 747.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 747.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 747.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 747.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 747.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 747.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 747.
+(babel)             in language  on input line 800.
  [18]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 812.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 812.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 812.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 812.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 762.
+(babel)             in language  on input line 812.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 762.
-LaTeX Info: Redefining \. on input line 788.
-LaTeX Info: Redefining \% on input line 788.
+(babel)             in language  on input line 812.
+LaTeX Info: Redefining \. on input line 831.
+LaTeX Info: Redefining \% on input line 831.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 788.
+(babel)             in language  on input line 831.
  [19]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 800.
+(babel)             in language  on input line 852.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 800.
+(babel)             in language  on input line 852.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 800.
+(babel)             in language  on input line 852.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 800.
+(babel)             in language  on input line 852.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 800.
+(babel)             in language  on input line 852.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 800.
+(babel)             in language  on input line 852.
+LaTeX Info: Redefining \. on input line 857.
+LaTeX Info: Redefining \% on input line 857.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 857.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 857.
+ [20]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 868.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 868.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 868.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 868.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 868.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 868.
+LaTeX Info: Redefining \. on input line 883.
+LaTeX Info: Redefining \% on input line 883.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 883.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 883.
+ [21]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 894.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 894.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 894.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 894.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 894.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 894.
+LaTeX Info: Redefining \. on input line 923.
+LaTeX Info: Redefining \% on input line 923.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 923.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 923.
+ [22]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 932.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 932.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 932.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 932.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 932.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 932.
 
 
 Package amsthm Warning: The \qedhere command may not work correctly here on inp
-ut line 813.
+ut line 945.
 
-LaTeX Info: Redefining \. on input line 816.
-LaTeX Info: Redefining \% on input line 816.
+LaTeX Info: Redefining \. on input line 948.
+LaTeX Info: Redefining \% on input line 948.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 816.
-[20]
+(babel)             in language  on input line 948.
+[23]
+LaTeX Info: Redefining \. on input line 948.
+LaTeX Info: Redefining \% on input line 948.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 948.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 948.
+ [24
+
+]
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 816.
+(babel)             in language  on input line 948.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 949.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 949.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 949.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 949.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 949.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 817.
+(babel)             in language  on input line 949.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 824.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 824.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 824.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 824.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 824.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 824.
+(babel)             in language  on input line 956.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 841.
+(babel)             in language  on input line 973.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 841.
-[21
-
-]
+(babel)             in language  on input line 973.
+[25]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 863.
+(babel)             in language  on input line 995.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 863.
+(babel)             in language  on input line 995.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 863.
+(babel)             in language  on input line 995.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 863.
+(babel)             in language  on input line 995.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 863.
+(babel)             in language  on input line 995.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 863.
-LaTeX Info: Redefining \. on input line 876.
-LaTeX Info: Redefining \% on input line 876.
+(babel)             in language  on input line 995.
+LaTeX Info: Redefining \. on input line 1008.
+LaTeX Info: Redefining \% on input line 1008.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 876.
+(babel)             in language  on input line 1008.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 876.
- [22]
+(babel)             in language  on input line 1008.
+ [26]
 
 Package amsthm Warning: The \qedhere command may not work correctly here on inp
-ut line 882.
+ut line 1014.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 901.
+(babel)             in language  on input line 1033.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 901.
+(babel)             in language  on input line 1033.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 901.
+(babel)             in language  on input line 1033.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 901.
+(babel)             in language  on input line 1033.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 901.
+(babel)             in language  on input line 1033.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 901.
-LaTeX Info: Redefining \. on input line 909.
-LaTeX Info: Redefining \% on input line 909.
+(babel)             in language  on input line 1033.
+LaTeX Info: Redefining \. on input line 1041.
+LaTeX Info: Redefining \% on input line 1041.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 909.
+(babel)             in language  on input line 1041.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 909.
-[23]
+(babel)             in language  on input line 1041.
+[27]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 939.
+(babel)             in language  on input line 1071.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 939.
+(babel)             in language  on input line 1071.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 939.
+(babel)             in language  on input line 1071.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 939.
+(babel)             in language  on input line 1071.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 939.
+(babel)             in language  on input line 1071.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 939.
-LaTeX Info: Redefining \. on input line 941.
-LaTeX Info: Redefining \% on input line 941.
+(babel)             in language  on input line 1071.
+LaTeX Info: Redefining \. on input line 1073.
+LaTeX Info: Redefining \% on input line 1073.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 941.
+(babel)             in language  on input line 1073.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 941.
- [24]
-LaTeX Info: Redefining \. on input line 986.
-LaTeX Info: Redefining \% on input line 986.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 986.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 986.
- [25]
-LaTeX Info: Redefining \. on input line 1018.
-LaTeX Info: Redefining \% on input line 1018.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1018.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1018.
- [26]
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1031.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1031.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1031.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1031.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1031.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1031.
-LaTeX Info: Redefining \. on input line 1052.
-LaTeX Info: Redefining \% on input line 1052.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1052.
- [27]
-LaTeX Info: Redefining \. on input line 1052.
-LaTeX Info: Redefining \% on input line 1052.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1052.
- [28
-
-]
-Cap\'{\i }tulo 3.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1052.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1085.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1085.
-[29]
+(babel)             in language  on input line 1073.
+ [28]
 LaTeX Info: Redefining \. on input line 1118.
 LaTeX Info: Redefining \% on input line 1118.
 Package babel Info: Redefining spanish shorthand <<
@@ -1940,106 +1902,266 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1118.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1118.
+ [29]
+LaTeX Info: Redefining \. on input line 1150.
+LaTeX Info: Redefining \% on input line 1150.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1150.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1150.
  [30]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1131.
+(babel)             in language  on input line 1163.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1131.
+(babel)             in language  on input line 1163.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1131.
+(babel)             in language  on input line 1163.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1131.
+(babel)             in language  on input line 1163.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1131.
+(babel)             in language  on input line 1163.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1131.
-LaTeX Info: Redefining \. on input line 1147.
-LaTeX Info: Redefining \% on input line 1147.
+(babel)             in language  on input line 1163.
+LaTeX Info: Redefining \. on input line 1184.
+LaTeX Info: Redefining \% on input line 1184.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1147.
+(babel)             in language  on input line 1184.
  [31]
+LaTeX Info: Redefining \. on input line 1184.
+LaTeX Info: Redefining \% on input line 1184.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1150.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1150.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1150.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1150.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1150.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1150.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1169.
-LaTeX Info: Redefining \. on input line 1169.
-LaTeX Info: Redefining \% on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
+ [32
+
+]
+Cap\'{\i }tulo 3.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 1169.
+(babel)             in language  on input line 1184.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 1169.
- [32]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1169.
+(babel)             in language  on input line 1184.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1217.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1217.
+[33]
+LaTeX Info: Redefining \. on input line 1250.
+LaTeX Info: Redefining \% on input line 1250.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1250.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1250.
+ [34]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1263.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1263.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1263.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1263.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1263.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1263.
+LaTeX Info: Redefining \. on input line 1279.
+LaTeX Info: Redefining \% on input line 1279.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1279.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1279.
+ [35]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1282.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1282.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1282.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1282.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1282.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1282.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1301.
+LaTeX Info: Redefining \. on input line 1301.
+LaTeX Info: Redefining \% on input line 1301.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 1301.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 1301.
+ [36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1301.
  (./Algebra Lineal.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1169.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1169.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1301.
 
 Package rerunfilecheck Info: File `"Algebra Lineal".out' has not changed.
-(rerunfilecheck)             Checksum: A22D54BF45ED4C16EB094D058CD7CA56;1724.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1169.
+(rerunfilecheck)             Checksum: BB6B87BDA056D5E330F01B31CEE0E6C0;1778.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1301.
  ) 
 Here is how much of TeX's memory you used:
- 8861 strings out of 492995
- 126164 string characters out of 6132704
+ 8904 strings out of 492995
+ 126499 string characters out of 6132704
  234991 words of memory out of 5000000
- 12087 multiletter control sequences out of 15000+600000
+ 12089 multiletter control sequences out of 15000+600000
  15840 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,12n,32p,313b,682s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,12n,32p,313b,625s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
@@ -2059,10 +2181,10 @@ e/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2017/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2
 017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Algebra Lineal.pdf" (33 pages, 296519 bytes).
+Output written on "Algebra Lineal.pdf" (37 pages, 305300 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
- 190 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 589 PDF objects out of 1000 (max. 8388607)
+ 525 compressed objects within 6 object streams
+ 231 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

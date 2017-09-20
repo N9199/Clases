@@ -45,7 +45,139 @@
 \tableofcontents
 \pagenumbering{arabic}
 \chapter{Espacios Vectoriales}
+\section{Cuerpos}
+Si $\set{F}=\set{R}$ o $\set{C}$, recordemos que se tienen las siguientes propiedades:
+\begin{enumerate}
+	\item Conmutatividad de la suma
+	\[a+y=y+x\quad\forall x,y\in\set{F}\]
+
+	\item Asociatividad de la suma
+	\[(x+y)+z=x+(y+z)\quad\forall x,y,z\in\set{F}\]
+
+	\item Existe un único elemento neutro para la suma, tal que:
+	\[x+0=x\quad\forall x\in\set{F}\]
+
+	\item Para todo $x\in\set{F}$ existe un único inverso para la suma, tal que:
+	\[x+y=0\quad (-x=y)\]
+
+	\item Conmutatividad del producto
+	\[xy=yx\quad\forall x,y\in\set{F}\]
+
+	\item Asociatividad del producto
+	\[(xy)z=x(yz)\quad\forall x,y\in\set{F}\]
+
+	\item Existe único neutro para el producto, el 1, tal que:
+	\[x\cdot 1=x\quad\forall x\in\set{F}\]
+
+	\item Todo elemento $x\neq 0$ posee inverso multiplicativo único, tal que:
+	\[x\cdot y=1\quad (x^{-1}=y)\]
+
+	\item Distributividad de $\cdot$ con respecto a $+$
+	\[x\cdot (y+z)=xy+xz\quad\forall x,y,z\in\set{F}\]
+\end{enumerate}
+\begin{defn}[Cuerpo]
+	Un cuerpo es un conjunto dotado de dos operaciones $(\set{F},+,\cdot)$, que cumplen lo siguiente:
+	\[\func{+}{\set{F}\times\set{F}}{\set{F}}{}{}\]
+	\[\func{\cdot}{\set{F}\times\set{F}}{\set{F}}{}{}\]
+	\begin{itemize}
+		\item $(\set{F},+)$ es grupo abeliano
+
+		\item $(\set{F}\setminus\{0\},\cdot)$ es un grupo abeliano ($0$ es el neutro aditivo)
+
+		\item $a,b,c\in\set{F}\implies a(b+c)=ab+ac$
+	\end{itemize}
+\end{defn}
+Ejemplos:
+\begin{enumerate}[label=(\alph*)]
+	\item $\set{N}$ con $+$ y $\cdot$ usuales. No, no hay inverso aditivo.
+	
+	\item $\set{Z}$ con $+$ y $\cdot$ usuales. No, no hay inverso multiplicativo.
+
+	\item $\set{Q}$ con $+$ y $\cdot$ usuales. Si.
+
+	\item $\set{R}$ con $+$ y $\cdot$ usuales. Si.
+
+	\item $\set{C}$ con $+$ y $\cdot$ usuales. Si.
+
+	\item $\set{F}=\{0,1\}$ con $+$ y $\cdot$ definida de la siguiente forma:\\
+	\begin{center}
+		\begin{tabular}{ c | c  c }
+			+ & 0 & 1 \\ \hline
+			0 & 0 & 1 \\
+			1 & 1 & 0
+		\end{tabular}
+		\ \ \ \ \ 
+		\begin{tabular}{ c | c  c }
+			$\cdot$ & 0 & 1\\ \hline
+			0 & 0 & 0 \\
+			1 & 0 & 1
+		\end{tabular}
+	\end{center}
+\end{enumerate}
+\begin{defn}[Subcuerpo]
+	$\set{L}\subseteq\set{F}$ es un subcuerpo si $(\set{L},+,\cdot)$ es un cuerpo (donde $+$ y $\cdot$ vienen de $(\set{F},+,\cdot)$)
+\end{defn}
+\begin{prop}
+	Sea $(\set{F},+,\cdot)$ un cuerpo $\set{L}$ es subcuerpo $\iff$
+	\begin{enumerate}[label = (\alph*)]
+		\item $\{0,1\}\subseteq\set{L}$
+
+		\item $\set{L}$ es cerrado para $+$, y $\forall x\in\set{L}\implies \exists -x\in\set{L}$
+
+		\item $\set{L}$ es cerrado para $\cdot$, y $\forall x\in\set{L}\setminus\{0\}\implies \exists x^{-1}\in\set{L}$
+	\end{enumerate}
+	\begin{proof}
+		$\implies$ trivial\\
+		$\impliedby$
+		\begin{enumerate}
+			\item La propiedad se hereda de $(\set{F},+,\cdot)$
+
+			\item Idem
+
+			\item Por (a)
+
+			\item Por (b)
+
+			\item La propiedad se hereda de $(\set{F},+,\cdot)$
+
+			\item Idem
+
+			\item Por (a)
+
+			\item Por (c)
+
+			\item La propiedad se hereda de $(\set{F},+,\cdot)$
+		\end{enumerate}
+	\end{proof}
+\end{prop}
+Ejemplos:
+\begin{enumerate}
+	\item $\set{F}$ es un subcuerpo de $\set{F}$
+
+	\item $\set{R}$ es un subcuerpo de $\set{C}$
+
+	\item $\set{Q}$ es un subcuerpo de $\set{R}$
+
+	\item $\{a+b\sqrt{2}:a,b\in\set{Q}\}$ es subcuerpo de $\set{R}$
+\end{enumerate}
+\begin{lem}
+	Todo subcuerpo de $\set{R}$ contiene a $\set{Q}$
+	\begin{proof}
+		Sea $\set{L}$ un subcuerpo de $\set{R}$
+		\[(a)\implies \{0,1\}\subseteq\set{L}\]
+		\[1\in\set{L}\implies\set{N}\subseteq\set{L}\quad (b)\]
+		\[\implies \set{Z}\subseteq\set{L}\quad (b)\]
+		\[\implies \set{Q}\subseteq\set{L}\quad (c)\]
+		\underline{Observación:} El único subcuerpo de $\set{Q}$ es $\set{Q}$ (ver dem. anterior)
+	\end{proof}
+\end{lem}
+\underline{Ejercicio:} Existen infinitos subcuerpos de $\set{R}$
+Recursivamente: sean $p_0=2,p_1=3,p_2=5,...$ los números primos. Definamos:
+\[\set{L}_0\]
 \section{Espacios Vectoriales}
+\begin{defn}[Espacio Vectorial]
+	
+\end{defn}
 \section{Subespacios generados}
 \subsection{Combinaciones lineales}
 \begin{thm}[*]
