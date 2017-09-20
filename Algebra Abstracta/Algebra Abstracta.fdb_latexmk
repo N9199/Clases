@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1505507082 "/Users/nicholas/Documents/Clases/Algebra Abstracta/Algebra Abstracta.tex" "Algebra Abstracta.pdf" "Algebra Abstracta" 1505507083
-  "/Users/nicholas/Documents/Clases/Algebra Abstracta/Algebra Abstracta.tex" 1505507082 22495 3fbd52cff4d59b579b9f5c3a320d63f1 ""
+["pdflatex"] 1505747761 "/Users/nicholas/Documents/Clases/Algebra Abstracta/Algebra Abstracta.tex" "Algebra Abstracta.pdf" "Algebra Abstracta" 1505747762
+  "/Users/nicholas/Documents/Clases/Algebra Abstracta/Algebra Abstracta.tex" 1505747761 22666 36f1dd4723f73438125cd96f7e58b7b1 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -14,6 +14,7 @@
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1480098701 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1480098701 1332 f817c21a1ba54560425663374f1b651a ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1480098701 1344 8a0be4fe4d376203000810ad4dc81558 ""
+  "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1480098701 1336 3125ccb448c1a09074e3aa4a9832f130 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1480098701 1332 1fde11373e221473104d6cc5993f046e ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1480098701 1300 63a6111ee6274895728663cf4b4e7e81 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1480098701 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -113,13 +114,13 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "Algebra Abstracta.aux" 1505507083 3342 d670d8c68550acd1c563b1719c20cd28 ""
-  "Algebra Abstracta.out" 1505507083 1132 11be5c224c4b16252b5f992663cc22a0 ""
-  "Algebra Abstracta.tex" 1505507082 22495 3fbd52cff4d59b579b9f5c3a320d63f1 ""
-  "Algebra Abstracta.toc" 1505507083 1898 fe03fc119054d7ad2d00d1906a050469 ""
+  "Algebra Abstracta.aux" 1505747762 3382 1133e97aa9542499e8287f7b353a3fb7 ""
+  "Algebra Abstracta.out" 1505747762 1150 85cd3d9b1c01f0938108803072c10d71 ""
+  "Algebra Abstracta.tex" 1505747761 22666 36f1dd4723f73438125cd96f7e58b7b1 ""
+  "Algebra Abstracta.toc" 1505747762 1937 72ebf7ef971ee819d0f30efa64a0ff83 ""
   (generated)
-  "Algebra Abstracta.aux"
-  "Algebra Abstracta.out"
   "Algebra Abstracta.toc"
-  "Algebra Abstracta.pdf"
+  "Algebra Abstracta.out"
   "Algebra Abstracta.log"
+  "Algebra Abstracta.aux"
+  "Algebra Abstracta.pdf"
