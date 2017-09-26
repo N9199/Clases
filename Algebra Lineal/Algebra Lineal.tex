@@ -33,6 +33,7 @@
 \newtheorem{lem}[thm]{Lema}
 \newtheorem{prop}[thm]{Proposición}
 \newtheorem*{cor}{Corolario}
+\newtheorem*{conj}{Conjetura}
 
 \theoremstyle{definition}
 \newtheorem{defn}{Definición}[section]
@@ -1168,7 +1169,7 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\[A=Diag(A)\]
 	Equivalentemente, $A$ es diagonal si 
 	\[a_{i,j}=0\forall i\neq j\]
-	Claramente, toda matriz diagonal es $\triangle$ supeior, entonces los valores propios de $A$ son los valores en la diagonal.	
+	Claramente, toda matriz diagonal es $\triangle$ superior, entonces los valores propios de $A$ son los valores en la diagonal.	
 \end{defn}
 \begin{defn}[Subespacio Propio]
 	Sea $T\in\mathcal{L}(V)$ y $\lambda\in\set{F}$. El subespacio propio de $T$ correspondiente a $\lambda, E(\lambda,T)$, se define como
@@ -1298,4 +1299,219 @@ Por teo del coseno
 \[\|v-u\|^2=\|v\|^2+\|u\|^2-2<u,v>\]
 Reemplazando:
 \[<u,v>=\|u\|\|v\|\cos\theta\]
+\section{Conjuntos Ortonormales}
+
+\begin{prop}[Norma de una combinación ortonormal]
+	Sea $(V,<\cdot,\cdot>)$ espacio con producto interno y $e_1,...,e_m$ conjunto ortonormal. Entonces
+	\[\|a_1e_1+...a_me_m\|^2=|a_1|^2+...+|a_m|^2\]
+	\begin{proof}
+		Por Pitágoras:
+		\[\|a_1e_1+...a_me_m\|^2=\|a_1e_1\|^2+\|a_2e_2+...+a_me_m\|^2\]
+		\[\|a_1e_1+...a_me_m\|^2=|a_1|^2\|e_1\|^2+\|a_2e_2+...+a_me_m\|^2\]
+		\[\|a_1e_1+...a_me_m\|^2=|a_1|^2+\|a_2e_2+...+a_me_m\|^2\]
+		\[\vdots\]
+		\[\|a_1e_1+...a_me_m\|^2=|a_1|^2+...+|a_m|^2\]
+	\end{proof}
+\end{prop}
+\begin{thm}
+	Todo familia ortonormal es linealmente independente.
+	\begin{proof}
+		Sea $(e_\lambda)_{\lambda\in\Lambda}$ conjunto ortonormal. Si fueran linealmente dependientes, existen $a_1,...,a_m\in\set{F}$ no todos nulos
+		\[\lambda_1,...,\lambda_m\in\Lambda\]
+		\[a_1e_{\lambda_1}+...+a_me_{\lambda_m}=0\quad /\|\cdot\|^2\]
+		\[0=\|a_1e_{\lambda_1}+...+a_me_{\lambda_m}\|^2\]
+		\[0=|a_1|^2+...+|a_m|^2\]
+		\[\iff a_1=...=a_m=0\]
+		\[\contr\qedhere\]
+	\end{proof}
+\end{thm}
+\begin{defn}[Base ortonormal]
+	Una base ortonormal de un espacio con producto interno $(V,<\cdot,\cdot>)$ es un conjunto ortonormal que también es base.
+\end{defn}
+\begin{lem}
+	Sea $(V,<\cdot,\cdot>)$ un espacio producto interno finito dimensional. Entonces un conjunto ortonormal de cardinalidad $\dim V$ es una base ortonormal
+	\begin{proof}
+		Sea $n=\dim V$ y sea $e_1,...,e_m$ conjunto ortonormal en $V$.
+		\[\implies e_1,..,e_m\textrm{ son linealmente independiente}\]
+		\[\implies\textrm{ son base}\qedhere\]
+	\end{proof}
+\end{lem}
+\underline{Ejemplos:}
+\begin{enumerate}
+	\item $\set{F}^n$
+
+	\item $ser{F}^4$, el conjunto
+	\[(0.5,0.5,0.5,0.5),(0.5,0.5,-0.5,-0.5)\]
+	\[(0.5,-0.5,-0.5,0.5),(-0.5,0.5,-0.5,0.5)\]
+	es base ortonormal.
+	Claramente: $\|\cdot\|=\sqrt{(0.5)^2+(0.5)^2+(0.5)^2+(0.5)^2}=1$\\
+	Tambien los productos internos cruzados dan 0
+\end{enumerate}
+\underline{Pregunta:} Cuándo existen bases ortonormales uniformes en $\set{R}^n$
+\begin{lem}
+	Sea $e_1,..e_n$ vectores de $\set{F}^n$ y sea 
+	\[U=\left[e_1|e_2|...|e_n\right]\]
+	Entonces, $e_1,..,e_n$ es base ortonormal $\iff$
+	\[U^T\cdot U=I_{n\times n}\]
+	\begin{proof}
+		\[\left[\frac{e_1^T}{\cfrac{e_2^T}{\cfrac{\vdots}{e_n^T}}}\right]\]
+	\end{proof}
+\end{lem}
+\begin{defn}[Matriz unitaria]
+	$U\in\set{F}^{n\times n}$ se dice unitaria si
+	\[U^TU=I_{n\times n}\]
+	Notar que $U$ es unitaria $\iff$ las columnas de $U$ son base ortonormal.
+\end{defn}
+Para responder la pregunta hacemos lo siguiente:
+\begin{proof}
+	\underline{$n=1$:} $\{1\}$ es dase ortonormal de $\set{F}$
+	\[H_1=[1]\]
+	\underline{$n\implies 2n$:} Sea $H_n$ una matriz unitaria tal que
+	\[|(H_n)_{i,j}|=\frac{1}{\sqrt{n}}=c\]
+	\[H_{2n}=\frac{1}{\sqrt{2}}\begin{bmatrix}
+		H_n & H_n\\
+		H_n & -H_n
+	\end{bmatrix}\]
+	\begin{enumerate}
+		\item Esta matriz también es uniforme
+
+		\item Esta matriz es unitaria
+		\[H_{2n}^T\cdot H_{2n}=\frac{1}{2}\begin{bmatrix}
+			H_n^T\cdot H_n+H_n^T\cdot H_n & H_n^T\cdot H_n-H_n^T\cdot H_n^T\cdot H_n\\
+			H_n^T\cdot H_n-H_n^T\cdot H_n & H_n^T\cdot H_n+H_n^T\cdot H_n
+		\end{bmatrix}=\begin{bmatrix}
+			I_{n\times n} & 0\\
+			0 & I_{n\times n}
+		\end{bmatrix}\qedhere\]
+		Las columnas son las base ortonormal uniforme buscada.\\
+		Las matrices $H_1,H_2,H_4,...,H_{2^k}$ se conocen como matrices de Hadanard
+	\end{enumerate}
+\end{proof}
+\begin{conj}[Hadanard]
+	Estas matrices solo existen para
+	\[n=4k,k\in\set{Z}\]
+\end{conj}
+Dada una base $e_1,...,e_n$ de $V$ tenemos
+\[v=\sum^n_{i=1}a_ie_i\quad \forall v\in V\]
+Cómo calcular $a_1,..,a_m$?
+\begin{thm}
+	Sea $e_1,..,e_n$ base ortonormal de $(V,<\cdot,\cdot>)$, entonces
+	\[v=\sum^n_{i=1}<v,e_i>e_i\]
+	además
+	\[\|v\|^2=\sum^n_{i=1}|<v,e_i>|^2\]
+	\begin{proof}
+		Como $e_1,...,e_n$ es base, existen $a_1,...,a_n$ tal que\[v=\sum^n_{i=1}a_ie_i\quad /<\cdot,e_j>\]
+		\[<v,e_j>=\sum^n_{i=1}a_i<e_i,e_j>=a_j\cdot 1\]
+		Probamos la primera parte. La segunda es consecuencia de Pitágoras.
+	\end{proof}
+\end{thm}
+\section{Algoritmo de Gram-Schmidt}
+\begin{thm}
+	Sean $v_1,...,v_m$ conjunto linealmente independente de vectores en $(V,<\cdot,\cdot>)$. Sea
+	\[e_1=\frac{v_1}{\|v_1\|}\]
+	\[e_j=\frac{v_j-\sum_{i<j}<v_j,e_i>e_i}{\|v_j-\sum_{i<j}<v_j,e_i>e_i\|}\]
+	Entonces $e_1,...,e_n$ es conjunto ortonormal y $<e_1,...,e_n>=<v_1,...,v_n>$
+	\begin{proof}
+		Por inducción en $j$\\
+		\underline{$j=1$:} $e_1$ es conjunto ortonormal:
+		\[\|e_1\|=\left\|\frac{v_1}{\|v_1\|}\right\|=1\]
+		y
+		\[<e_1>=<v_1>\]
+		Notar que $v_1\neq 0$ porque $v_1,...,v_n$ es linealmente independente y por ender $e_1$ esta bien definido.\\
+		\underline{$j-1\implies j$:}\\
+		$e_1,...,e_j$ es ortonormal.\\
+		Primero $e_j$ está bien definido
+		\[e_j=\frac{v_j-\sum_{i<j}<v_j,e_i>e_i}{\|v_j-\sum_{i<j}<v_j,e_i>e_i\|}\]
+		y
+		\[v_j\notin <v_1,...,v_{j-1}>\]
+		\[\therefore v_j-\sum_{i<j}<v_j,e_i>e_i\neq 0\]
+		Para probar ortonormalidad, basta probar que:
+		\[<e_j,e_l>=\begin{cases}
+			1\quad l=j\\
+			0\quad l<j
+		\end{cases}\]
+		\[<e_j,e_j>=\|e_j\|^2=\frac{\|\cdot\|^2}{\|\cdot\|^2}=1\]
+		\[<e_j,e_l>=\frac{1}{c}<v_j-\sum_{i<j}<v_j,e_i>e_i,e_l>\]
+		\[<e_j,e_l>=\frac{1}{c}\left[<v_j,e_l>-<\sum_{i<j}<v_j,e_i>e_i,e_l>\right]\]
+		\[<e_j,e_l>=\frac{1}{c}\left[<v_j,e_l>-\sum_{i<j}<<v_j,e_i>e_i,e_l>\right]\]
+		\[<e_j,e_l>=\frac{1}{c}\left[<v_j,e_l>-\sum_{i<j}<v_j,e_i>\cdot<e_i,e_l>\right]\]
+		Por hipótesis de inducción:
+		\[<e_j,e_l>=\frac{1}{c}\left[<v_j,e_l>-<v_j,e_l>\cdot 1\right]=0\]
+		$\therefore e_1,...,e_n$ ortonormal.\\
+		Falta probar
+		\[<e_1,...,e_n>=<v_1,...,v_n>\]
+		Para probarlo basta ver que\\
+		\[\textrm{(Hip. Ind.)} <e_1,...,e_{j-1}>=<v_1,...,v_{j-1}>\]
+		Pero además
+		\[e_j\in<e_1,..,e_{j-1},v_j>=<v_1,...,v_j>\]
+		En conclusión
+		\[<e_1,..,e_j>\subseteq<v_1,...,v_j>\]
+		\[\therefore<e_1,..,e_j>\subseteq<v_1,...,v_j>\qedhere\]
+	\end{proof}
+\end{thm}
+\begin{thm}[Representación $\triangle$-superior con respecto a base ortonormal]
+	Sea $(V,<\cdot,\cdot>)$ espacio con producto interno (real o complejo) y sea $T\in\mathcal{L}(V)$. Si $T$ posee una representación matricial $\triangle$-superior con respecto a una base, entonces posee una representación $\triangle$-superior con respecto a una base ortonormal.
+	\begin{proof}
+		Sea $B=(v_1,...,v_n)$ base ordenada de $V$ tal que $\mathcal{M}_B(T)$ sea $\triangle$-superior. Entonces:
+		\[<v_1>\textrm{ es invariante bajo} T\]
+		\[<v_1,v_2>\textrm{ es invariante bajo} T\]
+		\[\vdots\]
+		\[<v_1,...,v_n>\textrm{ es invariante bajo} T\]
+		Aplicando G-S a $(v_1,...,v_n)\implies e_1,...,e_n$ base ortonormal de $V$.\\
+		Para concluir basta probar que los subespacios
+		\[<e_1,...,e_j>\quad j=1,...,n\]
+		son invariantes bajo $T$.\\
+		Pero esto es directo, ya que
+		\[<v_1,...,v_j>=<e_1,...,e_j>\quad j=1,...,n\qedhere\]
+	\end{proof}
+\end{thm}
+\begin{thm}[Schur]
+	Todo operador sobre un espacio con producto interno complejo de dimensión finita posee una representación $\triangle$-superior para alguna base ortonormal de $V$.
+	\begin{proof}
+		Todo operador sobre un espacio vectorial complejo de dimensión finita posee una representación $\triangle$-superior para alguna base. Con el Teo anterior se concluye.
+	\end{proof}
+\end{thm}
+\section{Funciones lineales sobre Espacio con producto interno}
+\begin{defn}[Funcional Lineal]
+	Una funcional lineal sobre $(V,<\cdot,\cdot>)$ es una transformación lineal $\func{l}{V}{\set{F}}{}{}$.
+\end{defn}
+\underline{Ejemplos:}
+\begin{enumerate}
+	\item $u\in V:$\\
+	$\func{l}{V}{\set{F}}{}{}$\\
+	$v\mapsto <v,u>$
+
+	\item Sea $\func{\varphi}{\mathcal{P}_2(\set{R})}{\set{R}}{}{}$ dado por
+	\[\varphi(P)=\int^1_{-1}p(t)\cos(\pi t)\d{t}\]
+	Pregunta: $\exists q\in\mathcal{P}_2(\set{R}):\varphi(p)=\int^1_{-1}p(t)q(t)\d{t}$?
+\end{enumerate}
+\begin{thm}[Representación de Riesz]
+	Sea $(V,<\cdot,\cdot>)$ espacio producto interno finito-dimensional y $\varphi$ un funcional lineal. Entonces existe un único $u\in V$
+	\[\varphi(v)=<v,u>\quad\forall v\in V\]
+	\begin{proof}
+		Sea $\dim V=n, e_1,..,e_n$ base de ortonormal de V.\\
+		\underline{Existencia} Sea $v\in V$
+		\[v=<v,e_1>e_1+...+<v,e_n>e_n\quad/\varphi\]
+		\[\varphi(v)=\varphi(<v,e_1>e_1+...+<v,e_n>e_n)\]
+		\[\varphi(v)=<v,e_1>\varphi(e_1)+...+<v,e_n>\varphi(e_n)>\]
+		\[\varphi(v)=<v,\overline{\varphi(e_1)}e_1+...+\overline{\varphi(e_n)}e_n\]
+		\underline{Unicidad}: Sean $u_1,u_2\in V$ tales que
+		\[\varphi(v)=<v,u_1>=<v,u_2>\quad\forall v\in V\]
+		\[\therefore <v,u_1-u_2>=0\quad\forall v\in V\]
+		Tomando $v=u_1-u_2$
+		\[<u_1-u_2,u_1-u_2>=0\]
+		\[\therefore\|u_1-u_2\|^2=0\]
+		\[\iff u_1-u_2=0\qedhere\]
+	\end{proof}
+\end{thm}
+\begin{obs}
+	La demostración da una fórmula explícita para calcular $u$: Dada una base ortonormal $e_1,...,e_n$
+\end{obs}
+\section{Complementos Ortogonales y Problemas de Minimización}
+\begin{defn}[Complemento Ortogonal]
+	Sea $(V,<\cdot,\cdot>$ espacio con producto interno y $U\subset V$. Se define el complemento ortogonal de $U$, denotado $U^{}$ como
+	\[U^{}=\{v\in V:<v,u>=\forall u\in U\}\]
+\end{defn}
+\underline{Propiedades}
+Rellenar*
 \end{document}

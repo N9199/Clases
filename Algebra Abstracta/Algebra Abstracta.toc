@@ -22,3 +22,6 @@
 \contentsline {section}{\numberline {2.2}Acciones de grupo}{14}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Acci\IeC {\'o}n en clases laterales}{16}{subsection.2.2.1}
 \contentsline {section}{\numberline {2.3}Simetr\IeC {\'\i }as en $\mathbb {R}^3$}{17}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Acciones de grupos en si mismos}{19}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Acciones de grupos en subconjuntos}{19}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Teoremas de Sylow}{20}{section.2.4}

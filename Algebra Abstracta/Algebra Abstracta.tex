@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage{amsthm, amsmath, amssymb}
 \usepackage{mathtools}
+\usepackage{manfnt}
 \usepackage{setspace}\onehalfspacing
 \usepackage[loose,nice]{units} 
 \usepackage{enumitem}
@@ -26,6 +27,10 @@
 \newcommand{\set}[1]{\mathbb{#1}}
 \newcommand{\func}[5]{#1:#2\xrightarrow[#5]{#4}#3}
 \newcommand{\contr}{\rightarrow\leftarrow}
+\newcommand*\cube{\mbox{\mancube}}
+
+\DeclareMathOperator{\Ima}{Im}
+\DeclareMathOperator{\mcd}{mcd}
 
 \newtheorem{thm}{Teorema}[section]
 \newtheorem{lem}[thm]{Lema}
@@ -644,7 +649,7 @@ Ejemplo: Sea $(a,b)\in\mathbb{R}^2$
 				\[\therefore r_2=3\]
 				\begin{center}
 					\begin{tabular}{ c | c | c | c | c | c }
-						a & a & a & a & a & a \\
+						a & a & a & a & a & a \\ \hline
 						a & a & a & a & a & a \\
 						a & a & a & a & a & a \\
 						a & a & a & a & a & a \\
@@ -655,5 +660,176 @@ Ejemplo: Sea $(a,b)\in\mathbb{R}^2$
 		\end{enumerate}
 	\end{proof}
 \end{thm}
+\subsection{Acciones de grupos en si mismos}
+\subsection{Acciones de grupos en subconjuntos}
+Ej: $O=$ grupo de octaedro de 24 rotaciones del cubo
+\[O\circlearrowright\cube\]
+\[S=\textrm{Conjunto de vértices del cubo}\implies O\circlearrowright S\]
+\[S'=\textrm{Pares no ordenados de vértices de }\cube\quad(\textrm{es decir,}\binom{8}{2}=28\textrm{ pares.})\]
+\[\implies O\circlearrowright S'\]
+\begin{enumerate}[label=(\roman*)]
+	\item \{Pares de vértices en un lado\}$=12$
 
+	\item \{Pares de vértices opuestos en una cara\}$=12$
+
+	\item \{Pares de vértices opuestos en el cubo\}$=4$
+\end{enumerate}
+\[\therefore 28=12+12+4\]
+Si $G\circlearrowright S$
+\[\implies G\circlearrowright\textrm{ Subconjuntos de }S\]
+\[U\subset S, g\cdot U=\{g\cdot u:u\in U\}\]
+\[G_u=\{g\in G:gU=U\}\]
+\begin{prop}
+	$H\circlearrowright S$ y $U\subset S$\\
+	Entonces:
+	\[H\textrm{ estabiliza a }U\iff U=\bigcup\textrm{ algunas órbitas}\]
+	\begin{proof}
+		Dibujo
+	\end{proof}
+\end{prop}
+\begin{prop}
+	\[U\subset G, |G|<\infty\]
+	$G\circlearrowright G$ por multiplicación por la izquierda así $G\circlearrowright$ subconjuntos de $G$.
+	\[\implies |G| | |U|\]
+	\begin{proof}
+		$H=G_u$ y así $H$ estabiliza a $U\iff U=\bigcup$ algunas órbitas $=\bigcup_{\textrm{algunos }g\in G}g\cdot H$, pero $|gH|=|H|\implies |U|=\lambda |H|$
+	\end{proof}
+\end{prop}
+$G\circlearrowright$ subconjuntos de $G$ por conjugación.\\
+Un subgrupo $H\triangleleft G\iff$ su órbita contiene sólo a $H$.\\
+Qué sucede si $H\ntriangleleft G$?\\
+\underline{Respuesta:} Definir Normalizador de $H$ en $G$:
+\begin{defn}[Normalizador]
+	\[H\subseteq N(H)=\{g\in G:gHg^{-1}=H\}\]
+\end{defn}
+\section{Teoremas de Sylow}
+"Describir subgrupos de orden primo de un grupo finito"\\
+Sea $G$ un grupo de orden $n=p^e\cdot m$ $p$ primo, $e\geq 1$, $p$ no divide a $m$.\\
+\underline{Ejm:} $n=100, p=2 e=2\implies 100=2^2\cdot 25$
+\begin{thm}[Sylow 1]
+	$\exists$ un subgrupo de orden $p^e$.
+	\begin{lem}
+		Si $S$ es un conjunto con $n=p^e\cdot m$ elementos, con $p$ primo y $p$ no divide a $m$, y $p^e<n\implies$ El número de subconjuntos de cardinalidad $p^e$ es
+		\[N=\binom{n}{p^e}\quad p\textrm{no divide a} N\]
+		\begin{proof}
+			$N=\binom{n}{p^e}$ por introducción al álgebra.
+			\[\binom{n}{p^e}=\frac{n\cdot(n-1)\cdot...\cdot (n-(p^e-1))}{p^e\cdot (p^e-1)\cdot...\cdot 1}\]
+			Notar que $n-k$ y $p^e-k$ tienen exactamente la misma cantidad de $p^i$ como factor. Simplemente escribir $k=p^i\cdot l$, donde $p$ no divide a $l$, $i\geq 0$ y $e>i$.
+			\[n-k=p^e\cdot m-p^i\cdot l=p^i(p^{e-i}\cdot m-l)\]
+			\[p^e-k=p^e-p^i\cdot l=p^i(p^{e-i}-l)\qedhere\]
+		\end{proof}
+	\end{lem}
+	\begin{proof}
+		Sea $S=\{$ subconjuntos de $G$ de cardinalidad $p^e\}$\\
+		$G\circlearrowright S$ por multiplicación por la izquierda
+		\[N=\sum_{\textrm{órbitas disjuntas}}|O|\]
+		por el lema anterior, $p$ no divide a $N$
+		\[\implies \exists O:\mcd(|O|,p)=1\]
+		Sea $U\in O$
+		\[\therefore |G_u||O|=p^e\cdot m\]
+		Como $G_U$ estabiliza a $U$
+		\[\implies U=\bigcup\textrm{órbitas}\]
+		órbitas$=g\cdot G_U$
+		\[\therefore |G_U|\mid|U|\]
+		\[\implies|U|=p^e\qedhere\]
+	\end{proof}
+\end{thm}
+\begin{cor}
+	Si $p$ primo divide a $|G|\implies G$ tiene un elemento de orden $p$.
+	\begin{proof}
+		Sea $H<G$ con $|H|=p^e$, por Sylow 1\\
+		Sea $x\in H,x\neq e$.\\
+		Entonces ord$(x)=p^\alpha,1\leq 1 \alpha\leq e$\\
+		Si $\alpha=1$, listo.\\
+		Si $\alpha>1\implies$
+		\[1|=x^{p^{\alpha}}=x^{p^{\alpha-1}\cdot p}=(x^{p^{\alpha-1}})^p\]
+		\[\therefore x^{p^{\alpha-1}}\textrm{ tiene orden }p\qedhere\]
+	\end{proof}  
+\end{cor}
+\begin{cor}
+	$|G|=6$
+	\[\implies G\simeq\set{Z}_6\vee G\simeq D_3\]
+	\begin{proof}
+		Sea $x$ de orden 3 e $y$ de orden 2 en $G$.
+		\[\implies x^iy^i\quad 0\leq i\leq 2, 0\leq j\leq 1\]
+		Son todos distintos.
+		\[x^iy^j=x^{i'}y^{j'}\]
+		\[\therefore x^{i-i'}=y^{j'-j}=e\]
+		\[\therefore G=\{e,x,x^2,y,xy,x^2y\}\]
+		Notar que $yx\neq e,x,x^2,y$
+		\[\implies yx=xy\vee yx=x^2y\qedhere\]
+	\end{proof}
+\end{cor}
+\begin{defn}[Sylow p]
+	$G$ finito de orden $p^em$, $p$ primo, $p\nmid m$. Un $H< G$ de orden $p^e$ se llama \underline{Sylow p}.
+\end{defn}
+\begin{thm}[Sylow 2]
+	Sea $K<G$,$p\mid|K|$ y $H$ es un Sylow p.
+	\[\implies\exists g\in G: K\cap gHg^{-1}\subset K\]
+	es un Sylow p de $K$
+	\begin{proof}
+		$S=\{$ clases laterales izquierdas de $H\}=G/H$\\
+		$G\circlearrowright S$ por multiplicación por izquierda es acción transitiva, $H$ estabiliza a $H$\\
+		\underline{Clave:} hacer actuar $K\circlearrowright S$ por multiplicación izquierda. Descomponer $S$ en $K$-órbitas.\\
+		$H$ Sylow-p
+		\[\implies |S|=[G:H]=m\implies p\nmid m\]
+		\[\therefore \exists \textrm{K-órbita }O:\mcd(|O|,p)=1\]
+		Digamos
+		\[O=O(aH)\]
+		Sea $H'=aHa^{-1}$. [Es Sylow-p para $G$]\\
+		Notar que $H'$ es estabilizador de $aH$ por la acción de $G$.\\
+		$\implies$ El estabilizador de $aH$ por $K$ es $H'\cap K$ y $[K:H'\cap K]=|O(aH)|$. Y $[K:K\cap H']$ es coprimo a $p$.\\
+		Notar que $H'$ es p-grupo de $K$ y así $K\cap H'$ es p-grupo.\\
+		$\implies H'\cap K$ es Sylow-p para $K$
+	\end{proof}
+	\begin{cor}
+		\
+		\begin{enumerate}[label=(\alph*)]
+			\item $K<G$ p-grupo\\
+			$\implies K\subset$ algún Sylow p
+			
+			\item Sylow p de $G$ aon conjugados entre si.
+		\end{enumerate}
+		\begin{enumerate}[label=(\alph*)]
+			\item \begin{proof}
+				$gHg^{-1}$ es Sylow p si $H$ es Sylow p,$\forall g\in G$. Sea $K$ un p-grupo en $G$.\\
+				Por teo Sylow 2, $gHg^{-1}\cap K=K$ es p-grupo de $K$
+				\[\implies gHg^{-1}\supset K\qedhere\]
+			\end{proof}
+
+			\item \begin{proof}
+				$K$ y $H$ Sylow p. Por Sylow 2 $\exists g:gHg^{-1}\supset K$ es Sylow p para $K$.
+				\[\therefore gHg^{-1}\cap K=K\]
+				\[\therefore gHg^{-1}\supset K\]
+				\[\implies gHg^{-1}=K\]
+			\end{proof}
+		\end{enumerate}
+	\end{cor}
+\end{thm}
+\begin{thm}[Sylow 3]
+	$|G|=p^e\cdot m$
+	\[s=\#\{\textrm{Sylow p en }G\}\]
+	\[\implies s ||G|\wedge s\equiv 1\mod p\]
+	\begin{proof}
+		Por Corolario $(b)$: Todos los Sylow-p son conjugados a uno: $H$\\
+		$\#\{$Sylow-p$\}=s[G:N(H)]$ $N(H)=$normalizador de $H$ en $G$
+		\[\therefore s\mid m\]
+		$S=\{H_1=H,H_2,...,H_s\}=$Sylow-p\\
+		$H\circlearrowright S$ conjugar con elementos de $H$.
+		\[\textrm{Una órbita consiste de 1 elemento}\iff H\subset N_i=\textrm{normalizador de }H_i\]
+		\[\implies H=H_i\]
+		$\therefore$ la única órbita por 1 elemento es la de $H$
+		\[s=\sum_{O\textrm{ disjuntas}}|O|=1+\sum_{\textrm{resto}}|O|\]
+		\[\implies s\equiv 1\mod p\qedhere\]
+	\end{proof}
+	\begin{cor}
+		$H$ Sylow-p de $G$.
+		\[H\triangleleft G\iff s=1\]
+		\begin{proof}
+			Si $H\triangleleft G\implies gHg^{-1}=H\quad\forall g\in G$. Teo Sylow 2, tenemos $s=1$.\\
+			Si $s=1\implies gHg^{-1}\in$ Sylow p$=\{H\}$
+			\[\implies gHg^{-1}=H\forall g\in G\qedhere\]
+		\end{proof}
+	\end{cor}
+\end{thm}
 \end{document}
