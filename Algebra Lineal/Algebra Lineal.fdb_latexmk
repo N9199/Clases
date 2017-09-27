@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1506362158 "/Users/nicholas/Documents/Clases/Algebra Lineal/Algebra Lineal.tex" "Algebra Lineal.pdf" "Algebra Lineal" 1506362159
-  "/Users/nicholas/Documents/Clases/Algebra Lineal/Algebra Lineal.tex" 1506362157 54859 46c4a0f91a4bf1a5ca5ce5148fd52d23 ""
+["pdflatex"] 1506526824 "/Users/nicholas/Documents/Clases/Algebra Lineal/Algebra Lineal.tex" "Algebra Lineal.pdf" "Algebra Lineal" 1506526824
+  "/Users/nicholas/Documents/Clases/Algebra Lineal/Algebra Lineal.tex" 1506526823 59979 bc3803a17f0d5458f58b97db921c21f6 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -114,13 +114,13 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1495593487 4129592 0e6cfee100d68e6d96b92c0258f2ff73 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "Algebra Lineal.aux" 1506362158 4702 41b8e33d0236565fe349e99c9553d351 ""
-  "Algebra Lineal.out" 1506362158 2121 17ccf04708210b0747852f54b00198d9 ""
-  "Algebra Lineal.tex" 1506362157 54859 46c4a0f91a4bf1a5ca5ce5148fd52d23 ""
-  "Algebra Lineal.toc" 1506362158 2969 408a525ac9bcee703714bfedfe1dcd80 ""
+  "Algebra Lineal.aux" 1506526824 4814 0cfa1a4fec3da8d0fafb17c785af0ad8 ""
+  "Algebra Lineal.out" 1506526824 2196 69c0299457f1e10b6dbf0467c3aed8b5 ""
+  "Algebra Lineal.tex" 1506526823 59979 bc3803a17f0d5458f58b97db921c21f6 ""
+  "Algebra Lineal.toc" 1506526824 3063 2b2ecde646f3be4c764ebade4872683c ""
   (generated)
-  "Algebra Lineal.out"
-  "Algebra Lineal.pdf"
-  "Algebra Lineal.toc"
-  "Algebra Lineal.log"
   "Algebra Lineal.aux"
+  "Algebra Lineal.pdf"
+  "Algebra Lineal.log"
+  "Algebra Lineal.out"
+  "Algebra Lineal.toc"

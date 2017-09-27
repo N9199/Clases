@@ -29,7 +29,7 @@
 
 \DeclareMathOperator{\Ima}{Im}
 
-\newtheorem{thm}{Terorema}[section]
+\newtheorem{thm}{Teorema}[section]
 \newtheorem{lem}[thm]{Lema}
 \newtheorem{prop}[thm]{Proposición}
 \newtheorem*{cor}{Corolario}
@@ -348,7 +348,7 @@ Todo espacio vectorial $V\neq\{0\}$ finito dimensional posee una base.
 		\[
 		B_W=\{w_1,...,w_m\}\quad\textrm{es base de } W
 		\]
-		Como $W$ es subsepacio propio, existe $v\in V\setminus<B_W>$\\
+		Como $W$ es subespacio propio, existe $v\in V\setminus<B_W>$\\
 		$\implies B_W\cup\{v\}$ es linealmente independiente y $\subset V$.\\
 		Por Teo. a), $B_W\cup\{v\}$ se extiende cin una base $B_V,|B_V|\geq|B_W|+1$.
 		\[
@@ -469,7 +469,7 @@ Si $T:V\rightarrow W$ transformaciones lineales, entonces:
 
 \end{proof}
 
-La importancia de este teorema se relaciona con el hecho de poder definir transformaciones lineales sólo a través de como actuan sobre una base. Esto se relaciona con la nocion de \underline{matriz representante}.
+La importancia de este teorema se relaciona con el hecho de poder definir transformaciones lineales sólo a través de como actuan sobre una base. Esto se relaciona con la noción de \underline{matriz representante}.
 \begin{defn}
 Si $T:V\rightarrow W$ transformación lineal, definimos:
 \begin{itemize}
@@ -562,7 +562,7 @@ Y el resto de las propiedades se dejan propuestas como ejercicio.
 \subsubsection{Teorema}
 Sean $V,W$ espacios vectoriales sobre $\mathbb{F}$, $\dim V=n$ y $\dim W=m$. Luego, $\mathcal{L}(V,W)$ es un espacio finito dimensional y $\dim\mathcal{L}(V,W)=m\cdot n$\\
 Dem: Sean $V=<\{v_1,...,0_i,...,v_n\}>$, $W=<\{w_1,...,0_j,...,w_n\}>$, bases respectivamente.\\
-Dados $1\leq p\leq m, 1\leq q\leq n$, definimos $E^{p,q}\in\mathcal{L}(V,W)$ como unica transformación lineal que satisface:
+Dados $1\leq p\leq m, 1\leq q\leq n$, definimos $E^{p,q}\in\mathcal{L}(V,W)$ como única transformación lineal que satisface:
 \[
 E^{p,q}(v_j)=
 \begin{dcases}
@@ -845,7 +845,7 @@ Tomando $T^{-1}$, (que también es isomorfismo) tomemos
 Es linealmente independiente
 \[\implies m\leq\dim V=n\]
 \[\implies m=n\]
-$\impliedby$ Suponemos $n=m$, sea $T$ la unica transformación lineal tal que
+$\impliedby$ Suponemos $n=m$, sea $T$ la única transformación lineal tal que
 \[Tv_i=w_i\quad\forall I=1,...,n\]
 Por el teorema $\square$, parte $(v)\implies (i)$ tenemos que $T$ es isomorfismo.
 \end{proof}
@@ -1009,7 +1009,7 @@ Sea $p\in\mathbb{F}[z]$ y $\lambda\in\mathbb{F}$. Entonces $p(\lambda)=0\iff(z-\
 $\impliedby$ $(z-\lambda)$ factor de $p$, entonces $\exists q\in\mathbb{F}[z]$ tal que
 \[p(z)=(z-\lambda)\cdot q(z)\forall z\in\mathbb{F}\]
 \[\implies p(\lambda)=0\cdot q(\lambda)=0\]
-$implies$. Por el algoritmo de la división para $p$ y $s(z)=z-\lambda$, tenenemos que $\exists !r\in\mathbb{F}[z]$ con $gr(r)\leq=0\implies r\in\mathbb{F}$ tal que 
+$implies$. Por el algoritmo de la división para $p$ y $s(z)=z-\lambda$, tenemos que $\exists !r\in\mathbb{F}[z]$ con $gr(r)\leq=0\implies r\in\mathbb{F}$ tal que 
 \[p(z)=q(z)\cdot (z-\lambda)+r\]
 \[\implies 0=p(\lambda)=q(\lambda)\cdot 0+r\]
 \[\therefore r=0\qedhere\]
@@ -1509,9 +1509,173 @@ Cómo calcular $a_1,..,a_m$?
 \end{obs}
 \section{Complementos Ortogonales y Problemas de Minimización}
 \begin{defn}[Complemento Ortogonal]
-	Sea $(V,<\cdot,\cdot>$ espacio con producto interno y $U\subset V$. Se define el complemento ortogonal de $U$, denotado $U^{}$ como
-	\[U^{}=\{v\in V:<v,u>=\forall u\in U\}\]
+	Sea $(V,<\cdot,\cdot>$ espacio con producto interno y $U\subset V$. Se define el complemento ortogonal de $U$, denotado $U^\perp$ como
+	\[U^\perp=\{v\in V:<v,u>=\forall u\in U\}\]
 \end{defn}
-\underline{Propiedades}
-Rellenar*
+\underline{Propiedades:}
+\begin{enumerate}[label=\textbf{(\alph*)}]
+	\item $U\subseteq V\implies U^\perp$ subespacio vectorial de $V$\\
+	$U^\perp=\{v\in V:<v,u>=0\quad\forall u\in U\}$
+	\begin{proof}
+		\[U^\perp\neq\emptyset:0\in U^\perp\]
+		\[v,w\in U^\perp,\lambda\in\set{F}: u\in U\]
+		\[\therefore<v+\lambda w,u>=<v,u>+\lambda<w,u>=0\qedhere\]
+	\end{proof}
+
+	\item $\{0\}^\perp=V:$ Ejercicio
+
+	\item $V^\perp=\{0\}$
+	\begin{proof}
+		Si $v\in V^\perp$ entonces:
+		\[<v,u>=0\quad\forall u\in V\]
+		Tomando $u=v$
+		\[<v,v>=0\iff v=0\]
+	\end{proof}
+
+	\item $U<V\implies U\cap U^\perp=\{0\}$
+	\begin{proof}
+		Sea $v\in U\cap U^\perp$
+		\[<v,u>=0\quad\forall u\in U\]
+		Tomando $u=v$
+		\[<v,v>=0\iff v=0\qedhere\]
+	\end{proof}
+
+	\item $U\subseteq W\implies W^\perp\subset U^\perp$
+	\begin{proof}
+		\[W^\perp=\{v\in V:<v,w>=0\quad\forall w\in W\}\]
+		\[W^\perp\subseteq\{v\in V:<v,u>=0\quad\forall u\in U\}\]
+		\[W^\perp\subseteq U^\perp\qedhere\]
+	\end{proof}
+\end{enumerate}
+\begin{prop}[Suma directa ortogonal]
+	Sea $(V,<\cdot,\cdot>)$ espacio con producto interno, y $U$ subespacio finito-dimensional. Entonces:
+	\[U\oplus U^\perp=V\]
+	\begin{proof}
+		\
+		$\underline{U+U^\perp=V}$: Sea $e_1,...,e_m$ base ortonormal de $V$
+		\[\forall v\in V\]
+		\[v=(\overline{<e_1,v>}e_1+...+\overline{<e_m,v>}e_m)\in U+(v-\overline{<e_1,v>}e_1-...-\overline{<e_m,v>}e_m)\]
+		Por demostrar que: $u\in U^\perp$\\
+		Basta probar que $\forall i=1,...,m$
+		\[<e_i,u>=0\]
+		Veamos
+		\[<e_i,v-<\overline{e_1,v>}e_1-...-\overline{<e_m,v>}e_m>=<e_i,v>-<e_1,v><e_i,e_1>-...-<e_m,v><e_i,e_m>\]
+		\[<e_i,u>=<e_i,v>-<e_i,v>=0\]
+		\underline{Es directa:} $U\cap U^\perp=\{0\}$ por propiedad.
+	\end{proof}
+\end{prop}
+\begin{cor}[Dimensión del complemento ortogonal]
+	Si $V$ es finito-dimensional $U<V$
+	\[\dim U+\dim U^\perp=\dim V\]
+	\begin{proof}
+		\[U\oplus U^\perp=V\qedhere\]
+	\end{proof}
+\end{cor}
+\begin{thm}
+	Sea $U<V$ finito-dimensional. Entonces
+	\[(U^\perp)^\perp=U\]
+	\begin{proof}
+		\underline{$U\subseteq(U^\perp)^\perp:$} Sea $u\in U$
+		\[<v,u>=0\quad\forall v\in U^\perp\]
+		\[\therefore u\in (U^\perp)^\perp\]
+		\underline{$U\supseteq(U^\perp)^\perp$} Sea $v\in (U^\perp)^\perp$
+		\[v=u+w\quad u\in U,w\in W\]
+		\underline{PDQ:} $w=0$\\
+		Como $v\in (U^\perp)^\perp$
+		\[<v,z>=o\quad\forall z\in U^\perp\]
+		Tomando $z=w$
+		\[<u+w,w>=0\]
+		\[<u,w>+<w,w>=0\]
+		\[u\in U, w\in U^\perp\implies <u,w>=0\implies <w,w>=0\iff w=0\]
+		\[\therefore v=u\in U\qedhere\]
+	\end{proof}
+\end{thm}
+\begin{defn}[Proyección ortogonal]
+	Sea $U$ subespacio vectorial finito-dimensional de $(V,<\cdot,\cdot>)$. Se define la proyección ortogonal $\mathcal{P}_U\in\mathcal{L}(V)$ tal que
+	\[\func{\mathcal{P}_U}{V}{V}{}{}\]
+	\[v\mapsto u\]
+	donde
+	\[v=u+w, u\in U, w\in U^\perp\]
+\end{defn}
+\underline{Ejemplo:} Sea $x\in V,x\neq 0$ y $U=<x>$
+\[\mathcal{P}_Uv=\frac{<v,x>}{\|x\|^2}\cdot x\]
+\underline{Propiedades:} Sea $U<V$ finito-dimensional y $v\in V$
+\begin{enumerate}[label=\textbf{(\alph*)}]
+	\item $\mathcal{P}_U\in\mathcal{L}(V)$
+
+	\item $\mathcal{P}_Uu=u\quad\forall u\in U$
+
+	\item $\mathcal{P}_Uw=0\quad\forall w\in U^\perp$
+
+	\item $\Ima\mathcal{P}_U=U$
+
+	\item $\ker\mathcal{P}_U=U^\perp$
+
+	\item $v-\mathcal{P}_Uv\in U^\perp$
+
+	\item $\mathcal{P}_U^2=\mathcal{P}_U$
+
+	\item $\|\mathcal{P}_Uv\}\leq\|v\|$
+
+	\item Para todoa base ortonormal de $U$, $e_1,...,e_n$
+	\[\mathcal{P}_Uv=<v,e_1>e_1+,,,+<v,e_n>e_n>\] 
+\end{enumerate}
+Demostración de las propiedades
+\begin{enumerate}[label=\textbf{(\alph*)}]
+	\item \begin{proof}
+		Sabemos que $\mathcal{P}_U$ es función ya que $U\oplus U^\perp=V$. Probemos la linealidad. Sean $v_1=u_1+w_1,v_2=u_2+w_2$ y sea $\lambda\in\set{F}$
+		\[\mathcal{P}_U(v_1+\lambda v_2)=?\]
+		Sabemos que
+		\[\mathcal{P}_Uv_1=u_1\quad\mathcal{P}_Uv_2=u_2\]
+		Y además
+		\[v_1+\lambda v_2=(u_1+w_1)+\lambda (u_2+w_2)=(u_1+\lambda u_2)+(w_1+\lambda w_2)\]
+	\end{proof}
+
+	\item \begin{proof}
+		\[u=u+0\implies P_Uu=u\]
+	\end{proof}
+	
+	\item \begin{proof}
+		\[w=0+w\implies P_Uu=0\]
+	\end{proof}
+
+	\item Ejercicio
+
+	\item Ejercicio
+
+	\item \begin{proof}
+		\[<v,\mathcal{P}_Uv,u>=0\quad\forall u\in U\]
+		Sean
+		\[v=u+w\quad u\in U\quad w\in U^\perp\]
+		\[\implies u=\mathcal{P}_Uv\]
+		\[\therefore w-\mathcal{P}_Uv\in U^\perp\qedhere\]
+	\end{proof}
+
+	\item \begin{proof}
+		$\mathcal{P}_U^2=\mathcal{P}_U$\\
+		Sea $v\in V$:
+		\[v=u+w\quad u \in U\quad w\in U^\perp\]
+		\[\mathcal{P}_Uv=^{(a)}\mathcal{P}_Uu+\mathcal{P}_Uw=^{(b),(c)}u\]
+		\[\mathcal{P}_U^2v=\mathcal{P}_Uu+\mathcal{P}_Uw=\mathcal{P}_Uv\qedhere\]
+	\end{proof}
+
+	\item Sea $v=u+w\quad u\in U\quad w\in U^\perp$
+	\[v=\mathcal{P}_Uv+w\quad/\|\cdot\|^2\]
+	\[\|v\|^2=\|\mathcal{P}_Uv\|^2+\|w\|^2\]
+	\[\implies \|v\|^2\geq \|\mathcal{P}_Uv\|^2\]
+
+	\item Ejercicio
+\end{enumerate}
+\section{Problemas de Minimización}
+Dado $v\in V$ y $U<V$
+\[(\mathcal{P})\min \|u-v\|\quad u\in U\]
+
+\begin{thm}[Distancia mínima a un subespacio vectorial]
+	Sea $(V,<\cdot,\cdot>)$ espacio con producto interno y $U<V$. Entonces para todo $v\in V$
+	\[\|v-\mathcal{P}_Uv\|\leq \|v-u\|\quad\forall u\in U\]
+	Más aun, la igualdad se alcanza $\iff u=\mathcal{P}_Uv$ 
+	\begin{proof}
+		
+	\end{proof}
+\end{thm}
 \end{document}
