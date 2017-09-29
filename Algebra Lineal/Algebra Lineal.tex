@@ -9,6 +9,12 @@
 \usepackage[loose,nice]{units} 
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usetikzlibrary{babel}
+
 \hypersetup{
     colorlinks,
     citecolor=black,
@@ -16,6 +22,8 @@
     linkcolor=black,
     urlcolor=black
 }
+
+\definecolor{mygreen}{RGB}{27,111,27}
 
 \title{Algebra Lineal}
 \author{Nicholas Mc-Donnell}
@@ -1678,4 +1686,122 @@ Dado $v\in V$ y $U<V$
 		
 	\end{proof}
 \end{thm}
+\underline{Ejemplo:} Encuentre un polinomio $u$ a coeficientes reales y de grado máximo $5$ que aproxime $\sin (x)$ lo mejor posible sobre $[-\pi,\pi]$, con respecto a la distincia
+\[\min_{u\in\mathcal{P}_s}\int^\pi_{-\pi}|\sin(x)-u(x)|\d{x}\]
+\[\textcolor{red}{\sin (x)}\approx x-\frac{x^3}{3!}+\frac{x^5}{5!}=\textcolor{mygreen}{T(x)}\]
+\begin{center}
+	\definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+	\definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+	\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+	\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-4.,-4.) grid (4.,4.);
+	\draw[->,color=black] (-4.,0.) -- (4.,0.);
+	\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-4.) -- (0.,4.);
+	\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-4.,-4.) rectangle (4.,4.);
+	\draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{(\x)-(\x)^(3.0)/6.0+(\x)^(5.0)/120.0});
+	\draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{sin(((\x))*180/pi)});
+	\begin{scriptsize}
+	\draw[color=qqwuqq] (-4.442383629790053,-5.543338273894109) node {$f$};
+	\draw[color=ccqqqq] (-7.219112146289378,-0.8828994572570593) node {$g$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{center}
+\underline{Solución:} $(V,<\cdot,\cdot>)$ espacio con producto interno
+\[V=\mathcal{C}([\-pi,\pi],\set{R})<p,q>=\int^\pi_{-\pi}p(x)q(x)\d{x}\]
+\[U=\mathcal{P}_5(\set{R})|_{[-\pi,\pi]}\quad\forall p,q\in V\]
+Tenemos una base de $U$
+\[1,x,x^2,x^3,x^4,x^5\]
+\begin{enumerate}
+	\item Aplicamos G-S (Ejercicio)
+	\[e_1,e_2,e_3,e_4,e_5,e_6\]
+
+	\item Aplicamos la fórmula de $\mathcal{P}_Uv$
+	\[\mathcal{P}_Uv=<v,e_1>e_1+...<v,e_5>e_5+<v,e_6>e_6>\]
+	(Ejercicio de Cálculo, \textbf{NO DE LINEAL})
+\end{enumerate}
+\[<v,e_1>=\int^\pi_{-\pi}\sin (x)\cdot e_i(x)\d{x}\approx \frac{1}{10^6}\sum^{10^6}_{i=1}\]
+Finalmente:
+\[\textcolor{blue}{u(x)}=\mathcal{P}_Uv\approx 0.987862x-0.155271x^3+0.00564312x^5\]
+\begin{center}
+	\definecolor{qqqqff}{rgb}{0.,0.,1.}
+	\definecolor{ccqqqq}{rgb}{0.8,0.,0.}
+	\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
+	\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-4.,-4.) grid (4.,4.);
+	\draw[->,color=black] (-4.,0.) -- (4.,0.);
+	\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.}
+	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+	\draw[->,color=black] (0.,-4.) -- (0.,4.);
+	\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.}
+	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+	\clip(-4.,-4.) rectangle (4.,4.);
+	\draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{(\x)-(\x)^(3.0)/6.0+(\x)^(5.0)/120.0});
+	\draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{sin(((\x))*180/pi)});
+	\draw[line width=2.pt,color=qqqqff,smooth,samples=100,domain=-4.0:4.0] plot(\x,{0.987862*(\x)-0.155271*(\x)^(3.0)+0.00564312*(\x)^(5.0)});
+	\begin{scriptsize}
+	\draw[color=qqwuqq] (-4.442383629790053,-5.543338273894109) node {$f$};
+	\draw[color=ccqqqq] (-7.219112146289378,-0.8828994572570593) node {$g$};
+	\draw[color=qqqqff] (-5.126100701691898,-5.543338273894109) node {$h$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{center}
+\chapter{Operadores sobre Espacio con Producto Interno}
+Durante este capítulo
+\begin{itemize}
+	\item $\set{F}=\set{R}$ o $\set{C}$
+
+	\item $V,W$ son espacios con producto interno sobre $\set{F}$
+\end{itemize}
+\section{Operador Adjunto, Auto-Adjunto y Normal}
+Sea $T\in\mathcal{L}(V,W)$. Consideremos para $w\in W$ fijo, el funcional
+\[\func{l_w}{V}{\set{F}}{}{}\]
+\[v\mapsto <Tv,w>\]
+Por el Teo. de Rep. de Riesz, existe $T^*w\in V$ tal que
+\[l_w(v)=<v,T^*w>=<Tv,w>\quad\forall v\in V\forall w\in W\]
+La función
+\[\func{T^*}{W}{V}{}{}\]
+\[w\mapsto T*w\]
+le llamamos la adjunta de $T$.
+\begin{defn}[Adjunta]
+	Sea $T\in\mathcal{L}(V,W)$. Definimos la adjunta de $T$ como la función
+	\[\func{T*}{W}{V}{}{}\]
+	tal que 
+	\[<Tv,w>_W=<v,T^*w>_V\\quad\forall v\in V\forall w\in W\]
+\end{defn}
+\underline{Ejemplo:} Sea
+\[\func{T}{\set{R}^3}{\set{R}^2}{}{}\]
+\[(x_1,x_2,x_3)\mapsto (x_2+3x_3,2x_1)\]
+Tomemos bases canónicas
+\[\mathcal{M}(T)=\begin{bmatrix}
+	0 & 1 & 3\\
+	2 & 0 & 0
+\end{bmatrix}\]
+\[\mathcal{M}(T^*)=\begin{bmatrix}
+	0 & 2\\
+	1 & 0\\
+	3 & 0\\
+\end{bmatrix}\]
+\[\therefore \mathcal{M}(T^*)=\mathcal{T}^T\]
+\begin{prop}[Adjunta es lineal]
+	\[T\in\mathcal{L}(V,W)\implies T^*\in\mathcal{L}(W,W)\]
+	\begin{proof}
+		Sean $w_1,w_2\in W$ y $\lambda\in\set{F}$
+		\underline{PD:} $T^*(w_1+\lambda w_2)=T^*w_1+\lambda T^*w_2$\\
+		Sea $v\in V$
+		\[<v,T^*(w_1+\lambda w_2)>=<Tv,w_1+\lambda w_2>\]
+		\[<v,T^*(w_1+\lambda w_2)>=<Tv,w_1>+\bar{\lambda}<Tv,w_2>\]
+		\[<v,T^*(w_1+\lambda w_2)>=<v,T^*w_1>+<v,\lambda T^*w_2>\]
+		\[<v,T^*(w_1+\lambda w_2)>=<v,T^*w_1+\lambda T^*w_2>\]
+		Por Riesz
+		\[T^*(w_1+\lambda w_2)=T^*(w_1)+\lambda T(w_2)\]
+	\end{proof}
+\end{prop}
 \end{document}
