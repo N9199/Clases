@@ -108,7 +108,7 @@ Ejemplos:
 
 	\item $\set{C}$ con $+$ y $\cdot$ usuales. Si.
 
-	\item $\set{F}=\{0,1\}$ con $+$ y $\cdot$ definida de la siguiente forma:\\
+	\item $\set{F}=\{0,1\}$ con $+$ y $\cdot$ definida de la siguiente forma:
 	\begin{center}
 		\begin{tabular}{ c | c  c }
 			+ & 0 & 1 \\ \hline
@@ -316,7 +316,7 @@ Todo espacio vectorial $V\neq\{0\}$ finito dimensional posee una base.
 	
 	Dem(Teo):\\
 	$V$ es finito dimensional $\implies\exists\{v_1,...,v_n\}$ que genera $V$.\\
-	Sea $S=\{v_1,...,v_n\}$ conjunto linealmente independente.\\
+	Sea $S=\{v_1,...,v_n\}$ conjunto linealmente independiente.\\
 	Dos casos:
 	\begin{enumerate}
 		\item Si $<S>=V$, entonces $S$ es base
@@ -1322,9 +1322,10 @@ Reemplazando:
 	\end{proof}
 \end{prop}
 \begin{thm}
-	Todo familia ortonormal es linealmente independente.
+	Todo familia ortonormal es linealmente independiente.
 	\begin{proof}
-		Sea $(e_\lambda)_{\lambda\in\Lambda}$ conjunto ortonormal. Si fueran linealmente dependientes, existen $a_1,...,a_m\in\set{F}$ no todos nulos
+		Sea $(e_\lambda)_{\lambda\in\Lambda}$ conjunto ortonormal.\\
+		Si fueran linealmente dependientes, existen $a_1,...,a_m\in\set{F}$ no todos nulos
 		\[\lambda_1,...,\lambda_m\in\Lambda\]
 		\[a_1e_{\lambda_1}+...+a_me_{\lambda_m}=0\quad /\|\cdot\|^2\]
 		\[0=\|a_1e_{\lambda_1}+...+a_me_{\lambda_m}\|^2\]
@@ -1415,7 +1416,7 @@ Cómo calcular $a_1,..,a_m$?
 \end{thm}
 \section{Algoritmo de Gram-Schmidt}
 \begin{thm}
-	Sean $v_1,...,v_m$ conjunto linealmente independente de vectores en $(V,<\cdot,\cdot>)$. Sea
+	Sean $v_1,...,v_m$ conjunto linealmente independiente de vectores en $(V,<\cdot,\cdot>)$. Sea
 	\[e_1=\frac{v_1}{\|v_1\|}\]
 	\[e_j=\frac{v_j-\sum_{i<j}<v_j,e_i>e_i}{\|v_j-\sum_{i<j}<v_j,e_i>e_i\|}\]
 	Entonces $e_1,...,e_n$ es conjunto ortonormal y $<e_1,...,e_n>=<v_1,...,v_n>$
@@ -1448,7 +1449,7 @@ Cómo calcular $a_1,..,a_m$?
 		$\therefore e_1,...,e_n$ ortonormal.\\
 		Falta probar
 		\[<e_1,...,e_n>=<v_1,...,v_n>\]
-		Para probarlo basta ver que\\
+		Para probarlo basta ver que
 		\[\textrm{(Hip. Ind.)} <e_1,...,e_{j-1}>=<v_1,...,v_{j-1}>\]
 		Pero además
 		\[e_j\in<e_1,..,e_{j-1},v_j>=<v_1,...,v_j>\]
@@ -1768,13 +1769,13 @@ Por el Teo. de Rep. de Riesz, existe $T^*w\in V$ tal que
 \[l_w(v)=<v,T^*w>=<Tv,w>\quad\forall v\in V\forall w\in W\]
 La función
 \[\func{T^*}{W}{V}{}{}\]
-\[w\mapsto T*w\]
+\[w\mapsto T^*w\]
 le llamamos la adjunta de $T$.
 \begin{defn}[Adjunta]
 	Sea $T\in\mathcal{L}(V,W)$. Definimos la adjunta de $T$ como la función
-	\[\func{T*}{W}{V}{}{}\]
+	\[\func{T^*}{W}{V}{}{}\]
 	tal que 
-	\[<Tv,w>_W=<v,T^*w>_V\\quad\forall v\in V\forall w\in W\]
+	\[<Tv,w>_W=<v,T^* w>_V\quad\forall v\in V\forall w\in W\]
 \end{defn}
 \underline{Ejemplo:} Sea
 \[\func{T}{\set{R}^3}{\set{R}^2}{}{}\]
@@ -1801,7 +1802,167 @@ Tomemos bases canónicas
 		\[<v,T^*(w_1+\lambda w_2)>=<v,T^*w_1>+<v,\lambda T^*w_2>\]
 		\[<v,T^*(w_1+\lambda w_2)>=<v,T^*w_1+\lambda T^*w_2>\]
 		Por Riesz
-		\[T^*(w_1+\lambda w_2)=T^*(w_1)+\lambda T(w_2)\]
+		\[T^*(w_1+\lambda w_2)=T^*(w_1)+\lambda T(w_2)\qedhere\]
 	\end{proof}
 \end{prop}
+\underline{Propiedades de la adjunta:}
+\begin{enumerate}[label=\alph*)]
+	\item $(S+T)^*=S^*+T^*\quad\forall S,T\in \mathcal{L}(V,W)$
+
+	\item $(\lambda T)^*=\bar{\lambda}T^*\quad\forall\lambda\in\set{F}\forall T\in\mathcal{L}(V,W)$
+
+	\item $(T^*)^*=T$
+
+	\item $I^*=I$ donde $I\in\mathcal{L}(V)$ es la identidad
+
+	\item $(ST)^*=T^*S^*\quad\forall T\in\mathcal{L}(V,W)\forall S\in\mathcal{L}(W,S)$
+\end{enumerate}
+\begin{enumerate}[label=\alph*)]
+	\item \begin{proof}
+		Sean $v\in V,w\in W$
+		\[<v,(S+T)^*w>=<(S+T)v,w>\]
+		\[<v,(S+T)^*w=<Sv,w>+<Tv,w>\]
+		\[<v,(S+T)^*w=<v,S^*w>+<v,T^*w>=<v,(S^*+T^*)w>\forall v\]
+		\[\iff (S+T)^*w=S^*w+T^*w\forall w\in W\iff (S+T)^*=S^*T^*\qedhere\]
+	\end{proof}
+
+	\item \begin{proof}
+		Sean $v\in V,w\in W,\lambda\in\set{F}$
+		\[<v,(\lambda T)^*w>=<(\lambda T)v,w>=\lambda<Tv,w>\]
+		\[<v,(\lambda T)^*w>=<v,\bar{\lambda}T^*w>\quad\forall v\in V\forall w\in W\qedhere\]
+	\end{proof}
+	
+	\item \begin{proof}
+		Sean $v\in V,w\in W$
+		\[<w,(T^*)^*v>=<T^*w,v>=<w,Tv>\]
+		Por Riesz:
+		\[(T^*)^*v=Tv\forall v\]
+		\[\iff (T^*)^*=T\qedhere\]
+	\end{proof}
+
+	\item Ejercicio
+
+	\item \begin{proof}
+		Sean $v\in V, u\in U$
+		\[<v,(ST)^*u>=<(ST)v,u>=<S(Tv),u>=<Tv,S^*u>=<v,T^*(S^*u)>\]
+		Por Riesz:
+		\[(ST)^*u=T^*S^*u\forall u\in U\]
+		\[\iff (ST)^*=T^*S^*\qedhere\]
+	\end{proof}
+\end{enumerate}
+\begin{prop}[Núcleo e Imagen de $T^*$]
+	Sea $T\in\mathcal{L}(V,W)$. Entonces
+	\begin{enumerate}[label=\alph*)]
+		\item $\ker T^*=(\Ima T)^\perp$
+
+		\item $\Ima T^*=(\ker T)^\perp$
+
+		\item $\ker T=(\Ima T^*)^\perp$
+
+		\item $\Ima T=(\ker T^*)^\perp$
+	\end{enumerate}
+	\begin{enumerate}[label=\alph*)]
+		\item \begin{proof}
+			Sea $w\in W$
+			\[w\in\ker (T^*)\iff T^*w=0\]
+			\[\iff <v,T^*w>=0\quad\forall v\in V\]
+			\[\iff <Tv,w>=0\quad\forall v\in V\]
+			\[\iff <z,w>=0\quad\forall z=Tv,v\in V\]
+			\[\iff w\in(\Ima T)^\perp\qedhere\]
+		\end{proof}
+
+		\item \begin{proof}
+			Claramente esta es implicada por c) y el complemento ortogonal
+		\end{proof}
+
+		\item \begin{proof}
+			Claramente esta es implica por a)
+		\end{proof}
+
+		\item \begin{proof}
+			Claramente esta es implicada por b)
+		\end{proof}
+	\end{enumerate}
+\end{prop}
+\begin{defn}[Traspuesta conjugada]
+	La traspuesta conjugada de una matriz $m\times n$ compleja es una matriz $n\times n$ compleja que se obtiene intercambiando filas por columnas, y tomando conjugadas en todos los coeficientes.
+\end{defn}
+\underline{Ejemplo:}
+\[\begin{bmatrix}
+	2 & 3+i & 7\\
+	6 & 6 & 8i
+\end{bmatrix}\mapsto\begin{bmatrix}
+	2 & 6\\
+	3-i & 6\\
+	7 & -8i
+\end{bmatrix}\]
+\begin{thm}[La matriz representante de $T^*$]
+	Sea $T\in\mathcal{L}(V,W)$. Sean
+	\[B=(e_1,...,e_n)\subseteq V\]
+	\[C=(f_1,...,f_m)\subseteq W\]
+	bases ordenadas y ortonormales de $V$ y $W$, respectivamente. Entonces $\mathcal{M}_{C,B}(T^*)$ es la traspuesta conjugada de $\mathcal{M}_{B,C}(T)$
+	\begin{proof}
+		Como $C$ es base ortonormal
+		\[Te_k=<Te_k,f_1>f_1+...+<Te_k,f_m>f_m\]
+		Y por lo tanto
+		\[(\mathcal{M}_{B,C}(T))_{jk}=<Te_k,f_j>\]
+		Como $B$ es base ortonormal tenemos
+		\[T^*f_j=<T^*f_j,e_1>e_1+...+<T^*f_j,e_n>e_n\]
+		Y por lo tanto
+		\[(\mathcal{M}_{C,B}(T^*))_{kj}=<T^*f_j,e_k=<f_j,Te_k>=\overline{<Te_k,f_j>}\qedhere\]
+	\end{proof}
+\end{thm}
+\subsection{Operadores Auto-Adjuntos}
+\begin{defn}[Operador a.a.]
+	Un operador $T\in\mathcal{L}(V)$ se dice auto-adjunto (a.a.) si $T+T^*$. Es decir,
+	\[<Tv,w>=<v,Tw>\quad\forall v,w\in V\]
+\end{defn}
+\underline{Propiedades:} Si $S,T$ a.a. y $\lambda\in\set{R}$. Entonces
+\begin{enumerate}[label=\alph*]
+	\item $S+T$ es a.a.
+
+	\item $\lambda S$ es a.a.
+\end{enumerate}
+\begin{proof}
+	Ejercicio
+\end{proof}
+\begin{prop}
+	Todo valor propio de un operador a.a. es real
+	\begin{proof}
+		Sea $\lambda\in\set{F}$ y $v\in V\setminus\{0\}$ tal que
+		\[Tv=\lambda v\quad /<\cdot, v>\]
+		\[<Tv,v>=<\lambda v, v>=\lambda \|\lambda\|^2\]
+		\[<v,Tv>=\bar{\lambda}\|v\|^2\]
+		\[\implies \bar{\lambda}=\lambda\qedhere\]
+	\end{proof}
+\end{prop}
+\begin{thm}
+	Sea $(V,<\cdot,\cdot>$ espacio con producto interno compleja y $T\in\mathcal{L}$. Entonces
+	\[<Tv,v>=0\quad\forall v\in V\iff T=0\]
+	\begin{obs}
+		Esto no es cierto si $\set{F}=\set{R}$. Ver la siguiente transformación:
+		\[\func{T}{\set{R}^2}{\set{R}^2}{}{}\]
+		\[(x,y)\mapsto (-y,x)\]
+	\end{obs}
+	\begin{proof}
+		Notemos que $\forall u,w\in V$
+		\[<Tu,w>=\frac{<T(u+w),u+w>-<T(u-w),u-w>}{4}+i\frac{<T(u+iw),u+iw>-<T(u-iw),u-iw>}{4}\]
+		Entonces
+		\[Tu,w>=0\quad\forall u,w\iff <Tv,v>=0\quad\forall v\in V\]
+		Concluyendo que $T=0\iff<Tv,v>=0\quad\forall v\in V$
+	\end{proof}
+\end{thm}
+\begin{thm}
+	Sea $(V,<\cdot,\cdot>)$ espacio con producto interno complejo y $T\in\mathcal{L}(V)$. Entonces $T$ es a.a.
+	\[\iff <Tv,v>\in\set{R}\quad\forall v\in V\]
+	\begin{obs}
+		Esto \textbf{NO} es cierto para $\set{F}=\set{R}$
+	\end{obs}
+	\begin{proof}
+		\[<Tv,v>-\overline{<Tv,v>}=<Tv,v>-<v,Tv>\]
+		\[<Tv,v>-\overline{<Tv,v>}=<(T-T^*)v,v>\]
+		Se concluye que
+		\[<Tv,v>\in\set{R}\iff <(T-T^*)v,v>=0\iff T-T^*=0\qedhere\]
+	\end{proof}
+\end{thm}
 \end{document}
