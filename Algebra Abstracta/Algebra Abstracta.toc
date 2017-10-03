@@ -26,3 +26,4 @@
 \contentsline {section}{\numberline {3.1}Acciones de grupos en s\IeC {\'\i } mismos}{21}{section.3.1}
 \contentsline {section}{\numberline {3.2}Acciones de grupos en subconjuntos}{21}{section.3.2}
 \contentsline {section}{\numberline {3.3}Teoremas de Sylow}{22}{section.3.3}
+\contentsline {chapter}{\numberline {4}Anillos}{27}{chapter.4}

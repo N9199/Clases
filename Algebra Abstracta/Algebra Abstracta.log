@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  1 OCT 2017 23:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  3 OCT 2017 11:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1835,7 +1835,6 @@ ut line 824.
 Package amsthm Warning: The \qedhere command may not work correctly here on inp
 ut line 832.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 836.
 LaTeX Info: Redefining \. on input line 836.
 LaTeX Info: Redefining \% on input line 836.
 Package babel Info: Redefining spanish shorthand <<
@@ -1863,22 +1862,121 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 836.
 [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 836.
+LaTeX Info: Redefining \. on input line 836.
+LaTeX Info: Redefining \% on input line 836.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 836.
+ [26
+
+]
+Cap\'{\i }tulo 4.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 836.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 870.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 870.
+[27]
+
+Package amsthm Warning: The \qedhere command may not work correctly here on inp
+ut line 877.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 880.
+LaTeX Info: Redefining \. on input line 880.
+LaTeX Info: Redefining \% on input line 880.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 880.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 880.
+[28]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 880.
  (./Algebra Abstracta.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 836.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 836.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 880.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 880.
 Package rerunfilecheck Info: File `"Algebra Abstracta".out' has not changed.
-(rerunfilecheck)             Checksum: 7C34B24469D613F3B64CBD2F3DB46E6E;1438.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 836.
+(rerunfilecheck)             Checksum: D252C5566AFF9FABB1503C57DFC6F8A2;1481.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 880.
  ) 
 Here is how much of TeX's memory you used:
- 8851 strings out of 492995
- 126596 string characters out of 6132704
+ 8860 strings out of 492995
+ 126676 string characters out of 6132704
  235335 words of memory out of 5000000
- 12143 multiletter control sequences out of 15000+600000
+ 12144 multiletter control sequences out of 15000+600000
  19010 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,13n,32p,319b,735s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1903,10 +2001,10 @@ ve/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 17/texmf-dist/fonts/type1/hoekwater/manfnt-font/manfnt.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texl
 ive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Algebra Abstracta.pdf" (27 pages, 281336 bytes).
+Output written on "Algebra Abstracta.pdf" (30 pages, 285829 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 352 compressed objects within 4 object streams
- 116 named destinations out of 1000 (max. 500000)
- 169 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 428 PDF objects out of 1000 (max. 8388607)
+ 371 compressed objects within 4 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 177 words of extra memory for PDF output out of 10000 (max. 10000000)
 

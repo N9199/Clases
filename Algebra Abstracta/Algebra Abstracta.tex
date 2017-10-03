@@ -833,4 +833,48 @@ Sea $G$ un grupo de orden $n=p^e\cdot m$ $p$ primo, $e\geq 1$, $p$ no divide a $
 		\end{proof}
 	\end{cor}
 \end{thm}
+\chapter{Anillos}
+\begin{defn}[Unidad]
+	Un $u\in R$ con inverso multiplicativo se llama \underline{Unidad}
+	\[\iff \exists v:uv=vu=1\]
+	\[uv'=v'u=1=uv=vu\]
+	\[uv'=uv\quad /v\cdot\implies v'=v\]
+\end{defn}
+\begin{defn}[Anillo de división/Cuerpo]
+	$R$ anillo con $0\neq 1$ tal que todo elemento no cero es unidad se llama \underline{Anillo de división}. Si más aun es conmutativo, este es un \underline{cuerpo}
+\end{defn}
+\underline{Ejemplos:}
+\begin{itemize}
+	\item En $\set{Z}$ el conjunto de unidades es $\{\pm 1\}$\\
+	$\therefore$ no es cuerpo
+
+	\item En $\set{R}[x]$ las unidades son $\set{R}\setminus\{0\}$
+
+	\item $\set{Z}[i]$ las unidades son $\{\pm 1,\pm i\}$
+\end{itemize}
+\begin{defn}[Dominio]
+	Un anillo $R$ conmutativo con $1\neq 0$ es \underline{dominio} si dado $a\cdot b=0\implies a=0\vee b=0$
+\end{defn}
+\underline{Ejemplo:}
+$\set{Z}_p$ es dominio para $p$ primo y más, es cuerpo.\\
+Sea $a\in\set{Z}_p\setminus\{0\}$. Como mcd$(a,b)=1\implies \exists x,y\in\set{Z}$ tal que
+\[ax+py=1\]
+Y en $\set{Z}_p$
+\[ax=1\]
+$\therefore x$ es el inverso de $a$.\\
+$\therefore\set{Z}_p$ es un cuerpo con $p$ elementos.
+\begin{prop}
+	Si $R$ es dominio y $|R|$ finito $\implies R$ es cuerpo.
+	\begin{proof}
+		Sea $a\in R\setminus\{0\}$
+		\[\func{f}{R}{R}{}{}\]
+		\[x\mapsto ax\]
+		Es inyectiva? Es sobreyectiva?\\
+		Si V$\implies$ V
+		\[\therefore ax=ay\]
+		\[\iff a(x-y)=0\]
+		\[\iff x-y=0\]
+		\[\therefore x=y\qedhere\]
+	\end{proof}
+\end{prop}
 \end{document}
