@@ -1965,4 +1965,103 @@ Tomemos bases canónicas
 		\[<Tv,v>\in\set{R}\iff <(T-T^*)v,v>=0\iff T-T^*=0\qedhere\]
 	\end{proof}
 \end{thm}
+\underline{Ejercicio:}\\
+Sea $(V,<\cdot,\cdot>)$ espacio con producto interno con $V=\mathcal{C}([-1,1],\set{R})$
+\[<f,g>=\int^1_{-1}f(x)g(x)\d{x}\]
+Sea $\func{T}{V}{V}{}{}$
+\[f\mapsto\int^1_{-1}exp(-\frac{(x-y)^2}{2})f(y)\d{y}\]
+\begin{enumerate}[label=\alph*)]
+	\item Pruebe que $T$ está bien definida y que $T\in\mathcal{L}(V)$
+
+	\item Calcule $T^*$
+
+	\item ¿Cuándo $T$ es a.a.?
+\end{enumerate}
+\underline{Sol:}
+\begin{prop}
+	Sea $\set{F}=\set{R}\vee\set{F}=\set{C}$ y sea $T\in\mathcal{L}(V)$ a.a. tal que
+	\[<Tv,v>=0\quad\forall v\in V\]
+	Entonces $T=0$
+	\begin{proof}
+		Basta probarlo para $\set{F}=\set{R}$
+	\end{proof}
+\end{prop}
+\subsection{Operadores normales}
+\begin{defn}[Operador Normal]
+	Un operador $T$ sobre un espacio con producto interno se dice normal si conmuta con su adjunta:
+	\[TT^*=T^*T\]
+\end{defn}
+\begin{thm}[Caracterización Operadores Positivos]
+	Los siguientes son equivalentes:
+	\begin{enumerate}[label=\alph*)]
+		\item $T\geq 0$
+
+		\item $T$ a.a. y sus valores propios son no-negativos
+
+		\item $T$ posee una raíz cuadrada mayor a 0
+
+		\item $T$ posee una raíz cuadrada a.a.
+
+		\item $\exists R\in\mathcal{L}(V)$ tal que $T=R^*R$
+	\end{enumerate}
+	\begin{proof}
+		\underline{$a)\implies b)$:} $<Tv,v>\geq 0\quad\forall v\in V$ y $T$ a.a.\\
+		Sea $\lambda$ valor propio de $T:\exists v\in V\setminus\{0\}$ tal que
+		\[Tv=\lambda v\quad/<\cdot,v>\]
+		\[<Tv,v>=<\lambda v,v>=\lambda \|v\|^2\]
+		Si $\lambda<0$ entonces $<Tv,v><0$ $\contr$\\
+		\underline{$b)\implies c)$:} $T$ a.a. con valores propios mayores o iguales a 0.\\
+		Sea $e_1,...,e_n$ base ortonormal de $V$ de vectores propios de $T$
+		\[Te_i=\lambda_ie_i\quad\forall i=1,...,n\]
+		\[\lambda_i\geq 0\quad\forall i=1,...,n\]
+		Proponemos $R\in\mathcal{L}(V)$ como
+		\[Re_i=\sqrt{\lambda_i}e_i\quad\forall i=1,...,n\]
+		Notemos que
+		\[R^2e_i=R(Re_i)\]
+		\[R^2e_i=R(\sqrt{\lambda_i}e_i)\]
+		\[R^2e_i=\lambda_ie_i\]
+		\[R^2e_i=Te_i\]
+		Como todo operadpr se describe de manera única sobre una base
+		\[R^2=T\]
+		Probemos finalmente que $T\geq 0$.\\
+		$R$ es a.a.
+		\[\therefore R\textrm{ a.a.}\]
+		Nos falta que $<Rv,v>\geq 0\quad\forall v\in V$
+		\[<Rv,v>=\sum_i |a_i|^2\sqrt{\lambda_i}\]
+		\[<Rv,v>\geq 0\]
+		\underline{$c)\implies d)$:} Es inmediata.\\
+		\underline{$d)\implies e)$:} $T=R^2\quad R=R^*$
+		\[T=RR=R^*R\]
+		\underline{$e)\implies a)$:} $T=R^*R$\\
+		$T$ es a.a.:
+		\[T^*=(R^*R)^*=R^*R^{**}=R^*R=T\]
+		Positividad:
+		\[<Tv,v>=<R^*Rv,v>\]
+		\[<Tv,v>=<Rv,Rv>=\|Rv\|^2\]
+		\[\implies <Tv,v>\geq 0\qedhere\]
+	\end{proof}
+\end{thm}
+\begin{prop}
+	Si $T\geq 0$ entonces existe una única raíz cuadrada positiva.
+	\begin{proof}
+		Ya tenemos la existencia. Falta unicidad.\\
+		Sea $R\geq 0$ raíz cuadrada de $T$
+		\[T=R^2\]
+		Sea $e_1,...,e_n$ base ortonormal de $V$ tal que
+		\[Re_i=\lambda_ie_i\quad\forall i=1,...,n\]
+		Notar que $\lambda_i\geq 0\quad\forall i$ (por b)\\
+		Sean $\lambda,v$ par propio de $T$
+		\[Tv=\lambda v\]
+		Digamos $v=a_1e_1+...+a_ne_n$
+		\[\implies Rv=a_1\lambda_1e_1+...+a_n\lambda_ne_n\]
+		\[\implies R^2v=a_1\lambda_1^2e_1+...+a_n\lambda_n^2e_n=Tv\]
+		Como $e_1,..,e_n$ base
+		\[a_i\lambda_i^2=a_i\lambda\quad\forall i\]
+		Como $v\neq 0$ entonces $\exists i: a_i\neq 0$
+		\[\implies \lambda=\lambda_i^2\implies a_j=0\quad\forall\lambda_j\neq\lambda_i\]
+		En consecuencia:
+		\[v=\sum_{i:\lambda_i^2=\lambda}a_ie_i\]
+		\[\implies Rv=\sum_{i:\lambda_i^2=\lambda}a_i\lambda_ie_i=\sqrt{\lambda}v\qedhere\]
+	\end{proof}
+\end{prop}
 \end{document}

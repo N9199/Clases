@@ -38,3 +38,4 @@
 \contentsline {chapter}{\numberline {4}Operadores sobre Espacio con Producto Interno}{51}{chapter.4}
 \contentsline {section}{\numberline {4.1}Operador Adjunto, Auto-Adjunto y Normal}{51}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Operadores Auto-Adjuntos}{55}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Operadores normales}{56}{subsection.4.1.2}
