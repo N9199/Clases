@@ -2073,4 +2073,30 @@ Sea $\func{T}{V}{V}{}{}$
 		\[\implies Rv=\sum_{i:\lambda_i^2=\lambda}a_i\lambda_ie_i=\sqrt{\lambda}v\qedhere\]
 	\end{proof}
 \end{prop}
+
+\subsection{Vectores Propios Generalizados}
+$v$ es vector propio generalizado de $T$ asociada a $\lambda\in\set{F}:v\neq 0$ tal que $\exists j\geq 1$
+\[(T-\lambda I)^jv=0\]
+\begin{obs}
+	La noción de "valor propio generalizado" no tiene sentido
+	\[(\lambda\in\set{F})\quad(T-\lambda I)^j\textrm{ no inyectivo para algún }j\geq 1\]
+	\[\implies (T-\lambda I)\textrm{ no es inyectiva}\]
+	\[\implies \lambda \textrm{ es valor propio de }T\]
+\end{obs}
+\begin{defn}[Espacio propio generalizado]
+	Sea $T\in\mathcal{L}(V)$ y $\lambda\in\set{F}$. El espacio propio generalizado de $T$ correspondiente a $\lambda$, denotado $G(\lambda, T)$, se define como el conjunto de vectores propios generalizados de $T$ asociados a $\lambda$, incluyendo el $0$.
+	\[G(\lambda,T)=\bigcup_{j\geq 1}\ker(T-\lambda I)^j\]
+	\begin{obs}
+		$E(\lambda,T)\subseteq G(\lambda,T)$\\
+		Hasta ahora ni siquiera es claso que $G(\lambda,T)$ es subespacio vectorial de $V$.
+	\end{obs}
+\end{defn}
+\begin{prop}[Caracterización de subespacio propio generado]
+	Sea $T\in\mathcal{L}(V)$ y $\lambda\in\set{F}$. Entonces
+	\[G(\lambda,T)=\ker(T-\lambda I)^{\dim V}\]
+	\begin{proof}
+		Claramente $\supseteq$\\
+		\underline{$\subseteq|$} Sea $j\geq 1$ y $v\neq 0$
+	\end{proof}
+\end{prop}
 \end{document}
