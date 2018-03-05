@@ -9,4 +9,114 @@
 \begin{document}
     \maketitle
 
+    \newpage 
+    \section*{Programa}
+    {\raggedleft Profesor: Godofredo Iommi}\\
+    Email: giommi@mat.uc.cl
+    \begin{enumerate}
+        \item La Integral de Riemann
+
+        \item Técnicas de integración
+
+        \item Aplicaciones
+
+        \item Integrales impropias
+
+        \item Sucesiones y Series de funciones
+    \end{enumerate}
+
+    \section*{Bibliografía}
+    \begin{itemize}
+        \item Calculus, 4 edición, Kitchens
+
+        \item \url{www.mat.uc.cl/~igiommi}
+
+    \end{itemize}
+
+    \section*{Adicional}
+    \begin{itemize}
+        \item Análise Real Vol. I, Lima
+
+        \item Introduction to Calculus and Analysis, Courant y John
+    \end{itemize}
+
+    \section*{Evaluaciones}
+    %\begin{justify}
+        
+    %\end{justify}
+    {\raggedright I1: Jueves 5 Abril 7-8}\\
+    I2: Jueves 3 Mayo 7-8\\
+    I3: Miércoles 6 Junio 7-8\\
+    Examen: Martes 26 Junio 3-4\\
+
+    \[
+        NF = 0.7\cdot\frac{(I1+I2+I3)}{3}+0.3\cdot EX
+    \]
+    No hay eximición 
+    \tableofcontents
+    \pagenumbering{arabic}
+
+    \part{La Integral de Riemann}
+    \chapter{Axioma del Supremo}
+    {\raggedleft Estructura algebraica: $\set{R}$ es un cuerpo}\\
+    Estructura de orden: $\set{R}$ esta ordenado\\
+    $\set{R}$ es completo ($\set{Q}$ no es completo)\\
+    \begin{defn}[Cota Superior]
+        Sea $A\subseteq\set{R}$ un conjunto no vacío, diremos que $a\in\set{R}$ es \underline{cota superior} de $A$ si para todos $x\in A$ se tiene que $x\leq a$
+    \end{defn}
+    \begin{defn}[Cota Inferior]
+        Análogamente se define cota inferior
+    \end{defn}
+    \begin{obs}
+        Las cotas superiores e inferiores \underline{no} son unicas.
+    \end{obs}
+    \begin{ejm}
+        \[A=\left\{\frac{1}{n}:n\in\set{N}\right\}\]
+        es tal que $0$ es cota inferior y $2$ es cota superior.
+    \end{ejm}
+    \begin{ejm}
+        \[A=[0,+\infty]\]
+        Posee cota inferior, pero no superior
+    \end{ejm}
+    \begin{defn}
+        Diremos que $A\subset\set{R},A\neq\emptyset$ es \underline{acotado superiormente} (resp. inferiormente) si posee cotas superiores (resp. inferiores).\\
+        Diremos que $A$ es \underline{acotado} si lo es inferior y superiormente.
+    \end{defn}
+    \begin{defn}
+        Sea $A\subset\set{R},A\neq\emptyset$ si $a\in A$ es cota superior (resp. inferior) de $A$ diremos que "$a$" es el \underline{maximo} (resp. minimo) de $A$
+    \end{defn}
+    \begin{defn}[Supremo]
+        Sea $A\subset\set{R}$ un conjunto no vacio, diremos que $a\in\set{R}$ es el supremo de $A$ y anotaremos $a=\sup A$ si satisface:
+        \begin{enumerate}
+            \item El numero $a$ es cota superior de $A$
+
+            \item Si $b\in\set{R}$ es cota superior de $A$ entonces $a\leq b$
+        \end{enumerate}
+    \end{defn}
+
+    \begin{obs}
+        El supremo es la menor de las cotas superiores de $A$
+    \end{obs}
+
+    \begin{obs}
+        Es posible reformular la definición de supremo. En efecto, $a=\sup A$ si:
+        \begin{enumerate}
+            \item $a$ es cota superior de $A$
+
+            \item $\forall\epsilon>0\exists x\in A:a-\epsilon<x\leq a$
+
+        \end{enumerate}
+    \end{obs}
+
+    \begin{defn}[Ínfimo]
+        Análogamente el ínfimo se define con cotas inferiores y con notación $\inf$
+    \end{defn}
+    \begin{defn}[Axioma del Supremo]
+        Todo conjunto $A\subset\set{R}$ acotado superiormente posee supremo.
+    \end{defn}
+    \begin{obs}
+        Todo conjunto $A\subset\set{R}$ acotado inferiormente posee ínfimo.
+    \end{obs}
+
+    
 \end{document}
