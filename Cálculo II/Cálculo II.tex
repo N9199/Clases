@@ -120,4 +120,49 @@
         Todo conjunto $A\subset\set{R}$ acotado inferiormente posee ínfimo.
     \end{obs}
 
+    \begin{ejm}
+        Sea $A=(a,b)$, demuestre que $\inf A=a$
+    \end{ejm}
+    \begin{proof}
+        De la defincion de intervalo tenemos que "$a$" es cota inferior.\\
+        Si $\epsilon>b-a$ entonces para todo $x\in A$ se tiene que $x<a+\epsilon$\\
+        Sea $0<\epsilon<b-a$ y consideremos el numero $c=a+\frac{\epsilon}{2}$\\
+        Entonces:
+        \begin{enumerate}
+            \item $a<c$
+
+            \item $a+\frac{\epsilon}{2}\leq a+\epsilon<a+b-a=b$
+        \end{enumerate}
+        \[\implies c\in A\]
+        Luego $\inf A=a$
+    \end{proof}
+    \begin{prop}[Arquimediana]
+        Dado un numero real $x$, existe $n\in\set{N}$ tal que $x<n$
+    \end{prop}
+    \begin{proof}
+        La afirmación es equivalente a decir que el conjunto $\set{N}$ \underline{no} esta acotado superiormente.\\
+        Supongamos por el contrario que $\set{N}$ es acotado superiormente. Por el axioma del supremo existe $c=\sup\set{N}$\\
+        En particular $c-1$ no es cota superior de $\set{N}$. Es decir, existe $n\in\set{N}$ tal que $c-1<n$. Luego, $\sup\set{N}=c<n+1$ como $n+1\in\set{N}$, tenemos la contradicción que prueba el resultado.
+    \end{proof}
+
+    \begin{ejm}
+        Pruebe que el infimo de $A=\{\frac{1}{n}:n\in\set{N}\}$ es igual a $0$.
+    \end{ejm}
+    \begin{proof}
+        Cero es cota inferior ya que los elementos de $A$ son cuocientes de numeros positivos y por lo tanto son positivos.\\
+        Supongamos que $a>0$ es tal que $\inf A=a$. Es decir, para todo $n\in\set{N}$ se tiene que
+        \[a\leq\frac{1}{n}\]
+        En particular, para todo $n\in\set{N}$ se tiene que $n\leq\frac{1}{a}$ que contradice la proposicion Arquimediana. Luego, $\inf A=0$
+    \end{proof}
+
+    \begin{ejm}
+        Demuestre que $\inf\{\frac{|\sin(n)|}{n}:n\in\set{N}\}$ es igual a $0$.
+    \end{ejm}
+
+    \begin{proof}
+        Notemos que $|\sin(n)|\geq 0$ y $n\geq0$. Luego $x=0$ es cota inferior de $\{\frac{|\sin(n)|}{n}:n\in\set{N}\}$.\\
+        Notemos ademas que $|\sin(n)|\leq 1$. Luego, $\frac{|\sin(n)|}{n}\leq\frac{1}{n}$
+    \end{proof}
+
+
 \end{document}

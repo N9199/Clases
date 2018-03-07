@@ -40,4 +40,124 @@
         \end{enumerate}
     \end{defn}
 
+    \begin{ejm}
+        \[\set{Z},\set{Q},\set{R}\]
+        \[\set{Z}/m\set{Z},m\in\set{Z}\]
+        $(\set{N},+,\cdot)$ no es anillo
+    \end{ejm}
+
+    \begin{obs}
+        $A=\{0\}$ es anillo trivial ($0\equiv 1$)
+    \end{obs}
+
+    \begin{defn}[Divisor de cero]
+        $a\in A$ es \underline{divisor de cero} si
+        \begin{enumerate}
+            \item $a\neq 0$
+
+            \item $\exists b\in A: b\neq0 \wedge a\cdot b=0$
+        \end{enumerate}
+    \end{defn}
+
+    \begin{ejm}
+        En $\set{Z}/4\set{Z}$, $\bar{2}\neq\bar{0}$ y $\bar{2}\cdot\bar{2}=\bar{4}=\bar{0}$
+    \end{ejm}
+
+    \begin{defn}[Unidad]
+        $u\in A$ \underline{unidad} si $\exists v\in A: u\cdot v=1$
+        \[A^\star=\{\text{unidades de }A\}\]
+        $(A^\star,\cdot)$ es grupo abeliano
+    \end{defn}
+
+    \begin{ejm}
+        \hfill
+        \begin{itemize}
+            \item $\set{Z}^\star=\{-1,1\}$
+
+            \item $\set{R}^\star=\set{R}\setminus\{0\}$
+
+            \item $\set{Z}[i]^\star=\{-1,1,-i,i\}$
+        \end{itemize}
+    \end{ejm}
+
+    \begin{eje}
+        $m\in\set{Z},m\neq 0$\\
+        $(\set{Z}/m\set{Z})^\star=\{\bar{b}:(b,m)=1\}$
+    \end{eje}
+
+    \chapter{Cuerpos}
+    \begin{defn}[Cuerpo]
+        Un \underline{cuerpo} es un anillo tal que $A^\star=A\setminus\{0\}$.
+    \end{defn}
+
+    \begin{ejm}
+        $\set{R},\set{Q}$ son cuerpos\\
+        $\set{Z},\set{Z}[i]$ \underline{no} son cuerpos\\
+        $\set{Q}[i]$ es cuerpo
+    \end{ejm}
+
+    \begin{defn}
+        Sea $A$ anillo, $p(x)=a_0+a_1x+...+a_nx^n\in A[x]$ es un polinomio con coeficientes en $A$
+    \end{defn}
+
+    \begin{prop}
+        $A[x]=\{\text{polinomios con coeficientes en }A\}$ es un anillo con las operaciones usuales.
+    \end{prop}
+
+    \begin{obs}
+        Si $A\neq\{0\}$, entonces $A[x]$ no es cuerpo.\\
+        En efecto, $x\neq 0$ y no tiene inverso pues si tuviera $p(x)=\sum^n_{i=0}a_ix^i$ tal que
+        \[x\cdot(p(x))=1\]
+        \[x(a_0+a_1x+...+a_nx^n)=1\]
+        \[0+a_0x+a_1x^2+...+a_nx^{n+1}=1\]
+        Al ser igualdad de polinomios $0=1,\forall i:a_i=0\contr$
+    \end{obs}
+
+    \begin{eje}
+        \begin{enumerate}
+            \item Si $A$ no tiene divisores de cero $(A[x])^\star=A^\star$
+
+            \item Encontrar un anillo $A$ tal que $(A[x])^\star\neq A^\star$
+        \end{enumerate}
+    \end{eje}
+
+    \section{Morfismos}
+    $A,B$ anillos $\func{f}{A}{B}{}{}$ se dice morfismo de anillos si:
+    \begin{enumerate}
+        \item $f(0_A)=0_B, f(1_A)=f(1_B)$
+
+        \item $\forall a,b\in A$
+    \end{enumerate}
+    %Continuacion
+
+    %Ideales maximos y principales
+
+    \chapter{Anillos Euclideanos}
+    Sea $A$ un anillo. Una funcion Euclideana $\func{f}{A\setminus\{0\}}{\set{Z}}{}{}$ es tal que $\forall a,b\in A\setminus\{0\}$, se cumple $f(ab)\geq f(a)$.\\
+    $A$ se dice Euclideano si la funcion $f$ ademas satisface:
+    \[\forall a,b \in A:b\neq 0\]
+    \[\exists q,r\in A:q=bq+r\]
+    Donde, o bien $r=0$, o bien $f(r)<f(b)$\\
+    (Algoritmo de la division)
+    \begin{ejm}
+        \hfill
+        \begin{enumerate}
+            \item $A=\set{Z}; f(x)=|x|$
+
+            \item $A=F[x]$, $F$ cuerpo\\
+            $f(p(x))=$ grado de $p(x)$\\
+            (Asumiendo $p(x)\neq 0$)
+        \end{enumerate}
+    \end{ejm}
+
+    \begin{obs}
+        Todo anillo Euclideano es un DIP
+        \begin{proof}
+            Dada $I\subset A$, con $A$ Euclideano, elegimos $a\in I$ tal que $f(a)$ cumple $f(a)=\min\Ima(f)$\\
+            Dado $b\in I$, escribimos $b=a\cdot q+r$\\
+            Notar que $r=b-a\cdot q\in I$ y si $r\neq 0$, se tiene $f(b)<f(a)$
+            \[\contr\]
+        \end{proof}
+    \end{obs}
+
 \end{document}

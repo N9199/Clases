@@ -1,0 +1,106 @@
+\input{../Templates/NotetakingEnglish}
+
+\title{Complejidad Computacional}
+\author{Nicholas Mc-Donnell}
+\date{1er semestre 2018}
+
+\pagenumbering{gobble}
+
+\begin{document}
+    \maketitle
+
+    \tableofcontents
+
+    \pagenumbering{arabic}
+
+    \chapter{Turing Machines}
+
+    Objective: Measure complexity of a problem.\\
+
+    That is: We want to measure computational resources needed to solve a problem.
+    \begin{itemize}
+        \item Time
+
+        \item Space
+
+        \item ...
+    \end{itemize}
+
+    But first, let us define a problem
+    \begin{defn}[Alphabet $\Sigma$]
+        A finite set of symbols
+    \end{defn}
+    \begin{ejm}
+        \[\Sigma=\{0,1\}\]
+    \end{ejm}
+    \begin{defn}[Word $w$]
+        A finite sequence of symbols from $\Sigma$
+    \end{defn}
+    \begin{defn}[$\Sigma^\star$]
+        The set of all words over the alphabet $\Sigma$
+    \end{defn}
+    \begin{defn}[Language $L$]
+        A set of words
+    \end{defn}
+    \begin{ejm}
+        \[L=\{0^n1^n|n\in\set{N}\]
+        \[L=\{p|p\text{ has integer roots}\]
+    \end{ejm}
+    Decision problem associated to a language $L$: Given $w\in\Sigma^\star$, decide if $w\in L$ (or $w\notin L$)\\
+
+    The complexity of a language $L$ is the complexity of a decision problem associated to $L$\\
+
+    When can we say that $L$ can be solved efficiently?\\
+
+    How can we show that a problem is difficult?\\
+
+    What is an algorithm?\\
+    Turing machines: An intent to formalize this concept\\
+    Is it possible to show that Turing machines capture the notion of an algorithm?\\
+    No way. Algorithm is an intuitive concept.\\ %Really?
+    Why do we believe that Turing machines are a good formalisation of the notion of an algorithm?
+    \begin{itemize}
+        \item All programs of a Turing machine can be implemented
+
+        \item All known algorithms can be implemented on a Turing machine
+        
+        \item All other attempts to formalize the concept are reducible to Turing machines
+        \begin{itemize}
+            \item The best attempts are equivalent to Turing machines
+
+            \item All "reasonable" formalisations are efficiently inter-reducible.
+        \end{itemize}
+    \end{itemize}
+
+    \section{Turing machines: The idea}
+    \begin{itemize}
+        \item An infinite tape to read from and write to
+
+        \item A read/write head that can move along the tape
+
+        \item Accept/Reject state to tell us if the word belongs to the language or not
+    \end{itemize}
+    \begin{obs}
+        The machine can go forever
+    \end{obs}
+
+    \begin{defn}[Deterministic Turing machine]
+        \[Q,\Sigma, \Gamma,\delta,q_0,q_{accept},q_{reject}\]
+        \begin{itemize}
+            \item $Q$ is a finite set of states
+
+            \item $\Sigma$ is the input alphabet, where $\vdash,B\notin \Sigma$
+
+            \item $\Gamma$ is the tape alphabet, where $\Sigma\cup\{\vdash,B\}\subset\Gamma$
+
+            \item $q_0\in Q$ initial state
+
+            \item $q_{accept}\in Q$ accepted state
+
+            \item $q_{reject}\in Q$ rejected state
+
+            \item $\delta$ transition function
+        \end{itemize}
+    \end{defn}
+
+\end{document}
