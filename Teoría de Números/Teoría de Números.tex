@@ -1,0 +1,129 @@
+\input{../Templates/Notetaking}
+
+\title{Teoría de Números}
+\author{Nicholas Mc-Donnell}
+\date{2do semestre 2018}
+
+
+\pagenumbering{gobble}
+\begin{document}
+    \maketitle
+    \newpage
+
+    \pagenumbering{arabic}
+    \tableofcontents
+
+    \newpage
+    \section{Funciones Aritméticas}
+    \begin{defn}[Función Aritmética]
+        $\func{f}{\set{N}}{\set{C}}{}{}$
+        \begin{itemize}
+            \item Es \underline{multiplicativa} si
+            \[f(a\cdot b)=f(a)\cdot f(b)\quad \forall (a,b)=1\]
+
+            \item Es \underline{completamente multiplicativa} si
+            \[f(a\cdot b)=f(a)\cdot f(b)\quad \forall a,b\]
+        \end{itemize}
+    \end{defn}
+    \begin{ejm}
+        \begin{enumerate}[label=(\alph*)]
+            \item $\delta(n)$
+
+            \item $I_k(n)=n^k$
+
+            \item Función de Möbius:
+            \[\mu(n)=\]
+
+            \item $\sigma_k(n)=\sum_{d|n}d^k$
+
+            \item Función de Euler:
+            $\phi(n)=\#\{1\leq k\leq n: (k,n) =1\}$
+        \end{enumerate}
+    \end{ejm}
+    \begin{defn}[Convolución]
+        Sean $f,g$ funciones aritméticas su \underline{convolución} $f*g$:
+        \[(f*g)(n)=\sum_{a\cdot b=n}f(a)\cdot g(b)\]
+    \end{defn}
+    \begin{thm}[Propiedades de la convolución]
+        \begin{enumerate}[label=(\alph*)]
+            \item $(f*g)*h=f*(g*h)$
+
+            \item $f*g=g*f$
+
+            \item $f*(g+h)=f*g+f*h$
+
+            \item $\delta*f=f$
+
+            \item $I_0*\mu=\delta$
+
+            \item Si $f$ y $g$ son multiplicativas entonces $f*g$ es multiplicativa
+        \end{enumerate}
+    \end{thm}
+    \begin{proof}
+        \
+        \begin{enumerate}[label=(\alph*)]
+            \item Tarea
+
+            \item Tarea
+
+            \item Tarea
+
+            \item Tarea
+
+            \item $(I_0*\mu)(1)=I_0(1)\cdot\mu(1)=1=\delta(1)$
+            Sea $n>1$, sean $p_1,...,p_l$ los factores primos distintos de $n$
+            \[n=p_1^{\alpha_1}\cdot...\cdot p_l^{\alpha_l}\]
+            \[(I_0*\mu)(n)=\sum_{a\cdot b=n}I_0(a)\mu(b)\]
+            \[(I_0*\mu)(n)=\sum_{b|n}\mu(b)=\sum_{d|p_1\cdot...\cdot p_l}\]
+            \[(I_0*\mu)(n)=\sum_{\nu=0}^l(-1)^\nu\binom{l}{\nu}=(1\cdot 1)^l=0=\delta(n)\]
+
+            \item $f,g$ mult. Sean $(a,b)=1$
+            \[(f*g)(a)\cdot(f*g)(b)=\left(\sum_{x\cdot y=a}f(x)g(y)\right)\left(\sum_{s\cdot t=a}f(s)g(t)\right)\]
+            \[(f*g)(a)\cdot(f*g)(b)=\sum_{x\cdot y=a}\sum_{s\cdot t=b}f(x\cdot s)\cdot g(y\cdot t)\]
+            \[(f*g)(a)\cdot(f*g)(b)=\sum_{u\cdot w=ab}f(u)\cdot g(w)\]
+            \[(f*g)(a)\cdot(f*g)(b)=(f*g)(ab)\]
+        \end{enumerate}
+    \end{proof}
+    \begin{ejm}
+        \[\sigma_k(n)=\sum_{d|n}d^k\cdot I_0(n/d)=(I_0*I_0)(n)\]
+    \end{ejm}
+    \begin{cor}[Fórmula de Inversión de Möbius]
+        Sea $f$ función aritmética. Sea $F=I_0*f$ es decir: $F(n)=\sum_{d|n}f(d)$\\
+        entonces: $f=\mu*F$\\
+        es decir $f(n)=\sum_{d|n}\mu(d)\cdot F(n/d)$
+    \end{cor}
+    \begin{proof}
+        \[\mu*F=\mu*(I_0*f)\]
+        \[\mu*F=(\mu*I_0)*f=\delta*f=f\]
+    \end{proof}
+    \begin{ejm}
+        $C_n=\set{Z}/n\set{Z}$
+        \begin{itemize}
+            \item Nro de generados: $\phi(n)$
+
+            \item Subgrupos: exactamente, para $d|n$:
+            \[C_n\geq\left\langle\frac{n}{d}\right\rangle\simeq C_d\]
+
+            \item Todo $x\in C_n$ genera algún subgrupo
+            \[\implies \sum_{d|n}\phi(n)=\#C_n=n\]
+            \[\therefore \phi(n)=\sum_{d|n}\mu(d)\cdot I_1(n/d)\]
+            \[\phi(n)=n\cdot\sum_{d|n}\frac{\mu(d)}{d}\]
+            \[\phi=\mu*I_1\]
+        \end{itemize}
+    \end{ejm}
+    \begin{thm}[$\Sigma\rightarrow\Pi$]
+        Sea $f$ multiplicativa y no idénticamente a $0$. Entonces:
+        \[\sum_{d|n}f(d)=\prod_{p|n}(1+f(p)+...+f(p^{v_p(n)}))\]
+        donde $p$ varía sobre primos y $v_p(n)=$ exponente de $p$ en $n$.
+    \end{thm}
+    \begin{proof}
+        Expandir LD + Factorización Única + mult
+    \end{proof}
+    \begin{ejm}
+        \begin{enumerate}[label=(\alph*)]
+            \item $\sigma_0=\sum_{d|n}1=\prod_{p|n}(1+1+...+1)=\prod_{p|n}(v_p(n)+1)$
+
+            \item $\phi(n)=n\sum_{d|n}\frac{\mu(d)}{d}=n\prod_{p|n}(1-\frac{1}{p})$
+        \end{enumerate}
+    \end{ejm}
+\end{document}
