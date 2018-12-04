@@ -1,0 +1,114 @@
+\input{../Templates/Notetaking}
+
+\title{Teoría de Modelos}
+\author{Nicholas Mc-Donnell}
+\date{Verano 2018-2019}
+
+\pagenumbering{gobble}
+\begin{document}
+\maketitle
+\newpage
+
+\pagenumbering{arabic}
+\tableofcontents
+\newpage
+
+\chapter{Base}
+La lógica se interesa en el camino entre un conjunto de premisas y un conjunto de conclusiones. Para eso esta se fija en la forma  los argumentos.
+\begin{ejm}
+	\begin{align*}
+		 & p\implies q          \\
+		 & p                    \\
+		 & \rule{1.6cm}{0.03cm} \\
+		 & q
+	\end{align*}
+\end{ejm}
+\begin{ejm}
+	\begin{align*}
+		 & p\implies q          \\
+		 & \neg q               \\
+		 & \rule{1.6cm}{0.03cm} \\
+		 & \neg p
+	\end{align*}
+\end{ejm}
+\section{Lógica proposicional}
+Premisas que tienen un solo valor de verdad, Verdadero o Falso. Lenguaje es \textbf{muy} importante, no puede ser ambiguo.
+\begin{defn}[Lenguaje ($\mathcal{L}$)]
+	\
+	\begin{itemize}
+		\item letras proposicionales (infinitos numerables)
+		      \[
+			      p_1,p_2,...,p_n,...
+		      \]
+		\item conectivos lógicos
+		\item paréntesis
+	\end{itemize}
+\end{defn}
+\begin{defn}[Oración]
+	\
+	\begin{itemize}
+		\item Oraciones atómicas:
+		      \[
+			      p_i
+		      \]
+		\item $\alpha, \beta$ son oraciones, las siguientes son oraciones:
+		      \[
+			      \neg\alpha, \alpha\implies\beta, \alpha\vee\beta,\alpha\wedge\beta, \alpha\iff\beta
+		      \]
+		\item Toda oración se obtiene de la manera anterior en un número finito de pasos.
+	\end{itemize}
+\end{defn}
+\begin{defn}[Table de verdad]
+	Es una función tal que
+	\[
+		v:\{p_i: i\in\set{N}\}\rightarrow\{0,1\}
+	\]
+	$v$ valuación: mundos posibles
+\end{defn}
+\begin{defn}[Consecuencia lógica ($\models$)]
+	$\Gamma\models\varphi$, gama entraña phi (Gamma entails Phi), phi. Para cualquier $v$ si $v(\Gamma)=1$ entonces $v(\phi)=1$
+\end{defn}
+\begin{ejm}[Modus Ponens]
+	\begin{align*}
+		 & \text{Si }\Gamma\models\varphi\implies\psi \\
+		 & \text{y  }\Gamma\models\varphi             \\
+		 & \text{entonces }\Gamma\models\psi
+	\end{align*}
+\end{ejm}
+\begin{ejm}[Teorema de Compacidad]
+	Si $\Gamma\models\varphi$, entonces existe $\Gamma_0\subseteq\Gamma$ tal que $\Gamma_0$ es finito y $\Gamma_0\models\varphi$
+\end{ejm}
+\subsection{Sistema deductivo}
+Axiomas y conectivos lógicos $(\neq,\implies)$
+\begin{enumerate}
+	\item $\vdash\varphi\implies(\psi\implies\varphi)$
+	\item $\vdash\paren{\varphi\implies(\psi\implies\varphi)}\implies\paren{(\varphi\implies\psi)\implies(\varphi\implies\psi)}$
+	\item Hay dos opciones\begin{itemize}
+		      \item $\vdash\paren{\neq\varphi\implies\psi}\implies\paren{(\neq\varphi\implies\neq\psi)\implies\varphi}$
+		      \item $\vdash\paren{\neq\varphi\implies\neq\theta}\implies\paren{\psi\implies\theta}$
+	      \end{itemize}
+\end{enumerate}
+Bajo Modus Ponens
+\begin{proof}[$\vdash\varphi\implies\varphi$]
+	\begin{align*}
+		 & \vdash\varphi\implies((\varphi\implies\varphi)\implies\varphi)\implies\paren{(\varphi\implies(\varphi\implies\varphi))\implies(\varphi\implies\varphi)} \\
+		 & \vdash\varphi\implies\paren{(\varphi\implies\varphi)\implies\varphi}                                                                                    \\
+		 & \vdash(\varphi\implies(\varphi\implies\varphi))\implies(\varphi\implies\varphi)                                                                         \\
+		 & \vdash\paren{\varphi\implies(\varphi\implies\varphi)}                                                                                                   \\
+		 & \vdash\varphi\implies\varphi
+	\end{align*}
+\end{proof}
+\begin{defn}[Demostración ($\Gamma\vdash\varphi$)]
+	$\Gamma$ es consecuencia sintáctica de $\varphi$ si existe sucesión de oraciones de $\mathcal{L}$ $<\sigma_1,\sigma_2,...,\sigma_n>$
+	\begin{itemize}
+		\item $\sigma_n=\varphi$
+		\item $\sigma_i$ es instancia de axiomas
+		\item $\sigma_i\in\Gamma$
+		\item $\sigma_i$ se obtiene por MP de $\sigma_j,\sigma_k;j,k<i$
+	\end{itemize}
+\end{defn}
+\begin{thm}[Completitud]
+    Si $\Gamma\models\varphi$, entonces $\Gamma\vdash\varphi$ (Dem: Capítulo 1 del Mendelson)
+\end{thm}
+
+\end{document}
