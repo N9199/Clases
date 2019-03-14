@@ -1,0 +1,136 @@
+\input{../Templates/Notetaking}
+
+\title{Introducción a la Geometría Algebraica}
+\author{Nicholas Mc-Donnell}
+\date{1er semestre 2019}
+
+\pagenumbering{gobble}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\pagenumbering{arabic}
+\newpage
+\section*{Info}
+\begin{itemize}
+    \item[Libro:] ``Algebraic Curves'' William Fulton
+    \item[Notas:] Tareas
+\end{itemize}
+\chapter{Introducción}
+\section{Motivación}
+Estudio de objetos geométricos derivados de los polinomios (Variedades $\rightarrow$ Esquemas, etc). Los objetos son suaves o singulares.
+
+\subsection{Resolución de singularidades para una curva}
+Consideramos el siguiente polinomio:
+\[
+    \{(x,y)\in\set{C}^2: f(x,y):= y^2-x^2(x+1)=0\}=C
+\]
+%Gráfico de f(x,y) en R
+\begin{defn}[Singularidad]
+    Es $p\in\set{C}^2$ tal que $f(p)=0$, $f_x(p)=0$ y $f_y(p)=0$
+\end{defn}
+En el ejemplo el $(0,0)$ es el único punto singular.\\
+Considerar el morfismo:
+\begin{align*}
+    \set{C}^2\xrightarrow{\makebox[1cm]{$\sigma$}}\set{C}^2 \\
+    (u,v)\mapsto(uv,v)
+\end{align*}
+%Gráfico de la función
+
+Vemos la pre-imagen:
+\begin{align*}
+    \sigma^{-1}(C) & =\{v^2-u^2v^2(uv+1)=0\}     \\
+                   & =\{v^2=0\}\{1-u^2(uv+1)=0\}
+\end{align*}
+
+%Gráfico de la función sobre C
+
+\begin{ejm}
+    \begin{align*}
+        \set{C}^2\xrightarrow{\makebox[1cm]{}}\set{C}^2 \\
+        T(x,y)=(-x,-y)
+    \end{align*}
+    $T$ es automorfismo de $\set{C}^2$
+    \[T\circ T=1\]%Look for Id
+    Lo qye sucede es que el grupo $\{1,T\}=G$ actua en $\set{C}^2$.\\
+    Mirar $\set{C}^2/G=$espacio de órbitas de $G$, lo cuál es una variedad algebraica\\
+    Funciones regulares en $\set{C}^2=\set{C}[x,y]$.\\
+    Queremos buscar lo siguiente:
+    \[\set{C}[x,y]^G=\{f(x,y)\text{polinomio tal que }f(x,y)=f(-x,-y)\}=\set{C}[x^2,y^2,xy]\]
+    \[\set{C}[x^2,y^2,xy]\simeq\set{C}[a,b,c]/(c^2-ab)\]
+    \[\therefore\set{C}^2/G:=\{(a,b,c)\in\set{C}^3:c^2-ab=0\}\]
+    %Graficar c^2-ab en R^3
+    %Graficar cono con el punto (0,0,0) y curva similar que es el cono con un blow up en el (0,0,0)
+\end{ejm}
+\begin{ejm}
+    \[\{(x,y)\in k^2: x^{2n}+y^{2n}=1\}=V(k)\]
+    Cómo se ve $V(k)$? ($V(k)\neq\emptyset$)\\
+    $n=1$
+    \begin{itemize}
+        \item[$k=\set{Q}$:] Circunferencia porosa ($x=\frac{t^2-1}{t^2+1}, y=\frac{2t}{t^2+1}$)(Viene de $\set{Z}$, aritmético) %Graficar
+        \item[$k=\set{R}$:] Circunferencia completa (Viene de Análisis/límites) %Graficar
+        \item[$k=\set{C}$:] Esfera sin puntos? %Graficar
+    \end{itemize}
+    $n\geq2$: $V(\set{Q})\subset V(\set{R})\subset V(\set{C})$
+    \begin{itemize}
+        \item[$V(\set{Q})$:] Ultimo Teorema de Fermat $\implies$ 4ptos %Graficar
+        \item[$V(\set{R})$:] Algo que se acerca a un cuadrado con $n$ ``grande''%Graficar
+        \item[$V(\set{C})$:] Objeto extraño con $g=(n-1)(2n-1)$ agujeros %Gráfico?
+    \end{itemize}
+    Variedades $=$ ceros de polinomios $\in k[x_1,...,x_n]$ donde $k=\overline{k}$
+\end{ejm}
+\section{Preliminares Algebraicos}
+\begin{itemize}
+    \item Anillos conmutativos con $1$, y morfismos de anillos, tal que el $1\mapsto1$
+    \item Dominios (sin div. del cero) y cuerpos (todo $u\neq0$ es unidad)
+    \item $R$ anillo $\rightarrow$ $R[x]$, grado, mónico. En general: $R[x_1,...,x_n]$
+    \item Polinomios homogeneos: $F\in R[x_1,...,x_n]$ ssi $F(\lambda x_1,...,\lambda x_n)=\lambda^{\deg(F)}F(x_1,...,x_n)$
+    \item $a\in R$ es \underline{irreducible} si $a$ no unidad, no cero y $a=bc\implies b$ o $c$ es unidad
+    \item $a\in R$ es primeo si $a\mid bc\implies a\mid b$ o $a\mid c$
+    \item $R$ es UFD (DFU): Todo elemento se factoriza de forma única salvo orden y unidades. ($R$ UFD$\implies R[x]$ UFD)
+    \item Dado $R$ dominio existe $F=$ cuerpo de fracciones de $R\supset R$, $F=\{\frac{a}{b}:a,b\in R, b\neq 0\}$
+    \item $f$ morfismo, $\ker f$ (ideal) $\Ima f$ (anillo)
+    \item Ideal $\cong$ Kernel (Primer teorema de Isomorfismo)
+    \item Para $S\subset R$ anillo, $<S>=$  Ideal generado por S
+\end{itemize}
+\begin{defn}[Ideal Primo]
+    $p\subset R$ ideal primo ssi $ab\in p\implies a\in p\vee b\in p$
+\end{defn}
+\begin{thm}
+    $p$ primo $\iff R/p$ dominio.
+\end{thm}
+\begin{proof}
+    $p$ ideal primo
+    \begin{align*}
+             & ab=0              \\
+        \iff & ab\in p           \\
+        \iff & a\in p\vee b\in p \\
+        \iff & a=0\vee b=0
+    \end{align*}
+\end{proof}
+\begin{defn}[Ideal Maximal]
+    $p\subset R$ es maximal ssi $p\subset m\subset R$, $m$ ideal $\implies p=m\vee m=R$
+\end{defn}
+\begin{thm}
+    $m$ maximal $\iff R/m$  es cuerpo
+\end{thm}
+\begin{proof}
+    $\implies$\\
+    Sea $a\in R\setminus m$, por lo que $a\neq0$, luego ya que $m$ maximal, $<m, a>=R$. Dado esto, sabemos que $\exists b\in m, \exists c,d\in R: bc+ad=1$, y viendo esto en $R/m$ tenemos que $ad=1$, o sea, $a$ tiene inverso.\\
+    $\impliedby$\\
+    Por contradicción, existe $n$ ideal maximal que contiene a $m$
+\end{proof}
+
+\begin{prob}
+    Sea $R$ un dominio.
+    \begin{enumerate}
+        \item Si $F,G$ son formas\footnote{Polinomios homogeneos} de grado $r,s$ respectivamente en $R[x_1,...,x_n]$, muestre que $FG$ es una forma de grado $r+s$
+        \item Muestre que todo factor de una forma en $R[x_1,...,x_n]$ también es una forma
+    \end{enumerate}
+\end{prob}
+
+\begin{prob}
+    Sea $R$ un DFU, $K$ el cuerpo cociente de $R$. Muestre que todo elemento $z$ de $K$ se puede escribir
+\end{prob}
+
+\end{document}
