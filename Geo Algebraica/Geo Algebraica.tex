@@ -133,4 +133,89 @@ Vemos la pre-imagen:
     Sea $R$ un DFU, $K$ el cuerpo cociente de $R$. Muestre que todo elemento $z$ de $K$ se puede escribir
 \end{prob}
 
+\section{}
+\begin{defn}[Espacio Afín]
+    El \textbf{Espacio afín} de  dimensión $n$ es $\set{A}_k^n:=k^n$
+\end{defn}
+\begin{defn}[Hipersuperficie]
+    Dado $F\in k[x_1,...,x_n]$, se define la \textbf{hipersuperficie}
+    \[
+        V(F):=\{(a_1,...,a_n)\in k^n: F(a_1,...,a_n)=0\}
+    \]
+\end{defn}
+
+\begin{ejm}
+    $V(y^2-x^2(x+1))\subset\set{A}_\set{R}^2$ %Graficar
+\end{ejm}
+
+\begin{ejm}
+    $V(ax^2+by^2+1)\subset\set{A}_\set{R}^2=\emptyset$, dado $a,b>0$, distinto a $V(x^2+y^2+1)\subset\set{A}_\set{C}^2$
+\end{ejm}
+
+\begin{ejm}
+    $V(y^2-x(x^2-1))\subset\set{A}_\set{R}^2$ %Graficar
+\end{ejm}
+
+\begin{ejm}
+    $V(z^2-x^2-y^2)\subset\set{A}_\set{R}^3$ %Graficar
+\end{ejm}
+
+\begin{ejm}
+    $V((x^2-y^2)(x^3-1)(y^3-1))\subset\set{A}_\set{R}^2$ %Graficar
+\end{ejm}
+
+\begin{defn}[Conjunto Algebraico]
+    Sea $S\subset k[x_1,..,x_n]$. Un \textbf{conjunto algebraico afín}
+    \begin{align*}
+        V(S) & =\{p\in\set{A}^n_k:F(p)=0\forall F\in S\} \\
+             & =\bigcap_{F\in S}V(F)
+    \end{align*}
+    $S=\{F_1,...,F_m\}, V(S)=V(F_1,...,F_m)$
+\end{defn}
+\begin{ppty}[Conjuntos Algebraicos]
+    \begin{enumerate}
+        \item Si $I=<S>\implies V(S)=V(I)$
+              \begin{proof}
+                  Sea $p\in V(S)\implies F(p)=0\forall F\in S$.\\
+                  Sea $G\in I\implies G=r_1F_1+...+r_mF_m$, $F_1,...,F_m\in S$ $r_1,...,r_m\in k[x_1,...,x_n]$\\
+                  \[\therefore G(p)=r_1(p)F_1(p)+...+r_m(p)F_m(p)=0\implies p\in V(I)\]
+                  Si $p\in V(I)\implies$ en particular $F(p)=0\forall F\in S\subset I\implies p\in V(S)$\\
+                  \[\therefore V(I)=V(S)\]
+              \end{proof}
+        \item $\{I_\alpha\}_{\alpha\in J}$ familia de ideales $\implies V(\bigcup_{\alpha\in J}I_\alpha)=\bigcap_{\alpha\in J}V(I_\alpha)$
+        \item $I\subset J$ ideales $\implies V(I)\supset V(J)$
+        \item $V(FG)=V(F)\cup V(G)$ Sea $I,J$ ideales $\implies V(I)\cup V(J)=V(<\{FG:F\in I, G\in J\}>)$
+        \item $V(\emptyset)=\set{A}_k^n$, $V(1)=\emptyset$
+    \end{enumerate}
+\end{ppty}
+\begin{obs}
+    La \textbf{unión} arbitraria de conjuntos algebraicos no es necesariamente conjunto algebraico:
+    \[
+        \set{N}=V(I)?
+    \]
+\end{obs}
+\begin{obs}[Topología de Zariski]
+    Los conjuntos algebraicos definen los \textbf{conjuntos cerrados} para una topología en $\set{A}_k^n$ ($\set{A}_k^n\setminus$cerrados $=$ abiertos). Los cerrados de esta topología son $\{\emptyset,\set{A}_k^n, \text{conj. finitos}\}$
+\end{obs}
+\begin{defn}[Ideal de un conjunto]
+    Sea $X\subset\set{A}_k^n$. $I(X)=\{f\in k[x_1,...,x_n]: f(p)=0\forall p\in X\}$
+\end{defn}
+\begin{ppty}[Ideales de conjuntos]
+    \begin{enumerate}
+        \item $I(X)$ es ideal:
+              \begin{proof}
+                  $f,g\in I(X)\implies f(p)+g(p)=0,\forall p\in X\implies f+g\in I(X)$\\
+                  $r\in k[x_1,..,x_n], f\in I(X)\implies r(p)f(p)=r(p)\cdot 0=0\forall p\in X\implies rf\in I(X)$
+              \end{proof}
+        \item $X\subset Y\implies I(X)\supset I(Y)$
+        \item $I(\emptyset)=k[x_1,...,x_n]$, $I(\set{A}_k^n)=(0)$ si $k$ es un cuerpo infinito. $I(\{a_1,...,a_n\})=(x_1-a_1,x_2-a_2,...,x_n-a_n)$ $a_i\in k$
+        \item $I(V(S))\supset S$ $\forall$ conj. $S\subset k[x_1,..,x_n]$, $V(I(X))\supset X\forall X\subset \set{A}_k^n$
+        \item $V(I(V(S)))=V(S)$ $\forall$ conj. de pol. $S$, $I(V(I(X)))=I(X)\forall X\subset\set{A}_k^n$
+        \item Si $V=$ conj. alg. $\implies V=V(I(V))$, si $I=$ ideal $\implies I=I(V(I))$
+    \end{enumerate}
+\end{ppty}
+\begin{obs}
+    Si $I=I(X)$ y $F^m\in I$
+\end{obs}
+
 \end{document}
