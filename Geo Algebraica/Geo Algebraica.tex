@@ -14,6 +14,7 @@
 \section*{Info}
 \begin{itemize}
     \item[Libro:] ``Algebraic Curves'' William Fulton
+    \item[Libro 2:] ``Introduction to Commutative Algebra'' Atiyah, Mac Donald
     \item[Notas:] Tareas
 \end{itemize}
 \chapter{Introducción}
@@ -133,7 +134,7 @@ Vemos la pre-imagen:
     Sea $R$ un DFU, $K$ el cuerpo cociente de $R$. Muestre que todo elemento $z$ de $K$ se puede escribir
 \end{prob}
 
-\section{}
+\section{Conjuntos Algebraicos}
 \begin{defn}[Espacio Afín]
     El \textbf{Espacio afín} de  dimensión $n$ es $\set{A}_k^n:=k^n$
 \end{defn}
@@ -173,6 +174,7 @@ Vemos la pre-imagen:
     $S=\{F_1,...,F_m\}, V(S)=V(F_1,...,F_m)$
 \end{defn}
 \begin{ppty}[Conjuntos Algebraicos]
+    \
     \begin{enumerate}
         \item Si $I=<S>\implies V(S)=V(I)$
               \begin{proof}
@@ -201,6 +203,7 @@ Vemos la pre-imagen:
     Sea $X\subset\set{A}_k^n$. $I(X)=\{f\in k[x_1,...,x_n]: f(p)=0\forall p\in X\}$
 \end{defn}
 \begin{ppty}[Ideales de conjuntos]
+    \
     \begin{enumerate}
         \item $I(X)$ es ideal:
               \begin{proof}
@@ -215,7 +218,89 @@ Vemos la pre-imagen:
     \end{enumerate}
 \end{ppty}
 \begin{obs}
-    Si $I=I(X)$ y $F^m\in I$
+    Si $I=I(X)$ y $\exists m\in\set{N}: F^m\in I$, entonces $F\in I$
 \end{obs}
+
+\begin{defn}[Ideal Radical]
+    Si $I$ es ideal de $R$, entonces el ideal Radical es:
+    \[
+        \rad I=\{a\in R: \exists m\in\set{N} a^m\in I\}
+    \]
+\end{defn}
+
+\section{Base de Hilbert}
+
+\begin{thm}[Base de Hilbert]
+    Todo conjunto algebraico es la intersección de un número finito de hipersuperficies.
+\end{thm}
+
+\begin{defn}[Anillo Noetheriano]
+    Sea $R$ anillo. $R$ se dice \textbf{Noetheriano} ssi todo ideal de $R$ es finitamente generado.
+\end{defn}
+
+\begin{obs}
+    Notar que $k$ cuerpo es Noetheriano, y que los DIP son Noetherianos.
+\end{obs}
+
+\begin{thm}[Hilbert]
+    $R$ Noetheriano $\implies$ $R[x_1,...,x_n]$ Noetheriano
+\end{thm}
+
+\begin{proof}
+    $F(x)=a_0+a_1x+...+a_dx^d\in R[x]$ $a_d\neq 0$, $a_d$ se llamará término líder de $F$ ($a_d=l(F)$).\\
+    Sea $I\subset R[x]$ ideal, Sea $J\subset R$ el conjunto de todos los términos líderes de elementos en $I$
+    \begin{obs}
+        $J$ es ideal
+    \end{obs}
+    \noindent$\therefore$ Por hipótesis $J=<l(F_1,...,l(F_r))>$.\\
+    Sea $N>\deg(F_i)\forall i=1,..,r$\\
+    Para cada $m\leq N$, sea $J_m$ el conjunto de los coeficientes líderes de $F\in I$ con $\deg(F)\leq n$. Notamos que $J_m$ es ideal.\\
+    $\therefore$ Por hipótesis, $J_m=<\underbrace{l(F_{m,i})}_\text{Finitos}>$ con $\deg(F_{m,i})\leq m$.\\
+    \[
+        I'=<F_1,...,F_r,\bigcup_{m=1}^N\{F_{m,i}\}>
+    \]
+    Notar que $I'\subseteq I$. Sea $G\in I\setminus I'$ tal que su grado es lo más pequeño posible.\\
+    Caso 1: Si $\deg(G)>N\implies\exists$ polinomios $\{Q_i\}$ tal que $G$ y $\sum_{i=1}^rQ_i\cdot F_i$ tienen el mismo líder: Sea $l(G)=\sum_{i=1}^r\alpha_i\cdot l(F_i)$
+    \[
+        \therefore Q_i=\alpha_i\cdot x^{\deg(G)-\deg(F_i)}
+    \]
+    \[
+        \therefore \deg(\underbrace{G-\sum Q_i\cdot F_i}_{\in I})<\deg(G)
+    \]
+    Y $G-\sum Q_i\cdot F_i\notin I'$ en otro caso $G\in I'$ $\contr$\\
+    Caso 2: Si $\deg(G)\leq N\implies \deg(G)=m\leq N$\\
+    $\therefore$ hacer lo mismo con $J_m$
+\end{proof}
+
+\begin{cor}
+    $k[x_1,...x_m]$ es Noetheriano.
+\end{cor}
+
+\begin{defn}[Reducible/Irreducible]
+    $V\subset\set{A}^n$ conjunto algebraico. Si $V=V_1\cup V_2$ donde $V_1,V_2$ son conjuntos algebraicos en $\set{A}^n$ y $V\neq V_i, i=1,2\implies$ se dice que $V$ es \textbf{reducible}. Si no, es \textbf{irreducible}
+\end{defn}
+
+\begin{ejm}
+    $V(xy)\subset\set{A}^2_k$, $V(xy)=V(x)\cup V(y)\implies$ $V(xy)$  es reducible.
+\end{ejm}
+\begin{ejm}
+    $\{p,q\}\subset\set{A}_k^n$, $V=\{p,q\}=\{p\}\cup\{q\}$
+\end{ejm}
+\begin{ejm}
+    $V(x^2)\subset\set{A}^2$, $(x^2)=I$ no es primo
+\end{ejm}
+
+\begin{prop}
+    $V$ irred. ssi $I(V)$ es primo
+\end{prop}
+\begin{proof}
+    Si $I(V)$ no primo $\implies F_1,F_2\in k[x_1,...,x_2]$ con $F_1F_2\in I(V)$, pero $F_i\notin I(V)$ $i=1,2$
+    \[
+        \implies V=(V\cap V(F_1))\cup(V\cap V(F_2)), V\cap V(F_i)\nsubseteq V
+    \]
+    Si $p\in V\implies F_1(p)\cdot F_2(p)=0\implies F_1(p)=0\vee F_2(p)=0$.\\
+    Luego $\exists q_i\in V$ tal que $F_i(q_i)\neq 0\implies q_i\notin V\cap V(F_i)$\\
+    $\therefore V$ es reducible
+\end{proof}
 
 \end{document}
