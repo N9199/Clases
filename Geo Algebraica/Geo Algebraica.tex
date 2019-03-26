@@ -303,4 +303,70 @@ Vemos la pre-imagen:
     $\therefore V$ es reducible
 \end{proof}
 
+\begin{lem}
+    $\mathcal{J}\neq\emptyset$ conjunto arbitrario de ideales en un anillo Noetheriano $R$, entonces existe elemento maximal, es decir, $\exists\mathcal{M}\in\mathcal{J}$ tal que $\mathcal{M}$ no está contenido en ningún ideal de $
+        \mathcal{J}$
+\end{lem}
+\begin{proof}
+    Tomar $I_1\in\mathcal{J}\neq\emptyset$ y $\mathcal{J}_1=\{I\in\mathcal{J}:I\nsupseteq I_1\}$. Si $\mathcal{J}_1=\emptyset$, tenemos lo pedido, sino $I_2\in\mathcal{J}_1$. Seguir este proceso:
+    \[
+        I_1\nsubseteq I_2\nsubseteq ...
+    \]
+    Luego definimos $I=\bigcup_{i=1}^\infty I_i$, un ideal de $R$.
+    \begin{align*}
+        \implies & I=(f_1,...,f_m)               \\
+        \implies & \exists s: f_1,...,f_m\in I_s \\
+        \implies & I=(f_1,...,f_m)\subseteq I_s
+    \end{align*}
+    Lo que es una contradicción, por lo que tenemos lo pedido.
+\end{proof}
+
+\begin{thm}
+    Sea $V\subseteq\set{A}_k^n$ conj. alg., entonces $\exists V_1,...,V_m$ irreducibles unívocamente determinados tales que
+    \[
+        V=V_1\cup...\cup V_m, V_i\nsubseteq V_j\text{si }i\neq j
+    \]
+\end{thm}
+
+\begin{proof}
+    Sea $S=\{V\subset\set{A}^n\text{ algebraico tal que no es unión finita}\}$. Sea $V\in S$ elemento minimal (a través de $I(V)$ tenemos colección de ideales $\mathcal{J}_s$)\\
+    $\therefore V$ es irreducible (sino $V=V_1\cup V_2$ y $V_i\nsubseteq V$ $V_i\neq\emptyset$)\\
+    $\therefore V$ irreducible no por definición\\
+    $\therefore S=\emptyset$\\
+    \underline{Unicidad}:$V_1\cup...\cup V_m=W_1\cup...\cup W_r$ irreducibles.
+    \[
+        V_1=\bigcup_{i=1}^r\underbrace{(W_i\cap V_1)}_\text{conj. alg.}
+    \]
+    Pero $V_1$ es irreducibles, por lo que $\exists i: V_1=W_i\cap V_1\implies V_1\subseteq W_i$.
+    \[
+        W_i=\bigcup_{j=1}^m(V_j\cap W_i)
+    \]
+    $W_i$ es irreducible, por lo que $V_1=W_i$
+\end{proof}
+
+Conj. alg. de $\set{A}_k^2$
+\begin{prop}
+    $F,G\in k[x,y]$ sin factores en común, entonces $V(F,G)=V(F)\cap V(G)$ es un conjunto finito.
+\end{prop}
+
+\begin{proof}
+    $F,G$ sin div. comunes en $k[x,y]=k[x][y]$, entonces tampoco tienen en $k(x)[y]$.\\
+    $\therefore$ existen $h,r\in k(x)[y]$ tal que $h\cdot F+r\cdot G=1$\\
+    Limpiamos el denominador (pol. en $x$)
+    \[
+        \therefore H(x,y)F(x,y)+R(x,y)G(x,y)=p(x)
+    \]
+    Si $(a,b)\in\set{A}_k^2$, $F(a,b)=0$ y $G(a,b)=0$, entonces $p(a)=0$\\
+    Luego los ceros comunes de $F$ y $G$ tienen finitas posibilidades para $x$ (ya que son los ceros de $p(x)$ son finitos). Análogo para $y$.
+\end{proof}
+
+\begin{cor}
+    $F$ pol. irred. en $k[x,y]$ y $\abs{V(F)}=\infty$, entonces $I(V(F))=(F)$ y $V(F)$ irreducible.
+\end{cor}
+\begin{proof}
+    Si $G\in I(V(F))$, entonces $\abs{V(F,G)}=\infty$, luego $F,G$ tienen factores en común, pero $F$ es irred. por lo que $F\mid G$, luego $G=F\cdot H$, con lo que tenemos que $I(V(F))=(F)$, $V(F)$ es irreducible ($(F)$ es primo)
+\end{proof}
+
+\underline{Desafío}: Dados finitos puntos en $S\subset\set{A}_\set{R}^2$ entonces existe $F(x,y)\in \set{R}[x,y]$ \underline{irreducible} tal que $S=V(F)$
+
 \end{document}
