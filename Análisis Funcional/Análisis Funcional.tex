@@ -1,0 +1,100 @@
+\documentclass{notetaking}
+
+\title{Ánalisis Funcional}
+\author{Nicholas Mc-Donnell}
+\date{2do Semestre}
+
+\setlist[enumerate]{label=\arabic*)}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section*{Preliminares}
+
+\subsection*{Contenidos}
+\begin{enumerate}
+    \item Espacios de Banach: Definiciones Básicas, Hahn-Banach, Consecuencias del Teorema de Bairi
+    \item Espacios de Hilbert: Definiciones, Bases Hilbertianas, Proyección Dual de un Hilbert, Lax-Milgram
+    \item Topologías débiles: Espacios reflexivos
+    \item Teoría Espectral
+\end{enumerate}
+
+\subsection*{Textos}
+\begin{itemize}
+    \item Reed and Simon (Functional Analysis)
+    \item Rudin (Functional Analysis)
+    \item Hain Brenzin
+\end{itemize}
+
+\subsection*{Interrogaciones}
+3 Interrogaciones + 1 Examen. Si hay exención sería con 6
+
+\subsection*{Fechas}
+\begin{itemize}
+    \item[I1:] Semana 23-27/9
+    \item[I2:] Semana 14-19/10
+    \item[I3:] Semena 18-22/11
+    \item[Ex:] Semana 2-6/12
+\end{itemize}
+\newpage
+
+\part{Espacios de Banach}
+\section{Introducción a los Espacios de Banach}
+\begin{defn}[Espacio de Banach]
+    Sea \(E\) un e.v., una función \(\norm{\cdot}\) tq
+    \begin{itemize}
+        \item \(\norm{x}\geq0\forall x\in E, \norm{x}=0\iff x=0\)
+        \item \(\norm{x+y}\leq\norm{x}+\norm{y},\forall x,y,\in R\)
+        \item \(\norm{\lambda x}=\abs{\lambda}\norm{x}\forall x\in E\forall\lambda\in k\)
+    \end{itemize}
+\end{defn}
+\begin{ejm}
+    En \(\set{C}^n\), si \(z\in\set{C}^n\), \(z=(z_1,\dots,z_n)\) \(\norm{z}_p=\paren{\sum_{j=1}^n\abs{z_j}^p}^{1/p}\)
+\end{ejm}
+\begin{ejm}
+    Si \((X,\mathcal{B},\mu)\) es e. de medida y si \(1\leq p<\infty\), \(E=L^p(X)\); La norma es \(\norm{[f]}=\paren{\int_X\abs{f(x)}^p\d{x}}^{1/p}\)
+\end{ejm}
+\begin{obs}
+    Si \(\norm{\cdot}\) es norma en \(E\), entonces \(d_E(x,y)=\norm{x-y}\) es una métrica o distancia en \(E\).
+\end{obs}
+\begin{defn}[Espacio de Banach]
+    \(E\) e.v. con norma \(\norm{\cdot}\) se dice espacio de Banach si es completo con respecto a \(d_E\).
+\end{defn}
+\begin{ejm}
+    Todos los anteriores son Banach
+\end{ejm}
+\begin{ejm}
+    Sea \(\Omega\subseteq\set{R}^n\) abierto, y sea \(E=\{f:\Omega\rightarrow\set{R},\text{continúa tq }\int_\Omega\abs{f(x)}\d{x}<\infty\}\) en \(E\), \(\norm{f}_1=\int_\Omega\abs{f(x)}\d{x}<\infty\) es norma
+\end{ejm}
+\begin{ejm}
+    Sea \(E\) un e.v. con norma, y sea \(x_n\in E\) tal que \(\sum_{k=1}^\infty\abs{x_n}<\infty\)\\
+    Q: Si \(s_n=\sum_{k=1}^n x_k\), ¿qué podemos decir de \(s_n\)?\\
+    Si \(1\leq m< n\) entonces \(s_n-s_m=\sum_{k=m+1}^nx_k\), luego \(\norm{s_n-s_m}\leq\sum_{k=m+1}^n\norm{x_k}\leq\sum_{k=m+1}^\infty\norm{x_k}\)\\
+    De aquí no es difícil ver que, como \(\sum_{k=1}^\infty\norm{x_k}<\infty\). Entonces \(s_n\) es de Cauchy. Ciertamente \(s_n\) tiene límite en \(E\) cuando \(E\) es de Banach.
+\end{ejm}
+\begin{defn}[Convergencia Absoluta]
+    Un \(E\) e.v. con norma, si \(x_n\in E\) es tq \(\sum_{k=1}^\infty\norm{x_k}<\infty\), diremos que la serie es absolutamente convergente
+\end{defn}
+\begin{defn}[Convergencia en Norma]
+    Si \(s_n=\sum_{k=1}^nx_k\) es convergente en \(E\) converge respecto a \(d_E\), diremos que \(s_n\) converge en norma
+\end{defn}
+\begin{prp}
+    Si \(E\) es Banach y \(\sum_{k=1}^\infty\norm{x_k}<\infty\), entonces \(s=\lim_{n\rightarrow\infty}s_n\) converge en norma. (Notación: \(s=\sum_{k=1}^\infty x_k\)) Recíprocamente si \(E\) e.v. con norma y si cada serie absolutamente convergente es también convergente en norma, entonces \(E\) es Banach.
+\end{prp}
+\begin{proof}
+    \(\impliedby\): Listo anteriormente.\\
+    \(\implies\): Sea \(x_n\) de Cauchy en \(E\). Claramente, basta encontrar \(x_{n_k}\) convergente.\\
+    Como \(x_n\) es de Cauchy, existe \(x_{n_k}\) tq \(\norm{x_{n_k}-x_{n_{k-1}}}\leq\frac1{2^k}\) si esto es verdad.
+    \[
+        x_{n_k}-x_{n_1}=\sum_{j=2}^k(x_{n_j}-x_{n_{j-1}})
+    \]
+    Pero \(\sum_{j=2}^\infty\norm{x_{n_k}-x_{n_{k-1}}}\leq\sum_{j=2}^\infty\frac1{2^k}<\infty\) así que \(x_{n_k}-n_{n_1}\rightarrow x\implies x_{n_k}\rightarrow x+n_{n_1}\).\\
+    Para ver que \(\exists x_{n_k}\) con \(\norm{x_{n_k}-x_{n_{k-1}}}\leq\frac1{2^k}\), sea \(k=1\), para \(\varepsilon=\frac12\exists n_1\) tq \(\norm{x_n-x_m}\leq\frac12\forall n,m\geq n_1\), esto da \(n_1\). Si \(1\leq n_1<\dots<n_k\) son tq \(\norm{x_{n_j}-x_{n_{j-1}}}\leq\frac1{2^j},\: j=1,\dots,k-1\), \(\norm{x_n-x_m}<\frac1{2^k}\forall n,m\geq n_k\), sea \(\varepsilon=\frac1{2^{k+1}}\). Sea \(n_{k+1}>n_k\) tq \(\norm{x_{n_{k+`'}}-x_{n_{k}}}\leq\frac1{2^{k+1}}\). Esto construye \(x_{n_k}\).
+\end{proof}
+\begin{ejm}
+    \(M^n(\set{R})\) matrices de \(n\times n\) en \(\set{R}\), \(A\in M^n(\set{R})\) entonces \(\norm{A}=\paren{\tr(A^TA)}^{1/2}\)
+\end{ejm}
+
+\end{document}
