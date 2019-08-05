@@ -369,4 +369,29 @@ Conj. alg. de $\set{A}_k^2$
 
 \underline{Desafío}: Dados finitos puntos en $S\subset\set{A}_\set{R}^2$ entonces existe $F(x,y)\in \set{R}[x,y]$ \underline{irreducible} tal que $S=V(F)$
 
+\begin{thm}[Nullstenllensatz]
+    Si $I\nsubseteq k[x_1,...,x_n]$, entonces $V(I)\neq\emptyset$
+\end{thm}
+
+\begin{proof}
+    Suponer que $I$ es maximal (ya que sino, $I\subset M\nsubseteq k[x_1,...,x_n$ $V(M)\subseteq V(I)$). Notar que $k\subseteq K$ (ya que $I\nsubseteq k[x_1,...,_n]$)\\
+    Luego considerar $k[x_1,...,x_n]/I=K$ un cuerpo. Se considera $k[x_1,...,x_n]\rightarrow K$, y lo que queremos mostrar que $K=k$ 
+\end{proof}
+
+\begin{thm}[Nullstenllensatz Fuerte]
+    Si $k=\overline{k}$ e $I\subset k[x_1,...,x_n]$ ideal, entonces $I(V(I))=\rad(I)$, es decir, si $f$ es cero en $V(I)\implies \exists m: f^m\in I$
+\end{thm}
+
+\begin{proof}[Truco de Rabinowitsch]
+    Digamos que $f_1,...,f_m=I\subset k[x_1,...,x_n]$
+\end{proof}
+
+\begin{cor}
+    Si $I=\rad(I)\implies I(V(I))=I$
+\end{cor}
+
+\begin{cor}
+    Si $I$ es primo, entonces $V(I)$ es irreducible.
+\end{cor}
+
 \end{document}

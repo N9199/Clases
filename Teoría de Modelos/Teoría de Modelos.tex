@@ -79,13 +79,13 @@ Premisas que tienen un solo valor de verdad, Verdadero o Falso. Lenguaje es \tex
 	Si $\Gamma\models\varphi$, entonces existe $\Gamma_0\subseteq\Gamma$ tal que $\Gamma_0$ es finito y $\Gamma_0\models\varphi$
 \end{ejm}
 \subsection{Sistema deductivo}
-Axiomas y conectivos lógicos $(\neq,\implies)$
+Axiomas y conectivos lógicos $(\neg,\implies)$
 \begin{enumerate}
 	\item $\vdash\varphi\implies(\psi\implies\varphi)$
-	\item $\vdash\paren{\varphi\implies(\psi\implies\varphi)}\implies\paren{(\varphi\implies\psi)\implies(\varphi\implies\psi)}$
+	\item $\vdash\paren{\varphi\implies(\psi\implies\theta)}\implies\paren{(\varphi\implies\psi)\implies(\varphi\implies\theta)}$
 	\item Hay dos opciones\begin{itemize}
-		      \item $\vdash\paren{\neq\varphi\implies\psi}\implies\paren{(\neq\varphi\implies\neq\psi)\implies\varphi}$
-		      \item $\vdash\paren{\neq\varphi\implies\neq\theta}\implies\paren{\psi\implies\theta}$
+		      \item $\vdash\paren{\neg\varphi\implies\psi}\implies\paren{(\neg\varphi\implies\neg\psi)\implies\varphi}$
+		      \item $\vdash\paren{\neg\varphi\implies\neg\theta}\implies\paren{\psi\implies\theta}$
 	      \end{itemize}
 \end{enumerate}
 Bajo Modus Ponens
@@ -108,7 +108,38 @@ Bajo Modus Ponens
 	\end{itemize}
 \end{defn}
 \begin{thm}[Completitud]
-    Si $\Gamma\models\varphi$, entonces $\Gamma\vdash\varphi$ (Dem: Capítulo 1 del Mendelson)
+	Si $\Gamma\models\varphi$, entonces $\Gamma\vdash\varphi$ (Dem: \cite{mendelson2009introduction})
 \end{thm}
+
+\begin{defn}[$\overline{\mathcal{L}}$]
+	Son todas las oraciones de $\mathcal{L}$
+\end{defn}
+
+\begin{defn}[Álgebra totalmente libre]
+	$<\mathcal{L},\vee,\wedge,\neg>$, dónde:
+	\[\vee:\overline{\mathcal{L}}\times\overline{\mathcal{L}}\rightarrow\overline{\mathcal{L}}\]
+	\[(\psi,\varphi)\mapsto(\psi\vee\varphi)\]
+\end{defn}
+
+\begin{defn}[Álgebra de Boole]
+	Se toma la siguiente relación de congruencia
+	\begin{align*}
+		\varphi\sim\psi\iff & \models\varphi\iff\psi
+	\end{align*}
+	Con lo que $\overline{\mathcal{L}}\mid_\sim=\{[\varphi]:\varphi\in\overline{\mathcal{L}}\}$
+	\[[\varphi]\vee[\psi]=[\varphi\vee\psi]\]
+	\[[\varphi]\wedge[\psi]=[\varphi\wedge\psi]\]
+	\[\neg[\psi]=[\neg\psi]\]
+	Si se define $[\varphi]\leq[\psi]$ ssi $\models\varphi\implies\psi$, esto genera un orden en esta Álgebra.
+\end{defn}
+\begin{thm}[Teorema de la deducción]
+	$(\Sigma\vdash\varphi\implies\psi)\impliedby(\Sigma,\varphi\vdash\psi)$
+\end{thm}
+
+\subsection{Lógica de Primer Orden}
+Se cuantifica \textbf{sólo} sobre objetos, no sobre conjuntos de objetos.
+
+\bibliographystyle{unsrt}
+\bibliography{Modelos}
 
 \end{document}

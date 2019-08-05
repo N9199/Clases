@@ -58,31 +58,31 @@
 Si $\set{F}=\set{R}$ o $\set{C}$, recordemos que se tienen las siguientes propiedades:
 \begin{enumerate}
 	\item Conmutatividad de la suma
-	\[a+y=y+x\quad\forall x,y\in\set{F}\]
+	      \[a+y=y+x\quad\forall x,y\in\set{F}\]
 
 	\item Asociatividad de la suma
-	\[(x+y)+z=x+(y+z)\quad\forall x,y,z\in\set{F}\]
+	      \[(x+y)+z=x+(y+z)\quad\forall x,y,z\in\set{F}\]
 
 	\item Existe un único elemento neutro para la suma, tal que:
-	\[x+0=x\quad\forall x\in\set{F}\]
+	      \[x+0=x\quad\forall x\in\set{F}\]
 
 	\item Para todo $x\in\set{F}$ existe un único inverso para la suma, tal que:
-	\[x+y=0\quad (-x=y)\]
+	      \[x+y=0\quad (-x=y)\]
 
 	\item Conmutatividad del producto
-	\[xy=yx\quad\forall x,y\in\set{F}\]
+	      \[xy=yx\quad\forall x,y\in\set{F}\]
 
 	\item Asociatividad del producto
-	\[(xy)z=x(yz)\quad\forall x,y\in\set{F}\]
+	      \[(xy)z=x(yz)\quad\forall x,y\in\set{F}\]
 
 	\item Existe único neutro para el producto, el 1, tal que:
-	\[x\cdot 1=x\quad\forall x\in\set{F}\]
+	      \[x\cdot 1=x\quad\forall x\in\set{F}\]
 
 	\item Todo elemento $x\neq 0$ posee inverso multiplicativo único, tal que:
-	\[x\cdot y=1\quad (x^{-1}=y)\]
+	      \[x\cdot y=1\quad (x^{-1}=y)\]
 
 	\item Distributividad de $\cdot$ con respecto a $+$
-	\[x\cdot (y+z)=xy+xz\quad\forall x,y,z\in\set{F}\]
+	      \[x\cdot (y+z)=xy+xz\quad\forall x,y,z\in\set{F}\]
 \end{enumerate}
 \begin{defn}[Cuerpo]
 	Un cuerpo es un conjunto dotado de dos operaciones $(\set{F},+,\cdot)$, que cumplen lo siguiente:
@@ -99,7 +99,7 @@ Si $\set{F}=\set{R}$ o $\set{C}$, recordemos que se tienen las siguientes propie
 Ejemplos:
 \begin{enumerate}[label=(\alph*)]
 	\item $\set{N}$ con $+$ y $\cdot$ usuales. No, no hay inverso aditivo.
-	
+
 	\item $\set{Z}$ con $+$ y $\cdot$ usuales. No, no hay inverso multiplicativo.
 
 	\item $\set{Q}$ con $+$ y $\cdot$ usuales. Si.
@@ -109,19 +109,19 @@ Ejemplos:
 	\item $\set{C}$ con $+$ y $\cdot$ usuales. Si.
 
 	\item $\set{F}=\{0,1\}$ con $+$ y $\cdot$ definida de la siguiente forma:
-	\begin{center}
-		\begin{tabular}{ c | c  c }
-			+ & 0 & 1 \\ \hline
-			0 & 0 & 1 \\
-			1 & 1 & 0
-		\end{tabular}
-		\ \ \ \ \ 
-		\begin{tabular}{ c | c  c }
-			$\cdot$ & 0 & 1\\ \hline
-			0 & 0 & 0 \\
-			1 & 0 & 1
-		\end{tabular}
-	\end{center}
+	      \begin{center}
+		      \begin{tabular}{ c | c  c }
+			      + & 0 & 1 \\ \hline
+			      0 & 0 & 1 \\
+			      1 & 1 & 0
+		      \end{tabular}
+		      \ \ \ \ \
+		      \begin{tabular}{ c | c  c }
+			      $\cdot$ & 0 & 1 \\ \hline
+			      0       & 0 & 0 \\
+			      1       & 0 & 1
+		      \end{tabular}
+	      \end{center}
 \end{enumerate}
 \begin{defn}[Subcuerpo]
 	$\set{L}\subseteq\set{F}$ es un subcuerpo si $(\set{L},+,\cdot)$ es un cuerpo (donde $+$ y $\cdot$ vienen de $(\set{F},+,\cdot)$)
@@ -185,7 +185,7 @@ Recursivamente: sean $p_0=2,p_1=3,p_2=5,...$ los números primos. Definamos:
 \[\set{L}_0\]
 \section{Espacios Vectoriales}
 \begin{defn}[Espacio Vectorial]
-	
+
 \end{defn}
 \section{Subespacios generados}
 \subsection{Combinaciones lineales}
@@ -196,281 +196,281 @@ Recursivamente: sean $p_0=2,p_1=3,p_2=5,...$ los números primos. Definamos:
 		Sean $u_1,u_2,...,u_n\in V$ con $n>m$. Por contradicción, suponiendo que son linealmente independientes.\\
 		Sean $<v_1,...,v_m>=V$ (por hipótesis)
 		\[
-		\implies u_1=\sum^m_{i=1}\lambda_i^{(1)} v_i
+			\implies u_1=\sum^m_{i=1}\lambda_i^{(1)} v_i
 		\]
 		Claramente $(\lambda_1^{(1)},...,\lambda_m^{(1)})\neq 0$ (de lo contrario $u_1=0$)\\
 		Sin perder generalidad, $\lambda_1^{(1)}\neq 0$ y por el Lema:
 		\[
-		<u_1,v_2,...,v_m>=V
+			<u_1,v_2,...,v_m>=V
 		\]
 		Ahora, existan $(\lambda_1^{(2)},...,\lambda_m^{(2)}\neq(0,...,0)$ tales que:
 		\[
-		u_2=\lambda_1^{(2)} u_1+\sum^m_{i=2}\lambda_i^{(2)}v_i
+			u_2=\lambda_1^{(2)} u_1+\sum^m_{i=2}\lambda_i^{(2)}v_i
 		\]
 		Más. aun, $(\lambda_2^{(2)},...,\lambda_m^{(2)}\neq(0,...,0)$\\
 		De lo contrario:
 		\[
-		u_2=\lambda_1^{(2)}u_1\\
-		0=\lambda_1^{(2)}u_1-u_2\\
-		\rightarrow\leftarrow (u_1,...,u_n\textrm{ son linealmente independientes})
+			u_2=\lambda_1^{(2)}u_1\\
+			0=\lambda_1^{(2)}u_1-u_2\\
+			\rightarrow\leftarrow (u_1,...,u_n\textrm{ son linealmente independientes})
 		\]
 		En conclusión, sin perdida de generalidad  $\lambda_2^{(2)}\neq 0$\\
 		Por el Lema:
 		\[
-		<u_1,u_2,v_3...,v_m>=V
+			<u_1,u_2,v_3...,v_m>=V
 		\]
 		Iterando el argumento, se tiene que:
 		\[
-		<u_1,...,u_m>=V
+			<u_1,...,u_m>=V
 		\]
 		Notemos que $u_{m+1}\in<u_1,...,u_m>$
 		\[
-		0\neq u_{m+1}=\sum^m_{i=1}\mu_i u_i
-		\rightarrow\leftarrow
-		\]		
+			0\neq u_{m+1}=\sum^m_{i=1}\mu_i u_i
+			\rightarrow\leftarrow
+		\]
 	\end{proof}
 \end{thm}
 
 \begin{defn}[Base,Dimensión finita]
-Una base B de un espacio vectorial es un conjunto $B\subseteq V$ tal que:
-\begin{enumerate}
-	\item $B$ es linealmente independiente
-	\item $<B>=V$
-\end{enumerate}
-Un espacio vectorial $V$ se dice finito-dimensional si existe un conjunto $S\subseteq V,\|S\|<\infty$ tal que $<S>=V$.
+	Una base B de un espacio vectorial es un conjunto $B\subseteq V$ tal que:
+	\begin{enumerate}
+		\item $B$ es linealmente independiente
+		\item $<B>=V$
+	\end{enumerate}
+	Un espacio vectorial $V$ se dice finito-dimensional si existe un conjunto $S\subseteq V,\|S\|<\infty$ tal que $<S>=V$.
 \end{defn}
 \begin{cor}
-Si $V$ es finito-dimensional, todas las bases de $V$ son finitas y tienen la misma cardinalidad.
-\begin{proof}
-Sean $B_1$ y $B_2$ bases de V.\\
-Por Teo (*), $\|B_1\|,\|B_2\|\leq m$, donde $m$ es el tamaño de $S$ tal que $<S>=V$ y $\|S\|<\infty$.\\
-Como $B_1$ es base, $<B_1>=V$, y como $B_2$ es linealmente independiente:
-\[
-Teo(*)\implies \|B_2\|\leq\|B_1\|
-\]
-Como $B_2$ es base.
-\end{proof}
+	Si $V$ es finito-dimensional, todas las bases de $V$ son finitas y tienen la misma cardinalidad.
+	\begin{proof}
+		Sean $B_1$ y $B_2$ bases de V.\\
+		Por Teo (*), $\|B_1\|,\|B_2\|\leq m$, donde $m$ es el tamaño de $S$ tal que $<S>=V$ y $\|S\|<\infty$.\\
+		Como $B_1$ es base, $<B_1>=V$, y como $B_2$ es linealmente independiente:
+		\[
+			Teo(*)\implies \|B_2\|\leq\|B_1\|
+		\]
+		Como $B_2$ es base.
+	\end{proof}
 \end{cor}
 
 \begin{defn}[Dimensión]
-Si V es un espacio vectorial finito-dimensional definimos su dimensión, $\dim V$, como el cardinal de una base cualquiera de $V$. Si $V$ no es finito-dimensional $dimV=+\infty$
+	Si V es un espacio vectorial finito-dimensional definimos su dimensión, $\dim V$, como el cardinal de una base cualquiera de $V$. Si $V$ no es finito-dimensional $dimV=+\infty$
 \end{defn}
 Ejemplos:
 \begin{enumerate}
 	\item $V=Sim^2(\mathbb{R})=\{A\in\mathbb{R}^{2\times 2}:A=A^T\}$
-	\[
-	abc
-	\]
-	
+	      \[
+		      abc
+	      \]
+
 	\item $\dim(\mathbb{R}^{n\times n})=n^2$
-	
+
 	\item $\dim(Antisim^m(\mathbb{R}))=\frac{n\cdot(n-1)}{2}$ y $\dim(Sim^m(\mathbb{R}))=\frac{n\cdot (n+1)}{2}$
-	
+
 	\item$P_n(\mathbb{C}$\\
-	$\{1,x,x^2,...,x^n\}$ es base
-	\begin{enumerate}
-		\item $<\{1,x,x^2,...,x^n\}>=P_n(\mathbb{C})$\\
-		$p\in P_n(\mathbb{C})$\\
-		$\implies p(x)=a_0\cdot 1+a_1\cdot x+,,,+a_nx^n\in<\{1,x,x^2,...,x^n\}>$
-		
-		\item $\{1,x,...,x^n\}$ es linealmente independiente.\\
-		Por contradicción supongamos $(a_0,a_1,...,a_n)\neq (0,0,...,0)$\\
-		$0=a_0\cdot 1+a_1\cdot x+...+a_n\cdot x^n$ Con igualdad de funciones.\\
-		$\iff (\forall x\in \mathbb{C}) 0=a_0\cdot 1+a_1\cdot x+...+a_n\cdot x^n$\\
-		Recuerdo (TFA): Todo polinomio complejo de grado $\geq 1$ posee una raÃ­z compleja.\\
-		$\implies p(x)=a_0\cdot 1+a_1\cdot x+...+a_n\cdot x^n=(x-z_1)\cdot a_0'\cdot 1+a'_1\cdot x+...+a'_{n-1}\cdot x^{n-1}$\\
-		$\implies p(x)=(x-z_1)\cdot (x-z_2)\cdot...(x-z_k)\cdot A$ donde $k=gr(p)$, y $A\neq 0$.\\
-		Tomando $z'\neq z_1,z_2,...,z_k$, tenemos: $0=(z'-z_1)\cdot (z'-z_2)\cdot...(z'-z_k)\cdot A$ Pero multiplicar cosas distintas de $0$ no da $0$.
-		\[
-		\rightarrow\leftarrow
-		\]
-	\end{enumerate}
-	$\dim(P_n(\mathbb{C}))=n+1$
+	      $\{1,x,x^2,...,x^n\}$ es base
+	      \begin{enumerate}
+		      \item $<\{1,x,x^2,...,x^n\}>=P_n(\mathbb{C})$\\
+		            $p\in P_n(\mathbb{C})$\\
+		            $\implies p(x)=a_0\cdot 1+a_1\cdot x+,,,+a_nx^n\in<\{1,x,x^2,...,x^n\}>$
+
+		      \item $\{1,x,...,x^n\}$ es linealmente independiente.\\
+		            Por contradicción supongamos $(a_0,a_1,...,a_n)\neq (0,0,...,0)$\\
+		            $0=a_0\cdot 1+a_1\cdot x+...+a_n\cdot x^n$ Con igualdad de funciones.\\
+		            $\iff (\forall x\in \mathbb{C}) 0=a_0\cdot 1+a_1\cdot x+...+a_n\cdot x^n$\\
+		            Recuerdo (TFA): Todo polinomio complejo de grado $\geq 1$ posee una raÃ­z compleja.\\
+		            $\implies p(x)=a_0\cdot 1+a_1\cdot x+...+a_n\cdot x^n=(x-z_1)\cdot a_0'\cdot 1+a'_1\cdot x+...+a'_{n-1}\cdot x^{n-1}$\\
+		            $\implies p(x)=(x-z_1)\cdot (x-z_2)\cdot...(x-z_k)\cdot A$ donde $k=gr(p)$, y $A\neq 0$.\\
+		            Tomando $z'\neq z_1,z_2,...,z_k$, tenemos: $0=(z'-z_1)\cdot (z'-z_2)\cdot...(z'-z_k)\cdot A$ Pero multiplicar cosas distintas de $0$ no da $0$.
+		            \[
+			            \rightarrow\leftarrow
+		            \]
+	      \end{enumerate}
+	      $\dim(P_n(\mathbb{C}))=n+1$
 \end{enumerate}
 
 \begin{obs}
-$\{0\}, \dim\{0\}=0$, notando que base es $\emptyset$, tenemos que $<\emptyset>=\{0\}$
+	$\{0\}, \dim\{0\}=0$, notando que base es $\emptyset$, tenemos que $<\emptyset>=\{0\}$
 \end{obs}
 \begin{lem}
-Sea $S\subseteq , S=\{v_1,...,v_n\}$ conjunto linealmente independiente.\\
-$v\notin<v_1,...,v_n>\implies\{v,v_1,...,v_n\}$ es linealmente independiente.
-\begin{proof}
-Ejercicio
-\end{proof}
+	Sea $S\subseteq , S=\{v_1,...,v_n\}$ conjunto linealmente independiente.\\
+	$v\notin<v_1,...,v_n>\implies\{v,v_1,...,v_n\}$ es linealmente independiente.
+	\begin{proof}
+		Ejercicio
+	\end{proof}
 \end{lem}
 
 \begin{thm}
-Sea $V$ espacio vectorial finito dimensional, entonces:
-\begin{enumerate}
-	\item Todo conjunto linealmente extiende a una base
-	
-	\item Todo conjunto generado contiene una base
-\end{enumerate}
+	Sea $V$ espacio vectorial finito dimensional, entonces:
+	\begin{enumerate}
+		\item Todo conjunto linealmente extiende a una base
+
+		\item Todo conjunto generado contiene una base
+	\end{enumerate}
 
 \end{thm}
 Todo espacio vectorial $V\neq\{0\}$ finito dimensional posee una base.
 \begin{proof}
-\begin{enumerate}[label=\alph*)]
-	\item Sea $v\in V\setminus\{0\}$. Entonces $\{V\}$ es linealmente independiente.\\
-	Por Teo, estamos listos.
-	
-	Dem(Teo):\\
-	$V$ es finito dimensional $\implies\exists\{v_1,...,v_n\}$ que genera $V$.\\
-	Sea $S=\{v_1,...,v_n\}$ conjunto linealmente independiente.\\
-	Dos casos:
-	\begin{enumerate}
-		\item Si $<S>=V$, entonces $S$ es base
-		
-		\item Si $<S>\subset V$, entonces existe $v\notin<S>$, y opr el Lema, $S\cup\{V\}$ es linealmente independiente.
+	\begin{enumerate}[label=\alph*)]
+		\item Sea $v\in V\setminus\{0\}$. Entonces $\{V\}$ es linealmente independiente.\\
+		      Por Teo, estamos listos.
+
+		      Dem(Teo):\\
+		      $V$ es finito dimensional $\implies\exists\{v_1,...,v_n\}$ que genera $V$.\\
+		      Sea $S=\{v_1,...,v_n\}$ conjunto linealmente independiente.\\
+		      Dos casos:
+		      \begin{enumerate}
+			      \item Si $<S>=V$, entonces $S$ es base
+
+			      \item Si $<S>\subset V$, entonces existe $v\notin<S>$, y opr el Lema, $S\cup\{V\}$ es linealmente independiente.
+		      \end{enumerate}
+		      Inductivamente, o bien eventualmente $1$, o iteramos $2$.
+
+		      Sin embargo, $2$ no puede ocurrir infinitas veces.\\
+		      Teo(*)$\implies$ todo conjunto linealmente independiente posee cardinalidad $\leq n$.
+
+		\item Sea $S$, tal que $<S>=V$.\\
+		      Consideremos, $d=\max\{|S'|:S'\subseteq S, S'\textrm{ es linealmente independiente}\}$\\
+		      Notemos que $d\leq n<+\infty$, por el Teo(*).\\
+		      Como el máximo se alcanza, existe $S'$ tal que $|S'|=d$ y $S'$ es linealmente independiente.\\
+		      Por contradicción, supongamos que $S'$ no es base.
+		      \[
+			      <S'>\subset V=<S>
+		      \]
+		      Luego, $S\setminus<S'>\neq\emptyset$. De lo contrario $<S>\setminus<S'>\neq\emptyset$\\
+		      $\implies S\subseteq <S'>\implies <S>\subset<S'>$
+		      $\implies <S'>=V$\\
+		      Finalmente, existe $v\in S\setminus<S'>$, y por el Lema, $S'\cup\{v\}$ es linealmente independiente y $|S'\cup\{v\}|=d+1$
+		      \[
+			      \rightarrow\leftarrow
+		      \]
 	\end{enumerate}
-	Inductivamente, o bien eventualmente $1$, o iteramos $2$.
-	
-	Sin embargo, $2$ no puede ocurrir infinitas veces.\\
-	Teo(*)$\implies$ todo conjunto linealmente independiente posee cardinalidad $\leq n$.
-	
-	\item Sea $S$, tal que $<S>=V$.\\
-	Consideremos, $d=\max\{|S'|:S'\subseteq S, S'\textrm{ es linealmente independiente}\}$\\
-	Notemos que $d\leq n<+\infty$, por el Teo(*).\\
-	Como el máximo se alcanza, existe $S'$ tal que $|S'|=d$ y $S'$ es linealmente independiente.\\
-	Por contradicción, supongamos que $S'$ no es base.
-	\[
-	<S'>\subset V=<S>
-	\]
-	Luego, $S\setminus<S'>\neq\emptyset$. De lo contrario $<S>\setminus<S'>\neq\emptyset$\\
-	$\implies S\subseteq <S'>\implies <S>\subset<S'>$
-	$\implies <S'>=V$\\
-	Finalmente, existe $v\in S\setminus<S'>$, y por el Lema, $S'\cup\{v\}$ es linealmente independiente y $|S'\cup\{v\}|=d+1$
-	\[
-	\rightarrow\leftarrow
-	\]
-\end{enumerate}
 \end{proof}
 \begin{cor}
 	Sea $W\subset V$ subespacio propio ($W\neq V$) con $V$ finito dimensional.
 	Entonces, $\dim W< \dim V$
 	\begin{proof}
-	\begin{itemize}
-		\item Si $\dim W=0\implies \dim W=0<\dim V$.
-		
-		\item Si $\dim W\geq 1$ entonces, por el corolario, $W$ tiene una base.
-		\[
-		B_W=\{w_1,...,w_m\}\quad\textrm{es base de } W
-		\]
-		Como $W$ es subespacio propio, existe $v\in V\setminus<B_W>$\\
-		$\implies B_W\cup\{v\}$ es linealmente independiente y $\subset V$.\\
-		Por Teo. a), $B_W\cup\{v\}$ se extiende cin una base $B_V,|B_V|\geq|B_W|+1$.
-		\[
-		\dim W=|B_W|<|B_W|+1\leq |B_V|=\dim V
-		\]
-	\end{itemize}
-	\end{proof}	
+		\begin{itemize}
+			\item Si $\dim W=0\implies \dim W=0<\dim V$.
+
+			\item Si $\dim W\geq 1$ entonces, por el corolario, $W$ tiene una base.
+			      \[
+				      B_W=\{w_1,...,w_m\}\quad\textrm{es base de } W
+			      \]
+			      Como $W$ es subespacio propio, existe $v\in V\setminus<B_W>$\\
+			      $\implies B_W\cup\{v\}$ es linealmente independiente y $\subset V$.\\
+			      Por Teo. a), $B_W\cup\{v\}$ se extiende cin una base $B_V,|B_V|\geq|B_W|+1$.
+			      \[
+				      \dim W=|B_W|<|B_W|+1\leq |B_V|=\dim V
+			      \]
+		\end{itemize}
+	\end{proof}
 \end{cor}
 
 
 \begin{prop}
-Sean $U,W$ subespacios vectoriales de un espacio vectorial finito dimensional $V$. Entonces:
-\[
-\dim (U+W)=\dim U+\dim W-\dim (U\cap W)
-\]
-\begin{proof}
-Si $U\cap W=\{0\}$, trivial\\
-Si $U\cap W\neq\{0\}$, entonces sea $B_{U\cap W}$ base de $U\cap W$.
-\[
-B_{U\cap W}=\{v_1,...v_m\}
-\]
-Base de U: Sea $B_U=\{v_1,...,v_m,u_1,...,u_p\}$\\
-Base de W: Sea $B_W=\{v_1,...v_m,w_1,...,w_r\}$\\
-Ambos existen por Teo.a).\\
-Afirmación: $B_U\cap B_W=\{v_1,...,v_m,u_1,...,u_p,w_1,...,w_r\}$ es base de $U+W$.
-\begin{enumerate}
-	\item $<B_U\cap B_W>=U+W$\\
-	$v\in u+w,u\in U,w\in W$
+	Sean $U,W$ subespacios vectoriales de un espacio vectorial finito dimensional $V$. Entonces:
 	\[
-	\implies v=\sum^{p}_{i=1}\lambda_i u_i+\sum^{m}_{j=1}\alpha_j v_j+\sum^{r}_{k=1}\delta_k w_k+\sum^{m}_{j=1}\beta_j v_j\in<B_U\cup B_W>
+		\dim (U+W)=\dim U+\dim W-\dim (U\cap W)
 	\]
-	
-	\item $B_U\cup B_W$ es linealmente independiente:
-	\[
-	0=\sum^{m}_{i=1}\lambda_i v_i+\sum^{r}_{j=1}\mu_j w_j+\sum^{p}_{k=1}\nu_k u_k
-	\]
-	\[
-	-\sum^{p}_{k=1}\nu_k u_k=\sum^{m}_{i=1}\lambda_i v_i+\sum^{r}_{j=1}\mu_j w_j \in U\cap W
-	\]
-	\[
-	\implies 0=\sum^{m}_{i=1}\lambda_i v_i+\sum^{r}_{j=1}\mu_j w_j\implies \nu_k,\lambda_i=0\,\forall k,i
-	\]
-\end{enumerate}
-\[\dim(U+W)=\dim U+\dim W-\dim(U\cap W)\]
-\[\dim(U\cap W)=|b_{U\cap W}|\]
-\[\dim U=|B_U|\]	
-\[\dim W=|B_W|\]	
-\[\dim(U+W)=|B_U\cup B_W|\qedhere\]
-\end{proof}
+	\begin{proof}
+		Si $U\cap W=\{0\}$, trivial\\
+		Si $U\cap W\neq\{0\}$, entonces sea $B_{U\cap W}$ base de $U\cap W$.
+		\[
+			B_{U\cap W}=\{v_1,...v_m\}
+		\]
+		Base de U: Sea $B_U=\{v_1,...,v_m,u_1,...,u_p\}$\\
+		Base de W: Sea $B_W=\{v_1,...v_m,w_1,...,w_r\}$\\
+		Ambos existen por Teo.a).\\
+		Afirmación: $B_U\cap B_W=\{v_1,...,v_m,u_1,...,u_p,w_1,...,w_r\}$ es base de $U+W$.
+		\begin{enumerate}
+			\item $<B_U\cap B_W>=U+W$\\
+			      $v\in u+w,u\in U,w\in W$
+			      \[
+				      \implies v=\sum^{p}_{i=1}\lambda_i u_i+\sum^{m}_{j=1}\alpha_j v_j+\sum^{r}_{k=1}\delta_k w_k+\sum^{m}_{j=1}\beta_j v_j\in<B_U\cup B_W>
+			      \]
+
+			\item $B_U\cup B_W$ es linealmente independiente:
+			      \[
+				      0=\sum^{m}_{i=1}\lambda_i v_i+\sum^{r}_{j=1}\mu_j w_j+\sum^{p}_{k=1}\nu_k u_k
+			      \]
+			      \[
+				      -\sum^{p}_{k=1}\nu_k u_k=\sum^{m}_{i=1}\lambda_i v_i+\sum^{r}_{j=1}\mu_j w_j \in U\cap W
+			      \]
+			      \[
+				      \implies 0=\sum^{m}_{i=1}\lambda_i v_i+\sum^{r}_{j=1}\mu_j w_j\implies \nu_k,\lambda_i=0\,\forall k,i
+			      \]
+		\end{enumerate}
+		\[\dim(U+W)=\dim U+\dim W-\dim(U\cap W)\]
+		\[\dim(U\cap W)=|b_{U\cap W}|\]
+		\[\dim U=|B_U|\]
+		\[\dim W=|B_W|\]
+		\[\dim(U+W)=|B_U\cup B_W|\qedhere\]
+	\end{proof}
 \end{prop}
 \section{Transformaciones lineales}
 \begin{defn}[Transformación lineal]
-Sean $V$ y $W$ espacios vectoriales sobre un cuerpo común $\mathbb{F}$.
-Una función $T:V\rightarrow W$ es transformación lineal si 
-\[T(\lambda u+v)=\lambda T(u)+T(v)\quad \forall u,v\in V \forall\lambda\in\mathbb{F}
-\]
+	Sean $V$ y $W$ espacios vectoriales sobre un cuerpo común $\mathbb{F}$.
+	Una función $T:V\rightarrow W$ es transformación lineal si
+	\[T(\lambda u+v)=\lambda T(u)+T(v)\quad \forall u,v\in V \forall\lambda\in\mathbb{F}
+	\]
 \end{defn}
 Ejemplos:
 \begin{enumerate}
 	\item $V=\mathbb{F}^n, W=\mathbb{F}^m, T:\mathbb{F}^n\rightarrow\mathbb{F}^m$ y $A\in\mathbb{F}^{m\times n}\quad v\mapsto Av$\\
-	$T$ es una transformación lineal
-	
+	      $T$ es una transformación lineal
+
 	\item $V=W=C^\infty(\mathbb{R}=\{f:\mathbb{R}\rightarrow\mathbb{R}: f\textrm{ es infinitamente diferenciable}\}$\\
-	$V=C^1(\mathbb{R}), W=C^0(\mathbb{R})$\\
-	$T:V\rightarrow W$\\
-	$f\mapsto\frac{\d f}{\d x}$\\
-	Por álgebra de funciones diferenciables si $f,g\in V$ y $\lambda\in\mathbb{R}$
-	\[
-	\frac{\d (\lambda f+g)}{\d x}=\lambda\frac{\d f}{\d x}+\frac{\d g}{\d x}
-	\]
-	\[
-	T(\lambda u+v)=\lambda T(u)+T(v)
-	\]
-	
+	      $V=C^1(\mathbb{R}), W=C^0(\mathbb{R})$\\
+	      $T:V\rightarrow W$\\
+	      $f\mapsto\frac{\d f}{\d x}$\\
+	      Por álgebra de funciones diferenciables si $f,g\in V$ y $\lambda\in\mathbb{R}$
+	      \[
+		      \frac{\d (\lambda f+g)}{\d x}=\lambda\frac{\d f}{\d x}+\frac{\d g}{\d x}
+	      \]
+	      \[
+		      T(\lambda u+v)=\lambda T(u)+T(v)
+	      \]
+
 	\item $\mathbb{R}[x]$ Es un espacio vectorial\\
-	$T:\mathbb{R}[x]\rightarrow \mathbb{R}[x]$\\
-	$p\mapsto\frac{\d p}{\d x}$
-	
+	      $T:\mathbb{R}[x]\rightarrow \mathbb{R}[x]$\\
+	      $p\mapsto\frac{\d p}{\d x}$
+
 	\item $V=C^0([0,1]), W=\mathbb{R}$\\
-	$T:V\rightarrow W$\\
-	$f\rightarrow\mapsto\int^1_0f(x)\d x$
+	      $T:V\rightarrow W$\\
+	      $f\rightarrow\mapsto\int^1_0f(x)\d x$
 \end{enumerate}
 \begin{thm}
-Sea $V$ un espacio finito dimensional y $\{v_1,...,v_n\}$ es base de $V$.\\
-Sea $W$ un espacio vectorial y consideramos vectores $w_1,...w_n\in W$\\
-Entonces $\exists !T:V\rightarrow W: T(v_i)=w_i\forall i=1,...,n$
-\begin{proof}
-\begin{itemize}
-	\item Existencia: Si $v\in V$ entonces:
-	\[(*)\, v=\sum^n_{i=1}\lambda_i v_i\quad \exists \lambda_i\]
-	Definimos:
-	\[T(v)=\sum^n_{i=1}\lambda_i T(v_i)\]
-	$T:V\rightarrow W$ es una función porque $\forall v\in V$ la descomposición (*) es única.\\
-	Además, es lineal. Si $v,u\in V$ y $\lambda\in\mathbb{F}$
-	\[v=\sum_i \lambda_i v_i\]
-	\[u=\sum_i\mu_i v_i\]
-	\[T(\lambda v+u)=T(\sum_i(\lambda\lambda_i+\mu_i)v_i)\]
-	\[T(\lambda v+u)=\sum_i(\lambda\lambda_i+\mu_i)T(v_i)\]
-	\[T(\lambda v+u)=\lambda\sum_i\lambda_i T(v_i)+\sum_i\mu_i T(v_i)\]
-	\[T(\lambda v+u)=\lambda T(v)+T(u)\]
-	\item Unicidad: Sean $T,T'$ transformaciones lineales tales que:
-	\[T(v_i)=T'(v_i)=w_i\]
-	Sea $v\in V$, entonces:
-	\[v=\sum^n_{i=1}\lambda_i v_i\quad \exists \lambda_i\]
-	\[T(v)=\sum^n_{i=1}\lambda_i T(v_i)=\sum^n_{i=1}\lambda T'(v_i)\]
-	\[T(v)=T'(v)\implies T=T'\]
-\end{itemize}
-\end{proof}
+	Sea $V$ un espacio finito dimensional y $\{v_1,...,v_n\}$ es base de $V$.\\
+	Sea $W$ un espacio vectorial y consideramos vectores $w_1,...w_n\in W$\\
+	Entonces $\exists !T:V\rightarrow W: T(v_i)=w_i\forall i=1,...,n$
+	\begin{proof}
+		\begin{itemize}
+			\item Existencia: Si $v\in V$ entonces:
+			      \[(*)\, v=\sum^n_{i=1}\lambda_i v_i\quad \exists \lambda_i\]
+			      Definimos:
+			      \[T(v)=\sum^n_{i=1}\lambda_i T(v_i)\]
+			      $T:V\rightarrow W$ es una función porque $\forall v\in V$ la descomposición (*) es única.\\
+			      Además, es lineal. Si $v,u\in V$ y $\lambda\in\mathbb{F}$
+			      \[v=\sum_i \lambda_i v_i\]
+			      \[u=\sum_i\mu_i v_i\]
+			      \[T(\lambda v+u)=T(\sum_i(\lambda\lambda_i+\mu_i)v_i)\]
+			      \[T(\lambda v+u)=\sum_i(\lambda\lambda_i+\mu_i)T(v_i)\]
+			      \[T(\lambda v+u)=\lambda\sum_i\lambda_i T(v_i)+\sum_i\mu_i T(v_i)\]
+			      \[T(\lambda v+u)=\lambda T(v)+T(u)\]
+			\item Unicidad: Sean $T,T'$ transformaciones lineales tales que:
+			      \[T(v_i)=T'(v_i)=w_i\]
+			      Sea $v\in V$, entonces:
+			      \[v=\sum^n_{i=1}\lambda_i v_i\quad \exists \lambda_i\]
+			      \[T(v)=\sum^n_{i=1}\lambda_i T(v_i)=\sum^n_{i=1}\lambda T'(v_i)\]
+			      \[T(v)=T'(v)\implies T=T'\]
+		\end{itemize}
+	\end{proof}
 \end{thm}
 Propiedades:\\
 Si $T:V\rightarrow W$ transformaciones lineales, entonces:
 \begin{enumerate}
 	\item $T(0)=0$
-	
+
 	\item $T(\sum^n_{i=1}\lambda_iT(v_i)$
 \end{enumerate}
 \begin{proof}
@@ -479,81 +479,81 @@ Si $T:V\rightarrow W$ transformaciones lineales, entonces:
 
 La importancia de este teorema se relaciona con el hecho de poder definir transformaciones lineales sólo a través de como actuan sobre una base. Esto se relaciona con la noción de \underline{matriz representante}.
 \begin{defn}
-Si $T:V\rightarrow W$ transformación lineal, definimos:
-\begin{itemize}
-	\item Núcleo(Kernel): $\ker(T)=\{v\in V:T(v)=0\}$, subespacio vectorial de $V$
-	
-	\item Imagen(Rango): $T(V)=\{w\in W:\exists v\in V\, T(v)=w\}$, subespacio vectorial de $W$
-\end{itemize}
+	Si $T:V\rightarrow W$ transformación lineal, definimos:
+	\begin{itemize}
+		\item Núcleo(Kernel): $\ker(T)=\{v\in V:T(v)=0\}$, subespacio vectorial de $V$
+
+		\item Imagen(Rango): $T(V)=\{w\in W:\exists v\in V\, T(v)=w\}$, subespacio vectorial de $W$
+	\end{itemize}
 \end{defn}
 \begin{thm}[Núcleo-Imagen]
-Sean $V,W$ espacios vectoriales sobre $\mathbb{F}$ y $T:V\rightarrow W$ transformación lineal. Entonces, si $V$ es finito dimensional:
-\[
-\dim(V)=\dim(\ker(T))+\dim(T(V))
-\]
-\begin{proof}
-Como $\ker T$ es subespacio vectorial de $V$ entonces es finito dimensional y por ende posee una base:
-\[
-\{v_1,...,v_k\} \quad\textrm{ es base de} \ker T
-\]
-Por un teorema podemos extender a una base de $V$\\
-$\{v_1,...,v_k,v_{k+1},...,v_u\}$ es base de $V$\\
-Sea ahora $w\in\Im(T)\implies w=T(v)$\\
-Entonces,
-\[
-w=T(v)=T(\sum^n_{i=1}\quad\exists\lambda_i\in\mathbb{F}
-\]
-\[
-w=\sum^n+{i=k+1}\lambda_iT(v_i)
-\]
-\[
-\in<\{T(v_{k+1}),...,T(v_n)\}>
-\]
-Queremos probar ahora que $(T(v_i))^n_{i=k+1}$ son linealmente independiente. Supongamos $\exists\lambda_{k+1},...,\lambda_{n}$ tal que:
-\[
-\sum^n_{i=k+1}\lambda_iT(v_I)=0
-\]
-\[
-T(\sum^n_{i=k+1}\lambda_iv_i)=0
-\]
-\[
-\implies \in Ker(T)
-\]
-$\exists \lambda_1,...,\lambda_k$ tal que
-\[
-\sum^n_{i=k+1}(-\lambda_i)v_i+\sum^k_{j=1}\lambda_jv_j=0
-\]
-Como $\{v_1,...,v_n\}$ son linealmente independientes tenemos que:
-\[
-\lambda_1=\lambda_2=...=\lambda_n=0
-\]
-Finalmente:
-\[
-\dim V=n,\dim \ker T=k
-\]
-\[
-\dim\Im T=n-k\qedhere
-\]
-\end{proof}
+	Sean $V,W$ espacios vectoriales sobre $\mathbb{F}$ y $T:V\rightarrow W$ transformación lineal. Entonces, si $V$ es finito dimensional:
+	\[
+		\dim(V)=\dim(\ker(T))+\dim(T(V))
+	\]
+	\begin{proof}
+		Como $\ker T$ es subespacio vectorial de $V$ entonces es finito dimensional y por ende posee una base:
+		\[
+			\{v_1,...,v_k\} \quad\textrm{ es base de} \ker T
+		\]
+		Por un teorema podemos extender a una base de $V$\\
+		$\{v_1,...,v_k,v_{k+1},...,v_u\}$ es base de $V$\\
+		Sea ahora $w\in\Im(T)\implies w=T(v)$\\
+		Entonces,
+		\[
+			w=T(v)=T(\sum^n_{i=1}\quad\exists\lambda_i\in\mathbb{F}
+		\]
+		\[
+			w=\sum^n+{i=k+1}\lambda_iT(v_i)
+		\]
+		\[
+			\in<\{T(v_{k+1}),...,T(v_n)\}>
+		\]
+		Queremos probar ahora que $(T(v_i))^n_{i=k+1}$ son linealmente independiente. Supongamos $\exists\lambda_{k+1},...,\lambda_{n}$ tal que:
+		\[
+			\sum^n_{i=k+1}\lambda_iT(v_I)=0
+		\]
+		\[
+			T(\sum^n_{i=k+1}\lambda_iv_i)=0
+		\]
+		\[
+			\implies \in Ker(T)
+		\]
+		$\exists \lambda_1,...,\lambda_k$ tal que
+		\[
+			\sum^n_{i=k+1}(-\lambda_i)v_i+\sum^k_{j=1}\lambda_jv_j=0
+		\]
+		Como $\{v_1,...,v_n\}$ son linealmente independientes tenemos que:
+		\[
+			\lambda_1=\lambda_2=...=\lambda_n=0
+		\]
+		Finalmente:
+		\[
+			\dim V=n,\dim \ker T=k
+		\]
+		\[
+			\dim\Im T=n-k\qedhere
+		\]
+	\end{proof}
 \end{thm}
 \subsection{Algebra de Transformaciones Lineales}
 Def[Espacio de transformaciones lineales]:\\
 Sean $V$ y $W$ espacios vectoriales sobre $\mathbb{F}$. Definimos
 \[
-\mathcal{L}(V,W)=\{T:V\rightarrow W:T\textrm{ es transformación lineal}\}
+	\mathcal{L}(V,W)=\{T:V\rightarrow W:T\textrm{ es transformación lineal}\}
 \]
 Dadas $T_1,T_2\in\mathcal{L}(V,W)$ y $\lambda\in\mathbb{F}$, definimos
 \[
-T_1+T_2:V\rightarrow W
+	T_1+T_2:V\rightarrow W
 \]
 \[
-v\mapsto T_1v+T_2v
+	v\mapsto T_1v+T_2v
 \]
 \[
-\lambda T_1:V\rightarrow W
+	\lambda T_1:V\rightarrow W
 \]
 \[
-v\mapsto \lambda T_1v
+	v\mapsto \lambda T_1v
 \]
 \subsubsection{Teorema}
 $\mathcal{L}(V,W)$ dotado de $+$ y $\cdot$ es un espacio vectorial sobre $\mathbb{F}$\\
@@ -564,7 +564,7 @@ $(T_1+T_2)(\lambda v+w)=T_1(\lambda v+w)+T_2(\lambda v+w)$
 $(T_1+T_2)(\lambda v+w)=\lambda(T_1+T_2)(v)+(T_1+T_2)(w)$
 Similarmente:
 \[
-(\lambda T_1)(\mu v+w)=\mu(\lambda T_1)(v)+(\lambda T_1)(w)
+	(\lambda T_1)(\mu v+w)=\mu(\lambda T_1)(v)+(\lambda T_1)(w)
 \]
 Y el resto de las propiedades se dejan propuestas como ejercicio.
 \subsubsection{Teorema}
@@ -572,62 +572,62 @@ Sean $V,W$ espacios vectoriales sobre $\mathbb{F}$, $\dim V=n$ y $\dim W=m$. Lue
 Dem: Sean $V=<\{v_1,...,0_i,...,v_n\}>$, $W=<\{w_1,...,0_j,...,w_n\}>$, bases respectivamente.\\
 Dados $1\leq p\leq m, 1\leq q\leq n$, definimos $E^{p,q}\in\mathcal{L}(V,W)$ como única transformación lineal que satisface:
 \[
-E^{p,q}(v_j)=
-\begin{dcases}
-	w_p\quad\textrm{si }j=q\\
-	0\quad\textrm{si } j\neq q
-\end{dcases}
+	E^{p,q}(v_j)=
+	\begin{dcases}
+		w_p\quad\textrm{si }j=q \\
+		0\quad\textrm{si } j\neq q
+	\end{dcases}
 \]
 \[
-E^{p,q}\in\mathcal{L}(V,W)
+	E^{p,q}\in\mathcal{L}(V,W)
 \]
 $E^{p,q}$ esta bien definida por el primer teorema de la sección
 \[
-\mathcal{B}_L=\{E^{p,q}:1\leq p\leq n,1\leq q\leq m\}
+	\mathcal{B}_L=\{E^{p,q}:1\leq p\leq n,1\leq q\leq m\}
 \]
 Afirmación: $\mathcal{B}_L$ es base de $\mathcal{L}(V,W)$
 \[
-<\mathcal{B}_L>=\mathcal{L}:\textrm{Sea }T\in\mathcal{L}(V,W)
+	<\mathcal{B}_L>=\mathcal{L}:\textrm{Sea }T\in\mathcal{L}(V,W)
 \]
 Dado $1\leq j\leq n$, existen $\lambda_1,...,\lambda_m\in\mathbb{F}$
 \[
-T(v_j)=\sum^m_{i=1}\lambda_{i,j}w_i
+	T(v_j)=\sum^m_{i=1}\lambda_{i,j}w_i
 \]
 Dado $v\in V$, existen $\mu_1,...\mu_n\in\mathbb{F}$
 \[
-v=\sum^n_{j=1}\mu_jv_j
+	v=\sum^n_{j=1}\mu_jv_j
 \]
 \[
-T(v)=\sum^n_{j=1}\mu_jT(v_j)=\sum^n_{j=1}\mu_j(\sum^m_{i=1}\lambda_iw_i)
+	T(v)=\sum^n_{j=1}\mu_jT(v_j)=\sum^n_{j=1}\mu_j(\sum^m_{i=1}\lambda_iw_i)
 \]
 \[
-T(v)=\sum^n_{j=1}\sum^m_{i=1}\mu_j\lambda_{i,j}E^{i,j}(v_j)
+	T(v)=\sum^n_{j=1}\sum^m_{i=1}\mu_j\lambda_{i,j}E^{i,j}(v_j)
 \]
 \[
-T(v)=\sum_i\sum_j\lambda_{i,j}\mu_jE^{i,j}(v_j)
+	T(v)=\sum_i\sum_j\lambda_{i,j}\mu_jE^{i,j}(v_j)
 \]
 \[
-T(v)=\sum_i\left(\sum_j\lambda_{i,j}E^{i,j}\left(\sum_k\mu_kv_k\right)\right)
+	T(v)=\sum_i\left(\sum_j\lambda_{i,j}E^{i,j}\left(\sum_k\mu_kv_k\right)\right)
 \]
 \[
-T(v)=\sum_i\sum_j\lambda_{i,j}E^{i,j}(v)
+	T(v)=\sum_i\sum_j\lambda_{i,j}E^{i,j}(v)
 \]
 $\mathcal{B}_L$ es linealmente independiente: Supongamos que:
 \[
-\sum_i\sum_j\lambda_{i,j}E^{i,j}=0
+	\sum_i\sum_j\lambda_{i,j}E^{i,j}=0
 \]
 Dado $1\leq k\leq n$
 \[
-\sum_i\sum_j\lambda_{i,j}E^{i,j}(v_k)=\vec{0}
+	\sum_i\sum_j\lambda_{i,j}E^{i,j}(v_k)=\vec{0}
 \]
 \[
-\iff \sum_i\lambda_{i,k}w_i=\vec{0}
+	\iff \sum_i\lambda_{i,k}w_i=\vec{0}
 \]
 \[
-\iff \lambda_{1,k}=\lambda_{2,k}=...=\lambda_{m,k}=0\quad \forall k=1,...,n
+	\iff \lambda_{1,k}=\lambda_{2,k}=...=\lambda_{m,k}=0\quad \forall k=1,...,n
 \]
 \[
-\dim\mathcal{L}(V,W)=|\mathcal{B}|=m\cdot n
+	\dim\mathcal{L}(V,W)=|\mathcal{B}|=m\cdot n
 \]
 \subsection{Matriz representante}
 
@@ -637,12 +637,12 @@ Sea $T\in\mathcal{L}(V,W),\mathcal{B}_V=\{v_1,...,v_n\}$ base de $V,\mathcal{B}_
 
 Definimos la matriz representante de $T$ con respecto a las bases $\mathcal{B}_V$ y $\mathcal{B}_W$ como $\mathcal{M}(T)=(a_{ij})_{i=1...m,j=1...n}$, tal que
 \[
-T(v_j)=\sum^m_{i=1}a_{ij}w_i
+	T(v_j)=\sum^m_{i=1}a_{ij}w_i
 \]
 Si las bases no están claras por contexto usamos la notación $\mathcal{M}(T,\mathcal{B}_V,\mathcal{B}_W)$\\
 Es facil ver que
 \[
-\mathcal{M}(T_1+\lambda T_2)=\mathcal{M}(T_1)+\lambda\mathcal{M}(T_2)
+	\mathcal{M}(T_1+\lambda T_2)=\mathcal{M}(T_1)+\lambda\mathcal{M}(T_2)
 \]
 (Ejercicio)\\
 De esta forma, $\mathcal{M}$ "respeta" la estructura lineal de $\mathcal{L}(V,W)$\\
@@ -650,20 +650,20 @@ Ejemplos:\\
 $\mathbb{F}^\infty=V=W$
 \begin{enumerate}
 	\item $L:\mathbb{F}^\infty\rightarrow\mathbb{F}^\infty$
-	\[
-	x=(x_1,x_2,...)
-	\]
-	\[
-	Lx=(x_2,x_3,...)
-	\]
-	
+	      \[
+		      x=(x_1,x_2,...)
+	      \]
+	      \[
+		      Lx=(x_2,x_3,...)
+	      \]
+
 	\item $R:\mathbb{F}^\infty\rightarrow\mathbb{F}^\infty$
-	\[
-	x=(x_1,x_2,...)
-	\]
-	\[
-	Rx=(0,x_1,x_2,...)
-	\]
+	      \[
+		      x=(x_1,x_2,...)
+	      \]
+	      \[
+		      Rx=(0,x_1,x_2,...)
+	      \]
 \end{enumerate}
 Pregunta: $\mathcal{M}(L),\mathcal{M}(R)$?
 \subsection{Composición y Productos}
@@ -671,192 +671,192 @@ Pregunta: $\mathcal{M}(L),\mathcal{M}(R)$?
 Sean $V,W,Z$ espacios vectoriales sobre $\mathbb{F}$. Sea $T\in\mathcal{L}(V,W)$ y $S\in\mathcal{W,Z}$. Entonces por composición: $S\circ T:V\rightarrow Z$ dada por $(S\circ T)(v)=S(T(v))$ es una transformación lineal.\\
 Dem: Tenemos que probar que:
 \[
-(S\circ T)(\lambda u+v)=\lambda(S\circ T)(u)+(S\circ T)(v)
+	(S\circ T)(\lambda u+v)=\lambda(S\circ T)(u)+(S\circ T)(v)
 \]
 En efecto:
 \[
-(S\circ T)(\lambda u+v)=S(T(\lambda u+v))=S(\lambda T(u)+T(v))
+	(S\circ T)(\lambda u+v)=S(T(\lambda u+v))=S(\lambda T(u)+T(v))
 \]
 \[
-S\circ T)(\lambda u+v)=\lambda S(T(u))+S(T(v))=lambda(S\circ T)(u)+(S\circ T)(v)
+	S\circ T)(\lambda u+v)=\lambda S(T(u))+S(T(v))=lambda(S\circ T)(u)+(S\circ T)(v)
 \]
 \begin{defn}{Endomorfismo}
 
-Una transformación lineal $T\in\mathcal{L}(V,V)$ de dice endomorfismo u operador lineal. Denotamos $End (V)=\mathcal{L}(V,V)$. La composición funciona como producto sobre $End(V)$\\
-Propiedades:
-\begin{enumerate}[label=\alph*)]
-	\item $I\circ S=S\circ I=S$ ($I$ es neutro para $\circ$)
-	
-	\item \begin{itemize} \item $S\circ (T_1+T_2)=S\circ T_1+S\circ T_2$
-					\item $(T_1+T_2)\circ S=T_1\circ S+T_2\circ S$
-		\end{itemize}
-	
-	\item $\lambda(S\circ T)=(\lambda S)\circ T=S\circ(\lambda S)$
-\end{enumerate}
+	Una transformación lineal $T\in\mathcal{L}(V,V)$ de dice endomorfismo u operador lineal. Denotamos $End (V)=\mathcal{L}(V,V)$. La composición funciona como producto sobre $End(V)$\\
+	Propiedades:
+	\begin{enumerate}[label=\alph*)]
+		\item $I\circ S=S\circ I=S$ ($I$ es neutro para $\circ$)
+
+		\item \begin{itemize} \item $S\circ (T_1+T_2)=S\circ T_1+S\circ T_2$
+			      \item $(T_1+T_2)\circ S=T_1\circ S+T_2\circ S$
+		      \end{itemize}
+
+		\item $\lambda(S\circ T)=(\lambda S)\circ T=S\circ(\lambda S)$
+	\end{enumerate}
 \end{defn}
 \begin{proof}
-Ejercicio
+	Ejercicio
 \end{proof}
 Importante notar que $\circ$ no es conmutativo.\\
 También es importante observar que \underline{NO} todo operador posee elemento inverso para $\circ$. Dado $T\in End(V)\setminus\{0\}$, decimos que $S\in End(V)\setminus\{0\}$ es su inversa si:
 \[
-S\circ T=T\circ S=I
+	S\circ T=T\circ S=I
 \]
 \subsubsection{Corolario}
 Sea $V$ espacio vectorial finito-dimensional y $\mathbb{B}_V=\{v_1,...,v_n\}$ base de $V$. Entonces $\{E^{p,1}:p,q=1,...,n\}$ es base de $End(v)$.
 \begin{proof}
-Directo por Teo (+).
+	Directo por Teo (+).
 \end{proof}
 Lema: Sean $S,T\in End(V)$ con $V$ finito dimensional. Entonces:
 \[
-\mathcal{M}(S\circ T)=\mathcal{M}(S)\cdot\mathcal{M}(T)
+	\mathcal{M}(S\circ T)=\mathcal{M}(S)\cdot\mathcal{M}(T)
 \]
 \begin{proof}
-Recordar que
-\[\{E^{p,q}:p,q=1,...,n\}\]
-son base de $End(V)$.
-\[\mathcal{M}(S)=\left(b_{p,q}\right)_{p=1,...,n\\q=1,...n}\]
+	Recordar que
+	\[\{E^{p,q}:p,q=1,...,n\}\]
+	son base de $End(V)$.
+	\[\mathcal{M}(S)=\left(b_{p,q}\right)_{p=1,...,n\\q=1,...n}\]
 \end{proof}
 
 \subsection{Invertibilidad}
 \begin{defn}
-$T\in\mathcal{L}(V,W)$ se dice invertible si existe $S:W\rightarrow V$ tal que
-\begin{equation}
-S\circ T=I_V, T\circ S=I_W
-\end{equation}
-Cuando $T$ es invertible, denotamos $T^{-1}$ com su inversa
-\[T\textrm{ invertible}\iff T\textrm{ es inyectiva y es sobreyectiva}\]
+	$T\in\mathcal{L}(V,W)$ se dice invertible si existe $S:W\rightarrow V$ tal que
+	\begin{equation}
+		S\circ T=I_V, T\circ S=I_W
+	\end{equation}
+	Cuando $T$ es invertible, denotamos $T^{-1}$ com su inversa
+	\[T\textrm{ invertible}\iff T\textrm{ es inyectiva y es sobreyectiva}\]
 \end{defn}
 \begin{obs}
-\
-\begin{enumerate}
-	\item No todo $T\in End(V)\setminus\{0\}$ es invertible
-	
-	\item En el caso $V=W$, $I_V$ es neutro para $\circ$
-	
-	\item Puede ser que $S\circ T=I$ y $T\circ S\neq I$
-\end{enumerate}
+	\
+	\begin{enumerate}
+		\item No todo $T\in End(V)\setminus\{0\}$ es invertible
+
+		\item En el caso $V=W$, $I_V$ es neutro para $\circ$
+
+		\item Puede ser que $S\circ T=I$ y $T\circ S\neq I$
+	\end{enumerate}
 \end{obs}
 
 \begin{thm}
-Sean $V,W$ espacios vectoriales sobre $\mathbb{F}$ y $T\in\mathcal{L}(V,W)$. Si $T$ es invertible entonces $T^{-1}\in\mathcal{L}(W,V)$
+	Sean $V,W$ espacios vectoriales sobre $\mathbb{F}$ y $T\in\mathcal{L}(V,W)$. Si $T$ es invertible entonces $T^{-1}\in\mathcal{L}(W,V)$
 \end{thm}
 \begin{proof}
-Queremos probar $T^{-1}(w_1+\lambda w_2)=T^{-1}(w_1)+\lambda T^{-1}(w_2)$\\
-Sean $v_1=T^{-1}(w_1),v_2=T^{-1}(w_2)$
-\[
-T(v_1+\lambda v_2)=T(v_1)+\lambda T(v_2)\quad /T^{-1}(\,)
-\]
-\[
-v_1+\lambda v_2=T^{-1}(T(v_1)+\lambda T(v_2))
-\]
-\begin{equation}
-T^{-1}(w_1)+\lambda T^{-1}(w_2)=T^{-1}(w_1+\lambda w_2)\qedhere
-\end{equation}
+	Queremos probar $T^{-1}(w_1+\lambda w_2)=T^{-1}(w_1)+\lambda T^{-1}(w_2)$\\
+	Sean $v_1=T^{-1}(w_1),v_2=T^{-1}(w_2)$
+	\[
+		T(v_1+\lambda v_2)=T(v_1)+\lambda T(v_2)\quad /T^{-1}(\,)
+	\]
+	\[
+		v_1+\lambda v_2=T^{-1}(T(v_1)+\lambda T(v_2))
+	\]
+	\begin{equation}
+		T^{-1}(w_1)+\lambda T^{-1}(w_2)=T^{-1}(w_1+\lambda w_2)\qedhere
+	\end{equation}
 \end{proof}
 \begin{prop}
-Sean $T:V\rightarrow W,S:W\rightarrow Z$ lineales e invertibles. Entonces $S\circ T$ es lineal e invertible; mas aun
-\begin{equation}
-(S\circ T)^{-1}=T^{-1}\circ S^{-1}
-\end{equation}
+	Sean $T:V\rightarrow W,S:W\rightarrow Z$ lineales e invertibles. Entonces $S\circ T$ es lineal e invertible; mas aun
+	\begin{equation}
+		(S\circ T)^{-1}=T^{-1}\circ S^{-1}
+	\end{equation}
 \end{prop}
 \begin{proof}
-$S\circ T$ es lineal (visto lunes).\\
-Invertible: basta probar:
-\[
-(S\circ T)\circ(T^{-1}\circ S^{-1})=S\circ (T\circ T^{-1})\circ S^{-1}=S\circ S^{-1}=I_Z
-\]
-\[
-(T^{-1}\circ S^{-1})\circ (S\circ T)=T^{-1}\circ (S^{-1}\circ S)\circ T=T^{-1}\circ T=I_V
-\]
+	$S\circ T$ es lineal (visto lunes).\\
+	Invertible: basta probar:
+	\[
+		(S\circ T)\circ(T^{-1}\circ S^{-1})=S\circ (T\circ T^{-1})\circ S^{-1}=S\circ S^{-1}=I_Z
+	\]
+	\[
+		(T^{-1}\circ S^{-1})\circ (S\circ T)=T^{-1}\circ (S^{-1}\circ S)\circ T=T^{-1}\circ T=I_V
+	\]
 \end{proof}
 \begin{defn}
-Decimos que $T\in\mathcal{L}(V,W)$ es no singular si $\ker T=[0]$. Notar ademas que $T$ no singular si solo si inyectiva
-\begin{equation}
-Tv_1=Tv_2\iff T(v_1-v_2)=0
-\end{equation}
+	Decimos que $T\in\mathcal{L}(V,W)$ es no singular si $\ker T=[0]$. Notar ademas que $T$ no singular si solo si inyectiva
+	\begin{equation}
+		Tv_1=Tv_2\iff T(v_1-v_2)=0
+	\end{equation}
 \end{defn}
 \begin{thm}
-Sea $T\in\mathcal{L}(V,W)$. Entonces:\\
-$T$ no-singular $\iff T$ transforma conjuntos linealmente independientes en conjuntos linealmente independientes, es decir, $\{v_1,...,v_k\}\subseteq V\textrm{ l.i.}\implies\{Tv_1,...,Tv_k\}\subseteq W\textrm{ l.i.}$
+	Sea $T\in\mathcal{L}(V,W)$. Entonces:\\
+	$T$ no-singular $\iff T$ transforma conjuntos linealmente independientes en conjuntos linealmente independientes, es decir, $\{v_1,...,v_k\}\subseteq V\textrm{ l.i.}\implies\{Tv_1,...,Tv_k\}\subseteq W\textrm{ l.i.}$
 \end{thm}
 \begin{thm}{$\square$ }
-Sean $V,W$ finito-dimensionales tal que $\dim V=\dim W$. Si $T\in\mathcal{L}(V,W)$ entonces las siguientes son equivalentes:
-\begin{enumerate}[label=\roman*)]
-	\item $T$ es invertible
-	
-	\item $T$ es no-singular
-	
-	\item $T$ es sobreyectiva
-	
-	\item Para toda base $\{v_1,...,v_n\}$ de $V$, $\{Tv_1,...,Tv_n\}$ es base de $W$.
-	
-	\item Existe $\{v_1,...,v_n\}$ base de $V$ tal que $\{Tv_1,...,Tv_n\}$ es base de $W$
-\end{enumerate}
+	Sean $V,W$ finito-dimensionales tal que $\dim V=\dim W$. Si $T\in\mathcal{L}(V,W)$ entonces las siguientes son equivalentes:
+	\begin{enumerate}[label=\roman*)]
+		\item $T$ es invertible
+
+		\item $T$ es no-singular
+
+		\item $T$ es sobreyectiva
+
+		\item Para toda base $\{v_1,...,v_n\}$ de $V$, $\{Tv_1,...,Tv_n\}$ es base de $W$.
+
+		\item Existe $\{v_1,...,v_n\}$ base de $V$ tal que $\{Tv_1,...,Tv_n\}$ es base de $W$
+	\end{enumerate}
 \end{thm}
 \begin{obs}
-\
-\begin{enumerate}
-	\item Si $\dim V\neq\dim W$\\
-	$T:\mathbb{R}^n\rightarrow\mathbb{R}^m n<m$\\
-	$(x_1,..,x_n)\mapsto (x_1,...,x_n,0,...,0)$\\
-	es inyectiva, pero no sobreyectiva
-	
-	\item $V=W,\dim V=+\infty$\\
-	$R:\mathbb{F}^\infty\rightarrow\mathbb{F}^\infty$\\
-	$(x_1,...)\mapsto (0,x_1,...)$\\
-	es inyectiva, pero no sobreyectiva
-\end{enumerate}
+	\
+	\begin{enumerate}
+		\item Si $\dim V\neq\dim W$\\
+		      $T:\mathbb{R}^n\rightarrow\mathbb{R}^m n<m$\\
+		      $(x_1,..,x_n)\mapsto (x_1,...,x_n,0,...,0)$\\
+		      es inyectiva, pero no sobreyectiva
+
+		\item $V=W,\dim V=+\infty$\\
+		      $R:\mathbb{F}^\infty\rightarrow\mathbb{F}^\infty$\\
+		      $(x_1,...)\mapsto (0,x_1,...)$\\
+		      es inyectiva, pero no sobreyectiva
+	\end{enumerate}
 \end{obs}
 \begin{proof}
-$(i)\implies (ii)$\\
-$(ii) \ker T=\{0\}\iff T(V)=W$\\
-$(ii)\implies (iii)$\\
-$(iii) T$ es sobre. Por TNI
-\[
-\dim T=n\implies\dim\ker T=0\implies T\textrm{ no singular}
-\]
-Si $\{v_1,...,v_n\}$ es base de $V$, por el Teo. anterior $\{Tv_1,...,Tv_n\}$ se base de $W$
+	$(i)\implies (ii)$\\
+	$(ii) \ker T=\{0\}\iff T(V)=W$\\
+	$(ii)\implies (iii)$\\
+	$(iii) T$ es sobre. Por TNI
+	\[
+		\dim T=n\implies\dim\ker T=0\implies T\textrm{ no singular}
+	\]
+	Si $\{v_1,...,v_n\}$ es base de $V$, por el Teo. anterior $\{Tv_1,...,Tv_n\}$ se base de $W$
 \end{proof}
 \section{Isomorfismos}
 \begin{defn}{Isomorfismos}
-Sean $V,W$ espacio vectorial sobre $\mathbb{F}$. Decimos que $T\in\mathcal{L}(V,W)$ es un isomorfismo si es invertible. En tal caso, diremos que $V$ y $W$ son isomorfos
+	Sean $V,W$ espacio vectorial sobre $\mathbb{F}$. Decimos que $T\in\mathcal{L}(V,W)$ es un isomorfismo si es invertible. En tal caso, diremos que $V$ y $W$ son isomorfos
 \end{defn}
 Ejemplos:
 \begin{enumerate}
 	\item $\mathbb{F}^{n+1}$ y $\mathcal{P}_n(\mathbb{F})$ son isomorfos
-	\[T:\mathbb{F}^{n+1}\rightarrow \mathcal{P}_n(\mathbb{F})\]
-	\[(a_0,a_1,....,a_n)\mapsto p(x)=\sum^n_{I=1}a_ix^i+a_o\]
-	
+	      \[T:\mathbb{F}^{n+1}\rightarrow \mathcal{P}_n(\mathbb{F})\]
+	      \[(a_0,a_1,....,a_n)\mapsto p(x)=\sum^n_{I=1}a_ix^i+a_o\]
+
 	\item (Coordenadas baricéntricas): Si $B=\{v_1,...,v_n\}$ es base de $V$
-	\[(\forall v\in V)v=\sum^n_{I=1}\lambda_i v_i\]
-	\[ [\cdot ]_B:V\rightarrow \mathbb{F}^n\]
-	\[ v\mapsto(\lambda_1,...,\lambda_n)=[v]_B\]
-	
+	      \[(\forall v\in V)v=\sum^n_{I=1}\lambda_i v_i\]
+	      \[ [\cdot ]_B:V\rightarrow \mathbb{F}^n\]
+	      \[ v\mapsto(\lambda_1,...,\lambda_n)=[v]_B\]
+
 	\item $V,W$ finito dimensional sobre $\mathbb{F}$, con
-	\[B_V=\{v_1,...,v_n\}\]
-	\[B_W=\{w_1,..,w_m\}\]
-	\[\mathcal{M}(\cdot,B_V,B_W):\mathcal{L}(V,W)\rightarrow \mathbb{F}^{n\times m}\]
-	\[T\mapsto\mathcal{M}(T,B_V,B_W)\]
-	es un isomorfismo (ejercicio)
+	      \[B_V=\{v_1,...,v_n\}\]
+	      \[B_W=\{w_1,..,w_m\}\]
+	      \[\mathcal{M}(\cdot,B_V,B_W):\mathcal{L}(V,W)\rightarrow \mathbb{F}^{n\times m}\]
+	      \[T\mapsto\mathcal{M}(T,B_V,B_W)\]
+	      es un isomorfismo (ejercicio)
 \end{enumerate}
 \begin{thm}
-Dos espacios finito dimensionales $V,W$ (sobre $\mathbb{F}$ son isomorfos si solo si $\dim V= \dim W$
-\begin{proof}
-Sean $B_V=\{v_1,...,v_n\}$ base de $V$, $B_W=\{w_1,...,w_m\}$ base de $W$.\\
-$\implies$ Sea $T\in\mathcal{L}(V,W)$ isomorfismo
-\[\{Tv_1,...,Tv_n\}\subseteq W\]
-Es un conjunto linealmente independiente (un Teorema)
-\[\implies n\leq \dim W=m\]
-Tomando $T^{-1}$, (que también es isomorfismo) tomemos
-\[\{T^{-1}w_1,...,T^{-1}w_m\}\subseteq V\]
-Es linealmente independiente
-\[\implies m\leq\dim V=n\]
-\[\implies m=n\]
-$\impliedby$ Suponemos $n=m$, sea $T$ la única transformación lineal tal que
-\[Tv_i=w_i\quad\forall I=1,...,n\]
-Por el teorema $\square$, parte $(v)\implies (i)$ tenemos que $T$ es isomorfismo.
-\end{proof}
+	Dos espacios finito dimensionales $V,W$ (sobre $\mathbb{F}$ son isomorfos si solo si $\dim V= \dim W$
+	\begin{proof}
+		Sean $B_V=\{v_1,...,v_n\}$ base de $V$, $B_W=\{w_1,...,w_m\}$ base de $W$.\\
+		$\implies$ Sea $T\in\mathcal{L}(V,W)$ isomorfismo
+		\[\{Tv_1,...,Tv_n\}\subseteq W\]
+		Es un conjunto linealmente independiente (un Teorema)
+		\[\implies n\leq \dim W=m\]
+		Tomando $T^{-1}$, (que también es isomorfismo) tomemos
+		\[\{T^{-1}w_1,...,T^{-1}w_m\}\subseteq V\]
+		Es linealmente independiente
+		\[\implies m\leq\dim V=n\]
+		\[\implies m=n\]
+		$\impliedby$ Suponemos $n=m$, sea $T$ la única transformación lineal tal que
+		\[Tv_i=w_i\quad\forall I=1,...,n\]
+		Por el teorema $\square$, parte $(v)\implies (i)$ tenemos que $T$ es isomorfismo.
+	\end{proof}
 \end{thm}
 \subsection{Matrices representantes}
 Sean $V,W$ espacios vectoriales sobre $\mathbb{F}$, y sean $T\in\mathcal{L}(V,W),B_V=\{v_1,...,v_n\}$ base de $V$, $B_W=\{w_1,...,w_m\}$ base de $W$.
@@ -892,72 +892,72 @@ Sea ahora $T\in\mathcal{L}(V,V)$. Tomemos:
 \[ [v_j']_B=P\cdot [v_j']_{B'}=P\cdot j\]
 \[ P=\left[ [v_1']_B| [v_2']_B|...|[v_n']_B\right]\oplus\]
 \begin{thm}
-Sea $V$ espacio vectorial finito-dimensional con bases ordenadas $B=(v_1,...,v_n)$ y $B'=(v_1',...,'v_n')$. Sea $T\in End(V)$. Luego
-\[\mathcal{M}_{B',B}(T)=P^{-1}\mathcal{M}_{B,B}(T)P\]
+	Sea $V$ espacio vectorial finito-dimensional con bases ordenadas $B=(v_1,...,v_n)$ y $B'=(v_1',...,'v_n')$. Sea $T\in End(V)$. Luego
+	\[\mathcal{M}_{B',B}(T)=P^{-1}\mathcal{M}_{B,B}(T)P\]
 \end{thm}
 
 \begin{defn}
-$A,B\in\mathbb{F}^{n\times n}$ son similares si $\exists P$ invertible tal que:
-\[A=P^{-1}BP\]
+	$A,B\in\mathbb{F}^{n\times n}$ son similares si $\exists P$ invertible tal que:
+	\[A=P^{-1}BP\]
 \end{defn}
 \section{Productos de Espacios Vectoriales}
 \begin{defn}
-Sean $V_1,...,V_m$ espacios vectoriales sobre $\mathbb{F}$. Definimos el espacio producto como
-\[V=V_1\times...\times V_m=\{(v_1,...,v_m):v_i\in V_i(\forall i=1,...,m)\}\]
-\begin{enumerate}
-	\item Suma: $(v_1,...,v_m)+(v_1',...v_m')=(v_1+v_1',...,v_m+v_m')$
-	
-	\item Producto por escalar: $\lambda\cdot (v_1,...,v_m)=(\lambda v_1,...,\lambda v_m)$
-\end{enumerate}
+	Sean $V_1,...,V_m$ espacios vectoriales sobre $\mathbb{F}$. Definimos el espacio producto como
+	\[V=V_1\times...\times V_m=\{(v_1,...,v_m):v_i\in V_i(\forall i=1,...,m)\}\]
+	\begin{enumerate}
+		\item Suma: $(v_1,...,v_m)+(v_1',...v_m')=(v_1+v_1',...,v_m+v_m')$
+
+		\item Producto por escalar: $\lambda\cdot (v_1,...,v_m)=(\lambda v_1,...,\lambda v_m)$
+	\end{enumerate}
 \end{defn}
 \begin{prop}
-$V\times...\times V_m$ con suma y producto escalar es un espacio vectorial.
+	$V\times...\times V_m$ con suma y producto escalar es un espacio vectorial.
 \end{prop}
 \begin{proof}
-Ejercicio: similar a $\mathbb{F}^n$
+	Ejercicio: similar a $\mathbb{F}^n$
 \end{proof}
 \begin{prop}
-Sean $V_1,...,V_m$ espacios vectoriales sobre $\mathbb{F}$. Entonces $V_1\times...\times V_m$ es finito-dimensional y 
-\[\dim(V_1\times...\times V_m)=\sum^m_{i=1}\dim V_i\]
+	Sean $V_1,...,V_m$ espacios vectoriales sobre $\mathbb{F}$. Entonces $V_1\times...\times V_m$ es finito-dimensional y
+	\[\dim(V_1\times...\times V_m)=\sum^m_{i=1}\dim V_i\]
 \end{prop}
 \begin{proof}
-Dado $I=1,...,m$ sea
-\[B_{V_i}=\{V_{1,1},...,V_{i,n_i}\}\]
-Base de $V_i$. Ahora sea
-\[B=\bigcup^m_{i=1}\{(0,...,0,v_{ij},...,0):j=1,...,n_i\}\]
-Probaremos que $B$ es base de $V_1\times...\times V_m$. Notemos que esto basta:
-\[\dim V_1\times...\times V_m=|B|=\sum^m_{i=1}n_i=\sum^m_{i=1}\dim V_i\]
-\begin{itemize}
-	\item \underline{$B$ genera}: Sea $v\in V\times...\times V_m$, entonces
-	\[v=(v_1,...,v_m)\quad\textrm{donde }v_i\in V_i\]
-	Como $B_{V_i}$ es base de $V_i$:
-	\[v_i=\sum^{n_i}_{j=1}\lambda_{i,j}\cdot v_{i,j}\]
-	\[v=\left(\sum^{n_1}_{j=1}\lambda_{1,j}v_{1,j},...,\sum^{n_m}_{j=1}\lambda_{m,j}v_{m,j}\right)\]
-	\[v=\sum^m_{i=1}\sum^{n_i}_{j=1}\lambda_{i,j}(0,...,0,v_{i,j},0,...,0)\in <B>\]
-	
-	\item $B$ es linealmente independiente (ejercicio)
-\end{itemize}
+	Dado $I=1,...,m$ sea
+	\[B_{V_i}=\{V_{1,1},...,V_{i,n_i}\}\]
+	Base de $V_i$. Ahora sea
+	\[B=\bigcup^m_{i=1}\{(0,...,0,v_{ij},...,0):j=1,...,n_i\}\]
+	Probaremos que $B$ es base de $V_1\times...\times V_m$. Notemos que esto basta:
+	\[\dim V_1\times...\times V_m=|B|=\sum^m_{i=1}n_i=\sum^m_{i=1}\dim V_i\]
+	\begin{itemize}
+		\item \underline{$B$ genera}: Sea $v\in V\times...\times V_m$, entonces
+		      \[v=(v_1,...,v_m)\quad\textrm{donde }v_i\in V_i\]
+		      Como $B_{V_i}$ es base de $V_i$:
+		      \[v_i=\sum^{n_i}_{j=1}\lambda_{i,j}\cdot v_{i,j}\]
+		      \[v=\left(\sum^{n_1}_{j=1}\lambda_{1,j}v_{1,j},...,\sum^{n_m}_{j=1}\lambda_{m,j}v_{m,j}\right)\]
+		      \[v=\sum^m_{i=1}\sum^{n_i}_{j=1}\lambda_{i,j}(0,...,0,v_{i,j},0,...,0)\in <B>\]
+
+		\item $B$ es linealmente independiente (ejercicio)
+	\end{itemize}
 \end{proof}
 \subsection{Productos y Sumas directas}
 \begin{thm}
-Sean $U_1,...U_m$ subespacios vectoriales de $V$. Definimos la transformación lineal
-\[\Gamma:U_1\times...\times U_m\rightarrow U_1+...+U_m\]
-\[\Gamma(u_1,...,u_m)=u_1+...+u_m\]
-Entonces, $U_1+...+U_m$ es suma directa si solo si $\Gamma$ inyectiva
+	Sean $U_1,...U_m$ subespacios vectoriales de $V$. Definimos la transformación lineal
+	\[\Gamma:U_1\times...\times U_m\rightarrow U_1+...+U_m\]
+	\[\Gamma(u_1,...,u_m)=u_1+...+u_m\]
+	Entonces, $U_1+...+U_m$ es suma directa si solo si $\Gamma$ inyectiva
 \end{thm}
 \begin{obs}
-Notar que $\Gamma$ siempre es sobreyectiva
+	Notar que $\Gamma$ siempre es sobreyectiva
 \end{obs}
 \begin{proof}
-\[\Gamma\textrm{ inyectiva} \iff\ker\Gamma=\{0\}\]
-\[\iff [u_1+...+u_m=0\iff(u_1,...,u_m)=(0,...,0)]\]
-\[\iff U_1+...+U_m\textrm{ es directa}\qedhere\]
+	\[\Gamma\textrm{ inyectiva} \iff\ker\Gamma=\{0\}\]
+	\[\iff [u_1+...+u_m=0\iff(u_1,...,u_m)=(0,...,0)]\]
+	\[\iff U_1+...+U_m\textrm{ es directa}\qedhere\]
 \end{proof}
 
 \chapter{Parte II}
 \section{Polinomios}
 \begin{defn}[Grado]
-Si $p(z)=a_0+....+a_nz^n$ con $a_n\neq 0$, entonces $gr(p)=n$. Si $p(z)=0$ entonces $gr(p)=-\infty$
+	Si $p(z)=a_0+....+a_nz^n$ con $a_n\neq 0$, entonces $gr(p)=n$. Si $p(z)=0$ entonces $gr(p)=-\infty$
 \end{defn}
 \begin{prop}
 
@@ -968,76 +968,76 @@ Recordemos que si $p,s$ son enteros, no negativos, con $s\neq 0$, existen único
 Donde $r<s$.\\
 De ahora en adelante, $\mathbb{F}=\mathbb{R}\vee\mathbb{C}$ a menos que se diga lo contrario.
 \begin{thm}[División de polinomios]
-Sean $p,s\in\mathbb{F}[z]$ con $s\neq 0$. Entonces existen únicos polinomios $q,r\in\mathbb{F}[z]$ tales que:
-\[p=q\cdots+r\implies n=gr(q)+m\]
-Con $gr(r)<gr(s)$.
+	Sean $p,s\in\mathbb{F}[z]$ con $s\neq 0$. Entonces existen únicos polinomios $q,r\in\mathbb{F}[z]$ tales que:
+	\[p=q\cdots+r\implies n=gr(q)+m\]
+	Con $gr(r)<gr(s)$.
 \end{thm}
 \begin{proof}
-Sean $n=gr(p), m=gr(s)$. Definamos
-\[T:\mathcal{P}_{n-m}(\mathbb{F})\times\mathcal{P}_{m-1}(\mathbb{F})\rightarrow\mathcal{P}_{n}(\mathbb{F})\]
-\[(q,r)\mapsto q\cdot s+r\]
-Probaremos que $T$ es una transformación lineal biyectiva. Notar que esto es suficiente para concluir el Teorema.
-\begin{itemize}
-	\item \underline{T es lineal}
-	\[T((q_1,r_1)+\lambda (q_2,r_1))=T(q_1,r_1)+\lambda T(q_2,r_2)\]
-	
-	\item \underline{T inyectivo}: Basta probar que $\ker T=\{0\}$. En efecto, si $(q,r)$ son tales que:
-	\[q\cdot s+r=0\]
-	\[q\cdot s=-r\]
-	Comparando grados:
-	\[gr(LI)=gr(q)\cdot m,gr(LD)=\leq m-1\]
-	\[\implies q=0\implies r=0\]
-	
-	\item \underline{T sobreyectiva}: Por el TNI, y como $\ker T=\{0\}$
-	\[\dim(\mathcal{P}_{n-m}\times\mathcal{P}_{m-1})=\dim T(\mathcal{P}_{n-m}\times\mathcal{P}_{m-1})\]
-	\[\dim(\mathcal{P}_{n-m})+\dim(\mathcal{P}_{m-1})=n+1\]
-	\[\therefore \dim T(\mathcal{P}_{n-m}\times\mathcal{P}_{m-1})=n+1=\dim\mathcal{P}_{n-}\]
-	Lo que implica que $T$ es sobreyectiva.
-\end{itemize}
+	Sean $n=gr(p), m=gr(s)$. Definamos
+	\[T:\mathcal{P}_{n-m}(\mathbb{F})\times\mathcal{P}_{m-1}(\mathbb{F})\rightarrow\mathcal{P}_{n}(\mathbb{F})\]
+	\[(q,r)\mapsto q\cdot s+r\]
+	Probaremos que $T$ es una transformación lineal biyectiva. Notar que esto es suficiente para concluir el Teorema.
+	\begin{itemize}
+		\item \underline{T es lineal}
+		      \[T((q_1,r_1)+\lambda (q_2,r_1))=T(q_1,r_1)+\lambda T(q_2,r_2)\]
+
+		\item \underline{T inyectivo}: Basta probar que $\ker T=\{0\}$. En efecto, si $(q,r)$ son tales que:
+		      \[q\cdot s+r=0\]
+		      \[q\cdot s=-r\]
+		      Comparando grados:
+		      \[gr(LI)=gr(q)\cdot m,gr(LD)=\leq m-1\]
+		      \[\implies q=0\implies r=0\]
+
+		\item \underline{T sobreyectiva}: Por el TNI, y como $\ker T=\{0\}$
+		      \[\dim(\mathcal{P}_{n-m}\times\mathcal{P}_{m-1})=\dim T(\mathcal{P}_{n-m}\times\mathcal{P}_{m-1})\]
+		      \[\dim(\mathcal{P}_{n-m})+\dim(\mathcal{P}_{m-1})=n+1\]
+		      \[\therefore \dim T(\mathcal{P}_{n-m}\times\mathcal{P}_{m-1})=n+1=\dim\mathcal{P}_{n-}\]
+		      Lo que implica que $T$ es sobreyectiva.
+	\end{itemize}
 \end{proof}
 \begin{obs}
-La demostración del Teo. Anterior entrega un "algoritmo" para dividir polinomios. Resolver la ecuación lineal no-homogénea
-\[T(q,r)=p\]
-Asignando bases a la partida y la llegada, se obtendrá un sistema lineal
-\[Ax=b\]
+	La demostración del Teo. Anterior entrega un "algoritmo" para dividir polinomios. Resolver la ecuación lineal no-homogénea
+	\[T(q,r)=p\]
+	Asignando bases a la partida y la llegada, se obtendrá un sistema lineal
+	\[Ax=b\]
 \end{obs}
 \subsection{Raíces de Polinomios}
 El estudio de la ecuación $p(z)=0$ es sumamente útil para analizar un polinomio $p\in\mathbb{F}$
 \begin{defn}[Raíz]
-$\lambda\in\mathbb{F}$ se dice raiz de un polinomio si
-\[p(\lambda)=0\]
+	$\lambda\in\mathbb{F}$ se dice raiz de un polinomio si
+	\[p(\lambda)=0\]
 \end{defn}
 \begin{defn}[Factor]
-$s\in\mathbb{F}[z]$ se dice factor de $p\in\mathbb{F}[z]$ si existe un polinomio $q\in\mathbb{F}[z]$ tal que:
-\[p=q\cdot s\]
+	$s\in\mathbb{F}[z]$ se dice factor de $p\in\mathbb{F}[z]$ si existe un polinomio $q\in\mathbb{F}[z]$ tal que:
+	\[p=q\cdot s\]
 \end{defn}
 \begin{thm}[Raíces definen factores de grado 1]
-Sea $p\in\mathbb{F}[z]$ y $\lambda\in\mathbb{F}$. Entonces $p(\lambda)=0\iff(z-\lambda)$ es factor de $p$
-\begin{proof}
-$\impliedby$ $(z-\lambda)$ factor de $p$, entonces $\exists q\in\mathbb{F}[z]$ tal que
-\[p(z)=(z-\lambda)\cdot q(z)\forall z\in\mathbb{F}\]
-\[\implies p(\lambda)=0\cdot q(\lambda)=0\]
-$implies$. Por el algoritmo de la división para $p$ y $s(z)=z-\lambda$, tenemos que $\exists !r\in\mathbb{F}[z]$ con $gr(r)\leq=0\implies r\in\mathbb{F}$ tal que 
-\[p(z)=q(z)\cdot (z-\lambda)+r\]
-\[\implies 0=p(\lambda)=q(\lambda)\cdot 0+r\]
-\[\therefore r=0\qedhere\]
-\end{proof}
-\begin{cor}[Un polinomio tiene tantas raíces como su grado]
-Sea $p\in\mathbb{F}[z]$ un polinomio de grado $m\geq 0$. Entonces $p$ tiene a lo más $m$ raíces distintas sobre $\mathbb{F}$
-\begin{proof}
-Por inducción en $m$.\\
-$m=0$: $p(z)=a_0\neq 0$. Entonces $p$ tiene 0 raíces.\\
-$m-1\implies m$: Sea $p(z)=a_0+a_1z+...+a_mz^m$ con $a_m\neq 0$
-\begin{enumerate}[label= \underline{Caso \arabic*}:]
-	\item $p$ no posee raíces
-	
-	\item $p$ sí posee raíces. Sea $\lambda\in\mathbb{F}$ raíz de $p$
-	\[\therefore \exists q\in\mathbb{F}[z]: p(z)=(z-\lambda)\cdot q(z)\]
-	Claramente $gr(q)=m-1$. Por inducción, $q$ posee a lo más $m-1$ raíces en $\mathbb{F}$. Por lo tanto:
-	\[\#\textrm{ raíces de }p\leq \#\textrm{ raíces de }(z-\lambda)+\#\textrm{ raíces de }q=m\]
-\end{enumerate}
-\end{proof}
-\end{cor}
+	Sea $p\in\mathbb{F}[z]$ y $\lambda\in\mathbb{F}$. Entonces $p(\lambda)=0\iff(z-\lambda)$ es factor de $p$
+	\begin{proof}
+		$\impliedby$ $(z-\lambda)$ factor de $p$, entonces $\exists q\in\mathbb{F}[z]$ tal que
+		\[p(z)=(z-\lambda)\cdot q(z)\forall z\in\mathbb{F}\]
+		\[\implies p(\lambda)=0\cdot q(\lambda)=0\]
+		$implies$. Por el algoritmo de la división para $p$ y $s(z)=z-\lambda$, tenemos que $\exists !r\in\mathbb{F}[z]$ con $gr(r)\leq=0\implies r\in\mathbb{F}$ tal que
+		\[p(z)=q(z)\cdot (z-\lambda)+r\]
+		\[\implies 0=p(\lambda)=q(\lambda)\cdot 0+r\]
+		\[\therefore r=0\qedhere\]
+	\end{proof}
+	\begin{cor}[Un polinomio tiene tantas raíces como su grado]
+		Sea $p\in\mathbb{F}[z]$ un polinomio de grado $m\geq 0$. Entonces $p$ tiene a lo más $m$ raíces distintas sobre $\mathbb{F}$
+		\begin{proof}
+			Por inducción en $m$.\\
+			$m=0$: $p(z)=a_0\neq 0$. Entonces $p$ tiene 0 raíces.\\
+			$m-1\implies m$: Sea $p(z)=a_0+a_1z+...+a_mz^m$ con $a_m\neq 0$
+			\begin{enumerate}[label= \underline{Caso \arabic*}:]
+				\item $p$ no posee raíces
+
+				\item $p$ sí posee raíces. Sea $\lambda\in\mathbb{F}$ raíz de $p$
+				      \[\therefore \exists q\in\mathbb{F}[z]: p(z)=(z-\lambda)\cdot q(z)\]
+				      Claramente $gr(q)=m-1$. Por inducción, $q$ posee a lo más $m-1$ raíces en $\mathbb{F}$. Por lo tanto:
+				      \[\#\textrm{ raíces de }p\leq \#\textrm{ raíces de }(z-\lambda)+\#\textrm{ raíces de }q=m\]
+			\end{enumerate}
+		\end{proof}
+	\end{cor}
 \end{thm}
 \section{Subespacios invariantes, y valores y vectores propios}
 Queremos entender la estructura de $T\in End(V)=\mathcal{L}(V)$ supongamos que
@@ -1052,7 +1052,7 @@ y
 Propiedad: Sea $p,q\in\set{F}[z]$ y $T\in\mathcal{L}(V)$. Entonces:
 \begin{enumerate}
 	\item $(p\cdot q)(T)=p(T)\cdot q(T)$
-	
+
 	\item $p(T)\cdot q(T)=q(T)\cdot p(T)$
 \end{enumerate}
 \begin{proof}
@@ -1080,7 +1080,7 @@ Propiedad: Sea $p,q\in\set{F}[z]$ y $T\in\mathcal{L}(V)$. Entonces:
 \section{Matrices triangulares superiores}
 Recordemos que daa $T\in\mathcal{L}(V)$ y una base $B$ la matriz representante de $T$ con respecto a $B$ es
 \[\mathcal{M}_B(T)=(a_{i,j})_{i,j\in[n]}\]
-tal que 
+tal que
 \[Tv_j=\sum^n_{i=1}a_{i,k}v_k\]
 Notemos, por ejemplo, que en el caso complejo siempre existe una base $B$ tal que la matriz representante posee la siguiente estructura
 \[\mathcal{M}_B(T)=\begin{bmatrix}\lambda && 0 && \ldots\\ 0 && \ddots\\ \vdots \end{bmatrix}\]
@@ -1088,25 +1088,25 @@ En efecto, sea $\lambda\in\set{F}$ valor propio de $T$ con vector propio asociad
 Sea $B$ una base que contiene a $v$. Si hacemos esto
 \[Tv=\lambda v\]
 \[\begin{pmatrix}
-	a_{1,1}\\
-	\vdots\\
-	\vdots\\
-	a_{n,1}
-\end{pmatrix}=\begin{pmatrix}
-	\lambda\\
-	0\\
-	\vdots\\
-	0
-\end{pmatrix}\]
+		a_{1,1} \\
+		\vdots  \\
+		\vdots  \\
+		a_{n,1}
+	\end{pmatrix}=\begin{pmatrix}
+		\lambda \\
+		0       \\
+		\vdots  \\
+		0
+	\end{pmatrix}\]
 \begin{defn}[Matriz triangular superior]
 	Una matriz $A\in\set{F}^{n\times m}$ se dice triangular superior si
 	\[a_{i,j}=0\forall i>j\]
 	\[\begin{bmatrix}
-		\lambda_1 && * && \cdots && *\\
-		0 && \lambda_2 && \cdots && *\\
-		\vdots && \vdots && \ddots && \vdots\\
-		0 && 0 && \cdots && \lambda_n
-	\end{bmatrix}\]
+			\lambda_1 &  & *         &  & \cdots &  & *         \\
+			0         &  & \lambda_2 &  & \cdots &  & *         \\
+			\vdots    &  & \vdots    &  & \ddots &  & \vdots    \\
+			0         &  & 0         &  & \cdots &  & \lambda_n
+		\end{bmatrix}\]
 \end{defn}
 \begin{prop}
 	Sea $T\in\mathcal{L}(V)$ y $v_1,...,v_n$ base (ordenada) de $V$. Las siguientes propiedades son equivalentes:
@@ -1118,7 +1118,7 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 		\item $<v_1,...,v_j>$ es invariante bajo $T, \forall j=1,...,n$
 	\end{enumerate}
 	\begin{proof}
-		
+
 	\end{proof}
 \end{prop}
 \begin{prop}[Invertibilidad a través de representaciones matriciales]
@@ -1126,10 +1126,10 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\begin{proof}
 		Sea $B$ base tal que
 		\[\mathcal{M}_B(T)=\begin{bmatrix}
-			\lambda_1 && \cdots && *\\
-			\vdots && \ddots && \vdots\\
-			0 && \cdots && \lambda_n
-		\end{bmatrix}(*)\]
+				\lambda_1 &  & \cdots &  & *         \\
+				\vdots    &  & \ddots &  & \vdots    \\
+				0         &  & \cdots &  & \lambda_n
+			\end{bmatrix}(*)\]
 		$\impliedby$ Por $(*)$
 		\[Tv_1=\lambda_1v_1\]
 		\[\therefore v_1=T\left(\frac{v_1}{\lambda_1}\right)\in \Ima(T)\]
@@ -1150,18 +1150,18 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\begin{cor}[Valores propios de operador a través de representación $\triangle$ superior]
 		Sea $T\in\mathcal{L}(V)$ con representación $\triangle$ superior
 		\[\mathcal{M}_B(T)=\begin{bmatrix}
-			\lambda_1 && \cdots && *\\
-			\vdots && \ddots && \vdots\\
-			0 && \cdots && \lambda_n
-		\end{bmatrix}(*)\]
+				\lambda_1 &  & \cdots &  & *         \\
+				\vdots    &  & \ddots &  & \vdots    \\
+				0         &  & \cdots &  & \lambda_n
+			\end{bmatrix}(*)\]
 		con $B$ base de $V$. Entonces los valores propios de $T$ son $\lambda_1,...,\lambda_n$
 		\begin{proof}
 			\[T_\lambda I\quad\textrm{ no es biyectiva}\]
 			\[\mathcal{M}_B(T-\lambda I)=\begin{bmatrix}
-				\lambda_1-\lambda && \cdots && *\\
-				\vdots && \ddots && \vdots\\
-				0 && \cdots && \lambda_n-\lambda
-			\end{bmatrix}(*)\]
+					\lambda_1-\lambda &  & \cdots &  & *                 \\
+					\vdots            &  & \ddots &  & \vdots            \\
+					0                 &  & \cdots &  & \lambda_n-\lambda
+				\end{bmatrix}(*)\]
 			\[\mathcal{M}_B(T-\lambda I)=\mathcal{M}_B(T)-\lambda\mathcal{M}_B(I)\]
 			Por el Teo ($\therefore$)\\
 			$T-\lambda I$ invertible si solo si $\lambda_1-\lambda,...,\lambda_n-\lambda\neq 0$\\
@@ -1175,9 +1175,9 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\[(Diag(A))_{i,j}=\]
 	Y decimos que $A$ es diagonal si
 	\[A=Diag(A)\]
-	Equivalentemente, $A$ es diagonal si 
+	Equivalentemente, $A$ es diagonal si
 	\[a_{i,j}=0\forall i\neq j\]
-	Claramente, toda matriz diagonal es $\triangle$ superior, entonces los valores propios de $A$ son los valores en la diagonal.	
+	Claramente, toda matriz diagonal es $\triangle$ superior, entonces los valores propios de $A$ son los valores en la diagonal.
 \end{defn}
 \begin{defn}[Subespacio Propio]
 	Sea $T\in\mathcal{L}(V)$ y $\lambda\in\set{F}$. El subespacio propio de $T$ correspondiente a $\lambda, E(\lambda,T)$, se define como
@@ -1188,7 +1188,7 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 	\end{obs}
 \end{defn}
 \begin{prop}[Suma de subespacios propios es directa]
-	
+
 \end{prop}
 \chapter{Espacios de Producto Interno}
 \begin{defn}[Producto Interno]
@@ -1201,7 +1201,7 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 		\item Definitividad: $<v,v>=0\iff v=\vec{0}$
 
 		\item Aditividad por la izquierda: $\forall u,v,w\in V$
-		\[<u+v,w>=<u,w>+<v,w>\]
+		      \[<u+v,w>=<u,w>+<v,w>\]
 
 		\item Homogeneidad: $<\lambda u,v>=\lambda<u,v>\quad\forall\lambda\in\set{F}\forall u,v\in V$
 
@@ -1214,16 +1214,16 @@ Sea $B$ una base que contiene a $v$. Si hacemos esto
 \underline{Ejemplos:}
 \begin{enumerate}[label=\alph*)]
 	\item El producto interno Euclideano sobre $\set{F}^n$
-	\[<(z_1,...,z_n),(w_1,...,w_n)>=z_1\cdot \overline{w_1}+...+z_n\cdot \overline{w_n}\]
+	      \[<(z_1,...,z_n),(w_1,...,w_n)>=z_1\cdot \overline{w_1}+...+z_n\cdot \overline{w_n}\]
 
 	\item Si $c_1,...,c_n>0$, entonces
-	\[<(z_1,...,z_n),(w_1,...,w_n)>=\sum^n_{i=1}c_i\cdot z_i\cdot \overline{w_i}\]
-	
+	      \[<(z_1,...,z_n),(w_1,...,w_n)>=\sum^n_{i=1}c_i\cdot z_i\cdot \overline{w_i}\]
+
 	\item Si $V=\mathcal{C}[-1,1]$
-	\[<f,g>=\int^1_{-1}f(x)g(x)\d x\]
+	      \[<f,g>=\int^1_{-1}f(x)g(x)\d x\]
 
 	\item Si $V=\set{R}[x]$ entonces
-	\[<p,q>=\int_0^\infty e^{-x} p(x)q(x)\d{x}\]
+	      \[<p,q>=\int_0^\infty e^{-x} p(x)q(x)\d{x}\]
 \end{enumerate}
 \subsubsection{Integrales}
 Si $f\in\mathcal{C}[a,b]$ y $f\geq 0$ definimos la integral de $f$ como el "área bajo la curva".
@@ -1232,42 +1232,42 @@ Si $f\in\mathcal{C}[a,b]$ y $f\geq 0$ definimos la integral de $f$ como el "áre
 \[i=0,...,N\]
 \begin{enumerate}
 	\item \begin{thm}[Teorema Fundamental del Cálculo]
-		Sea $\func{f}{[a,b]}{\set{R}}{}{}$ continua tal que para $\func{F}{[a,b]}{\set{R}}{}{}$ se cumple $F'(x)=f(x)$ (primitiva).\\
-		Entonces:
-		\[\int^b_a f(x)\d{x}=\sum^J_{j=1}\int_{A_j=[a_j,b_j]}f(x)\d{x}\]
-	\end{thm}
+		      Sea $\func{f}{[a,b]}{\set{R}}{}{}$ continua tal que para $\func{F}{[a,b]}{\set{R}}{}{}$ se cumple $F'(x)=f(x)$ (primitiva).\\
+		      Entonces:
+		      \[\int^b_a f(x)\d{x}=\sum^J_{j=1}\int_{A_j=[a_j,b_j]}f(x)\d{x}\]
+	      \end{thm}
 
 	\item Linealidad:
-	\[\func{\mathcal{I}}{\mathcal{C}[a,b]}{\mathcal{C}[a,b]}{}{}\]
-	\[f(x)\mapsto\int^x_af(t)\d{t}\]
-	es una tra lineal.
+	      \[\func{\mathcal{I}}{\mathcal{C}[a,b]}{\mathcal{C}[a,b]}{}{}\]
+	      \[f(x)\mapsto\int^x_af(t)\d{t}\]
+	      es una tra lineal.
 \end{enumerate}
 Ejemplos:
 \begin{enumerate}
 	\item Monomio:
-	\[p(t)=t^k\quad P(t)=\frac{t^{k+1}}{k+1}\]
-	$P$ es primitiva de $p$:
-	\[P'(t)=t^k=p(t)\]
-	\[\therefore TFC\]
-	\[\int^t_0p(s)\d{s}=P(t)-P(0)\]
+	      \[p(t)=t^k\quad P(t)=\frac{t^{k+1}}{k+1}\]
+	      $P$ es primitiva de $p$:
+	      \[P'(t)=t^k=p(t)\]
+	      \[\therefore TFC\]
+	      \[\int^t_0p(s)\d{s}=P(t)-P(0)\]
 
 	\item Polinomios:
-	\[p(t)=a_0+a_1t+...+a_nt\]
-	\[\int^t_0p(s)\d{t}=\sum^n_{k=0}a_k\int^t_0s^k\d{s}\]
+	      \[p(t)=a_0+a_1t+...+a_nt\]
+	      \[\int^t_0p(s)\d{t}=\sum^n_{k=0}a_k\int^t_0s^k\d{s}\]
 
 	\item Exponenciales:
-	\[f(x)=e^{\lambda x}\quad(\lambda\neq 0)\]
-	\[F(x)=\frac{e^{\lambda x}}{\lambda}\]
-	\[\therefore \int^x_0e^{\lambda t}\d{t}=F(x)-F(0)=\frac{e^{\lambda x}-1}{\lambda}\]
-	
+	      \[f(x)=e^{\lambda x}\quad(\lambda\neq 0)\]
+	      \[F(x)=\frac{e^{\lambda x}}{\lambda}\]
+	      \[\therefore \int^x_0e^{\lambda t}\d{t}=F(x)-F(0)=\frac{e^{\lambda x}-1}{\lambda}\]
+
 	\item Seno-Coseno:
-	\[\func{f}{\set{R}}{\set{C}}{}{}\]
-	\[f(x)=e^{i\lambda x}=\cos\lambda x+i\sin\lambda x\]
-	\[F(x)=\frac{e^{\lambda x}}{\lambda}\]
-	\[\therefore\int^x_0f(t)\d{t}=\frac{e^{i\lambda x}-1}{i\lambda}\]
-	\[\int^x_0f(t)=\frac{\sin \lambda x}{\lambda}+i\frac{1-\cos \lambda x}{\lambda}\]
-	\[\implies \int^x_0\sin\lambda t\d{t}=\frac{1-\cos \lambda x}{\lambda}\]
-	\[\int^x_0\cos\lambda t\d{t}=\frac{\sin \lambda x}{\lambda}\]
+	      \[\func{f}{\set{R}}{\set{C}}{}{}\]
+	      \[f(x)=e^{i\lambda x}=\cos\lambda x+i\sin\lambda x\]
+	      \[F(x)=\frac{e^{\lambda x}}{\lambda}\]
+	      \[\therefore\int^x_0f(t)\d{t}=\frac{e^{i\lambda x}-1}{i\lambda}\]
+	      \[\int^x_0f(t)=\frac{\sin \lambda x}{\lambda}+i\frac{1-\cos \lambda x}{\lambda}\]
+	      \[\implies \int^x_0\sin\lambda t\d{t}=\frac{1-\cos \lambda x}{\lambda}\]
+	      \[\int^x_0\cos\lambda t\d{t}=\frac{\sin \lambda x}{\lambda}\]
 \end{enumerate}
 \section{Espacio de producto interno}
 \begin{defn}[Espacio de producto interno]
@@ -1277,7 +1277,7 @@ Ejemplos:
 	\
 	\begin{enumerate}[label=(\alph*)]
 		\item \[\forall u\in V\quad v\mapsto <v,u> \]
-		Es una transformación lineal de $V$ hacia $\set{F}$
+		      Es una transformación lineal de $V$ hacia $\set{F}$
 
 		\item \[<0,u>=0\forall u\in V\]
 
@@ -1350,15 +1350,15 @@ Reemplazando:
 	\item $\set{F}^n$
 
 	\item $ser{F}^4$, el conjunto
-	\[(0.5,0.5,0.5,0.5),(0.5,0.5,-0.5,-0.5)\]
-	\[(0.5,-0.5,-0.5,0.5),(-0.5,0.5,-0.5,0.5)\]
-	es base ortonormal.
-	Claramente: $\|\cdot\|=\sqrt{(0.5)^2+(0.5)^2+(0.5)^2+(0.5)^2}=1$\\
-	Tambien los productos internos cruzados dan 0
+	      \[(0.5,0.5,0.5,0.5),(0.5,0.5,-0.5,-0.5)\]
+	      \[(0.5,-0.5,-0.5,0.5),(-0.5,0.5,-0.5,0.5)\]
+	      es base ortonormal.
+	      Claramente: $\|\cdot\|=\sqrt{(0.5)^2+(0.5)^2+(0.5)^2+(0.5)^2}=1$\\
+	      Tambien los productos internos cruzados dan 0
 \end{enumerate}
 \underline{Pregunta:} Cuándo existen bases ortonormales uniformes en $\set{R}^n$
 \begin{lem}
-	Sea $e_1,..e_n$ vectores de $\set{F}^n$ y sea 
+	Sea $e_1,..e_n$ vectores de $\set{F}^n$ y sea
 	\[U=\left[e_1|e_2|...|e_n\right]\]
 	Entonces, $e_1,..,e_n$ es base ortonormal $\iff$
 	\[U^T\cdot U=I_{n\times n}\]
@@ -1378,22 +1378,22 @@ Para responder la pregunta hacemos lo siguiente:
 	\underline{$n\implies 2n$:} Sea $H_n$ una matriz unitaria tal que
 	\[|(H_n)_{i,j}|=\frac{1}{\sqrt{n}}=c\]
 	\[H_{2n}=\frac{1}{\sqrt{2}}\begin{bmatrix}
-		H_n & H_n\\
-		H_n & -H_n
-	\end{bmatrix}\]
+			H_n & H_n  \\
+			H_n & -H_n
+		\end{bmatrix}\]
 	\begin{enumerate}
 		\item Esta matriz también es uniforme
 
 		\item Esta matriz es unitaria
-		\[H_{2n}^T\cdot H_{2n}=\frac{1}{2}\begin{bmatrix}
-			H_n^T\cdot H_n+H_n^T\cdot H_n & H_n^T\cdot H_n-H_n^T\cdot H_n^T\cdot H_n\\
-			H_n^T\cdot H_n-H_n^T\cdot H_n & H_n^T\cdot H_n+H_n^T\cdot H_n
-		\end{bmatrix}=\begin{bmatrix}
-			I_{n\times n} & 0\\
-			0 & I_{n\times n}
-		\end{bmatrix}\qedhere\]
-		Las columnas son las base ortonormal uniforme buscada.\\
-		Las matrices $H_1,H_2,H_4,...,H_{2^k}$ se conocen como matrices de Hadanard
+		      \[H_{2n}^T\cdot H_{2n}=\frac{1}{2}\begin{bmatrix}
+				      H_n^T\cdot H_n+H_n^T\cdot H_n & H_n^T\cdot H_n-H_n^T\cdot H_n^T\cdot H_n \\
+				      H_n^T\cdot H_n-H_n^T\cdot H_n & H_n^T\cdot H_n+H_n^T\cdot H_n
+			      \end{bmatrix}=\begin{bmatrix}
+				      I_{n\times n} & 0             \\
+				      0             & I_{n\times n}
+			      \end{bmatrix}\qedhere\]
+		      Las columnas son las base ortonormal uniforme buscada.\\
+		      Las matrices $H_1,H_2,H_4,...,H_{2^k}$ se conocen como matrices de Hadanard
 	\end{enumerate}
 \end{proof}
 \begin{conj}[Hadanard]
@@ -1436,9 +1436,9 @@ Cómo calcular $a_1,..,a_m$?
 		\[\therefore v_j-\sum_{i<j}<v_j,e_i>e_i\neq 0\]
 		Para probar ortonormalidad, basta probar que:
 		\[<e_j,e_l>=\begin{cases}
-			1\quad l=j\\
-			0\quad l<j
-		\end{cases}\]
+				1\quad l=j \\
+				0\quad l<j
+			\end{cases}\]
 		\[<e_j,e_j>=\|e_j\|^2=\frac{\|\cdot\|^2}{\|\cdot\|^2}=1\]
 		\[<e_j,e_l>=\frac{1}{c}<v_j-\sum_{i<j}<v_j,e_i>e_i,e_l>\]
 		\[<e_j,e_l>=\frac{1}{c}\left[<v_j,e_l>-<\sum_{i<j}<v_j,e_i>e_i,e_l>\right]\]
@@ -1487,12 +1487,12 @@ Cómo calcular $a_1,..,a_m$?
 \underline{Ejemplos:}
 \begin{enumerate}
 	\item $u\in V:$\\
-	$\func{l}{V}{\set{F}}{}{}$\\
-	$v\mapsto <v,u>$
+	      $\func{l}{V}{\set{F}}{}{}$\\
+	      $v\mapsto <v,u>$
 
 	\item Sea $\func{\varphi}{\mathcal{P}_2(\set{R})}{\set{R}}{}{}$ dado por
-	\[\varphi(P)=\int^1_{-1}p(t)\cos(\pi t)\d{t}\]
-	Pregunta: $\exists q\in\mathcal{P}_2(\set{R}):\varphi(p)=\int^1_{-1}p(t)q(t)\d{t}$?
+	      \[\varphi(P)=\int^1_{-1}p(t)\cos(\pi t)\d{t}\]
+	      Pregunta: $\exists q\in\mathcal{P}_2(\set{R}):\varphi(p)=\int^1_{-1}p(t)q(t)\d{t}$?
 \end{enumerate}
 \begin{thm}[Representación de Riesz]
 	Sea $(V,<\cdot,\cdot>)$ espacio producto interno finito-dimensional y $\varphi$ un funcional lineal. Entonces existe un único $u\in V$
@@ -1524,37 +1524,37 @@ Cómo calcular $a_1,..,a_m$?
 \underline{Propiedades:}
 \begin{enumerate}[label=\textbf{(\alph*)}]
 	\item $U\subseteq V\implies U^\perp$ subespacio vectorial de $V$\\
-	$U^\perp=\{v\in V:<v,u>=0\quad\forall u\in U\}$
-	\begin{proof}
-		\[U^\perp\neq\emptyset:0\in U^\perp\]
-		\[v,w\in U^\perp,\lambda\in\set{F}: u\in U\]
-		\[\therefore<v+\lambda w,u>=<v,u>+\lambda<w,u>=0\qedhere\]
-	\end{proof}
+	      $U^\perp=\{v\in V:<v,u>=0\quad\forall u\in U\}$
+	      \begin{proof}
+		      \[U^\perp\neq\emptyset:0\in U^\perp\]
+		      \[v,w\in U^\perp,\lambda\in\set{F}: u\in U\]
+		      \[\therefore<v+\lambda w,u>=<v,u>+\lambda<w,u>=0\qedhere\]
+	      \end{proof}
 
 	\item $\{0\}^\perp=V:$ Ejercicio
 
 	\item $V^\perp=\{0\}$
-	\begin{proof}
-		Si $v\in V^\perp$ entonces:
-		\[<v,u>=0\quad\forall u\in V\]
-		Tomando $u=v$
-		\[<v,v>=0\iff v=0\]
-	\end{proof}
+	      \begin{proof}
+		      Si $v\in V^\perp$ entonces:
+		      \[<v,u>=0\quad\forall u\in V\]
+		      Tomando $u=v$
+		      \[<v,v>=0\iff v=0\]
+	      \end{proof}
 
 	\item $U<V\implies U\cap U^\perp=\{0\}$
-	\begin{proof}
-		Sea $v\in U\cap U^\perp$
-		\[<v,u>=0\quad\forall u\in U\]
-		Tomando $u=v$
-		\[<v,v>=0\iff v=0\qedhere\]
-	\end{proof}
+	      \begin{proof}
+		      Sea $v\in U\cap U^\perp$
+		      \[<v,u>=0\quad\forall u\in U\]
+		      Tomando $u=v$
+		      \[<v,v>=0\iff v=0\qedhere\]
+	      \end{proof}
 
 	\item $U\subseteq W\implies W^\perp\subset U^\perp$
-	\begin{proof}
-		\[W^\perp=\{v\in V:<v,w>=0\quad\forall w\in W\}\]
-		\[W^\perp\subseteq\{v\in V:<v,u>=0\quad\forall u\in U\}\]
-		\[W^\perp\subseteq U^\perp\qedhere\]
-	\end{proof}
+	      \begin{proof}
+		      \[W^\perp=\{v\in V:<v,w>=0\quad\forall w\in W\}\]
+		      \[W^\perp\subseteq\{v\in V:<v,u>=0\quad\forall u\in U\}\]
+		      \[W^\perp\subseteq U^\perp\qedhere\]
+	      \end{proof}
 \end{enumerate}
 \begin{prop}[Suma directa ortogonal]
 	Sea $(V,<\cdot,\cdot>)$ espacio con producto interno, y $U$ subespacio finito-dimensional. Entonces:
@@ -1627,51 +1627,51 @@ Cómo calcular $a_1,..,a_m$?
 	\item $\|\mathcal{P}_Uv\}\leq\|v\|$
 
 	\item Para todoa base ortonormal de $U$, $e_1,...,e_n$
-	\[\mathcal{P}_Uv=<v,e_1>e_1+,,,+<v,e_n>e_n>\] 
+	      \[\mathcal{P}_Uv=<v,e_1>e_1+,,,+<v,e_n>e_n>\]
 \end{enumerate}
 Demostración de las propiedades
 \begin{enumerate}[label=\textbf{(\alph*)}]
 	\item \begin{proof}
-		Sabemos que $\mathcal{P}_U$ es función ya que $U\oplus U^\perp=V$. Probemos la linealidad. Sean $v_1=u_1+w_1,v_2=u_2+w_2$ y sea $\lambda\in\set{F}$
-		\[\mathcal{P}_U(v_1+\lambda v_2)=?\]
-		Sabemos que
-		\[\mathcal{P}_Uv_1=u_1\quad\mathcal{P}_Uv_2=u_2\]
-		Y además
-		\[v_1+\lambda v_2=(u_1+w_1)+\lambda (u_2+w_2)=(u_1+\lambda u_2)+(w_1+\lambda w_2)\]
-	\end{proof}
+		      Sabemos que $\mathcal{P}_U$ es función ya que $U\oplus U^\perp=V$. Probemos la linealidad. Sean $v_1=u_1+w_1,v_2=u_2+w_2$ y sea $\lambda\in\set{F}$
+		      \[\mathcal{P}_U(v_1+\lambda v_2)=?\]
+		      Sabemos que
+		      \[\mathcal{P}_Uv_1=u_1\quad\mathcal{P}_Uv_2=u_2\]
+		      Y además
+		      \[v_1+\lambda v_2=(u_1+w_1)+\lambda (u_2+w_2)=(u_1+\lambda u_2)+(w_1+\lambda w_2)\]
+	      \end{proof}
 
 	\item \begin{proof}
-		\[u=u+0\implies P_Uu=u\]
-	\end{proof}
-	
+		      \[u=u+0\implies P_Uu=u\]
+	      \end{proof}
+
 	\item \begin{proof}
-		\[w=0+w\implies P_Uu=0\]
-	\end{proof}
+		      \[w=0+w\implies P_Uu=0\]
+	      \end{proof}
 
 	\item Ejercicio
 
 	\item Ejercicio
 
 	\item \begin{proof}
-		\[<v,\mathcal{P}_Uv,u>=0\quad\forall u\in U\]
-		Sean
-		\[v=u+w\quad u\in U\quad w\in U^\perp\]
-		\[\implies u=\mathcal{P}_Uv\]
-		\[\therefore w-\mathcal{P}_Uv\in U^\perp\qedhere\]
-	\end{proof}
+		      \[<v,\mathcal{P}_Uv,u>=0\quad\forall u\in U\]
+		      Sean
+		      \[v=u+w\quad u\in U\quad w\in U^\perp\]
+		      \[\implies u=\mathcal{P}_Uv\]
+		      \[\therefore w-\mathcal{P}_Uv\in U^\perp\qedhere\]
+	      \end{proof}
 
 	\item \begin{proof}
-		$\mathcal{P}_U^2=\mathcal{P}_U$\\
-		Sea $v\in V$:
-		\[v=u+w\quad u \in U\quad w\in U^\perp\]
-		\[\mathcal{P}_Uv=^{(a)}\mathcal{P}_Uu+\mathcal{P}_Uw=^{(b),(c)}u\]
-		\[\mathcal{P}_U^2v=\mathcal{P}_Uu+\mathcal{P}_Uw=\mathcal{P}_Uv\qedhere\]
-	\end{proof}
+		      $\mathcal{P}_U^2=\mathcal{P}_U$\\
+		      Sea $v\in V$:
+		      \[v=u+w\quad u \in U\quad w\in U^\perp\]
+		      \[\mathcal{P}_Uv=^{(a)}\mathcal{P}_Uu+\mathcal{P}_Uw=^{(b),(c)}u\]
+		      \[\mathcal{P}_U^2v=\mathcal{P}_Uu+\mathcal{P}_Uw=\mathcal{P}_Uv\qedhere\]
+	      \end{proof}
 
 	\item Sea $v=u+w\quad u\in U\quad w\in U^\perp$
-	\[v=\mathcal{P}_Uv+w\quad/\|\cdot\|^2\]
-	\[\|v\|^2=\|\mathcal{P}_Uv\|^2+\|w\|^2\]
-	\[\implies \|v\|^2\geq \|\mathcal{P}_Uv\|^2\]
+	      \[v=\mathcal{P}_Uv+w\quad/\|\cdot\|^2\]
+	      \[\|v\|^2=\|\mathcal{P}_Uv\|^2+\|w\|^2\]
+	      \[\implies \|v\|^2\geq \|\mathcal{P}_Uv\|^2\]
 
 	\item Ejercicio
 \end{enumerate}
@@ -1682,9 +1682,9 @@ Dado $v\in V$ y $U<V$
 \begin{thm}[Distancia mínima a un subespacio vectorial]
 	Sea $(V,<\cdot,\cdot>)$ espacio con producto interno y $U<V$. Entonces para todo $v\in V$
 	\[\|v-\mathcal{P}_Uv\|\leq \|v-u\|\quad\forall u\in U\]
-	Más aun, la igualdad se alcanza $\iff u=\mathcal{P}_Uv$ 
+	Más aun, la igualdad se alcanza $\iff u=\mathcal{P}_Uv$
 	\begin{proof}
-		
+
 	\end{proof}
 \end{thm}
 \underline{Ejemplo:} Encuentre un polinomio $u$ a coeficientes reales y de grado máximo $5$ que aproxime $\sin (x)$ lo mejor posible sobre $[-\pi,\pi]$, con respecto a la distincia
@@ -1696,35 +1696,35 @@ Dado $v\in V$ y $U<V$
 	\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
 	\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
 	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-	\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-4.,-4.) grid (4.,4.);
-	\draw[->,color=black] (-4.,0.) -- (4.,0.);
-	\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.}
-	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
-	\draw[->,color=black] (0.,-4.) -- (0.,4.);
-	\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.}
-	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
-	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
-	\clip(-4.,-4.) rectangle (4.,4.);
-	\draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{(\x)-(\x)^(3.0)/6.0+(\x)^(5.0)/120.0});
-	\draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{sin(((\x))*180/pi)});
-	\begin{scriptsize}
-	\draw[color=qqwuqq] (-4.442383629790053,-5.543338273894109) node {$f$};
-	\draw[color=ccqqqq] (-7.219112146289378,-0.8828994572570593) node {$g$};
-	\end{scriptsize}
+		\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-4.,-4.) grid (4.,4.);
+		\draw[->,color=black] (-4.,0.) -- (4.,0.);
+		\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.}
+		\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+		\draw[->,color=black] (0.,-4.) -- (0.,4.);
+		\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.}
+		\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+		\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+		\clip(-4.,-4.) rectangle (4.,4.);
+		\draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{(\x)-(\x)^(3.0)/6.0+(\x)^(5.0)/120.0});
+		\draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{sin(((\x))*180/pi)});
+		\begin{scriptsize}
+			\draw[color=qqwuqq] (-4.442383629790053,-5.543338273894109) node {$f$};
+			\draw[color=ccqqqq] (-7.219112146289378,-0.8828994572570593) node {$g$};
+		\end{scriptsize}
 	\end{tikzpicture}
 \end{center}
 \underline{Solución:} $(V,<\cdot,\cdot>)$ espacio con producto interno
-\[V=\mathcal{C}([\-pi,\pi],\set{R})<p,q>=\int^\pi_{-\pi}p(x)q(x)\d{x}\]
+\[V=\mathcal{C}([\-\pi,\pi],\set{R})<p,q>=\int^\pi_{-\pi}p(x)q(x)\d{x}\]
 \[U=\mathcal{P}_5(\set{R})|_{[-\pi,\pi]}\quad\forall p,q\in V\]
 Tenemos una base de $U$
 \[1,x,x^2,x^3,x^4,x^5\]
 \begin{enumerate}
 	\item Aplicamos G-S (Ejercicio)
-	\[e_1,e_2,e_3,e_4,e_5,e_6\]
+	      \[e_1,e_2,e_3,e_4,e_5,e_6\]
 
 	\item Aplicamos la fórmula de $\mathcal{P}_Uv$
-	\[\mathcal{P}_Uv=<v,e_1>e_1+...<v,e_5>e_5+<v,e_6>e_6>\]
-	(Ejercicio de Cálculo, \textbf{NO DE LINEAL})
+	      \[\mathcal{P}_Uv=<v,e_1>e_1+...<v,e_5>e_5+<v,e_6>e_6\]
+	      (Ejercicio de Cálculo, \textbf{NO DE LINEAL})
 \end{enumerate}
 \[<v,e_1>=\int^\pi_{-\pi}\sin (x)\cdot e_i(x)\d{x}\approx \frac{1}{10^6}\sum^{10^6}_{i=1}\]
 Finalmente:
@@ -1735,23 +1735,23 @@ Finalmente:
 	\definecolor{qqwuqq}{rgb}{0.,0.39215686274509803,0.}
 	\definecolor{cqcqcq}{rgb}{0.7529411764705882,0.7529411764705882,0.7529411764705882}
 	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
-	\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-4.,-4.) grid (4.,4.);
-	\draw[->,color=black] (-4.,0.) -- (4.,0.);
-	\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.}
-	\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
-	\draw[->,color=black] (0.,-4.) -- (0.,4.);
-	\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.}
-	\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
-	\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
-	\clip(-4.,-4.) rectangle (4.,4.);
-	\draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{(\x)-(\x)^(3.0)/6.0+(\x)^(5.0)/120.0});
-	\draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{sin(((\x))*180/pi)});
-	\draw[line width=2.pt,color=qqqqff,smooth,samples=100,domain=-4.0:4.0] plot(\x,{0.987862*(\x)-0.155271*(\x)^(3.0)+0.00564312*(\x)^(5.0)});
-	\begin{scriptsize}
-	\draw[color=qqwuqq] (-4.442383629790053,-5.543338273894109) node {$f$};
-	\draw[color=ccqqqq] (-7.219112146289378,-0.8828994572570593) node {$g$};
-	\draw[color=qqqqff] (-5.126100701691898,-5.543338273894109) node {$h$};
-	\end{scriptsize}
+		\draw [color=cqcqcq,, xstep=1.0cm,ystep=1.0cm] (-4.,-4.) grid (4.,4.);
+		\draw[->,color=black] (-4.,0.) -- (4.,0.);
+		\foreach \x in {-4.,-3.,-2.,-1.,1.,2.,3.}
+		\draw[shift={(\x,0)},color=black] (0pt,2pt) -- (0pt,-2pt) node[below] {\footnotesize $\x$};
+		\draw[->,color=black] (0.,-4.) -- (0.,4.);
+		\foreach \y in {-4.,-3.,-2.,-1.,1.,2.,3.}
+		\draw[shift={(0,\y)},color=black] (2pt,0pt) -- (-2pt,0pt) node[left] {\footnotesize $\y$};
+		\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+		\clip(-4.,-4.) rectangle (4.,4.);
+		\draw[line width=2.pt,color=qqwuqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{(\x)-(\x)^(3.0)/6.0+(\x)^(5.0)/120.0});
+		\draw[line width=2.pt,color=ccqqqq,smooth,samples=100,domain=-4.0:4.0] plot(\x,{sin(((\x))*180/pi)});
+		\draw[line width=2.pt,color=qqqqff,smooth,samples=100,domain=-4.0:4.0] plot(\x,{0.987862*(\x)-0.155271*(\x)^(3.0)+0.00564312*(\x)^(5.0)});
+		\begin{scriptsize}
+			\draw[color=qqwuqq] (-4.442383629790053,-5.543338273894109) node {$f$};
+			\draw[color=ccqqqq] (-7.219112146289378,-0.8828994572570593) node {$g$};
+			\draw[color=qqqqff] (-5.126100701691898,-5.543338273894109) node {$h$};
+		\end{scriptsize}
 	\end{tikzpicture}
 \end{center}
 \chapter{Operadores sobre Espacio con Producto Interno}
@@ -1774,7 +1774,7 @@ le llamamos la adjunta de $T$.
 \begin{defn}[Adjunta]
 	Sea $T\in\mathcal{L}(V,W)$. Definimos la adjunta de $T$ como la función
 	\[\func{T^*}{W}{V}{}{}\]
-	tal que 
+	tal que
 	\[<Tv,w>_W=<v,T^* w>_V\quad\forall v\in V\forall w\in W\]
 \end{defn}
 \underline{Ejemplo:} Sea
@@ -1782,14 +1782,14 @@ le llamamos la adjunta de $T$.
 \[(x_1,x_2,x_3)\mapsto (x_2+3x_3,2x_1)\]
 Tomemos bases canónicas
 \[\mathcal{M}(T)=\begin{bmatrix}
-	0 & 1 & 3\\
-	2 & 0 & 0
-\end{bmatrix}\]
+		0 & 1 & 3 \\
+		2 & 0 & 0
+	\end{bmatrix}\]
 \[\mathcal{M}(T^*)=\begin{bmatrix}
-	0 & 2\\
-	1 & 0\\
-	3 & 0\\
-\end{bmatrix}\]
+		0 & 2 \\
+		1 & 0 \\
+		3 & 0 \\
+	\end{bmatrix}\]
 \[\therefore \mathcal{M}(T^*)=\mathcal{T}^T\]
 \begin{prop}[Adjunta es lineal]
 	\[T\in\mathcal{L}(V,W)\implies T^*\in\mathcal{L}(W,W)\]
@@ -1819,36 +1819,36 @@ Tomemos bases canónicas
 \end{enumerate}
 \begin{enumerate}[label=\alph*)]
 	\item \begin{proof}
-		Sean $v\in V,w\in W$
-		\[<v,(S+T)^*w>=<(S+T)v,w>\]
-		\[<v,(S+T)^*w=<Sv,w>+<Tv,w>\]
-		\[<v,(S+T)^*w=<v,S^*w>+<v,T^*w>=<v,(S^*+T^*)w>\forall v\]
-		\[\iff (S+T)^*w=S^*w+T^*w\forall w\in W\iff (S+T)^*=S^*T^*\qedhere\]
-	\end{proof}
+		      Sean $v\in V,w\in W$
+		      \[<v,(S+T)^*w>=<(S+T)v,w>\]
+		      \[<v,(S+T)^*w=<Sv,w>+<Tv,w>\]
+		      \[<v,(S+T)^*w=<v,S^*w>+<v,T^*w>=<v,(S^*+T^*)w>\forall v\]
+		      \[\iff (S+T)^*w=S^*w+T^*w\forall w\in W\iff (S+T)^*=S^*T^*\qedhere\]
+	      \end{proof}
 
 	\item \begin{proof}
-		Sean $v\in V,w\in W,\lambda\in\set{F}$
-		\[<v,(\lambda T)^*w>=<(\lambda T)v,w>=\lambda<Tv,w>\]
-		\[<v,(\lambda T)^*w>=<v,\bar{\lambda}T^*w>\quad\forall v\in V\forall w\in W\qedhere\]
-	\end{proof}
-	
+		      Sean $v\in V,w\in W,\lambda\in\set{F}$
+		      \[<v,(\lambda T)^*w>=<(\lambda T)v,w>=\lambda<Tv,w>\]
+		      \[<v,(\lambda T)^*w>=<v,\bar{\lambda}T^*w>\quad\forall v\in V\forall w\in W\qedhere\]
+	      \end{proof}
+
 	\item \begin{proof}
-		Sean $v\in V,w\in W$
-		\[<w,(T^*)^*v>=<T^*w,v>=<w,Tv>\]
-		Por Riesz:
-		\[(T^*)^*v=Tv\forall v\]
-		\[\iff (T^*)^*=T\qedhere\]
-	\end{proof}
+		      Sean $v\in V,w\in W$
+		      \[<w,(T^*)^*v>=<T^*w,v>=<w,Tv>\]
+		      Por Riesz:
+		      \[(T^*)^*v=Tv\forall v\]
+		      \[\iff (T^*)^*=T\qedhere\]
+	      \end{proof}
 
 	\item Ejercicio
 
 	\item \begin{proof}
-		Sean $v\in V, u\in U$
-		\[<v,(ST)^*u>=<(ST)v,u>=<S(Tv),u>=<Tv,S^*u>=<v,T^*(S^*u)>\]
-		Por Riesz:
-		\[(ST)^*u=T^*S^*u\forall u\in U\]
-		\[\iff (ST)^*=T^*S^*\qedhere\]
-	\end{proof}
+		      Sean $v\in V, u\in U$
+		      \[<v,(ST)^*u>=<(ST)v,u>=<S(Tv),u>=<Tv,S^*u>=<v,T^*(S^*u)>\]
+		      Por Riesz:
+		      \[(ST)^*u=T^*S^*u\forall u\in U\]
+		      \[\iff (ST)^*=T^*S^*\qedhere\]
+	      \end{proof}
 \end{enumerate}
 \begin{prop}[Núcleo e Imagen de $T^*$]
 	Sea $T\in\mathcal{L}(V,W)$. Entonces
@@ -1863,25 +1863,25 @@ Tomemos bases canónicas
 	\end{enumerate}
 	\begin{enumerate}[label=\alph*)]
 		\item \begin{proof}
-			Sea $w\in W$
-			\[w\in\ker (T^*)\iff T^*w=0\]
-			\[\iff <v,T^*w>=0\quad\forall v\in V\]
-			\[\iff <Tv,w>=0\quad\forall v\in V\]
-			\[\iff <z,w>=0\quad\forall z=Tv,v\in V\]
-			\[\iff w\in(\Ima T)^\perp\qedhere\]
-		\end{proof}
+			      Sea $w\in W$
+			      \[w\in\ker (T^*)\iff T^*w=0\]
+			      \[\iff <v,T^*w>=0\quad\forall v\in V\]
+			      \[\iff <Tv,w>=0\quad\forall v\in V\]
+			      \[\iff <z,w>=0\quad\forall z=Tv,v\in V\]
+			      \[\iff w\in(\Ima T)^\perp\qedhere\]
+		      \end{proof}
 
 		\item \begin{proof}
-			Claramente esta es implicada por c) y el complemento ortogonal
-		\end{proof}
+			      Claramente esta es implicada por c) y el complemento ortogonal
+		      \end{proof}
 
 		\item \begin{proof}
-			Claramente esta es implica por a)
-		\end{proof}
+			      Claramente esta es implica por a)
+		      \end{proof}
 
 		\item \begin{proof}
-			Claramente esta es implicada por b)
-		\end{proof}
+			      Claramente esta es implicada por b)
+		      \end{proof}
 	\end{enumerate}
 \end{prop}
 \begin{defn}[Traspuesta conjugada]
@@ -1889,13 +1889,13 @@ Tomemos bases canónicas
 \end{defn}
 \underline{Ejemplo:}
 \[\begin{bmatrix}
-	2 & 3+i & 7\\
-	6 & 6 & 8i
-\end{bmatrix}\mapsto\begin{bmatrix}
-	2 & 6\\
-	3-i & 6\\
-	7 & -8i
-\end{bmatrix}\]
+		2 & 3+i & 7  \\
+		6 & 6   & 8i
+	\end{bmatrix}\mapsto\begin{bmatrix}
+		2   & 6   \\
+		3-i & 6   \\
+		7   & -8i
+	\end{bmatrix}\]
 \begin{thm}[La matriz representante de $T^*$]
 	Sea $T\in\mathcal{L}(V,W)$. Sean
 	\[B=(e_1,...,e_n)\subseteq V\]
@@ -1998,7 +1998,7 @@ Sea $\func{T}{V}{V}{}{}$
 	$T$ es normal $\iff\|Tv\|=\|T^*v\|\quad \forall v\in V$
 	\begin{proof}
 		$T$ normal $\iff TT^*-T^*T=0$
-	\end{proof} 
+	\end{proof}
 \end{thm}
 \begin{thm}[Caracterización Operadores Positivos]
 	Los siguientes son equivalentes:
