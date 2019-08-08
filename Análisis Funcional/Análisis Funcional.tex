@@ -2,7 +2,7 @@
 
 \title{Ánalisis Funcional}
 \author{Nicholas Mc-Donnell}
-\date{2do Semestre}
+\date{2019-2}
 
 \setlist[enumerate]{label=\arabic*)}
 
@@ -91,10 +91,124 @@
         x_{n_k}-x_{n_1}=\sum_{j=2}^k(x_{n_j}-x_{n_{j-1}})
     \]
     Pero \(\sum_{j=2}^\infty\norm{x_{n_k}-x_{n_{k-1}}}\leq\sum_{j=2}^\infty\frac1{2^k}<\infty\) así que \(x_{n_k}-n_{n_1}\rightarrow x\implies x_{n_k}\rightarrow x+n_{n_1}\).\\
-    Para ver que \(\exists x_{n_k}\) con \(\norm{x_{n_k}-x_{n_{k-1}}}\leq\frac1{2^k}\), sea \(k=1\), para \(\varepsilon=\frac12\exists n_1\) tq \(\norm{x_n-x_m}\leq\frac12\forall n,m\geq n_1\), esto da \(n_1\). Si \(1\leq n_1<\dots<n_k\) son tq \(\norm{x_{n_j}-x_{n_{j-1}}}\leq\frac1{2^j},\: j=1,\dots,k-1\), \(\norm{x_n-x_m}<\frac1{2^k}\forall n,m\geq n_k\), sea \(\varepsilon=\frac1{2^{k+1}}\). Sea \(n_{k+1}>n_k\) tq \(\norm{x_{n_{k+`'}}-x_{n_{k}}}\leq\frac1{2^{k+1}}\). Esto construye \(x_{n_k}\).
+    Para ver que \(\exists x_{n_k}\) con \(\norm{x_{n_k}-x_{n_{k-1}}}\leq\frac1{2^k}\), sea \(k=1\), para \(\varepsilon=\frac12\exists n_1\) tq \(\norm{x_n-x_m}\leq\frac12\forall n,m\geq n_1\), esto da \(n_1\). Si \(1\leq n_1<\dots<n_k\) son tq \(\norm{x_{n_j}-x_{n_{j-1}}}\leq\frac1{2^j},\; j=1,\dots,k-1\), \(\norm{x_n-x_m}<\frac1{2^k}\forall n,m\geq n_k\), sea \(\varepsilon=\frac1{2^{k+1}}\). Sea \(n_{k+1}>n_k\) tq \(\norm{x_{n_{k+`'}}-x_{n_{k}}}\leq\frac1{2^{k+1}}\). Esto construye \(x_{n_k}\).
 \end{proof}
 \begin{ejm}
     \(M^n(\set{R})\) matrices de \(n\times n\) en \(\set{R}\), \(A\in M^n(\set{R})\) entonces \(\norm{A}=\paren{\tr(A^TA)}^{1/2}\)
 \end{ejm}
 
+\begin{defn}[Transformación Lineal]
+    Sean \(E,F\) e.v. (sobre \(\set{C}\) o \(\set{R}\)). Una transformación lineal es una función \(T:E\rightarrow F\) tq \(T(x+\lambda y)=Tx+\lambda Ty\forall x,y\in E\forall\lambda\).
+\end{defn}
+
+\begin{thm}[Caracterización de continuidad de funciones lineales]
+    Sean \(E,F\) e.v.n., y sea \(T:E\rightarrow F\) una transformación lineal. Las siguientes proposiciones son equivalentes:
+    \begin{enumerate}
+        \item \(T\) es continua en \(x\) para todo \(x\in E\).
+        \item \(T\) es continua en \(0_E\)
+        \item \(\sup_{\norm{x}_E=1}\norm{Tx}_F<\infty\)
+        \item \(\exists c>0\forall x\in E:\norm{Tx}_F\leq c\norm{x}_E\) 
+    \end{enumerate}
+\end{thm}
+
+\begin{proof}
+    Se demostrará \(1\implies 2\implies 3\implies 4\implies 1\)\\
+    \(1\implies 2\) es trivial\\
+    Para \(2\implies 3\), sea \(\varepsilon=1\), y un \(\delta>0\) tq 
+    \[
+        \norm{x-0_E}_E<\delta\implies\norm{Tx-T(0)}_F<1
+    \]
+    Como \(T\) es lineal tenemos que \(Tx-T(0)=Tx\), y además se tiene que \(x-0_E=x\). Luego,
+    \[
+        \norm{x}_E<\delta\implies\norm{Tx}_F<1
+    \]
+    Ahora, para todo \(x\in E\) tq \(\norm{x}=1\), \(\norm{\delta x}=\delta\norm{x}\). Con esto,
+    \[
+        \norm{\frac\delta2x}=\frac\delta2<\delta
+    \]
+    Así, por lo anterior tenemos que
+    \[
+        \norm{T\paren{\frac\delta2x}}<1
+    \]
+    Eso significa que para todo \(x\in E\) tq \(\norm{x}=1\) se tiene que
+    \[
+        \norm{Tx}<\frac2\delta
+    \]
+    Con lo que tenemos lo pedido.\\
+    Para \(3\implies 4\), sea \(c_0=\sup_{\norm{x}=1}\norm{Tx}\), entonces para todo \(x\in E\) distinto de cero, tenemos que
+    \[
+        \paren{\norm{\frac{x}{\norm{x}}}=1\implies\norm{T\paren{\frac{x}{\norm{x}}}}\leq c_0}\implies \norm{Tx}_F\leq c_0\norm{x}_E
+    \]
+    Con lo que se llega a lo que queríamos.\\
+    Por último, para \(4\implies 1\), sea \(c>0\) tq \(\norm{Tx}_F\leq c\norm{x}_E\). Luego,
+    \[
+        \norm{Tx-Ty}_F=\norm{T(x-y)}_F\leq c\norm{x-y}_E
+    \]
+    Por lo que \(T\) es Lipschitz, por lo que es continua.
+\end{proof}
+
+\begin{defn}[Norma de operador/Funcional Acotado]
+    Para \(E,V\) e.v.n \(T:E\rightarrow F\) que cumple 1-2-3-4 se llama funcional acotado (u operador lineal acotado); se define \(\norm{T}_{E,F}=\sup_{\norm{x}_E=1}\norm{Tx}_F=\inf\{c>0:\norm{Tx}\leq c\norm{x}\forall x\in E\}\)
+\end{defn}
+
+\begin{defn}
+    Para \(E,V\) e.v.n. sea \(\mathcal{L}(E,F)=\{T:E\rightarrow F\text{ lineal, acotado}\}\)
+\end{defn}
+
+\begin{prp}
+    \(\norm{\cdot}_{E,F}\) es norma en \(\mathcal{L}(E,F)\)
+\end{prp}
+\begin{proof}
+    Claramente cumple todo en base a la definición
+\end{proof}
+
+\begin{prp}
+    Si \(F\) es Banach, entonces \(\mathcal{L}(E,F)\) es Banach con  respecto a \(\norm{\cdot}_{E,F}\)
+\end{prp}
+\begin{proof}
+    Sean \(T_n:E\rightarrow F\) lineales continuas, Cauchy con respecto a \(\norm{\cdot}_{E,F}\). Observemos que, para cada \(x\in R\)  fijo, \(y_n=T_nx\) es Cauchy en \(F\); pues \(\norm{y_n-y_m}_F=\norm{T_nx-T_mx}_F=\norm{(T_n-T_m)x}_F\leq\norm{T_n-T_m}\norm{x}\).\\
+    Si \(x=0\), \(y_n\) es constante, por lo que es Cauchy.\\
+    Si \(x\neq0\), sea \(\varepsilon>0\). \(T_n\) es Cauchy \(\implies\exists n_0:\norm{T_n-T_m}<\frac{\varepsilon}{\norm{x}}\forall n,m\geq n_0\). Así: \(y_n=T_nx\) es de Cauchy en \(F\), como \(F\) es completo, \(y_n\rightarrow y\equiv Tx\). En otras palabras, \(T_nx\rightarrow Tx\).\\
+    Vamos a ver que \(T\in\mathcal{L}(E,F)\) y que \(\norm{T_n-T}\xrightarrow{n\rightarrow\infty}0\).\\
+    \underline{Primero}: \(\forall x\in R\forall n\in\set{N}\) se tiene que \(T_n(x+\lambda y)=T_nx+\lambda T_ny\rightarrow T(x+\lambda y)=Tx+\lambda Ty\).\\
+    \underline{Segundo}: (Ejercicio) Como \(T_n\) es Cauchy, \(\sup_{n\in\set{N}}\norm{T_n}=C<\infty\). Entonces \(\norm{T_nx}\leq\norm{T_n}\norm{x}\leq C\norm{x}\rightarrow\norm{Tx}\leq C\norm{x}\).\\
+    \underline{Último}: Verificar que \(\norm{T_n-T}\xrightarrow{n\rightarrow\infty}0\), sea \(\varepsilon, n_0\) tq \(\norm{T_n-T_m}<\varepsilon\forall m,n\geq n_0\). Entonces \(\norm{T_n(x)-T_m(x)}\leq\varepsilon\norm{x}\;\forall n,m\geq n_0\forall x\in E\). Así \(\norm{Tx-T_nx}\leq\varepsilon\norm{x}\;\forall n\geq n_0\forall x\in E\) por lo que \(\norm{T-T_n}\leq\varepsilon\;\forall n\geq n_0\)
+\end{proof}
+
+\begin{defn}[Dual]
+    Si \(E\) es e.v.n., definimos su dual (topológico) como:
+    \[
+        E^*=\mathcal{L}(E,\set{C})\text{ o }\mathcal{E,\set{R}}
+    \]
+\end{defn}
+
+\begin{ejm}
+    Tomemos \(E=\set{R}^n\), y sean \(S,T\in\mathcal{L}(E)\).
+    \[
+        \norm{S\circ T(x)}=\norm{S(Tx)}\leq\norm{S}\norm{Tx}\leq\norm{S}\norm{T}\norm{x}
+    \]
+    por lo que
+    \[
+        \norm{S\circ T}\leq\norm{T}\norm{S}
+    \]
+    Entonces \(\norm{T^k}\leq\norm{T}^k\)
+\end{ejm}
+\begin{prp}
+    Si \(E\) es Banach, \(T\in\mathcal{L}(E),\norm{T}<1\), \(I-T\) es invertible, con inversa continua, entonces \((I_T)^{-1}=\sum_{k=0}^\infty T^k\)
+\end{prp}
+\begin{proof}
+    Sale con truco tipico
+\end{proof}
+
+\begin{ejm}
+    Sea \(\Omega\subseteq\set{R}^n\) abierto, y sea \(\kappa\in L^2(\Omega\times\Omega;\set{R})\). Definamos \(T_\kappa:L^2(\Omega)\rightarrow L^2(\Omega)\) donde \(f\mapsto T_\kappa(f)(x)=\int_\Omega \kappa(x,y)f(y)\d{y}\)\\
+    \(T_\kappa\) es lineal. Veamos que \(T_\kappa(f)\in L^2(\Omega)\)
+    \[
+        \int_\Omega\abs{\int_\Omega\kappa(x,y)f(y)\d{y}}^2\d{x}\leq\int_\Omega\int_\Omega\kappa^2(x,y)\d{y}\int_\Omega f^2(y)\d{y}\d{x}
+    \]
+    O sea, ya que \(\int_\Omega\abs{T(f)(x)}^2\d{x}=\norm{T_\kappa f}^2_{L^2(\Omega)}\)
+    \[
+        \norm{T_\kappa f}\leq\norm{\kappa}\norm{f}
+    \]
+\end{ejm}
 \end{document}
