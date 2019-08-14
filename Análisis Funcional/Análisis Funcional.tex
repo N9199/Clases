@@ -267,16 +267,35 @@ Sea \(F\) s.e.v. de \(E\), \(F\subsetneq E\); tomemos \(x\in E\setminus F\) (en 
 \end{proof}
 
 \begin{thm}[Hahn-Banach real]
-    Sea \(E\) e.v.n. sobre \(\set{R}\), \(F\subseteq E\) s.e.v., \(p\) semi-norma, \(\varphi:F\rightarrow\set{R}\) lineal tq \(\varphi(x)\leq p(x)\forall x\in F\). Entonces existe \(\varphi_1:E\rightarrow\set{R}\) lineal tq \(\varphi_1(x)=\varphi(x)\forall x\in F\), \(\varphi_1(x)\leq p(x)\forall x\in E\)
+    Sea \(E\) e.v. sobre \(\set{R}\), \(F\subseteq E\) s.e.v., \(p\) semi-norma, \(\varphi:F\rightarrow\set{R}\) lineal tq \(\varphi(x)\leq p(x)\forall x\in F\). Entonces existe \(\varphi_1:E\rightarrow\set{R}\) lineal tq \(\varphi_1(x)=\varphi(x)\forall x\in F\), \(\varphi_1(x)\leq p(x)\forall x\in E\)
 \end{thm}
 \begin{proof}
-    
+    Sea \(E\) e.v. sobre \(\set{R}\), \(p\) semi-norma en \(E\), \(F\subseteq E\) s.e.v., si \(\varphi:F\rightarrow \set{R}\) es lineal y \(\varphi(x)\leq p(x)\forall x\in F\). Entonces, existe \(\varphi_1:E\rightarrow\set{R}\) lineal, extensión de \(\varphi\), tq \(\varphi_1(x)\leq p(x)\forall x\in E\)
 \end{proof}
-
+    Definamos \(\mathcal{C}=\{(H,\psi): H\text{ s.e.v. de }E, F\subseteq H,\psi:H\rightarrow\set{R},\psi\mid_F=\varphi,\psi(x)\leq p(x) \forall x\in H\}\). Para \((H_1,\psi_1),(H_2,\psi_2)\in \mathcal{C}\). Se define \((H_1,\psi_1)\leq(H_2,\psi_2)\) ssi \(H_1\subseteq H_2\) y \(\psi_2\mid_{H_1}=\psi_1\). \(\leq\) es un orden parcial sobre \(\mathcal{C}\).
+    \begin{enumerate}
+        \item \(\mathcal{C}\neq\emptyset\), pues \((F,\varphi)\in\mathcal{C}\).
+        \item Si  \(\{(H_i,\psi_i)\}_{i\in I}\subseteq\mathcal{C}\) es totalmente ordenado, \(\exists (H_S,\psi_s)\) cota superior de \(\{(H_i,\psi_i)\}_{i\in I}\), o sea \(H_s\supseteq H_i\forall i\in I, \psi_s\mid_{H_i}=\psi_i\).
+    \end{enumerate}
+    Para esto:\\
+    Sea \(H_s=\bigcup_{i\in I}H_i\). \(H_s\) es s.e.v. de \(E\) pues si \(x,y\in H_s,\lambda\in\set{R}\) entonces \(\exists i,j\in I\) tq \(x\in H_i,y\in H_j\), como \(\{(H_i,\psi_i)\}\) es totalmente ordenado, se tiene que \(H_i\subseteq H_j\) o \(H_j\subseteq H_i\). Ahora, s.p.d.g. \(H_i\subseteq H_j\implies x,y\in H_j\implies x+\lambda y\in H_j\subseteq H_s\).\\
+    Definamos \(\psi_s:H_s\rightarrow\set{R}\) de la siguiente forma:
+    \[
+        \psi_s(x)=\psi_i(x)\text{ si }x\in H_i
+    \]
+    Esto esta bien definido, pues \(\{(H_i,\psi_i)\}\) es totalmente ordenado. Además \(\psi(x)\leq p(x)\forall x\in H_s\) pues todo \(\psi_i\) satisface esto.\\
+    Esto prueba que \((H_s,\psi_s)\in\mathcal{C}\) y que \((H_i,\psi_i)\leq (H_s,\psi_s)\forall i\in I\). Ahora, por el lemma de Zorn existe \((H_*,\psi_*)\in\mathcal{C}\) que es maximal. Esto es \(\paren{(H,\psi)\in\mathcal{C}\wedge (H_*,\psi_*)\leq (H,\psi)}\implies (H_*,\psi_*)=(H,\psi)\).\\
+    \underline{Afirmación:} \(H_*=E\). Si no: \(\exists x\in E\setminus H_*\), por lo que podemos extender \(H_*\) y \(\psi_*\), lo que es una contradicción, ya que \((H_*,\psi_*)\) es maximal. Con esto se tiene que 
 \begin{cor}
     Sea \(E\) e.v.n. (sobre \(\set{R}\) por ahora), \(\forall x\in E, x\neq0,\exists \varphi\in E^*\) tq \(\varphi(x)=\norm{x}\) y \(\norm{\varphi}=1\)
 \end{cor}
 \begin{proof}
     Definamos \(\varphi(\lambda x)=\lambda\norm{x}\), \(\varphi:\angled{x}\rightarrow\set{R}\) es lineal y claramente \(\varphi(\lambda x)\leq\norm{\lambda x}\). Ahora usamos HB con \(p(x)=\norm{x}\).
+\end{proof}
+\begin{thm}[Hahn-Banach complejo]
+    Hahn-Banach, pero sobre \(\set{C}\).
+\end{thm}
+\begin{proof}
+    La misma demostración, pero cambiar la frase \(\forall x \varphi(x)\leq p(x)\) por \(\forall x\abs{\varphi(x)}\leq p(x)\) donde \(\abs{\cdot}\) es la norma en \(\set{C}\).
 \end{proof}
 \end{document}
