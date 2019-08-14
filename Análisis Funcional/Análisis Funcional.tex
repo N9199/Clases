@@ -1,8 +1,9 @@
 \documentclass{notetaking}
 
-\title{Ánalisis Funcional}
+\title{Ánalisis Funcional - MAT2555}
 \author{Nicholas Mc-Donnell}
-\date{2019-2}
+\date{}
+\gdate{Segundo Semestre de 2019}
 
 \setlist[enumerate]{label=\arabic*)}
 
@@ -178,7 +179,7 @@
 \begin{defn}[Dual]
     Si \(E\) es e.v.n., definimos su dual (topológico) como:
     \[
-        E^*=\mathcal{L}(E,\set{C})\text{ o }\mathcal{E,\set{R}}
+        E^*=\mathcal{L}(E,\set{C})\text{ o }\mathcal{L}(E,\set{R})
     \]
 \end{defn}
 
@@ -194,10 +195,10 @@
     Entonces \(\norm{T^k}\leq\norm{T}^k\)
 \end{ejm}
 \begin{prp}
-    Si \(E\) es Banach, \(T\in\mathcal{L}(E),\norm{T}<1\), \(I-T\) es invertible, con inversa continua, entonces \((I_T)^{-1}=\sum_{k=0}^\infty T^k\)
+    Si \(E\) es Banach, \(T\in\mathcal{L}(E),\norm{T}<1\), \(I-T\) es invertible, con inversa continua, entonces \((I-T)^{-1}=\sum_{k=0}^\infty T^k\)
 \end{prp}
 \begin{proof}
-    Sale con truco tipico
+    Sale con truco típico.
 \end{proof}
 
 \begin{ejm}
@@ -211,4 +212,71 @@
         \norm{T_\kappa f}\leq\norm{\kappa}\norm{f}
     \]
 \end{ejm}
+
+\begin{defn}
+    Sea \(E\) e.v.n., \(p:E\rightarrow\set{R}\) se dice semi-norma si:
+    \begin{itemize}
+        \item \(p(x+y)\leq p(x)+p(y)\forall x,y\in E\)
+        \item \(p(\lambda x)=\abs{\lambda}p(x)\forall x\in E\forall \lambda\)
+    \end{itemize}
+\end{defn}
+
+\begin{ejm}
+    Sea \(\Omega\subseteq\set{R}^n\), y sea \(\mathcal{C}'=\{f:\Omega\rightarrow\set{R}\text{ continuas, con derivadas continuas acotadas}\}\), \(p(f)=\int_\Omega\abs{\nabla f}\) es una semi-norma.
+\end{ejm}
+
+\subsection{Problema}
+Sea \(E\) e.v.n. sobre \(\set{R}\), \(p:E\rightarrow\set{R}\) semi-norma, \(F\subseteq E\) s.e.v. y \(\varphi:F\rightarrow\set{R}\) lineal tq \(\varphi(x)\leq p(x)\forall x\in F\)
+
+\subsubsection{Pregunta}
+\(\exists\varphi_1:E\rightarrow\set{R}\) lineal tq \(\varphi_1(x)=\varphi(x)\forall x\in F\) y \(\varphi(x)\leq p(x)\forall x\in E\)?
+
+\subsubsection{Primero}
+Sea \(F\) s.e.v. de \(E\), \(F\subsetneq E\); tomemos \(x\in E\setminus F\) (en particular \(x\neq0\)), y consideramos \(F_1=\angled{\{x\}}\oplus F\). Entonces \(\forall y\in F_1\exists!\lambda\in\set{R},z\in F\) tq \(y=\lambda x+ z\). Si \(\varphi_1:F_1\rightarrow\set{R}\), entonces la linealidad implica que \(\varphi_1(y)=\lambda\varphi_1(x)+\varphi_1(z)\) y si \(\varphi_1\) es extensión de \(\varphi\), \(\varphi_1(y)=\lambda\varphi_1(x)+\varphi(z)\). En otras palabras, para extender \(\varphi\) a \(F_1\) basta escoger \(\varphi_1(x)\in\set{R}\), pero tenemos que escogerlo de modo que \(\lambda\varphi_1(x)+\varphi(z)\leq p(\lambda x+z)\,\forall z\in F\).
+\begin{lem}
+    Para \(E,p,F,\varphi\) como se acaban de describir.
+    \[
+        A=\sup_{\substack{z\in F\\\alpha>0}}\paren{\frac1\alpha\paren{-p(z-\alpha x)+\varphi(z)}}\leq\inf_{\substack{z\in F\\\alpha>0}}\paren{\frac1\alpha\paren{p(z+\alpha x)-\varphi(z)}}=B
+    \]
+\end{lem}
+\begin{proof}
+    Se tiene \(\forall\alpha,\beta>0\), \(\forall z_1,z_2\in F\)
+    \begin{align*}
+        \alpha\varphi(z_1)+\beta\varphi(z_2) &= (\alpha+\beta)\paren{\frac{\alpha z_1}{\alpha+\beta}+\frac{\beta z_2}{\alpha+\beta}}\\
+        &= (\alpha+\beta)\paren{\frac{\alpha (z_1-\beta x)}{\alpha+\beta}+\frac{\beta (z_2+\alpha x)}{\alpha+\beta}}\\
+        &\leq \alpha p(z_1=\beta x)+\beta p(z_2+\alpha x)
+    \end{align*}
+    Con esto se puede escribir
+    \begin{align*}
+        \alpha\varphi(z_1)-\alpha p(z_1-\beta x)&\leq-\beta\varphi(z_2)+\beta p(z_2+\alpha x)\\
+        \frac1\beta\paren{\varphi(z_1)-p(z_1-\beta x)}&\leq\frac1\alpha\paren{-\varphi(z_2)+ p(z_2+\alpha x)}\\
+        \sup_{\substack{\beta>0\\z_1\in F}}\frac1\beta\paren{\varphi(z_1)-p(z_1-\beta x)}&\leq\inf_{\substack{\alpha>0\\z_2\in F}}\frac1\alpha\paren{-\varphi(z_2)+ p(z_2+\alpha x)}
+    \end{align*}
+\end{proof}
+\begin{cor}
+    \(\exists\mu\in\set{R}\) tq si definimos \(\varphi_1(x)=\mu\), con \(x\in E\setminus F\), entonces \(\varphi_1(y)\leq p(y)\) \(\forall y\in F_1\)
+\end{cor}
+\begin{proof}
+    Sea \(\mu\in[A,B]\), para \(y=\alpha x+z,\alpha>0,z\in F\),
+    \begin{align*}
+        \varphi_1(y)&=\varphi_1(\alpha x+z)\\
+        &=\alpha\paren{\frac1\alpha\paren{\varphi(z)-p(z+\alpha x)}+\mu}+p(\alpha x+z)\\
+        &\leq p(z+\alpha x)
+    \end{align*}
+    Entonces \(\varphi_1(\alpha x+z)\leq p(\alpha x+z)\, \forall \alpha>0\). Para \(-\alpha\), \(\alpha>0\) se usa una idea similar, pero con el supremo.
+\end{proof}
+
+\begin{thm}[Hahn-Banach real]
+    Sea \(E\) e.v.n. sobre \(\set{R}\), \(F\subseteq E\) s.e.v., \(p\) semi-norma, \(\varphi:F\rightarrow\set{R}\) lineal tq \(\varphi(x)\leq p(x)\forall x\in F\). Entonces existe \(\varphi_1:E\rightarrow\set{R}\) lineal tq \(\varphi_1(x)=\varphi(x)\forall x\in F\), \(\varphi_1(x)\leq p(x)\forall x\in E\)
+\end{thm}
+\begin{proof}
+    
+\end{proof}
+
+\begin{cor}
+    Sea \(E\) e.v.n. (sobre \(\set{R}\) por ahora), \(\forall x\in E, x\neq0,\exists \varphi\in E^*\) tq \(\varphi(x)=\norm{x}\) y \(\norm{\varphi}=1\)
+\end{cor}
+\begin{proof}
+    Definamos \(\varphi(\lambda x)=\lambda\norm{x}\), \(\varphi:\angled{x}\rightarrow\set{R}\) es lineal y claramente \(\varphi(\lambda x)\leq\norm{\lambda x}\). Ahora usamos HB con \(p(x)=\norm{x}\).
+\end{proof}
 \end{document}
