@@ -108,14 +108,14 @@
         \item \(T\) es continua en \(x\) para todo \(x\in E\).
         \item \(T\) es continua en \(0_E\)
         \item \(\sup_{\norm{x}_E=1}\norm{Tx}_F<\infty\)
-        \item \(\exists c>0\forall x\in E:\norm{Tx}_F\leq c\norm{x}_E\) 
+        \item \(\exists c>0\forall x\in E:\norm{Tx}_F\leq c\norm{x}_E\)
     \end{enumerate}
 \end{thm}
 
 \begin{proof}
     Se demostrará \(1\implies 2\implies 3\implies 4\implies 1\)\\
     \(1\implies 2\) es trivial\\
-    Para \(2\implies 3\), sea \(\varepsilon=1\), y un \(\delta>0\) tq 
+    Para \(2\implies 3\), sea \(\varepsilon=1\), y un \(\delta>0\) tq
     \[
         \norm{x-0_E}_E<\delta\implies\norm{Tx-T(0)}_F<1
     \]
@@ -242,15 +242,15 @@ Sea \(F\) s.e.v. de \(E\), \(F\subsetneq E\); tomemos \(x\in E\setminus F\) (en 
 \begin{proof}
     Se tiene \(\forall\alpha,\beta>0\), \(\forall z_1,z_2\in F\)
     \begin{align*}
-        \alpha\varphi(z_1)+\beta\varphi(z_2) &= (\alpha+\beta)\paren{\frac{\alpha z_1}{\alpha+\beta}+\frac{\beta z_2}{\alpha+\beta}}\\
-        &= (\alpha+\beta)\paren{\frac{\alpha (z_1-\beta x)}{\alpha+\beta}+\frac{\beta (z_2+\alpha x)}{\alpha+\beta}}\\
-        &\leq \alpha p(z_1=\beta x)+\beta p(z_2+\alpha x)
+        \alpha\varphi(z_1)+\beta\varphi(z_2) & = (\alpha+\beta)\paren{\frac{\alpha z_1}{\alpha+\beta}+\frac{\beta z_2}{\alpha+\beta}}                      \\
+                                             & = (\alpha+\beta)\paren{\frac{\alpha (z_1-\beta x)}{\alpha+\beta}+\frac{\beta (z_2+\alpha x)}{\alpha+\beta}} \\
+                                             & \leq \alpha p(z_1=\beta x)+\beta p(z_2+\alpha x)
     \end{align*}
     Con esto se puede escribir
     \begin{align*}
-        \alpha\varphi(z_1)-\alpha p(z_1-\beta x)&\leq-\beta\varphi(z_2)+\beta p(z_2+\alpha x)\\
-        \frac1\beta\paren{\varphi(z_1)-p(z_1-\beta x)}&\leq\frac1\alpha\paren{-\varphi(z_2)+ p(z_2+\alpha x)}\\
-        \sup_{\substack{\beta>0\\z_1\in F}}\frac1\beta\paren{\varphi(z_1)-p(z_1-\beta x)}&\leq\inf_{\substack{\alpha>0\\z_2\in F}}\frac1\alpha\paren{-\varphi(z_2)+ p(z_2+\alpha x)}
+        \alpha\varphi(z_1)-\alpha p(z_1-\beta x)       & \leq-\beta\varphi(z_2)+\beta p(z_2+\alpha x)           \\
+        \frac1\beta\paren{\varphi(z_1)-p(z_1-\beta x)} & \leq\frac1\alpha\paren{-\varphi(z_2)+ p(z_2+\alpha x)} \\
+        \sup_{\substack{\beta>0                                                                                 \\z_1\in F}}\frac1\beta\paren{\varphi(z_1)-p(z_1-\beta x)}&\leq\inf_{\substack{\alpha>0\\z_2\in F}}\frac1\alpha\paren{-\varphi(z_2)+ p(z_2+\alpha x)}
     \end{align*}
 \end{proof}
 \begin{cor}
@@ -259,9 +259,9 @@ Sea \(F\) s.e.v. de \(E\), \(F\subsetneq E\); tomemos \(x\in E\setminus F\) (en 
 \begin{proof}
     Sea \(\mu\in[A,B]\), para \(y=\alpha x+z,\alpha>0,z\in F\),
     \begin{align*}
-        \varphi_1(y)&=\varphi_1(\alpha x+z)\\
-        &=\alpha\paren{\frac1\alpha\paren{\varphi(z)-p(z+\alpha x)}+\mu}+p(\alpha x+z)\\
-        &\leq p(z+\alpha x)
+        \varphi_1(y) & =\varphi_1(\alpha x+z)                                                        \\
+                     & =\alpha\paren{\frac1\alpha\paren{\varphi(z)-p(z+\alpha x)}+\mu}+p(\alpha x+z) \\
+                     & \leq p(z+\alpha x)
     \end{align*}
     Entonces \(\varphi_1(\alpha x+z)\leq p(\alpha x+z)\, \forall \alpha>0\). Para \(-\alpha\), \(\alpha>0\) se usa una idea similar, pero con el supremo.
 \end{proof}
@@ -272,20 +272,20 @@ Sea \(F\) s.e.v. de \(E\), \(F\subsetneq E\); tomemos \(x\in E\setminus F\) (en 
 \begin{proof}
     Sea \(E\) e.v. sobre \(\set{R}\), \(p\) semi-norma en \(E\), \(F\subseteq E\) s.e.v., si \(\varphi:F\rightarrow \set{R}\) es lineal y \(\varphi(x)\leq p(x)\forall x\in F\). Entonces, existe \(\varphi_1:E\rightarrow\set{R}\) lineal, extensión de \(\varphi\), tq \(\varphi_1(x)\leq p(x)\forall x\in E\)
 \end{proof}
-    Definamos \(\mathcal{C}=\{(H,\psi): H\text{ s.e.v. de }E, F\subseteq H,\psi:H\rightarrow\set{R},\psi\mid_F=\varphi,\psi(x)\leq p(x) \forall x\in H\}\). Para \((H_1,\psi_1),(H_2,\psi_2)\in \mathcal{C}\). Se define \((H_1,\psi_1)\leq(H_2,\psi_2)\) ssi \(H_1\subseteq H_2\) y \(\psi_2\mid_{H_1}=\psi_1\). \(\leq\) es un orden parcial sobre \(\mathcal{C}\).
-    \begin{enumerate}
-        \item \(\mathcal{C}\neq\emptyset\), pues \((F,\varphi)\in\mathcal{C}\).
-        \item Si  \(\{(H_i,\psi_i)\}_{i\in I}\subseteq\mathcal{C}\) es totalmente ordenado, \(\exists (H_S,\psi_s)\) cota superior de \(\{(H_i,\psi_i)\}_{i\in I}\), o sea \(H_s\supseteq H_i\forall i\in I, \psi_s\mid_{H_i}=\psi_i\).
-    \end{enumerate}
-    Para esto:\\
-    Sea \(H_s=\bigcup_{i\in I}H_i\). \(H_s\) es s.e.v. de \(E\) pues si \(x,y\in H_s,\lambda\in\set{R}\) entonces \(\exists i,j\in I\) tq \(x\in H_i,y\in H_j\), como \(\{(H_i,\psi_i)\}\) es totalmente ordenado, se tiene que \(H_i\subseteq H_j\) o \(H_j\subseteq H_i\). Ahora, s.p.d.g. \(H_i\subseteq H_j\implies x,y\in H_j\implies x+\lambda y\in H_j\subseteq H_s\).\\
-    Definamos \(\psi_s:H_s\rightarrow\set{R}\) de la siguiente forma:
-    \[
-        \psi_s(x)=\psi_i(x)\text{ si }x\in H_i
-    \]
-    Esto esta bien definido, pues \(\{(H_i,\psi_i)\}\) es totalmente ordenado. Además \(\psi(x)\leq p(x)\forall x\in H_s\) pues todo \(\psi_i\) satisface esto.\\
-    Esto prueba que \((H_s,\psi_s)\in\mathcal{C}\) y que \((H_i,\psi_i)\leq (H_s,\psi_s)\forall i\in I\). Ahora, por el lemma de Zorn existe \((H_*,\psi_*)\in\mathcal{C}\) que es maximal. Esto es \(\paren{(H,\psi)\in\mathcal{C}\wedge (H_*,\psi_*)\leq (H,\psi)}\implies (H_*,\psi_*)=(H,\psi)\).\\
-    \underline{Afirmación:} \(H_*=E\). Si no: \(\exists x\in E\setminus H_*\), por lo que podemos extender \(H_*\) y \(\psi_*\), lo que es una contradicción, ya que \((H_*,\psi_*)\) es maximal. Con esto se tiene que 
+Definamos \(\mathcal{C}=\{(H,\psi): H\text{ s.e.v. de }E, F\subseteq H,\psi:H\rightarrow\set{R},\psi\mid_F=\varphi,\psi(x)\leq p(x) \forall x\in H\}\). Para \((H_1,\psi_1),(H_2,\psi_2)\in \mathcal{C}\). Se define \((H_1,\psi_1)\leq(H_2,\psi_2)\) ssi \(H_1\subseteq H_2\) y \(\psi_2\mid_{H_1}=\psi_1\). \(\leq\) es un orden parcial sobre \(\mathcal{C}\).
+\begin{enumerate}
+    \item \(\mathcal{C}\neq\emptyset\), pues \((F,\varphi)\in\mathcal{C}\).
+    \item Si  \(\{(H_i,\psi_i)\}_{i\in I}\subseteq\mathcal{C}\) es totalmente ordenado, \(\exists (H_S,\psi_s)\) cota superior de \(\{(H_i,\psi_i)\}_{i\in I}\), o sea \(H_s\supseteq H_i\forall i\in I, \psi_s\mid_{H_i}=\psi_i\).
+\end{enumerate}
+Para esto:\\
+Sea \(H_s=\bigcup_{i\in I}H_i\). \(H_s\) es s.e.v. de \(E\) pues si \(x,y\in H_s,\lambda\in\set{R}\) entonces \(\exists i,j\in I\) tq \(x\in H_i,y\in H_j\), como \(\{(H_i,\psi_i)\}\) es totalmente ordenado, se tiene que \(H_i\subseteq H_j\) o \(H_j\subseteq H_i\). Ahora, s.p.d.g. \(H_i\subseteq H_j\implies x,y\in H_j\implies x+\lambda y\in H_j\subseteq H_s\).\\
+Definamos \(\psi_s:H_s\rightarrow\set{R}\) de la siguiente forma:
+\[
+    \psi_s(x)=\psi_i(x)\text{ si }x\in H_i
+\]
+Esto esta bien definido, pues \(\{(H_i,\psi_i)\}\) es totalmente ordenado. Además \(\psi(x)\leq p(x)\forall x\in H_s\) pues todo \(\psi_i\) satisface esto.\\
+Esto prueba que \((H_s,\psi_s)\in\mathcal{C}\) y que \((H_i,\psi_i)\leq (H_s,\psi_s)\forall i\in I\). Ahora, por el lemma de Zorn existe \((H_*,\psi_*)\in\mathcal{C}\) que es maximal. Esto es \(\paren{(H,\psi)\in\mathcal{C}\wedge (H_*,\psi_*)\leq (H,\psi)}\implies (H_*,\psi_*)=(H,\psi)\).\\
+\underline{Afirmación:} \(H_*=E\). Si no: \(\exists x\in E\setminus H_*\), por lo que podemos extender \(H_*\) y \(\psi_*\), lo que es una contradicción, ya que \((H_*,\psi_*)\) es maximal. Con esto se tiene que
 \begin{cor}
     Sea \(E\) e.v.n. (sobre \(\set{R}\) por ahora), \(\forall x\in E, x\neq0,\exists \varphi\in E^*\) tq \(\varphi(x)=\norm{x}\) y \(\norm{\varphi}=1\)
 \end{cor}
@@ -298,4 +298,66 @@ Sea \(F\) s.e.v. de \(E\), \(F\subsetneq E\); tomemos \(x\in E\setminus F\) (en 
 \begin{proof}
     La misma demostración, pero cambiar la frase \(\forall x \varphi(x)\leq p(x)\) por \(\forall x\abs{\varphi(x)}\leq p(x)\) donde \(\abs{\cdot}\) es la norma en \(\set{C}\).
 \end{proof}
+
+\begin{cor}
+    Si \(F\subseteq E\), \(\overline{F}\neq E\) \(\forall x\in E\setminus \overline{F}\,\exists\varphi\in E^*\) tq \(\varphi(z)=0\forall z\in F\) pero \(\varphi(x)\neq 0\)
+\end{cor}
+\begin{proof}
+    Para todo \(A\subseteq E\) y \(x\in E\) se define:
+    \[
+        d(x,A)=\inf\{\norm{x-y}:y\in A\}
+    \]
+    Sea \(x\in\overline{F}\), y sea \(F_1=\angled{x}\oplus F\). Se toma \(y\in F_1\), \(y=\lambda x+z\), \(z\in F\). Se define \(\varphi(y)=\lambda d(x,F)\) para \(z\in F\) y \(\lambda\neq 0\). Luego,
+    \begin{align*}
+        \abs{\varphi(\lambda x+z)} & =\abs{\lambda}d(x,F)                      \\
+                                   & \leq\abs{\lambda}\norm{x+\frac1\lambda z}
+    \end{align*}
+    Con lo que \(\abs{\varphi(\lambda x+z)}\leq\norm{\lambda x+z}\). O sea, \(\abs{\varphi(y)}\leq\norm{y}\) para \(y\in F_1\) y \(\varphi(z)=0\forall z\in F\)\\
+    Luego por HB \(\exists\varphi':E\rightarrow\set{C}\), \(\norm{\varphi'(y)}\leq\norm{y}\forall y \in E\) y además \(\varphi'(x)=d(x,F)>0\) para \(x\notin\overline{F}\).
+\end{proof}
+\begin{obs}
+    Esta proposición dice que si \(x\notin\overline{F}\) entonces \(\exists\varphi\in E^*\) tq \(\Re(\varphi(x))>\Re(\varphi(y))\) para todo \(y\in F\).
+\end{obs}
+En ese espíritu uno puede probar que:\\
+Si \(E\) es e.v.n., \(A,B\) convexos cerrados y disjuntos, con \(B\) compacto, \(\exists\varphi\in E^*\), y \(\alpha,\beta\in\set{R}\) con \(\alpha<\beta\) tq \(\Re(\varphi(x))\leq\alpha<\beta\leq\Re(\varphi(y))\,\forall x\in A\,\forall y\in B\).
+
+\section{Consecuencias del Lema de Baire}
+\subsection{Recuerdo}
+Sea \(X\) e.m. completo. Si \(O_n\subseteq X\) es abierto denso en \(X\forall n\in\set{N}\), entonces su intersección \(\bigcap_{n\in\set{N}}O_n\) es densa.\\
+Esto es equivalente a:\\
+Si \(F_n\) es cerrado de interior vacío en \(X\) para todo \(n\in\set{N}\). Entonces \(\bigcup_{n\in\set{N}}F_N\) tiene interior vacío.
+
+\begin{thm}[Banach Steinhaus o Teorema de la cota uniforme]
+    Sean \(E,F\) Banach, y sean \(T_i:E\rightarrow F\) lineales indexadas por \(i\in I\). Supongamos que \(\forall x\in E\,\exists c_x\geq 0\) tq \(\norm{T_ix}_F\leq c_x\,\forall i\in I\).\\
+    En estas condiciones \(\exists c\geq 0\) tq
+    \begin{align*}
+        &\norm{T_ix}_F\leq C\norm{x}_E &\forall x\in E,\,\forall i\in I
+    \end{align*}
+    Equivalentemente \(\norm{T_i}_{\mathcal{L}(E,F)}\leq C\,\forall i\in I\)
+\end{thm}
+\begin{proof}
+    Por hipótesis, \(\forall x\in E\) \(\exists c_x\geq 0\) tq \(\norm{T_ix}\leq c_x\) \(\forall i\in I\). Esto dice que si definimos
+    \[
+        B_n=\{x\in E\text{ tq }\norm{T_ix}\leq n\forall i\in I\}
+    \]
+    Entonces \(\bigcup_{n\in\set{N}}B_n=E\). Además, \(B_n\) son cerrados.\\
+    Por el lema de Baire, algún \(B_n\) tiene interior no vacío, digamos \(B_{n_0}\). Entonces \(\exists x_0\in E\) y \(\delta>0\) tq \(B_{2\delta}(x_0)\subseteq B_{n_0}\).\\
+    Entonces \(\forall x\in E\), \(x\neq0\),
+    \begin{align*}
+        T_i(x)&=\frac{\norm{x}}\delta T_i\paren{x_0+\frac{\delta x}{\norm{x}}-x_0}
+    \end{align*}
+    Como \(x_0+\frac{\delta x}{\norm{x}}\in B_{2\delta}(x_0)\) se tiene que
+    \begin{align*}
+        \norm{T_ix} &=\frac{\norm{x}}\delta\norm{T_i(x_0+\frac{\delta x}{\norm{x}})-T_ix_0}\\
+        &\leq\frac{\norm{x}}\delta\paren{\norm{T_i\paren{x_0+\frac{\delta x}{\norm{x}}}}+\norm{T_ix_0}}\\
+        &\leq\frac{2n_0}\delta\norm{x}
+    \end{align*}
+    Esto es, \(\norm{T_ix}\leq\frac{2n_0}\delta\norm{x}\) \(\forall x\in E,\,\forall i\in I\).
+\end{proof}
+\begin{thm}[Teorema de la aplicación abierta]
+    Sean \(E,F\) Banach, sea \(T:E\rightarrow F\) lineal continua y sobreyectiva. Entonces \(T\) es abierto, esto es, \(T(O)\) es abierto en \(F\) para todo \(O\) abierto en \(E\).
+\end{thm}
+\begin{cor}
+    Si \(E,F\) Banach, y \(T:E\rightarrow F\) es lineal continua y biyectiva, entonces es bicontinua.
+\end{cor}
 \end{document}
