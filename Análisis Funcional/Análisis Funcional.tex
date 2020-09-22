@@ -331,7 +331,7 @@ Si \(F_n\) es cerrado de interior vacío en \(X\) para todo \(n\in\set{N}\). Ent
     Sean \(E,F\) Banach, y sean \(T_i:E\rightarrow F\) lineales indexadas por \(i\in I\). Supongamos que \(\forall x\in E\,\exists c_x\geq 0\) tq \(\norm{T_ix}_F\leq c_x\,\forall i\in I\).\\
     En estas condiciones \(\exists c\geq 0\) tq
     \begin{align*}
-        &\norm{T_ix}_F\leq C\norm{x}_E &\forall x\in E,\,\forall i\in I
+         & \norm{T_ix}_F\leq C\norm{x}_E & \forall x\in E,\,\forall i\in I
     \end{align*}
     Equivalentemente \(\norm{T_i}_{\mathcal{L}(E,F)}\leq C\,\forall i\in I\)
 \end{thm}
@@ -344,20 +344,126 @@ Si \(F_n\) es cerrado de interior vacío en \(X\) para todo \(n\in\set{N}\). Ent
     Por el lema de Baire, algún \(B_n\) tiene interior no vacío, digamos \(B_{n_0}\). Entonces \(\exists x_0\in E\) y \(\delta>0\) tq \(B_{2\delta}(x_0)\subseteq B_{n_0}\).\\
     Entonces \(\forall x\in E\), \(x\neq0\),
     \begin{align*}
-        T_i(x)&=\frac{\norm{x}}\delta T_i\paren{x_0+\frac{\delta x}{\norm{x}}-x_0}
+        T_i(x) & =\frac{\norm{x}}\delta T_i\paren{x_0+\frac{\delta x}{\norm{x}}-x_0}
     \end{align*}
     Como \(x_0+\frac{\delta x}{\norm{x}}\in B_{2\delta}(x_0)\) se tiene que
     \begin{align*}
-        \norm{T_ix} &=\frac{\norm{x}}\delta\norm{T_i(x_0+\frac{\delta x}{\norm{x}})-T_ix_0}\\
-        &\leq\frac{\norm{x}}\delta\paren{\norm{T_i\paren{x_0+\frac{\delta x}{\norm{x}}}}+\norm{T_ix_0}}\\
-        &\leq\frac{2n_0}\delta\norm{x}
+        \norm{T_ix} & =\frac{\norm{x}}\delta\norm{T_i(x_0+\frac{\delta x}{\norm{x}})-T_ix_0}                         \\
+                    & \leq\frac{\norm{x}}\delta\paren{\norm{T_i\paren{x_0+\frac{\delta x}{\norm{x}}}}+\norm{T_ix_0}} \\
+                    & \leq\frac{2n_0}\delta\norm{x}
     \end{align*}
     Esto es, \(\norm{T_ix}\leq\frac{2n_0}\delta\norm{x}\) \(\forall x\in E,\,\forall i\in I\).
 \end{proof}
 \begin{thm}[Teorema de la aplicación abierta]
     Sean \(E,F\) Banach, sea \(T:E\rightarrow F\) lineal continua y sobreyectiva. Entonces \(T\) es abierto, esto es, \(T(O)\) es abierto en \(F\) para todo \(O\) abierto en \(E\).
 \end{thm}
+\begin{proof}
+    Sea \(T:E\rightarrow F\) lineal, continua y sobreyectiva. Con \(E,F\) espacios de Banach. Basta probar que \(T(B_t(x))\) es abierto en F \(\forall x\in E,\forall t>0\). Ya que dado \(V\) abierto, \(V=\bigcup_{x\in V}B_{\delta(x)}(x)\) para \(\delta(x)>0\), y entonces:
+    \begin{equation*}
+        \bigcup_{x\in V}T(B_{\delta(x)}(x))=T(V)
+    \end{equation*}
+    Lo que sería un abierto. Ahora, se nota que \(T(B_t(x))=T(x)+T(B_t(0))\). Esto nos dice que basta ver que \(T(B_t(0))\) sea abierto \(\forall t>0\).\\
+    Además, se ve que \(h_t(T(B_1(0)))=T(B_t(0))\), por lo que basta que \(T(B_t(0))\) sea abierto para algún \(t>0\).\\
+    Para eso, se demostrará que es suficiente que \(T(B_t(0))\) tenga interior no vacío para que sea abierto. Si \(T(B_t(0))\) tiene interior no vacío, entonces \(\exists\delta>0\), \(y\in F\) tal que \(D_{2\delta}^F(y)\subseteq T(B_t^E(0))\). De aquí, \(\exists x\in B_t(0)\) tal que \(T(x)=y\) y \(\norm{x}<t\). Con esto:
+    \begin{align*}
+        B_{2\delta}^F(y)=T(x)+B_{2\delta}^F(0) \subseteq T(B_t^E(0)) \\
+        \implies B_{2\delta}^F(0) \subseteq T(-x + B_t^E(0)) \subseteq T(B_{2t}^E(0))\footnotemark
+    \end{align*}\footnotetext{Esta última contención viene dada porque \(\norm{-x+z}\leq\norm{x}+\norm{z}\leq2t\).}
+    Es decir, \(B_{2\delta}^F(0)\subseteq T(B_{2t}^E(0))\), lo que gracias a la dilatación \(h_{\frac\varepsilon{2\delta}}\) es equivalente a decir que \(\forall\varepsilon>0 B_\varepsilon^F(0)\subseteq T(B_{\frac{t\varepsilon}\delta}(0))\).\\
+    Se usará lo anterior para probar que \(T(B_t(0))\) es abierto. Sea \(v\in T(B_t(0))\). Digamos que \(T(u)=v\), con \(u\in B_t(0)\).
+    \begin{obs}
+        \(B_{t-\norm{u}}^E(u)\subseteq B_t^E(0)\), así que \(u+B_{t-\norm{u}}^E(0)\subseteq B_t^E(0)\). Gracias a esto concluimos que \(T(u)+T(B_{t-\norm{u}}^E(0))\subseteq T(B_t^E(0))\).
+    \end{obs}
+    Ahora, escogiendo \(\frac{t\varepsilon}\delta\leq t-\norm{u}\), concluimos que \(B_\varepsilon^E(T(u))=T(u)+B_\varepsilon^F(0)\subseteq T(B_t^E(0))\).
+\end{proof}
 \begin{cor}
     Si \(E,F\) Banach, y \(T:E\rightarrow F\) es lineal continua y biyectiva, entonces es bicontinua.
 \end{cor}
+
+\begin{thm}
+    Sea \(H\) Hilbert
+    \begin{enumerate}
+        \item Si \(\{e_i\}_{i\in I},\{f_j\}_{j\in J}\) son ortonormales completos en \(H\). Entonces \(\exists h: I\rightarrow J\) biyectiva.
+        \item \(H\) tiene al menos un conjunto ortonormal completo.
+    \end{enumerate}
+\end{thm}
+\begin{proof}
+    \
+    \begin{enumerate}
+        \item Sean \(\{e_i\}_{i\in I},\{f_j\}_{j\in J}\) completos en \(H\). Vamos a probar que \(\exists z: I\rightarrow J\) inyectiva. Luego, similarmente existiría \(\eta: J\rightarrow I\), por lo que por Cantor-Bernstein se tiene que \(\exists h: I\rightarrow J\) biyectiva.\\
+              Para construir \(z\), observemos que \(\forall j\in J\), \(I_j\{i\in I:\angled{e_i,f_j}\neq0\}\) es numerable. Además, \(I=\bigcup_{j\in J}I_j\) pues si \(i\notin I_j\forall j\in J\), entonces \(\angled{e_i,f_j}=0\forall j\in J\implies e_i=0\).\\
+              Definamos: para \(i\in I\) escojamos un \(j\in J\) tq \(i\in I_j\). Enuramos \(I_j=\{\alpha,\alpha_2,\alpha_3,\dots\}\) y definamos \(z: I\rightarrow I\times\set{N}\) donde \(i\mapsto (j,n)\) donde \(i\in I_j\) y \(i=\alpha_n\).\\
+              Afirmación: \(z\) es inyectivo. Para ver esto, sean \(i_1,i_2\in I\) distintos:
+              \begin{itemize}
+                  \item[Caso 1]: \(j_1=j_2=j\). Entonces \(i_1,i_2\in I_j=\{\alpha,\alpha_1,\alpha_3,\dots\}\), luego \((j,n_1)\) \(j,n_2\) son distintos ya que \(i_1\neq i_2\). Así \(z(i_1)\neq z(i_2)\)
+                  \item[Caso 2]: \(j_1\neq j_2\), entonces \(z(i_1)\neq z(i_2)\)
+              \end{itemize}
+              Entonces, \(z\) es inyectiva, y como \(\exists\eta:J\times\set{N}\rightarrow J\) entonces \(\eta\circ z:I\rightarrow J\) es inyectiva.
+        \item Sea \(\mathcal{C}=\{\{e_i\}_{i\in I}\subseteq H: \{e_i\}_{i\in I}\text{ ortonormal}\}\). \(\mathcal{C}\) es no vacía, ya que si \(x\neq 0,e_x=\frac{x}{\norm{x}}\) satisface lo pedido. Se toma el orden parcial dado por la inclusión en \(\mathcal{C}\). Ahora, si \(\mathcal{B}_i\in\mathcal{C}\forall i\in \Lambda\) y si \(\{\mathcal{B_i}_{i\in\Lambda}\}\) es totalmente ordenado por \(\subseteq\). Se define \(\mathcal{B}=\bigcup_{i\in\Lambda}\mathcal{B}_i\). Claramente \(\mathcal{B}\) es cota superior en \(\{\mathcal{B}_i\}_{i\in\Lambda}\). Ahora por Zorn, se tiene un elemento maximal \(\mathcal{B}^*\) en \(\mathcal{C}\). Solo falta que \(\mathcal{B}^*\) sea completo, si \(\exists x\in H\) tq \(\angled{x,e}=0\forall e\in\mathcal{B}^*\), con \(x\neq 0\) entonces \(\mathcal{B}^*\cup\{\frac{x}{\norm{x}}\}\) es ortonormal, pero esto contradice la maximalidad de \(\mathcal{B}^*\).
+    \end{enumerate}
+\end{proof}
+
+\begin{thm}
+    Sea \(E\) Banach, \(E\) reflexiva ssi \(\overline{B}_1=\{x\in E:\norm{x}\leq1\}\) es compacto en \(\sigma(E,E^*)\)
+\end{thm}
+\begin{proof}
+    \(\implies\): Hecho en clase anterior%Anotar
+    \\
+    \(\impliedby\): Se toma un desvio por Hahn-Banach Geométrico
+\end{proof}
+
+\begin{thm}[Hahn-Banach Geométrico]
+    Sea \(E\) Banach
+    \begin{enumerate}
+        \item Si \(U,V\) son abiertos convexos, \(U\cap V=\emptyset\), entonces \(\exists \varphi\in E^*\) tq \(\Re(\varphi(x))<\Re(\varphi(y))\) \(\forall x\in U\forall y\in V\).
+        \item Si \(C\) y \(K\) cerrados convexos en \(E\), \(K\) compacto y \(K\cap C=\emptyset\), entonces \(\exists \varphi\in E^*,\delta>0\) tq \(\Re(\varphi(x))+\delta\leq\Re(\varphi(y))-\delta\) \(\forall x\in C\forall y\in K\)
+    \end{enumerate}
+\end{thm}
+Para demostrar lo anterior, se usarán los siguientes lemas:
+\begin{lem}
+    Sea \(V\subseteq E\), \(V\) abierto, convexo, \(0\in V\). Existe una función \(P_v:E\rightarrow[0,\infty)\) tq
+    \begin{enumerate}
+        \item \(P_V(\lambda x)=\lambda P_V(x)\) \(\forall x\in E\forall\lambda>0\)
+        \item \(P_V(x+y)\leq P_V(x)+P_V(y)\) \(\forall x,y\in E\)
+        \item \(V=\{x\in E:P_V(x)<1\}\)
+    \end{enumerate}
+\end{lem}
+\begin{proof}
+    Definamos \(P_V(x)=\inf\{t>0:\frac1tx\in V\}\), verifiquemos \(\forall x\in E\) el conjunto \(\{t>0:\frac1tx\in V\}\neq\emptyset\). Esto garantiza que el \(\inf\) existe.\\
+    \underline{Para esto}: \(0\in V\implies\exists\delta>0\) tq \(B_\delta(0)\subseteq V\). Entonces \(\forall x\in E\) se tiene que \(\frac\delta{2\norm{x}}x\in B_\delta(0)\subseteq V\). En particular \(t=\frac{2\norm{x}}\delta\in\{t>0:\frac1tx\in V\}\)\\
+    Sea ahora \(x\in E,\lambda>0\).
+    \begin{align*}
+        P_V(\lambda x)&=\inf\{t>0:\frac1t(\lambda x)\in V\}\\
+        &=\lambda\cdot\inf\{(t/\lambda)>0:\frac1{t//\lambda}x\in V\}\\
+        &=\lambda P_V(x)
+    \end{align*}
+    Para 2), es claro que \(\forall x\in E\forall\varepsilon>0\frac1{P_V(x)+\varepsilon}x\in V\). Sean \(x,y\in E,\varepsilon>0\). Definamos \(\alpha=\frac{P_V(x)+\varepsilon}{P_v(x)+P_V(y)+2\varepsilon}\in[0,1]\), \(1=\alpha=\frac{P_V(y)+\varepsilon}{P_v(x)+P_V(y)+2\varepsilon}\in[0,1]\).\\
+    Entonces
+    \begin{align*}
+        \alpha\cdot\paren{\frac{x}{P_V(x)+\varepsilon}}+(1-\alpha)\paren{\frac{y}{P_V(y)+\varepsilon}}=\frac{x+y}{P_v(x)+P_V(y)+2\varepsilon}\in V
+    \end{align*}
+    Por lo que \(P_V(x+y)\leq P_V(x)+P_V(y)+2\varepsilon\) \(\forall \varepsilon>0\).\\
+    Solo falta 3), llamemos \(V_1=\{x\in E:P_V(x)<1\}\). Para ver que \(V)1\subseteq V\), tomemos \(x\in V_1\), o sea, \(P_V(x)<1\). Escojamos \(t\) tq \(P_V(x)<t<1\). Entonces
+    \begin{equation*}
+        \frac1tx\in V\implies t\cdot\paren{\frac1tx}+(1-t)\cdot 0=x\in V
+    \end{equation*}
+    Conclusión \(V_1\subseteq V\). Para la otra parte, sea \(x\in V\). Si \(x=0\) entonces \(P_V(x)=0<1\). Si \(x\in V,x\neq 0\) \(\exists r>0\) tq \(B_r(x)\subseteq V\). Observemos entonces que \(\paren{1+\frac{r}{2\norm{x}}}x\in B_r(x)\). En otras palabras \(t=\frac1{1+\frac{r}{2\norm{x}}}<1\) cumple que \(\frac1tx\in V\implies P_V(x)<1\). Con lo que se tiene lo pedido.
+\end{proof}
+
+\begin{lem}
+    Sea \(E\) Banach, \(V\subseteq E\), \(V\) abierto, convexo, \(V\neq\emptyset\), y escojamos \(x_0\notin V\). Entonces \(\exists \varphi\in E^*\) tq \(\Re(\varphi(x))<\Re(\varphi(x_0))\) \(\forall x\in V\)
+\end{lem}
+
+\begin{proof}
+    Tomemos \(y_0\in V\), y definamos \(V_1=\{x-y_0:x\in V\}\), \(x_1=x_0-y_0\), con esto \(0\in V_1\), \(x_1\notin V_1\). Definamos \(F=\{\lambda x_1:\lambda\in\set{R}\}\). \(F\) es s.e.v. real de \(E\). Definamos \(\varphi_1:F\rightarrow\set{R}\) donde \(\varphi_1(\lambda x_1)=\lambda\). Observemos que \(\forall\lambda>0:\) \(\varphi_1(\lambda x_1)=\lambda\leq\lambda P_{V_1}(x_1)=P_{V_1}(\lambda x_1)\).\\
+    Esto dice que \(\varphi_1\leq P_V(x)\) \(\forall x\in F\). Ahora, por HB, \(\varphi_1\) se extiende a \(\varphi_1:E\rightarrow\set{R}\) lineal real tq \(\varphi_1(x)\leq P_V(x)\) \(\forall x\in E\).
+    \begin{obs}
+        \(\varphi_1(x)\leq P_V(x)\leq \frac{2\norm{x}}\delta\implies\varphi_1\) es lineal (real) continua.
+    \end{obs}
+    Sea \(\varphi(x)=\varphi_1(x)-i\varphi_1(ix)\). Claramente \(\Re(\varphi)=\varphi_1\), \(\varphi\in E^*\) y además con \(x\in V_1\)
+    \begin{align*}
+        \Re(\varphi(x))\leq P_{V_1}(x)<1=\varphi_1(x_1)=\Re(\varphi(x_1))
+    \end{align*}
+    Trasladando \(V_1\) de vuelta se tiene lo pedido.
+\end{proof}
 \end{document}

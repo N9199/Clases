@@ -1,0 +1,151 @@
+\documentclass{notetaking}
+
+\title{Variable Compleja - MAT2705}
+\author{Nicholas Mc-Donnell}
+\date{}
+\gdate{Segundo Semestre de 2019}
+
+\setlist[enumerate]{label=\arabic*)}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+
+\section*{Preliminares}
+
+\subsection*{Evaluaciones}
+\begin{itemize}
+    \item 3 Interrogaciones (27 Sept, 22 Oct, 20 Nov)
+    \item 4 Tareas
+    \item 1 Examen
+\end{itemize}
+Eximición con promedio 5.5
+\[
+    NF:=\frac{I_1+I_2+I_3+PT+E}5
+\]
+
+\subsection*{Textos}
+Libro: Gamelin: Complex Analysis
+
+\part{}
+\section{Números Complejos}
+Se identifica \(z=x+iy\in\set{C}\) ssi \((x,y)\in\set{R}^2\) (\(\set{C}\iff\set{R}^2\)). En este contexto se define \(i^2=-1\), se definen las operaciones decentes dado \(\set{C}\simeq\set{R}[x]/\paren{x^2+1}\) como cuerpo.\\
+También se puede identificar \(z=r\exp(i\theta)\in\set{C}\), donde \(r=\abs{z}=\sqrt{x^2+y^2}\) y \(\tan\theta=\frac{y}{x}\)
+
+\begin{defn}[Conjugado]
+    El conjugado de \(z\) se anota \(\bar{z}\) y se define \(\bar{z}=a-ib\) si \(z=a+ib\), \(\bar{z}=r\exp{-i\theta}\) si \(z=r\exp(i\theta)\).
+\end{defn}
+
+\subsection{Proyección Esterográfica}
+\begin{defn}[Proyección Estereográfica]
+    Cada \(z\in\set{C}\) identificarlo con un punto en \(S^2\) (la esfera)
+\end{defn}
+
+\begin{thm}
+    Bajo proyección estereográfica círculos y rectas en el plano corresponden a intersecciones de planos en \(S^2\) (círculos en la esfera)
+\end{thm}
+
+\subsection{Funciones en \(\set{C}\)}
+La topología en \(\set{C}\) es la heredada de \(\set{R}^2\) y bajo esta tenemos nociones de convergencia y continuidad.
+
+\begin{ejm}\
+    \begin{enumerate}
+        \item \(f(z)=a_nz^n+\cdots+a_0\) es continua
+        \item \(f(z)=\bar{z}\) continua
+        \item \(f(z)=\exp(z)\) continua
+        \item Definiendo \(\ln(z)=\ln(r\exp(i\theta))=\ln(r)+i\theta)\) con \(\theta\in(-\pi,\pi]\) (la rama principal), la función no es continua en todo el eje \(\{y\leq 0\}\)
+        \item Definiendo \(\sqrt{z}=\exp(\frac12\ln(z))\) no es continua.
+    \end{enumerate}
+\end{ejm}
+
+\subsection{Funciones Analíticas}
+\begin{obs}
+    Dado \(f:\set{C}\rightarrow\set{C}\), tal que \(((x,y)\mapsto(u(x,y),v(x,y)))\), \(x+iy\mapsto u(z)+iv(z)\). Esta función es diferenciable en \(\Omega\subseteq\set{R}^2\) en el sentido de CVV ssi \(\frac{\partial{u}}{\partial{x}},\frac{\partial{u}}{\partial{y}},\frac{\partial{v}}{\partial{x}},\frac{\partial{v}}{\partial{y}}\) existen y son continuas en \(\Omega\). El diferencial es:
+    \[
+        \begin{bmatrix}
+            \frac{\partial{u}}{\partial{x}}       & \frac{\partial{u}}{\partial{y}} \\
+            \frac{\partial{v}}{\partial{x}} & \frac{\partial{v}}{\partial{y}}
+        \end{bmatrix}
+    \]
+\end{obs}
+
+\begin{defn}
+    Decimos que \(f:\Omega\subseteq\set{C}\rightarrow\set{C}\) es diferenciable en \(z_0\) ssi \(\lim_{z\rightarrow z_0}\frac{f(z)-f(z_0)}{z-z_0}=f'(z_0)\) existe. \(f\) se dice analítica en \(Omega\) ssi \(f\) es diferenciable en el sentido anterior para todo \(z_0\in\Omega\) y \(f'(z)\) es continua en \(\Omega\).
+\end{defn}
+
+\begin{ejm}
+    \(f(z)=z^m\), dado \(\Delta z=z-z_0\), \(\frac{f(z)-f(z_0)}{z-z_0}=\frac{f(z_0+\Delta z)-f(z_0)}{\Delta z}\). Por lo que
+    \begin{align*}
+        \frac{(z_0+\Delta z)^m-z_0^m}{\Delta z} & =\frac{\sum_{j=0}^m\binom{m}{j}z_0^{m-j}(\Delta z)^j-z_0^m}{\Delta z}\\
+        &=\sum_{j=1}^m\binom{m}{j}(\Delta z)^{j-1}z_0^{m-j}\\
+        &\xrightarrow[\Delta z\rightarrow 0]{}mz_0^{m-1}
+    \end{align*}
+    Entonces \(f\) es diferenciable en \(\set{C}\) y la derivada es la usual.
+\end{ejm}
+
+\begin{ejm}
+    \(f(z)=\bar{z}\)
+    \begin{align*}
+        \frac{f(z_0+\Delta z)-f(z_0)}{\Delta z} &= \frac{\overline{x_0+iy_0+\Delta x+i\Delta y}-\overline{x_0+iy_0}}{\Delta x+i\Delta y}\\
+        &= \frac{\Delta x-i\Delta y}{\Delta x+i\Delta y}
+    \end{align*}
+    Si se toma \(\Delta z=\varepsilon\), entonces el límite es \(1\), por otro lado si \(\Delta z=i\varepsilon\) el límite es \(-1\).\\
+    Por lo que no es diferenciable en este contexto, pero si es diferenciable como función de \(\set{R}^2\) a \(\set{R}^2\).
+\end{ejm}
+
+Veamos ahora, como relacionar ambos conceptos. Si existe el límite, este tiene que ser igual independiente de la dirección. Por lo que, notamos que si \(\Delta z=\varepsilon\), el límite es \(\frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}\), en cambio si \(\Delta z=i\varepsilon\), el límite es \(-i\frac{\partial u}{\partial y}+\frac{\partial v}{\partial y}\). Por lo que una condición necesaria para la diferenciabilidad en sentido complejo es\footnote{Condiciones de Cauchy-Riemann}:
+\begin{align*}
+    \frac{\partial u}{\partial x}&=\frac{\partial v}{\partial y}\\
+    \frac{\partial v}{\partial x}&=-\frac{\partial u}{\partial y}
+\end{align*}
+
+\begin{thm}
+    \(f\) es analítica en \(\Omega\) ssi las derivadas parciales existen, son continuas y se tiene CR.
+\end{thm}
+
+\begin{proof}
+    \(\implies\): Se hizo anteriormente\\
+    \(\impliedby\): Se reescribe de la siguiente forma:
+    \begin{align*}
+        \frac{f(z_0+\Delta z)-f(z_0)}{\Delta z} &=\frac{u(x_0+\Delta x,y_0+\Delta y)-u(x_0,y_0)}{\paren{\Delta x}^2+\paren{\Delta y}^2}\paren{\Delta x-i\Delta y}\\&+i\frac{v(x_0+\Delta x,y_0+\Delta y)-v(x_0,y_0)}{\paren{\Delta x}^2+\paren{\Delta y}^2}\paren{\Delta x-i\Delta y}
+    \end{align*}
+    Por Taylor, se puede reescribir el límite usando harta matraca, y usando CR se tiene lo pedido.
+\end{proof}
+
+\begin{thm}
+    Si \(f,g\) analíticas
+    \begin{enumerate}
+        \item \((f+g)'=f'+g'\)
+        \item \((f\cdot g)'=f'g+fg'\)
+        \item \((cf)'=cf'\) con \(c\in\set{C}\)
+        \item \((f/g)'=\frac{f'g-g'f}{g^2}\) si \(g\neq0\)
+    \end{enumerate}
+\end{thm}
+\begin{thm}
+    Si \(f\) es analítica y \(f'(z)=0\) entonces \(f\) es constante
+\end{thm}
+
+\begin{proof}
+    Si \(f'(z)=0\) las derivadas parciales son cero, por lo que \(u=c_1,v=c_2\implies f=c_1+ic_2\)
+\end{proof}
+
+\begin{thm}
+    Si \(f\) analítica y \(f(z_0)\neq 0\), \(f\) es localmente invertible en una vecindad de \(z_0\) y \(f^{-1}\) es analítica
+    \[
+        (f^{-1})'(z_0)=\frac1{f'(f^{-1}(z_0))}
+    \]
+\end{thm}
+
+\subsection{Mapeos Conformes}
+\begin{defn}
+    Sean \(v_1,v_2\) vectores de \(\set{R}^2\), entonces \(\cos(\theta)=\frac{\angled{v_1,v_2}}{\norm{v_1}\norm{v_2}}\), donde \(\theta\) es el ángulo entre \(v_1,v_2\). Luego, sean \(\gamma_1,\gamma_2\) curvas diferenciables en \(\set{R}^2\) que se intersectan en el punto \(P\) en \(t_1,t_2\) correspondientemente, entonces el ángulo entre \(\gamma_1,\gamma_2\) en \(P\) esta dado por:
+    \[
+        \cos\theta=\frac{\angled{\gamma_1'(t_1),\gamma_2'(t_2)}}{\norm{\gamma_1'}\norm{\gamma_2'}}
+    \]
+\end{defn}
+
+\begin{defn}
+    Decimos que \(f:\set{R}^2\rightarrow\set{R}^2\) es conforme si \(\gamma_1,\gamma_2\) son curvas que se intersectan en \(P\) y forman un ángulo \(\theta\), entonces \(f\circ\gamma_1,f\circ\gamma_2\) forman el mismo ángulo \(\theta\) en \(f(P)\). Es decir, \(f\) preserva ángulos. (No necesariamente el largo)
+\end{defn}
+\end{document}
